@@ -1,0 +1,260 @@
+.th-monolith {
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: #f2ede4;
+  font-family: 'Archivo', sans-serif;
+}
+
+.th-monolith ::selection {
+  background: #ff4d00;
+  color: #0d0d0d;
+}
+
+.mono-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 3px solid #f2ede4;
+}
+
+.mono-logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.mono-logo sup {
+  color: #ff4d00;
+  font-size: 12px;
+}
+
+.mono-links {
+  display: flex;
+  gap: 34px;
+}
+
+.mono-links button {
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 6px 2px;
+  box-shadow: inset 0 -4px 0 transparent;
+  transition: box-shadow 0.15s ease, color 0.15s ease;
+}
+
+.mono-links button:hover {
+  box-shadow: inset 0 -4px 0 #ff4d00;
+  color: #ff4d00;
+}
+
+.mono-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  align-items: center;
+  padding: 64px 40px 48px;
+  border-bottom: 3px solid #f2ede4;
+}
+
+.mono-kicker {
+  display: inline-block;
+  background: #ff4d00;
+  color: #0d0d0d;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 6px 10px;
+}
+
+.mono-title span {
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(72px, 12vw, 168px);
+  line-height: 0.88;
+  letter-spacing: 2px;
+  margin-top: 18px;
+}
+
+.mono-outline {
+  color: transparent;
+  -webkit-text-stroke: 3px #f2ede4;
+}
+
+.mono-sub {
+  margin-top: 22px;
+  font-size: 17px;
+  max-width: 46ch;
+  color: #bdb5a6;
+}
+
+.mono-hero-art {
+  display: flex;
+  justify-content: center;
+}
+
+.mono-ox {
+  width: min(380px, 80vw);
+}
+
+.mono-marquee {
+  background: #ff4d00;
+  color: #0d0d0d;
+  overflow: hidden;
+  padding: 12px 0;
+  border-bottom: 3px solid #f2ede4;
+}
+
+.mono-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: mono-scroll 16s linear infinite;
+}
+
+.mono-marquee-half {
+  display: flex;
+  align-items: center;
+}
+
+.mono-marquee-half span {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-right: 44px;
+  font-family: 'Anton', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.mono-marquee-half em {
+  font-style: normal;
+  font-size: 16px;
+}
+
+@keyframes mono-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.mono-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 3px solid #f2ede4;
+}
+
+.mono-stat {
+  padding: 52px 40px;
+  border-left: 3px solid #f2ede4;
+  transition: background 0.2s ease;
+}
+
+.mono-stat:first-child {
+  border-left: none;
+}
+
+.mono-stat:hover {
+  background: #161616;
+}
+
+.mono-stat-num {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(56px, 7vw, 104px);
+  line-height: 1;
+  color: #ff4d00;
+}
+
+.mono-stat-label {
+  margin-top: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.mono-manifesto {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  padding: 100px 40px;
+}
+
+.mono-manifesto h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(44px, 6vw, 84px);
+  line-height: 0.95;
+}
+
+.mono-manifesto h2::before {
+  content: '';
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: #ff4d00;
+  margin-bottom: 26px;
+}
+
+.mono-manifesto p {
+  font-weight: 600;
+  font-size: clamp(21px, 2.6vw, 33px);
+  line-height: 1.4;
+  align-self: center;
+}
+
+.mono-manifesto mark {
+  background: #ff4d00;
+  color: #0d0d0d;
+  padding: 0 8px;
+}
+
+.mono-footer {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.mono-footer span {
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(120px, 26vw, 340px);
+  line-height: 0.78;
+  color: transparent;
+  -webkit-text-stroke: 2px #3a3a3a;
+  user-select: none;
+}
+
+@media (max-width: 900px) {
+  .mono-hero {
+    grid-template-columns: 1fr;
+    padding: 48px 24px 40px;
+  }
+
+  .mono-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .mono-stat {
+    border-left: none;
+    border-top: 3px solid #f2ede4;
+    padding: 36px 24px;
+  }
+
+  .mono-stat:first-child {
+    border-top: none;
+  }
+
+  .mono-manifesto {
+    grid-template-columns: 1fr;
+    padding: 70px 24px;
+  }
+
+  .mono-nav,
+  .mono-links {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .mono-links {
+    gap: 18px;
+  }
+}

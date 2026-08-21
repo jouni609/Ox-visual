@@ -1,0 +1,269 @@
+.th-pop {
+  min-height: 100vh;
+  background: #fff8e7;
+  color: #2b2440;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+.th-pop ::selection {
+  background: #ffd93d;
+  color: #2b2440;
+}
+
+.pop-header {
+  background: #ffd93d;
+  background-image: radial-gradient(rgba(43, 36, 64, 0.12) 3px, transparent 3.5px);
+  background-size: 34px 34px;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.pop-kicker {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  background: #2b2440;
+  color: #ffd93d;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.pop-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: clamp(38px, 7vw, 80px);
+  line-height: 1.12;
+  max-width: 16ch;
+  margin: 26px auto 0;
+}
+
+.sticker {
+  display: inline-block;
+  background: #ffffff;
+  border: 4px solid #2b2440;
+  border-radius: 14px;
+  padding: 0 18px;
+  transform: rotate(-3deg);
+  box-shadow: 8px 8px 0 #2b2440;
+}
+
+.pop-sub {
+  margin: 22px auto 40px;
+  max-width: 46ch;
+  font-size: 17px;
+  color: #4a4460;
+  padding: 0 20px;
+}
+
+.pop-wave {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+
+.pop-stage {
+  position: relative;
+  padding: 10px 24px 60px;
+}
+
+.stage-inner {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grass {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(640px, 92vw);
+  height: 130px;
+  background: #79c141;
+  border-radius: 50%;
+  box-shadow: inset 0 -18px 0 rgba(0, 0, 0, 0.08);
+}
+
+.mascot-wrap {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 86vw);
+  margin: 0 auto;
+}
+
+.mascot-bob {
+  animation: pop-bob 3.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes pop-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.tail-group {
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+  animation: tail-swish 2.8s ease-in-out infinite;
+}
+
+@keyframes tail-swish {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+
+.ear-l,
+.ear-r {
+  transform-box: fill-box;
+  transform-origin: 50% 85%;
+}
+
+.mascot:hover .ear-l {
+  animation: ear-wiggle-l 0.7s ease;
+}
+
+.mascot:hover .ear-r {
+  animation: ear-wiggle-r 0.7s ease;
+}
+
+@keyframes ear-wiggle-l {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(-16deg);
+  }
+  70% {
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes ear-wiggle-r {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(16deg);
+  }
+  70% {
+    transform: rotate(-7deg);
+  }
+}
+
+.badge {
+  position: absolute;
+  z-index: 2;
+  width: 108px;
+  height: 108px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 4px solid #2b2440;
+  box-shadow: 6px 6px 0 rgba(43, 36, 64, 0.9);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  padding: 10px;
+}
+
+.badge-star {
+  clip-path: polygon(
+    50% 0%, 59% 12%, 73% 6%, 76% 21%, 91% 21%, 86% 35%, 100% 41%, 89% 51%, 97% 64%, 82% 67%, 83% 83%, 68% 78%,
+    61% 93%, 50% 82%, 39% 93%, 32% 78%, 17% 83%, 18% 67%, 3% 64%, 11% 51%, 0% 41%, 14% 35%, 9% 21%, 24% 21%, 27% 6%, 41% 12%
+  );
+  border: none;
+  box-shadow: none;
+  width: 128px;
+  height: 128px;
+}
+
+.pop-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 30px 24px 110px;
+}
+
+.pop-card {
+  background: #ffffff;
+  border: 4px solid #2b2440;
+  border-radius: 26px;
+  padding: 32px 26px;
+  box-shadow: 8px 8px 0 #2b2440;
+  text-align: center;
+  cursor: default;
+}
+
+.pop-card-icon {
+  width: 54px;
+  margin: 0 auto 16px;
+}
+
+.pop-card h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.pop-card p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #4a4460;
+}
+
+.pop-footer {
+  background: #2b2440;
+  color: #fff8e7;
+  text-align: center;
+  padding: 44px 20px 60px;
+}
+
+.pop-footer-big {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: clamp(26px, 4vw, 44px);
+}
+
+.pop-footer-small {
+  margin-top: 14px;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .pop-cards {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  .badge {
+    width: 84px;
+    height: 84px;
+    font-size: 12px;
+  }
+
+  .badge-star {
+    width: 100px;
+    height: 100px;
+  }
+}

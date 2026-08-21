@@ -1,0 +1,203 @@
+.th-heritage {
+  min-height: 100vh;
+  background-color: #f2e8d5;
+  background-image: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.55), transparent 60%);
+  color: #2b2118;
+  font-family: 'EB Garamond', serif;
+}
+
+.th-heritage ::selection {
+  background: #7a1f1f;
+  color: #f2e8d5;
+}
+
+.plaque {
+  text-align: center;
+  padding: 26px 20px;
+  border-bottom: 1px solid rgba(43, 33, 24, 0.35);
+  letter-spacing: 0.35em;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 32px 30px;
+  text-align: center;
+}
+
+.eyebrow {
+  letter-spacing: 0.4em;
+  font-size: 11px;
+  color: #7a1f1f;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 1.08;
+  margin: 20px auto 0;
+  max-width: 18ch;
+}
+
+.hero h1 em {
+  color: #7a1f1f;
+}
+
+.lede {
+  max-width: 62ch;
+  margin: 26px auto 0;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #4a3c2e;
+}
+
+.plate {
+  margin: 60px auto 0;
+  max-width: 720px;
+  border: 1px solid #2b2118;
+  outline: 1px solid #2b2118;
+  outline-offset: 6px;
+  padding: 36px 34px 24px;
+  background: #f7efdd;
+  box-shadow: 0 24px 60px -30px rgba(43, 33, 24, 0.45);
+}
+
+.plate figcaption {
+  margin-top: 20px;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  color: #6d5c48;
+}
+
+.engraving {
+  width: 100%;
+}
+
+.ornament {
+  text-align: center;
+  font-size: 28px;
+  color: #b08d4a;
+  margin: 70px 0;
+}
+
+.timeline {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 32px 40px;
+}
+
+.timeline h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 42px);
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.timeline ol {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0 0 44px;
+  border-left: 1px solid rgba(122, 31, 31, 0.35);
+}
+
+.timeline li {
+  position: relative;
+  padding-bottom: 52px;
+}
+
+.timeline li:last-child {
+  padding-bottom: 12px;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -49px;
+  top: 9px;
+  width: 9px;
+  height: 9px;
+  background: #7a1f1f;
+  transform: rotate(45deg);
+}
+
+.tl-year {
+  position: absolute;
+  right: calc(100% + 22px);
+  top: 0;
+  width: 120px;
+  text-align: right;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #7a1f1f;
+  white-space: nowrap;
+}
+
+.timeline h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.timeline li p {
+  margin-top: 8px;
+  line-height: 1.7;
+  color: #4a3c2e;
+  max-width: 56ch;
+}
+
+.quote {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 80px 32px 90px;
+  text-align: center;
+}
+
+.quote blockquote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(26px, 3.4vw, 40px);
+  line-height: 1.35;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 24px;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7a1f1f;
+}
+
+.heritage-footer {
+  border-top: 1px solid rgba(43, 33, 24, 0.35);
+  text-align: center;
+  padding: 30px 20px;
+  letter-spacing: 0.35em;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .tl-year {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-bottom: 6px;
+  }
+
+  .timeline ol {
+    padding-left: 24px;
+  }
+
+  .timeline li::before {
+    left: -29px;
+  }
+}
