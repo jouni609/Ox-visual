@@ -1,0 +1,174 @@
+.th-stele {
+  --gypsum: #E8DDD0;
+  --lapis: #1E3A5F;
+  --sienna: #A0522D;
+  --gold: #C9A227;
+  --shadow: #2A1F18;
+  --sand: #D4C4A8;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--gypsum);
+  color: var(--shadow);
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-stele ::selection {
+  background: var(--lapis);
+  color: var(--gypsum);
+}
+
+.th-stele :focus-visible {
+  outline: 3px solid var(--lapis);
+  outline-offset: 3px;
+}
+
+.stele-ground {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 85%, rgba(180, 160, 130, 0.25) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stele-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(36px, 5vw, 72px) clamp(20px, 4vw, 48px);
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.stele-plinth {
+  width: 100%;
+  max-width: 520px;
+}
+
+.stele-pedestal {
+  width: 100%;
+}
+
+.stele-pedestal svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stele-slab {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  filter: drop-shadow(0 12px 32px rgba(42, 31, 24, 0.2));
+}
+
+.stele-slab-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stele-text {
+  text-align: center;
+  max-width: 600px;
+  margin-top: clamp(36px, 5vw, 56px);
+}
+
+.stele-kicker {
+  margin: 0 0 16px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(10px, 1.1vw, 12px);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--lapis);
+}
+
+.stele-headline {
+  margin: 0 0 22px;
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--shadow);
+}
+
+.stele-lede {
+  margin: 0 0 32px;
+  font-size: clamp(16px, 1.9vw, 20px);
+  font-weight: 400;
+  color: rgba(42, 31, 24, 0.82);
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stele-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2.5vw, 32px);
+  border-top: 1px solid rgba(42, 31, 24, 0.18);
+  padding-top: 24px;
+}
+
+.stele-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stele-fact-label {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(42, 31, 24, 0.55);
+}
+
+.stele-fact-value {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(14px, 1.6vw, 17px);
+  font-weight: 600;
+  color: var(--shadow);
+}
+
+.stele-footer {
+  position: relative;
+  z-index: 1;
+  padding: 36px clamp(20px, 4vw, 48px) 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.stele-signature {
+  width: 280px;
+  opacity: 0.75;
+}
+
+.stele-signature svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 520px) {
+  .stele-facts {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .stele-fact {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(42, 31, 24, 0.1);
+    padding-bottom: 12px;
+  }
+}

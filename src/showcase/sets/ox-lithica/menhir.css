@@ -1,0 +1,195 @@
+.th-menhir {
+  --granite: #5A5A5A;
+  --heather: #7B5E8B;
+  --lichen: #8FA68E;
+  --bone: #E8E0D4;
+  --mist: #C5C5C5;
+  --ink: #2A2520;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: 'Source Serif 4', serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-menhir ::selection {
+  background: var(--heather);
+  color: var(--bone);
+}
+
+.th-menhir :focus-visible {
+  outline: 3px solid var(--heather);
+  outline-offset: 3px;
+}
+
+.menhir-mist {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.menhir-mist-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.menhir-main {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+  padding: clamp(40px, 6vw, 100px) clamp(24px, 4vw, 64px);
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.menhir-stone-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menhir-stone {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  filter: drop-shadow(8px 8px 24px rgba(42, 37, 32, 0.25));
+}
+
+.menhir-text {
+  max-width: 560px;
+}
+
+.menhir-kicker {
+  margin: 0 0 18px;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(10px, 1.2vw, 12px);
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--heather);
+}
+
+.menhir-headline {
+  margin: 0 0 22px;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.menhir-lede {
+  margin: 0 0 36px;
+  font-size: clamp(15px, 1.7vw, 18px);
+  font-weight: 400;
+  color: rgba(42, 37, 32, 0.85);
+  max-width: 52ch;
+}
+
+.menhir-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 3vw, 40px);
+}
+
+.menhir-stat {
+  border-top: 2px solid var(--granite);
+  padding-top: 16px;
+}
+
+.menhir-num {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--heather);
+  font-variant-numeric: tabular-nums;
+}
+
+.menhir-affix {
+  font-size: 0.45em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--granite);
+}
+
+.menhir-label {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: rgba(42, 37, 32, 0.65);
+}
+
+.menhir-footer {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  padding: 32px clamp(24px, 4vw, 64px);
+  display: flex;
+  justify-content: center;
+}
+
+.menhir-signature {
+  width: 260px;
+  opacity: 0.7;
+}
+
+.menhir-signature svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 860px) {
+  .menhir-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+    min-height: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .menhir-stone-wrap {
+    order: 1;
+  }
+
+  .menhir-text {
+    order: 0;
+    max-width: 100%;
+  }
+
+  .menhir-lede {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menhir-stats {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .menhir-stats {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

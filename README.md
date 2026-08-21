@@ -109,6 +109,21 @@ The ox as a sensing body — not a symbol, a sensorium. Each page is one sense, 
 
 </details>
 
+<details>
+  <summary><strong>Set VIII — OX LITHICA</strong> · five stones, five carvings · <em>designed by OpenCode</em></summary>
+
+Five archaeological layers — the ox as aurochs scratched into granite, zebu carved into Assyrian gypsum, solar ox sunk into Egyptian limestone, bull head layered in Roman sardonyx, and ox-demon gargoyle leering from Gothic limestone. Each design carries its signature in the stone's own native mark (petroglyph incision, cuneiform wedge, Egyptian cartouche, gem-cutter's mark, mason's stamp).
+
+| # | Design | Stone | Direction |
+|---|--------|-------|-----------|
+| 01 | **Menhir** | Megalithic granite | Standing stone with scratched aurochs petroglyph, cup-and-ring marks, lichen patches, coastal mist |
+| 02 | **Stele** | Assyrian gypsum | Winged zebu in profile on a bordered boundary stone, cuneiform footer, rosette borders |
+| 03 | **Sunken** | Egyptian limestone | Sunken relief of solar ox with disk between horns, lotus and ankh attendants, museum label |
+| 04 | **Cameo** | Roman sardonyx | Layered shell bull head in oval gold mount, velvet ground, gem-cutter's mark |
+| 05 | **Grotesque** | Gothic limestone | Ox-demon gargoyle in pointed arch frame, rain streaks, stained glass glow, mason's stamp |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

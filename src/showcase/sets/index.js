@@ -6,4 +6,6 @@ import oxFolio from './ox-folio/manifest.js'
 import oxNumismatica from './ox-numismatica/manifest.js'
 import oxSensorium from './ox-sensorium/manifest.js'
 
-export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium]
+import oxLithica from './ox-lithica/manifest.js'
+
+export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium, oxLithica]
