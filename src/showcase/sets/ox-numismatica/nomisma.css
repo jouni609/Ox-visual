@@ -1,0 +1,348 @@
+.th-oxn-nomisma {
+  --oxn-nom-bg: #1c0412;
+  --oxn-nom-surface: #2b081d;
+  --oxn-nom-card: #3a0d28;
+  --oxn-nom-gold: #f59e0b;
+  --oxn-nom-gold-bright: #fde68a;
+  --oxn-nom-gold-glow: rgba(245, 158, 11, 0.28);
+  --oxn-nom-purple: #701a75;
+  --oxn-nom-scarlet: #dc2626;
+  --oxn-nom-lapis: #1e3a8a;
+  --oxn-nom-text-main: #faf5ee;
+  --oxn-nom-text-muted: #d4b8cc;
+  --oxn-nom-border: rgba(245, 158, 11, 0.35);
+  --oxn-nom-border-bright: rgba(253, 230, 138, 0.6);
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--oxn-nom-bg);
+  color: var(--oxn-nom-text-main);
+  font-family: 'Playfair Display', serif;
+  background-image: 
+    radial-gradient(circle at 50% 15%, rgba(245, 158, 11, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 85% 75%, rgba(112, 26, 117, 0.15) 0%, transparent 50%),
+    linear-gradient(180deg, #1c0412 0%, #260619 100%);
+}
+
+.th-oxn-nomisma ::selection {
+  background-color: var(--oxn-nom-gold);
+  color: var(--oxn-nom-bg);
+}
+
+.oxn-nom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 7rem;
+  box-sizing: border-box;
+}
+
+.oxn-nom-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8125rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--oxn-nom-gold);
+  margin-bottom: 0.75rem;
+}
+
+.oxn-nom-eyebrow-line {
+  flex: 1;
+  max-width: 60px;
+  height: 1px;
+  background: var(--oxn-nom-gold);
+}
+
+.oxn-nom-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(3rem, 8vw, 6.25rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0.06em;
+  margin: 0 0 1rem 0;
+  color: var(--oxn-nom-gold-bright);
+  text-shadow: 0 0 45px var(--oxn-nom-gold-glow);
+}
+
+.oxn-nom-subtitle {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  color: var(--oxn-nom-text-muted);
+  max-width: 840px;
+  margin: 0 0 3.5rem 0;
+}
+
+.oxn-nom-hero-stage {
+  background: var(--oxn-nom-surface);
+  border: 1px solid var(--oxn-nom-border);
+  border-radius: 6px;
+  padding: 3rem 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+}
+
+.oxn-nom-gold-disc-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.oxn-nom-coin-svg {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.8));
+}
+
+.oxn-nom-gold-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.oxn-nom-slider-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8125rem;
+  color: var(--oxn-nom-gold);
+  letter-spacing: 0.1em;
+}
+
+.oxn-nom-range-input {
+  flex: 1;
+  min-width: 180px;
+  accent-color: var(--oxn-nom-gold);
+  cursor: pointer;
+}
+
+.oxn-nom-meta-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 840px;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--oxn-nom-border);
+}
+
+@media (max-width: 768px) {
+  .oxn-nom-meta-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.oxn-nom-meta-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.oxn-nom-meta-lbl {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--oxn-nom-gold);
+  text-transform: uppercase;
+}
+
+.oxn-nom-meta-v {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--oxn-nom-gold-bright);
+}
+
+.oxn-nom-tax-section {
+  background: var(--oxn-nom-card);
+  border: 1px solid var(--oxn-nom-border);
+  border-radius: 6px;
+  padding: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.oxn-nom-tax-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--oxn-nom-gold-bright);
+}
+
+.oxn-nom-tax-sub {
+  font-size: 1.05rem;
+  color: var(--oxn-nom-text-muted);
+  margin: 0 0 2rem 0;
+}
+
+.oxn-nom-tax-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.oxn-nom-tax-btn {
+  background: var(--oxn-nom-surface);
+  border: 1px solid var(--oxn-nom-border);
+  color: var(--oxn-nom-gold);
+  padding: 0.65rem 1.25rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.oxn-nom-tax-btn:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: var(--oxn-nom-gold-bright);
+}
+
+.oxn-nom-tax-btn.active {
+  background: var(--oxn-nom-gold);
+  color: var(--oxn-nom-bg);
+  font-weight: 700;
+  box-shadow: 0 0 15px var(--oxn-nom-gold-glow);
+}
+
+.oxn-nom-tax-btn:focus-visible {
+  outline: 2px solid var(--oxn-nom-gold-bright);
+  outline-offset: 2px;
+}
+
+.oxn-nom-calc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.oxn-nom-tax-card {
+  background: rgba(28, 4, 18, 0.6);
+  border: 1px solid var(--oxn-nom-border);
+  padding: 1.25rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.oxn-nom-tcard-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--oxn-nom-gold);
+}
+
+.oxn-nom-tcard-val {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  color: var(--oxn-nom-gold-bright);
+  font-weight: 700;
+}
+
+.oxn-nom-tcard-desc {
+  font-size: 0.875rem;
+  color: var(--oxn-nom-text-muted);
+  margin: 0;
+}
+
+.oxn-nom-history-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 850px) {
+  .oxn-nom-history-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.oxn-nom-hist-card {
+  background: var(--oxn-nom-surface);
+  border: 1px solid var(--oxn-nom-border);
+  padding: 1.75rem;
+  border-radius: 6px;
+}
+
+.oxn-nom-hist-tag {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--oxn-nom-gold);
+  margin-bottom: 0.5rem;
+}
+
+.oxn-nom-hist-h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: var(--oxn-nom-gold-bright);
+  margin: 0 0 0.75rem 0;
+}
+
+.oxn-nom-hist-p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--oxn-nom-text-muted);
+  margin: 0;
+}
+
+.oxn-nom-signature {
+  margin-top: 5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--oxn-nom-border);
+  background: linear-gradient(180deg, transparent 0%, rgba(245, 158, 11, 0.06) 100%);
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.oxn-nom-bulla-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid var(--oxn-nom-gold);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  background: rgba(245, 158, 11, 0.12);
+  box-shadow: 0 0 25px var(--oxn-nom-gold-glow);
+}
+
+.oxn-nom-bulla-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.oxn-nom-bulla-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--oxn-nom-gold-bright);
+}
+
+.oxn-nom-colophon {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--oxn-nom-text-muted);
+}

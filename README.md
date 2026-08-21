@@ -79,6 +79,21 @@ Five worlds the ox has learned to live in — high cold, wet warm, dry flat, fro
 
 </details>
 
+<details>
+  <summary><strong>Set VI — OX NUMISMATICA</strong> · five millennia of value measured in the horn, the hide, and the hoof · <em>designed by Gemini 3.7 Flash</em></summary>
+
+Five currencies, five economies — the bovine as the primal standard of human wealth, credit, and measure (*pecus* to *pecunia*). Each design is a working numismatic document from that era, carrying its signature in its own native mark (foundry casting punch, mintmaster's countermark, terracotta tablet seal, imperial chrysobull bulla, security steel plate stamp).
+
+| # | Design | Currency | Direction |
+|---|--------|----------|-----------|
+| 01 | **Pecunia** | Archaic Bronze Ingot | Central Italic *Aes Signatum*: oxidized verdigris and molten copper glow, heavy cast bronze ox with sprue textures, interactive As-to-bushel balance scale, foundry punch signature |
+| 02 | **Euboea** | Archaic Silver Stater | Aegean midnight and struck silver die: charging Euboean bull with retrospective head and swimming dolphin, hammer strike trigger, 3D obverse/reverse flip, didrachm exchange converter |
+| 03 | **Pasupati** | Indus Steatite Seal | Mohenjo-Daro baked soapstone intaglio: humped Zebu bull before ritual incense brazier, authentic Harappan script cipher, steatite die vs terracotta sealing toggle, terracotta tablet seal |
+| 04 | **Nomisma** | Byzantine Gold Solidus | Constantinople gold leaf and imperial Tyrian purple: sacred yoked oxen pair with radiant haloed nimbuses turning the threshing floor, interactive specular light reflection, imperial grain tax ledger |
+| 05 | **Specie Scrip** | Gilded Age Gold Bond | 1898 Wall Street steel banknote engraving: charging dynamic bull over guilloche lathe rosettes, moving telegraphic cattle ticker tape, gold standard vs livestock parity calculator, steel plate seal |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
