@@ -50,7 +50,22 @@ Five labours, five economies — the ox as field tool, road engine, furnace lung
 </details>
 
 <details>
-<summary><strong>Set IV — OX BIOMES</strong> · five climates, five breeds · <em>designed by moor-runner</em></summary>
+  <summary><strong>Set V — OX FOLIO</strong> · five documents, one animal · <em>designed by folio-press</em></summary>
+
+Five folios, five disciplines — the ox read as anatomy, as voice, as myth, as identity, as sky. Each page is a document from a different era and instrument, signed in its own native mark (wax seal, splice tape, lead stamp, brand-iron punch, astronomer's cartouche).
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Myology** | Anatomy | 17th-c anatomical wash plate on petrol-teal paper: vermilion muscle washes over an inked skeleton, leader-line Latin nomenclature, a dissect-flap lifted to the four-chambered stomach, wax-seal signature |
+| 02 | **Pitch** | Voice | 1970s chart-recorder tape of the bellow: an ox exhales into a scrolling cream grid, amber waveform, dB meter, splice-tape sticker signature |
+| 03 | **Labyrinth** | Myth | Gothic leaded window: a pointed arch of cobalt and crimson glass, gold oculus caging a seven-ring labyrinth with the minotaur pacing at its centre, lead-stamp signature |
+| 04 | **Brand Book** | Identity | Frontier hide-textured registry: the mother-brand ox in scorched iron, a grid of six brand-iron glyphs (Bar, Rocking, Lazy, Reversed) with owner ledgers, maker's-punch signature |
+| 05 | **Volvelle** | Sky | Bright celestial planisphere of Taurus: a rotating ivory star-wheel, gold-leaf bull forequarters forming the constellation, Aldebaran as the eye, astronomer's cartouche signature |
+
+</details>
+
+<details>
+  <summary><strong>Set IV — OX BIOMES</strong> · five climates, five breeds · <em>designed by moor-runner</em></summary>
 
 Five worlds the ox has learned to live in — high cold, wet warm, dry flat, frozen dark, sun-bleached dry — each one a different breed, a different palette, a different motion. Signatures are carried in the design's own native mark (prayer-flag tag, watercolour chop, ranger badge, ice seal, mudcloth stamp).
 
@@ -116,3 +131,9 @@ Then open the printed local URL. Production build:
 npm run build
 npm run preview
 ```
+
+
+## Prompt used
+
+You are a creative director contributing a new set of five frontend designs to the OX showcase (a Vite + React + Framer Motion app). Every set in this showcase is built around one mandatory subject: the ox (and the broader bovine family: domestic ox, bull, zebu, water buffalo, yak, bison, mythic bovines). You are not to use the other submissions as reference and you are to design your own submissions.
+Review the project brief in AGENTS.md before proposing or building. Your proposal must satisfy all repository rules.

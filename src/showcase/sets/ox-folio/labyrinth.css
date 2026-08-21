@@ -1,0 +1,182 @@
+.th-laby {
+  --laby-wall: #1F1730;
+  --laby-wall2: #140E22;
+  --laby-lead: #070512;
+  --laby-cobalt: #2E5BB8;
+  --laby-crimson: #B5232E;
+  --laby-gold: #F4D24A;
+  --laby-bone: #E9DDC4;
+  --laby-bone-dim: rgba(233, 221, 196, 0.6);
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(120% 80% at 50% 100%, #2A1E40 0%, var(--laby-wall) 50%, var(--laby-wall2) 100%);
+  color: var(--laby-bone);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  padding: clamp(30px, 6vh, 64px) clamp(16px, 4vw, 56px) clamp(40px, 7vh, 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.th-laby::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(244, 210, 74, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(244, 210, 74, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px;
+  background-position: 0 0, 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.th-laby ::selection {
+  background: var(--laby-gold);
+  color: var(--laby-lead);
+}
+
+.lab-wall-texture {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.12) 0 2px, transparent 2px 60px),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0 2px, transparent 2px 80px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lab-head {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 640px;
+}
+
+.lab-eyebrow {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.4em;
+  font-size: clamp(10px, 1.4vw, 13px);
+  color: var(--laby-gold);
+  margin: 0 0 16px;
+  text-indent: 0.4em;
+}
+
+.lab-title {
+  font-family: 'UnifrakturMaguntia', 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: clamp(56px, 10vw, 128px);
+  line-height: 0.96;
+  margin: 0;
+  color: var(--laby-bone);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.lab-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(16px, 2.2vw, 21px);
+  line-height: 1.5;
+  color: var(--laby-bone-dim);
+  margin: 18px auto 0;
+  max-width: 42ch;
+}
+
+.lab-window-wrap {
+  position: relative;
+  z-index: 1;
+  width: min(560px, 86vw);
+  margin: clamp(28px, 5vh, 48px) 0 0;
+}
+
+.lab-window {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter:
+    drop-shadow(0 22px 30px rgba(0, 0, 0, 0.55))
+    drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.lab-stamp {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lab-stamp-strip {
+  display: block;
+  width: 44px;
+  height: 7px;
+  background: linear-gradient(180deg, #6E6A7A, #2A2638);
+  border: 1px solid var(--laby-lead);
+}
+
+.lab-stamp-text {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  color: var(--laby-bone);
+  background: linear-gradient(180deg, #4A4558, #2A2638);
+  border: 1px solid var(--laby-lead);
+  padding: 5px 10px;
+  text-indent: 0.24em;
+}
+
+.lab-foot {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: clamp(28px, 5vh, 48px);
+  text-align: center;
+}
+
+.lab-foot-line {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--laby-bone-dim);
+  margin: 0;
+  max-width: 50ch;
+}
+
+.lab-foot-credit {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--laby-gold);
+  margin: 0;
+  text-indent: 0.3em;
+}
+
+@media (max-width: 540px) {
+  .lab-stamp {
+    bottom: 12px;
+  }
+
+  .lab-stamp-strip {
+    width: 24px;
+  }
+
+  .lab-stamp-text {
+    font-size: 8px;
+    padding: 4px 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .th-laby .lab-window * {
+    animation: none !important;
+  }
+}
