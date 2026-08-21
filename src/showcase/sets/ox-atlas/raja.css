@@ -1,0 +1,198 @@
+.th-raja {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fff6e3;
+  background-image: radial-gradient(rgba(214, 51, 108, 0.1) 2px, transparent 2.5px),
+    radial-gradient(rgba(201, 162, 39, 0.12) 1.5px, transparent 2px);
+  background-size: 26px 26px, 26px 26px;
+  background-position: 0 0, 13px 13px;
+  color: #3b2314;
+  font-family: 'Karla', sans-serif;
+  padding-bottom: 40px;
+}
+
+.th-raja ::selection {
+  background: #f2a007;
+  color: #3b2314;
+}
+
+.raja-head {
+  text-align: center;
+  padding-top: clamp(48px, 8vw, 90px);
+}
+
+.raja-eyebrow {
+  letter-spacing: 0.4em;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0f7b6c;
+}
+
+.raja-title {
+  font-family: 'Yatra One', system-ui;
+  font-weight: 400;
+  font-size: clamp(72px, 14vw, 160px);
+  line-height: 1.05;
+  margin-top: 10px;
+  background: linear-gradient(160deg, #f2a007 20%, #c9a227 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(3px 3px 0 rgba(59, 35, 20, 0.18));
+}
+
+.raja-sub {
+  margin-top: 2px;
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(59, 35, 20, 0.7);
+}
+
+.raja-stage {
+  position: relative;
+  width: min(520px, 88vw);
+  margin: 14px auto 0;
+}
+
+.raja-arch {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.raja-mandala {
+  position: absolute;
+  left: 13%;
+  top: 30%;
+  width: 74%;
+  z-index: 0;
+}
+
+.raja-mandala-spin {
+  animation: raja-spin 120s linear infinite;
+  transform-origin: 200px 200px;
+}
+
+@keyframes raja-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.raja-zebu {
+  position: absolute;
+  left: 19%;
+  top: 24%;
+  width: 62%;
+  z-index: 1;
+}
+
+.raja-garland {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: raja-sway 4s ease-in-out infinite;
+}
+
+@keyframes raja-sway {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.raja-tail {
+  transform-box: fill-box;
+  transform-origin: top left;
+  animation: raja-flick 5s ease-in-out infinite;
+}
+
+@keyframes raja-flick {
+  0%,
+  78%,
+  100% {
+    transform: rotate(0deg);
+  }
+  84% {
+    transform: rotate(9deg);
+  }
+  92% {
+    transform: rotate(-5deg);
+  }
+}
+
+.raja-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 980px;
+  margin: 44px auto 0;
+  padding: 0 22px;
+}
+
+.raja-card {
+  background: #fffdf6;
+  border: 2px solid #0f7b6c;
+  border-radius: 18px;
+  padding: 22px 20px;
+}
+
+.raja-card h3 {
+  font-family: 'Yatra One', system-ui;
+  font-weight: 400;
+  font-size: 19px;
+  color: #d6336c;
+  margin-bottom: 8px;
+}
+
+.raja-card p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(59, 35, 20, 0.85);
+}
+
+.raja-divider {
+  display: block;
+  width: min(720px, 92vw);
+  height: 26px;
+  margin: 44px auto 26px;
+}
+
+.raja-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.raja-stamp {
+  display: inline-block;
+  transform: rotate(-3deg);
+  background: #3b2314;
+  color: #c9a227;
+  border: 2px solid #c9a227;
+  outline: 1px solid #c9a227;
+  outline-offset: 3px;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+}
+
+.raja-dispatch {
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(59, 35, 20, 0.65);
+}
+
+@media (max-width: 800px) {
+  .raja-cards {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}

@@ -1,0 +1,360 @@
+.th-toros {
+  --coral: #ff6b4a;
+  --coral2: #ff8351;
+  --amber: #ffb347;
+  --amber2: #f0c079;
+  --dust: #e8d5b5;
+  --arena: #c9a87c;
+  --black: #17120e;
+  --blood: #8e1b1b;
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(14px, 3vh, 34px) clamp(10px, 2vw, 24px);
+  font-family: 'Libre Franklin', system-ui, sans-serif;
+}
+
+.th-toros *,
+.th-toros *::before,
+.th-toros *::after {
+  box-sizing: border-box;
+}
+
+.th-toros ::selection {
+  background: var(--blood);
+  color: var(--dust);
+}
+
+.th-toros__sheet {
+  position: relative;
+  width: 92vw;
+  max-width: 1080px;
+  min-height: max(92vh, 640px);
+  overflow: hidden;
+  background: var(--dust);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.55),
+    0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.th-toros__sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 62%;
+  z-index: 0;
+}
+
+.th-toros__band {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform-origin: left center;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.05) 0 2px,
+    transparent 2px 4px
+  );
+}
+
+.th-toros__band--coral {
+  background-color: var(--coral);
+}
+
+.th-toros__band--coral2 {
+  background-color: var(--coral2);
+}
+
+.th-toros__band--amber {
+  background-color: var(--amber);
+}
+
+.th-toros__band--amber2 {
+  background-color: var(--amber2);
+}
+
+.th-toros__band--dust {
+  background-color: var(--dust);
+}
+
+.th-toros__sun {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  width: 26%;
+  max-width: 340px;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  animation: toros-sun-drift 30s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.th-toros__sun svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes toros-sun-drift {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-50%, calc(-50% + 3px));
+  }
+}
+
+.th-toros__arena {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 24%;
+  background: var(--arena);
+  z-index: 2;
+}
+
+.th-toros__fence {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.th-toros__rail {
+  display: block;
+  height: 5px;
+  background: var(--black);
+}
+
+.th-toros__posts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5%;
+}
+
+.th-toros__post {
+  width: 9px;
+  height: 30px;
+  background: var(--black);
+}
+
+.th-toros__bull {
+  position: absolute;
+  left: -2%;
+  bottom: 7%;
+  width: 85%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.th-toros__bull-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.th-toros__bull-svg path {
+  fill: var(--black);
+}
+
+.th-toros__title {
+  position: absolute;
+  left: 4.5%;
+  top: 5.5%;
+  z-index: 4;
+  margin: 0;
+  font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  font-weight: 900;
+  font-size: clamp(64px, 11vw, 150px);
+  line-height: 0.84;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.th-toros__mask {
+  display: block;
+  overflow: hidden;
+  padding: 0.05em 0.02em 0.05em 0;
+  margin: -0.05em 0;
+}
+
+.th-toros__word {
+  display: block;
+}
+
+.th-toros__word--solid {
+  color: var(--black);
+}
+
+.th-toros__word--outline {
+  color: transparent;
+  -webkit-text-stroke: 3px var(--black);
+}
+
+.th-toros__word--blood {
+  color: var(--blood);
+  text-shadow: 0.045em 0.045em 0 rgba(255, 131, 81, 0.55);
+}
+
+.th-toros__side {
+  position: absolute;
+  right: 2.4%;
+  top: 9%;
+  z-index: 4;
+  margin: 0;
+  writing-mode: vertical-rl;
+  font-weight: 600;
+  font-size: clamp(9px, 1vw, 12px);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: rgba(23, 18, 14, 0.55);
+}
+
+.th-toros__credit {
+  position: absolute;
+  left: 4.5%;
+  bottom: 4.5%;
+  z-index: 4;
+  color: var(--black);
+}
+
+.th-toros__credit-line {
+  margin: 0 0 0.35em;
+  font-weight: 600;
+  font-size: clamp(11px, 1.4vw, 15px);
+  letter-spacing: 0.22em;
+}
+
+.th-toros__credit-line--sub {
+  font-weight: 400;
+  font-size: clamp(10px, 1.2vw, 13px);
+  letter-spacing: 0.18em;
+}
+
+.th-toros__rule {
+  display: block;
+  width: min(300px, 34vw);
+  height: 2px;
+  background: var(--black);
+  margin: 0.7em 0 0.55em;
+}
+
+.th-toros__colophon {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: clamp(9px, 1vw, 11px);
+  letter-spacing: 0.3em;
+}
+
+.th-toros__reg {
+  width: 13px;
+  height: 13px;
+  flex: none;
+}
+
+.th-toros__crop {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.th-toros__crop--tl {
+  top: 12px;
+  left: 12px;
+  border-top: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+}
+
+.th-toros__crop--tr {
+  top: 12px;
+  right: 12px;
+  border-top: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+}
+
+.th-toros__crop--bl {
+  bottom: 12px;
+  left: 12px;
+  border-bottom: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+}
+
+.th-toros__crop--br {
+  bottom: 12px;
+  right: 12px;
+  border-bottom: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+}
+
+.th-toros__paper {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(23, 18, 14, 0.028) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 4px);
+}
+
+@media (max-width: 640px) {
+  .th-toros__side {
+    display: none;
+  }
+
+  .th-toros__sun {
+    width: 34%;
+  }
+
+  .th-toros__bull {
+    left: -7%;
+    bottom: 8.5%;
+    width: 96%;
+  }
+
+  .th-toros__posts {
+    padding: 0 4%;
+  }
+
+  .th-toros__post {
+    width: 7px;
+    height: 24px;
+  }
+
+  .th-toros__credit {
+    bottom: 4%;
+  }
+}
+
+@media (max-width: 400px) {
+  .th-toros__title {
+    left: 5%;
+    top: 6%;
+  }
+
+  .th-toros__rule {
+    width: 56vw;
+  }
+
+  .th-toros__word--outline {
+    -webkit-text-stroke-width: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .th-toros__sun {
+    animation: none;
+  }
+}

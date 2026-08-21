@@ -1,10 +1,12 @@
+import { useShowcase } from '../showcase/ShowcaseContext.jsx'
 import './dock.css'
 
-export default function ThemeDock({ themes, active, onChange }) {
-  const current = themes.find((t) => t.id === active)
+export default function ThemeDock() {
+  const { activeSet, designId, setDesign } = useShowcase()
+  const current = activeSet.designs.find((d) => d.id === designId) || activeSet.designs[0]
 
   return (
-    <aside className="dock" aria-label="Design theme switcher">
+    <aside className="dock" aria-label="Design switcher">
       <div className="dock-info" aria-live="polite">
         <span className="dock-kicker">DESIGN</span>
         <span className="dock-name">
@@ -13,17 +15,17 @@ export default function ThemeDock({ themes, active, onChange }) {
         <span className="dock-tag">{current.tag}</span>
       </div>
       <span className="dock-divider" aria-hidden="true" />
-      <div className="dock-chips" role="tablist" aria-label="Themes">
-        {themes.map((t, i) => (
+      <div className="dock-chips" role="tablist" aria-label={`Designs in ${activeSet.name}`}>
+        {activeSet.designs.map((d, i) => (
           <button
-            key={t.id}
+            key={d.id}
             type="button"
             role="tab"
-            aria-selected={t.id === active}
-            data-label={`${i + 1} · ${t.name}`}
-            className={`dock-chip${t.id === active ? ' is-active' : ''}`}
-            style={{ '--chip': t.chip }}
-            onClick={() => onChange(t.id)}
+            aria-selected={d.id === current.id}
+            data-label={`${i + 1} · ${d.name}`}
+            className={`dock-chip${d.id === current.id ? ' is-active' : ''}`}
+            style={{ '--chip': d.chip }}
+            onClick={() => setDesign(d.id)}
           >
             <span className="dock-chip-fill" />
           </button>

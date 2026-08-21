@@ -1,79 +1,95 @@
-import { useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { Suspense, useEffect, useState } from 'react'
+import { AnimatePresence, MotionConfig, motion } from 'framer-motion'
+import { ShowcaseProvider, useShowcase } from './showcase/ShowcaseContext.jsx'
 import ThemeDock from './components/ThemeDock.jsx'
-import Monolith from './themes/Monolith.jsx'
-import Heritage from './themes/Heritage.jsx'
-import CircuitBeast from './themes/CircuitBeast.jsx'
-import Stillness from './themes/Stillness.jsx'
-import BarnyardPop from './themes/BarnyardPop.jsx'
+import SetBar from './components/SetBar.jsx'
+import SetModal from './components/SetModal.jsx'
 
-const THEMES = [
-  { id: 'monolith', num: '01', name: 'Monolith', tag: 'Raw Power', chip: '#ff4d00' },
-  { id: 'heritage', num: '02', name: 'Heritage', tag: 'Endurance', chip: '#7a1f1f' },
-  { id: 'beast', num: '03', name: 'Circuit Beast', tag: 'Relentless Drive', chip: '#00f0ff' },
-  { id: 'stillness', num: '04', name: 'Stillness', tag: 'Patience', chip: '#6b7f5c' },
-  { id: 'pop', num: '05', name: 'Barnyard Pop', tag: 'Friendly Diligence', chip: '#ffd93d' },
-]
-
-const THEME_MAP = {
-  monolith: Monolith,
-  heritage: Heritage,
-  beast: CircuitBeast,
-  stillness: Stillness,
-  pop: BarnyardPop,
+function findDesign(activeSet, designId) {
+  return activeSet?.designs.find((d) => d.id === designId) || activeSet?.designs[0]
 }
 
-function getInitialTheme() {
-  try {
-    const saved = localStorage.getItem('ox-theme')
-    if (saved && THEME_MAP[saved]) return saved
-  } catch {
-    /* storage unavailable */
-  }
-  return 'monolith'
+function Loader() {
+  return (
+    <div className="design-loader" role="status">
+      <span>LOADING…</span>
+    </div>
+  )
 }
 
-export default function App() {
-  const [active, setActive] = useState(getInitialTheme)
+function Shell() {
+  const { activeSet, designId, setDesign, cycleSet } = useShowcase()
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const design = findDesign(activeSet, designId)
 
   useEffect(() => {
     const onKey = (e) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return
+      if (e.key === 'Escape') {
+        setModalOpen(false)
+        return
+      }
+      if (modalOpen) return
+      if (e.code === 'BracketLeft') {
+        cycleSet(-1)
+        return
+      }
+      if (e.code === 'BracketRight') {
+        cycleSet(1)
+        return
+      }
       const i = parseInt(e.key, 10)
-      if (i >= 1 && i <= THEMES.length) setActive(THEMES[i - 1].id)
+      if (i >= 1 && i <= 5 && activeSet) {
+        const target = activeSet.designs[i - 1]
+        if (target) setDesign(target.id)
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [])
-
-  const meta = THEMES.find((t) => t.id === active)
+  }, [activeSet, setDesign, cycleSet, modalOpen])
 
   useEffect(() => {
-    try {
-      localStorage.setItem('ox-theme', active)
-    } catch {
-      /* storage unavailable */
-    }
-    document.title = `OX — ${meta.name}`
-    window.scrollTo({ top: 0 })
-  }, [active, meta])
+    if (activeSet && design) document.title = `OX — ${activeSet.name} · ${design.name}`
+  }, [activeSet, design])
 
-  const Current = THEME_MAP[active]
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [activeSet?.id, designId])
+
+  const Current = design?.Component
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <AnimatePresence mode="wait">
         <motion.div
           className="theme-stage"
-          key={active}
+          key={`${activeSet?.id}:${designId}`}
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Current />
+          <Suspense fallback={<Loader />}>
+            {Current ? <Current /> : null}
+          </Suspense>
         </motion.div>
       </AnimatePresence>
-      <ThemeDock themes={THEMES} active={active} onChange={setActive} />
-    </>
+      <div className="ui-cluster">
+        <SetBar onOpen={() => setModalOpen(true)} />
+        <ThemeDock />
+      </div>
+      <AnimatePresence>
+        {modalOpen ? <SetModal onClose={() => setModalOpen(false)} /> : null}
+      </AnimatePresence>
+    </MotionConfig>
+  )
+}
+
+export default function App() {
+  return (
+    <ShowcaseProvider>
+      <Shell />
+    </ShowcaseProvider>
   )
 }

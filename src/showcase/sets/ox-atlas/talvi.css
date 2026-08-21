@@ -1,0 +1,242 @@
+.th-talvi {
+  --snow: #f4f6f8;
+  --rye: #b5442a;
+  --frost: #9fc1d9;
+  --birch: #e8dcc8;
+  --ink: #22262a;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--snow);
+  color: var(--ink);
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-talvi ::selection {
+  background: var(--rye);
+  color: var(--snow);
+}
+
+.th-talvi :focus-visible {
+  outline: 3px solid var(--rye);
+  outline-offset: 3px;
+}
+
+.talvi-band {
+  height: 40vh;
+  min-height: 240px;
+  overflow: hidden;
+  background: var(--snow);
+  border-bottom: 4px solid var(--ink);
+}
+
+.talvi-band-track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  animation: talvi-drift 60s linear infinite;
+  will-change: transform;
+}
+
+.talvi-band-svg {
+  display: block;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1200 / 480;
+  flex: none;
+}
+
+@keyframes talvi-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.talvi-card {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  margin: -70px auto 0;
+  background: #ffffff;
+  border: 4px solid var(--ink);
+  box-shadow: 10px 10px 0 rgba(34, 38, 42, 0.9);
+  padding: clamp(28px, 5vw, 64px);
+}
+
+.talvi-kicker {
+  margin: 0 0 24px;
+  font-size: clamp(10px, 1.4vw, 13px);
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--rye);
+}
+
+.talvi-headline {
+  margin: 0 0 16px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: clamp(44px, 7vw, 88px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.talvi-subline {
+  margin: 0 0 32px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(15px, 2vw, 19px);
+  color: rgba(34, 38, 42, 0.75);
+}
+
+.talvi-lede {
+  margin: 0;
+  max-width: 62ch;
+  font-size: clamp(15px, 1.9vw, 18px);
+  font-weight: 400;
+  color: rgba(34, 38, 42, 0.85);
+}
+
+.talvi-divider {
+  display: flex;
+  justify-content: center;
+  margin: clamp(30px, 4vw, 46px) 0;
+}
+
+.talvi-divider svg {
+  display: block;
+  width: 132px;
+  height: 18px;
+}
+
+.talvi-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(24px, 3.5vw, 44px);
+}
+
+.talvi-stat {
+  border-top: 3px solid var(--ink);
+  padding-top: 18px;
+}
+
+.talvi-num {
+  display: block;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: clamp(52px, 6.5vw, 84px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--rye);
+  font-variant-numeric: tabular-nums;
+}
+
+.talvi-affix {
+  font-size: 0.4em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.talvi-label {
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: rgba(34, 38, 42, 0.75);
+}
+
+.talvi-quote {
+  max-width: 780px;
+  margin: clamp(80px, 11vw, 140px) auto 0;
+  padding: 0 clamp(20px, 4vw, 32px);
+  text-align: center;
+}
+
+.talvi-quote p {
+  margin: 0 0 20px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: clamp(22px, 3.2vw, 34px);
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.talvi-quote cite {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(34, 38, 42, 0.72);
+}
+
+.talvi-footer {
+  margin-top: clamp(72px, 10vw, 120px);
+  background: var(--birch);
+  border-top: 4px solid var(--ink);
+  color: var(--ink);
+  padding: 28px clamp(20px, 4vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+}
+
+.talvi-signature {
+  display: inline-block;
+  border: 1.5px dashed var(--ink);
+  outline: 1.5px dashed rgba(34, 38, 42, 0.4);
+  outline-offset: -6px;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 10px 18px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0 rgba(34, 38, 42, 0.18);
+}
+
+.talvi-footer-brand {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1040px) {
+  .talvi-card {
+    margin: -70px 20px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .talvi-stats {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+}
+
+@media (max-width: 420px) {
+  .talvi-card {
+    margin: -70px 14px 0;
+    box-shadow: 7px 7px 0 rgba(34, 38, 42, 0.9);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .talvi-band-track {
+    animation: none;
+  }
+}

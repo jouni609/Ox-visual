@@ -40,6 +40,27 @@ button {
   min-height: 100vh;
 }
 
+.design-loader {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #0d0d0d;
+  color: #f2ede4;
+  font-family: 'Archivo', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+}
+
+.design-loader span {
+  animation: loader-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes loader-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
