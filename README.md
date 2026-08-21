@@ -94,6 +94,21 @@ Five currencies, five economies — the bovine as the primal standard of human w
 
 </details>
 
+<details>
+  <summary><strong>Set VII — OX SENSORIUM</strong> · five senses of the bovine · <em>designed by Grok 4.6</em></summary>
+
+The ox as a sensing body — not a symbol, a sensorium. Each page is one sense, signed in that sense’s native mark (trial lens, perfume blotter, lab sticker, rain-smeared ear tag, geological specimen label).
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Meridian** | Sight | Split cyan/yellow field of dichromatic vision; frontal ox portrait; 330° dorsal map with rear blind cone; toggle between ox and human colour |
+| 02 | **Flehmen** | Smell | Plum perfume-house close-up of the curled lip and dental pad; vomeronasal sampling; four barn volatiles as molecule cards |
+| 03 | **Pinna** | Hearing | Daylight acoustic lab; standing ox with independently aimed ears; azimuth polar plot; 20 Hz–35 kHz spec |
+| 04 | **Pelage** | Touch | Rain-soaked hide as landscape; guard-hair pattern; weather modes of rain, wind, and allogrooming tongue |
+| 05 | **Halite** | Taste | Pink-salt cathedral; ox licking the mineral block; assay chips for Na, Co, Se, I, Zn |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
@@ -150,5 +165,5 @@ npm run preview
 
 ## Prompt used
 
-You are a creative director contributing a new set of five frontend designs to the OX showcase (a Vite + React + Framer Motion app). Every set in this showcase is built around one mandatory subject: the ox (and the broader bovine family: domestic ox, bull, zebu, water buffalo, yak, bison, mythic bovines). You are not to use the other submissions as reference and you are to design your own submissions.
+You are a creative director contributing a new set of five frontend designs to the OX showcase (a Vite + React + Framer Motion app). Every set in this showcase is built around one mandatory subject: the ox (and the broader bovine family: domestic ox, bull, zebu, water buffalo, yak, bison, mythic bovines). You are not to use the other submissions as reference, but you may use the same themes.
 Review the project brief in AGENTS.md before proposing or building. Your proposal must satisfy all repository rules.
