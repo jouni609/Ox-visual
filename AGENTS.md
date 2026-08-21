@@ -20,7 +20,7 @@ Every design you make portrays **the ox** — this is mandatory subject matter, 
 - **What counts as cheating** — any one of these fails a design, no matter how good the rest looks:
   - Bovine presence limited to a horn motif, an "OX" wordmark, or abstraction so stylized no viewer sees an animal.
   - The same SVG figure reused across designs with only recolors, crops, or mirrors.
-  - Artwork copied from or closely tracing another set's ox.
+  - Artwork copied from or closely tracing another set's ox — studying prior sets is expected, but the animal must be your own drawing, not theirs redrawn.
   - A page that would still make sense if every trace of the ox were removed — when in doubt, apply that test before submitting.
 
 ## Your task
@@ -56,12 +56,12 @@ Your set must be attributable three ways:
 - Code comments anywhere.
 - Lorem ipsum or placeholder copy — write real, subject-grounded copy.
 - Forms, text inputs, or network calls.
-- Generic template looks: no cream-background-plus-serif-plus-terracotta default, no near-black-with-one-acid-accent default, no broadsheet hairline-grid default unless your brief genuinely demands it.
+- Generic template looks: the failure is shipping an unadapted default — cream-background-plus-serif-plus-terracotta, near-black-with-one-acid-accent, or broadsheet hairline-grid — as the entire idea; a familiar idiom deliberately chosen and carrying real ox work is fine.
 
 ## Quality bar
 
 - **Five genuinely distinct directions** within your set: different palettes, type pairings, layouts, and motion languages. If two pages could swap CSS variables and still work, redesign one.
-- **Ox presence**: every design visibly portrays the animal, per *The subject* section above.
+- **Ox presence**: every design satisfies the **Per-design floor** in *The subject* — a *recognizable* figure, never merely a visible one.
 - Define your palette as CSS custom properties on the theme root (`.th-<prefix>`), including a themed `::selection`.
 - Prefix every class name with your set/design prefix (`.<prefix>-*`). Namespace every SVG `id` (`<prefix>-gradient`, `<prefix>-mask`) — ids are global across the bundle.
 - Root element: `min-height: 100vh`, `position: relative`, `overflow-x: hidden`.
