@@ -1,0 +1,400 @@
+.th-uru {
+  --uru-night: #0a1220;
+  --uru-slate: #1f2a30;
+  --uru-ice: #cfdbe2;
+  --uru-snow: #e9f2f5;
+  --uru-steel: #8fa3ae;
+  --uru-stone: #2a342e;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: #0a1220;
+  color: var(--uru-ice);
+  font-family: 'Teko', sans-serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-uru ::selection {
+  background: var(--uru-ice);
+  color: var(--uru-night);
+}
+
+.th-uru :focus-visible {
+  outline: 3px solid var(--uru-ice);
+  outline-offset: 3px;
+}
+
+.uru-sky {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.uru-main {
+  position: relative;
+  z-index: 1;
+}
+
+.uru-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px clamp(18px, 3.6vw, 42px);
+  border-bottom: 1px solid rgba(207, 219, 226, 0.28);
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(10px, 1.3vw, 12px);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.uru-head-left {
+  letter-spacing: 0.3em;
+  color: var(--uru-steel);
+}
+
+.uru-head-title {
+  margin: 0 auto;
+  letter-spacing: 0.3em;
+}
+
+.uru-head-right {
+  color: rgba(207, 219, 226, 0.75);
+}
+
+.uru-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(44px, 7.6vw, 96px) clamp(20px, 4vw, 48px) clamp(30px, 5vw, 60px);
+}
+
+.uru-stone-block {
+  perspective: 1200px;
+}
+
+.uru-stone {
+  --sh: 0 44px 80px -24px rgba(0, 0, 0, 0.92);
+  position: relative;
+  padding: clamp(22px, 3vw, 38px) clamp(18px, 2.6vw, 32px) clamp(26px, 3.6vw, 44px);
+  background:
+    linear-gradient(172deg, #39443f 0%, #27312c 42%, #1b2320 100%);
+  box-shadow: var(--sh);
+  border: 1px solid rgba(207, 219, 226, 0.2);
+}
+
+.uru-stone::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  border: 1px solid rgba(207, 219, 226, 0.16);
+  pointer-events: none;
+}
+
+.uru-bigrune {
+  display: block;
+  width: clamp(220px, 26vw, 300px);
+  margin: 0 auto 10px;
+}
+
+.uru-bigrune path {
+  filter: drop-shadow(0 0 6px rgba(233, 242, 245, 0.28));
+}
+
+.uru-stone-caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.uru-stone-rune {
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(26px, 3vw, 36px);
+  color: var(--uru-ice);
+}
+
+.uru-stone-name {
+  font-family: 'Teko', sans-serif;
+  font-size: clamp(34px, 4.4vw, 52px);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--uru-snow);
+}
+
+.uru-stone-meaning {
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.28em;
+  color: var(--uru-steel);
+}
+
+.uru-ox {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  filter: drop-shadow(0 12px 26px rgba(0, 0, 0, 0.5));
+}
+
+.uru-carve-btn {
+  display: block;
+  margin: 12px auto 0;
+  padding: 12px 28px;
+  border: 1px solid rgba(207, 219, 226, 0.65);
+  background: rgba(10, 18, 32, 0.32);
+  color: var(--uru-ice);
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(11px, 1.2vw, 13px);
+  letter-spacing: 0.26em;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.uru-carve-btn:hover {
+  background: rgba(233, 242, 245, 0.14);
+  transform: translateY(-2px);
+}
+
+.uru-hero-copy {
+  min-width: 0;
+}
+
+.uru-kicker {
+  margin: 0 0 20px;
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.32em;
+  color: var(--uru-steel);
+}
+
+.uru-title {
+  margin: 0 0 24px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 700;
+  font-size: clamp(52px, 7.8vw, 104px);
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--uru-snow);
+}
+
+.uru-title em {
+  font-style: normal;
+  -webkit-text-stroke: 2px var(--uru-ice);
+  color: transparent;
+}
+
+.uru-lede {
+  margin: 0 0 16px;
+  max-width: 56ch;
+  font-family: 'Spectral', serif;
+  font-size: clamp(15px, 1.8vw, 19px);
+  line-height: 1.62;
+  color: rgba(207, 219, 226, 0.92);
+}
+
+.uru-lede strong {
+  color: var(--uru-snow);
+  font-weight: 700;
+}
+
+.uru-lede-snd {
+  margin: 0;
+  max-width: 56ch;
+  font-family: 'Spectral', serif;
+  font-size: clamp(14px, 1.6vw, 17px);
+  line-height: 1.62;
+  color: rgba(207, 219, 226, 0.7);
+}
+
+.uru-lede-snd em {
+  color: var(--uru-steel);
+  font-style: italic;
+}
+
+.uru-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 26px);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(28px, 4.6vw, 56px) clamp(20px, 4vw, 48px) clamp(40px, 6vw, 72px);
+  border-top: 1px solid rgba(207, 219, 226, 0.2);
+}
+
+.uru-fact {
+  padding: clamp(20px, 2.8vw, 32px);
+  border: 1px solid rgba(207, 219, 226, 0.24);
+  background: linear-gradient(178deg, rgba(42, 52, 46, 0.5), rgba(20, 28, 34, 0.55));
+}
+
+.uru-fact-num {
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(11px, 1.3vw, 13px);
+  letter-spacing: 0.3em;
+  color: var(--uru-steel);
+}
+
+.uru-fact-title {
+  margin: 0 0 10px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 2.8vw, 34px);
+  text-transform: uppercase;
+  color: var(--uru-snow);
+}
+
+.uru-fact-text {
+  margin: 0;
+  font-family: 'Spectral', serif;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.62;
+  color: rgba(207, 219, 226, 0.8);
+}
+
+.uru-fact-text em {
+  color: var(--uru-steel);
+  font-style: italic;
+}
+
+.uru-row {
+  padding: clamp(30px, 5vw, 64px) clamp(20px, 4vw, 48px) 0;
+}
+
+.uru-row-title {
+  margin: 0 0 18px;
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: var(--uru-steel);
+}
+
+.uru-row-track {
+  display: flex;
+  overflow: hidden;
+  border-top: 1px solid rgba(207, 219, 226, 0.24);
+  border-bottom: 1px solid rgba(207, 219, 226, 0.24);
+}
+
+.uru-row-glyphs {
+  display: flex;
+  flex: none;
+  white-space: nowrap;
+  padding: 18px 0 18px clamp(20px, 2.4vw, 40px);
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(26px, 3.6vw, 42px);
+  letter-spacing: 0.12em;
+  color: rgba(207, 219, 226, 0.82);
+  animation: uru-drift 36s linear infinite;
+}
+
+.uru-row-note {
+  margin: 14px 0 0;
+  font-family: 'Spectral', serif;
+  font-size: clamp(13px, 1.5vw, 15.5px);
+  text-align: center;
+  color: rgba(207, 219, 226, 0.62);
+}
+
+@keyframes uru-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.uru-footer {
+  padding: clamp(36px, 5.6vw, 72px) clamp(20px, 4vw, 48px);
+}
+
+.uru-carve-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 20px 30px;
+  border: 1px solid rgba(207, 219, 226, 0.3);
+  background:
+    repeating-linear-gradient(90deg, rgba(207, 219, 226, 0.05) 0 1px, transparent 1px 16px),
+    rgba(31, 42, 48, 0.5);
+}
+
+.uru-carve-mark-glyph {
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(30px, 3.4vw, 42px);
+  color: var(--uru-ice);
+}
+
+.uru-carve-mark-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uru-carve-mark-line {
+  font-family: 'Teko', sans-serif;
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--uru-snow);
+}
+
+.uru-carve-mark-sub {
+  font-family: 'IBM Plex Mono', 'Noto Sans Runic', monospace;
+  font-size: clamp(9px, 1vw, 10.5px);
+  letter-spacing: 0.22em;
+  color: var(--uru-steel);
+}
+
+@media (max-width: 900px) {
+  .uru-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .uru-facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .uru-head {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    padding: 12px 16px;
+  }
+
+  .uru-head-title {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+
+  .uru-stone-caption {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uru-row-glyphs {
+    animation: none;
+  }
+}

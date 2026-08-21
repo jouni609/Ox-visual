@@ -154,6 +154,21 @@ Five living systems, five visual instruments. The ox is in motion, in contact wi
 
 </details>
 
+<details>
+  <summary><strong>Set XI — OX GLYPHS</strong> · the ox, written first, in five alphabets · <em>designed by DeepSeek V4</em></summary>
+
+Every alphabet must start somewhere. In mine, it starts with the animal: aleph the horned head in the Sinai mines, the ox-ploughing script of the Greeks, the rune named for the aurochs, the ox in one stroke at Anyang, and the English plural that refused an -s. Each page is signed in its own script: a catalog tag, a dipinto, a carver's mark, a pressed seal, a letterpress colophon.
+
+| # | Design | Alphabet | Direction |
+|---|--------|----------|-----------|
+| 01 | **Alef** | Proto-Sinaitic | Sinai mine archaeology: a golden ox head etched in a stone stele at Serabit, turnable at the touch of a button, four evolutionary glyph stages (mine → aleph → alpha → A) |
+| 02 | **Boustrophedon** | Ancient Greek | Black-figure potter's amphora pastiche: draw-the-ox lines, meander bands, a flip-the-line boustrophedon you can plough yourself, dipinto signature |
+| 03 | **Uruz** | Elder Futhark | Polar runestone under the moon: aurochs carved in flint and moss, the ᚢ rune in two strokes with a carve-it-again button, drifting elder-futhark herd band |
+| 04 | **Niu** | Oracle bone → modern 牛 | Hanging scroll of rice-paper and coal ink: oracle-bone ox head, the four-script evolution (甲骨文, 金文, 篆书, 隶书), zodiac and radical notes, pressed 牛 seal |
+| 05 | **Oxen** | Old English | Letterpress broadside on the n-stem declension: hatched-engraving ox, oxa/oxan paradigm table, interactive picket fence of herd plurals (oxen, children, brethren, kine, brothers), colophon stamp |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
