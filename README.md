@@ -34,6 +34,21 @@ Five cultures, five craft traditions — each design carries the author's signat
 
 </details>
 
+<details>
+<summary><strong>Set III — OX WORKS</strong> · five labours that built the world · <em>designed by muse-spark</em></summary>
+
+Five labours, five economies — the ox as field tool, road engine, furnace lung, temple god and living ledger. Each page is a working document from that economy, signed in its own native mark (seed lot stamp, inspection badge, foundry punch, donor plaque, market chop).
+
+| # | Design | Labour | Direction |
+|---|--------|--------|-----------|
+| 01 | **Furrow** | The Field | Agronomy institute field sheet: soil strata cutaway, perspective furrows, three seed packets on straw paper |
+| 02 | **Haul** | The Road | Highway department waybill: tachograph gauges, yoked cart elevation, weighbridge tickets, hazard-yellow marquee |
+| 03 | **Forge** | The Furnace | Soot-black foundry plan: ox treadmill bellows breathing, sparking anvil, three ingot cards, heat indicator |
+| 04 | **Altar** | The Sacred | Lapis temple facade: pediment Nandi, swaying marigold garland, twin diya flames, brass donor plaque |
+| 05 | **Exchange** | The Ledger | Commodity market ledger: beam scale with ox vs grain, abacus head-count, weigh slips, fiscal balance stamp |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

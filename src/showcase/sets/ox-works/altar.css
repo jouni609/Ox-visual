@@ -1,0 +1,240 @@
+.th-altar {
+  --lapis: #0B2B5E;
+  --lapis2: #132F66;
+  --gold: #C79A11;
+  --gold-light: #F5D76E;
+  --ivory: #FFF8E8;
+  --vermilion: #B81E2C;
+  --stone: #E8DDC2;
+  --ink: #1A1A2E;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--lapis);
+  color: var(--ivory);
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.th-altar ::selection {
+  background: var(--gold);
+  color: var(--lapis);
+}
+.th-altar :focus-visible {
+  outline: 3px solid var(--gold-light);
+  outline-offset: 3px;
+}
+.at-head {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 72px) clamp(18px, 3vw, 40px) 0;
+  text-align: center;
+}
+.at-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  color: var(--gold-light);
+}
+.at-title {
+  margin: 14px 0 0;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  font-size: clamp(62px, 12vw, 148px);
+  line-height: 0.9;
+  letter-spacing: 0.08em;
+  color: var(--gold-light);
+  text-shadow: 0 2px 0 rgba(0,0,0,0.25), 0 8px 32px rgba(197,154,17,0.18);
+}
+.at-sub {
+  margin: 8px 0 0;
+  font-style: italic;
+  font-size: clamp(14px, 1.8vw, 18px);
+  color: var(--stone);
+}
+.at-lede {
+  margin: 18px auto 0;
+  max-width: 62ch;
+  font-size: clamp(15px, 1.8vw, 17px);
+  line-height: 1.7;
+  color: rgba(255,248,232,0.82);
+}
+.at-stage {
+  max-width: 880px;
+  margin: clamp(28px, 5vw, 48px) auto 0;
+  padding: 0 clamp(16px, 3vw, 36px);
+}
+.at-shrine {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 18px 48px rgba(0,0,0,0.45), 0 4px 14px rgba(0,0,0,0.35);
+}
+.at-garland {
+  animation: at-sway 5s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes at-sway {
+  0%,100% { transform: rotate(-0.6deg); }
+  50% { transform: rotate(0.6deg); }
+}
+.at-flame {
+  animation: at-flicker 0.32s steps(2) infinite;
+  transform-box: fill-box;
+  transform-origin: bottom center;
+}
+.at-flame-2 { animation-delay: 0.16s; }
+@keyframes at-flicker {
+  0%,100% { transform: scaleY(1) scaleX(1); opacity: 1; }
+  50% { transform: scaleY(1.12) scaleX(0.92); opacity: 0.92; }
+}
+.at-smoke path {
+  stroke-dasharray: 120;
+  stroke-dashoffset: 120;
+  animation: at-smoke 8s linear infinite;
+}
+.at-smoke path:nth-child(2) { animation-delay: 4s; }
+@keyframes at-smoke {
+  to { stroke-dashoffset: -120; }
+}
+.at-diya {
+  animation: at-glow 2.8s ease-in-out infinite alternate;
+}
+@keyframes at-glow {
+  to { filter: brightness(1.08); }
+}
+.at-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1060px;
+  margin: 36px auto 0;
+  padding: 0 clamp(16px, 3vw, 36px);
+}
+.at-card {
+  background: var(--ivory);
+  color: var(--ink);
+  border: 1.5px solid var(--stone);
+  padding: 22px 18px 18px;
+  position: relative;
+}
+.at-card::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(11,43,94,0.12);
+  pointer-events: none;
+}
+.at-card-num {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid var(--lapis);
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--lapis);
+}
+.at-card h3 {
+  margin: 14px 0 0;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: var(--lapis);
+}
+.at-card p {
+  margin: 10px 0 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: rgba(26,26,46,0.8);
+}
+.at-card-meta {
+  display: block;
+  margin-top: 14px;
+  border-top: 1px solid var(--stone);
+  padding-top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  color: rgba(26,26,46,0.55);
+}
+.at-quote {
+  max-width: 760px;
+  margin: clamp(48px, 6vw, 84px) auto 0;
+  padding: 0 clamp(18px, 3vw, 36px);
+  text-align: center;
+}
+.at-quote p {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(18px, 2.4vw, 28px);
+  line-height: 1.35;
+  color: var(--gold-light);
+}
+.at-quote cite {
+  display: block;
+  margin-top: 14px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,248,232,0.6);
+}
+.at-foot {
+  margin-top: clamp(48px, 6vw, 72px);
+  padding: 28px clamp(18px, 3vw, 40px) 32px;
+  border-top: 1px solid rgba(245,215,110,0.22);
+  background: rgba(0,0,0,0.18);
+  text-align: center;
+}
+.at-plaque {
+  display: inline-grid;
+  gap: 8px;
+  justify-items: center;
+  background: linear-gradient(180deg, #FFF8E8, #E8DDC2);
+  color: var(--lapis);
+  border: 2px solid var(--gold);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.9);
+  padding: 16px 24px;
+  min-width: min(520px, 92vw);
+}
+.at-plaque-rule {
+  display: block;
+  width: 72px;
+  height: 2px;
+  background: var(--gold);
+  opacity: 0.7;
+}
+.at-plaque-main {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+.at-plaque-sub {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: rgba(11,43,94,0.65);
+}
+.at-foot-brand {
+  display: block;
+  margin-top: 18px;
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--gold-light);
+  opacity: 0.85;
+}
+@media (max-width: 880px) {
+  .at-cards { grid-template-columns: 1fr; max-width: 520px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .at-garland, .at-flame, .at-smoke path, .at-diya { animation: none; }
+}
