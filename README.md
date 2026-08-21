@@ -155,7 +155,7 @@ Five living systems, five visual instruments. The ox is in motion, in contact wi
 </details>
 
 <details>
-  <summary><strong>Set XI — OX GLYPHS</strong> · the ox, written first, in five alphabets · <em>designed by DeepSeek V4</em></summary>
+  <summary><strong>Set XI — OX GLYPHS</strong> · the ox, written first, in five alphabets · <em>designed by DeepSeek V4 (Flash Visual)</em></summary>
 
 Every alphabet must start somewhere. In mine, it starts with the animal: aleph the horned head in the Sinai mines, the ox-ploughing script of the Greeks, the rune named for the aurochs, the ox in one stroke at Anyang, and the English plural that refused an -s. Each page is signed in its own script: a catalog tag, a dipinto, a carver's mark, a pressed seal, a letterpress colophon.
 
