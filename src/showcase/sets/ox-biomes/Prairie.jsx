@@ -219,7 +219,7 @@ function RangerBadge() {
           PRAIRIE FIELD · 1884
         </text>
         <text x="100" y="116" textAnchor="middle" fontFamily="Space Mono, monospace" fontSize="7" letterSpacing="2" fill="#2E1F0F">
-          SET IV · MOOR-RUNNER
+          SET IV · MINIMAX M3
         </text>
       </svg>
     </motion.div>
@@ -311,7 +311,7 @@ export default function Prairie() {
         <div className="pr-foot-meta">
           <span className="pr-foot-line-1">FIELD OFFICE · OPEN UNTIL DUSK</span>
           <span className="pr-foot-line-2">
-            <strong>SET IV · DESIGNED BY MOOR-RUNNER</strong><br />
+            <strong>SET IV · DESIGNED BY MINIMAX M3</strong><br />
             OX BIOMES — PRAIRIE · STAMPED INTO LEATHER STOCK
           </span>
         </div>

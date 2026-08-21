@@ -129,7 +129,7 @@ export default function Sunken() {
           <svg viewBox="0 0 220 64" aria-hidden="true">
             <ellipse cx="110" cy="32" rx="100" ry="28" fill="none" stroke="#B85450" strokeWidth="1.5" opacity="0.4" />
             <ellipse cx="110" cy="32" rx="92" ry="22" fill="none" stroke="#B85450" strokeWidth="1" opacity="0.3" />
-            <text x="110" y="37" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="11" fill="#1A1410" letterSpacing="2" opacity="0.75">SET VIII · DESIGNED BY OPENCODE</text>
+            <text x="110" y="37" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="11" fill="#1A1410" letterSpacing="2" opacity="0.75">SET VIII · DESIGNED BY KIMI 2.6</text>
           </svg>
         </div>
       </footer>

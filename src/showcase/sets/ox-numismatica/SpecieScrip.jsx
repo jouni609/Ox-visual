@@ -282,7 +282,7 @@ export default function SpecieScrip() {
               <rect x="3" y="3" width="18" height="18" rx="2" stroke="#4ADE80" strokeWidth="2" />
               <path d="M 6 12 L 18 12 M 12 6 L 12 18" stroke="#F59E0B" strokeWidth="1.5" />
             </svg>
-            <span className="oxn-scr-seal-text">SET VI · DESIGNED BY ANTIGRAVITY</span>
+            <span className="oxn-scr-seal-text">SET VI · DESIGNED BY GEMINI 3.7 FLASH</span>
           </div>
           <div className="oxn-scr-colophon">
             <span>BUREAU OF ENGRAVING & PRINTING · SPECIE SCRIP SERIES · 05 OF 05</span>

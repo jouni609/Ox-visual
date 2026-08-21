@@ -1,0 +1,271 @@
+.th-corium {
+  --teal: #1f6b6b;
+  --wet: #4a9b9b;
+  --bark: #6b3f1d;
+  --iron: #1a1f22;
+  --flesh: #d9c4a8;
+  --foam: #e4f0ee;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(74, 155, 155, 0.28), transparent 55%),
+    linear-gradient(165deg, #0f1818 0%, var(--iron) 42%, #243230 100%);
+  color: var(--flesh);
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  line-height: 1.5;
+  padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 40px) 140px;
+}
+
+.th-corium.is-oak {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(107, 63, 29, 0.35), transparent 55%),
+    linear-gradient(165deg, #1a120c 0%, #241810 42%, #3a2818 100%);
+}
+
+.th-corium ::selection {
+  background: var(--wet);
+  color: var(--iron);
+}
+
+.th-corium :focus-visible {
+  outline: 3px solid var(--flesh);
+  outline-offset: 3px;
+}
+
+.corium-drips {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 40%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.corium-drip {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--wet), transparent);
+  opacity: 0.7;
+}
+
+.th-corium.is-oak .corium-drip {
+  background: linear-gradient(180deg, #c4893a, transparent);
+}
+
+.corium-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.75fr);
+  grid-template-areas:
+    'head head'
+    'stage side';
+  gap: clamp(20px, 3vw, 36px);
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.corium-head {
+  grid-area: head;
+  max-width: 720px;
+}
+
+.corium-kicker {
+  margin: 0 0 10px;
+  font-family: Staatliches, sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+  color: var(--wet);
+}
+
+.th-corium.is-oak .corium-kicker {
+  color: #c4893a;
+}
+
+.corium-h1 {
+  margin: 0 0 14px;
+  font-family: Staatliches, sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.4rem, 7vw, 4.6rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--foam);
+}
+
+.corium-h1 span {
+  display: block;
+  color: var(--wet);
+}
+
+.th-corium.is-oak .corium-h1 span {
+  color: #e0a04a;
+}
+
+.corium-lead {
+  margin: 0;
+  max-width: 54ch;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  color: #c5b8a4;
+}
+
+.corium-stage {
+  grid-area: stage;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(217, 196, 168, 0.18);
+  border-radius: 8px;
+  padding: clamp(12px, 2vw, 24px);
+}
+
+.corium-ox {
+  width: min(100%, 640px);
+  height: auto;
+}
+
+.corium-cap {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9aafaa;
+}
+
+.corium-side {
+  grid-area: side;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.corium-toggles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.corium-btn {
+  appearance: none;
+  border: 1px solid rgba(217, 196, 168, 0.35);
+  background: rgba(26, 31, 34, 0.7);
+  color: var(--flesh);
+  font-family: Staatliches, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.corium-btn.is-on {
+  background: var(--wet);
+  color: var(--iron);
+  border-color: var(--wet);
+}
+
+.th-corium.is-oak .corium-btn.is-on {
+  background: #c4893a;
+  border-color: #c4893a;
+}
+
+.corium-note {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #c5b8a4;
+}
+
+.corium-drum {
+  width: 140px;
+  align-self: center;
+}
+
+.corium-specs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.corium-specs li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--wet);
+  background: rgba(31, 107, 107, 0.12);
+}
+
+.th-corium.is-oak .corium-specs li {
+  border-left-color: #c4893a;
+  background: rgba(107, 63, 29, 0.22);
+}
+
+.corium-specs strong {
+  font-family: Staatliches, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  color: var(--foam);
+}
+
+.corium-specs span {
+  font-size: 0.85rem;
+  color: #9aafaa;
+}
+
+.corium-seal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px dashed rgba(217, 196, 168, 0.4);
+  border-radius: 6px;
+  color: var(--flesh);
+}
+
+.corium-seal svg {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.corium-seal p {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.corium-seal b {
+  display: block;
+  margin-top: 4px;
+  font-family: Staatliches, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  color: var(--wet);
+}
+
+.th-corium.is-oak .corium-seal b {
+  color: #e0a04a;
+}
+
+@media (max-width: 860px) {
+  .corium-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'head'
+      'stage'
+      'side';
+  }
+}

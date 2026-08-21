@@ -50,7 +50,7 @@ Five labours, five economies — the ox as field tool, road engine, furnace lung
 </details>
 
 <details>
-  <summary><strong>Set V — OX FOLIO</strong> · five documents, one animal · <em>designed by minimax-m3</em></summary>
+  <summary><strong>Set V — OX FOLIO</strong> · five documents, one animal · <em>designed by GLM 5.2</em></summary>
 
 Five folios, five disciplines — the ox read as anatomy, as voice, as myth, as identity, as sky. Each page is a document from a different era and instrument, signed in its own native mark (wax seal, splice tape, lead stamp, brand-iron punch, astronomer's cartouche).
 
@@ -65,7 +65,7 @@ Five folios, five disciplines — the ox read as anatomy, as voice, as myth, as 
 </details>
 
 <details>
-  <summary><strong>Set IV — OX BIOMES</strong> · five climates, five breeds · <em>designed by GLM-5.2</em></summary>
+  <summary><strong>Set IV — OX BIOMES</strong> · five climates, five breeds · <em>designed by Minimax M3</em></summary>
 
 Five worlds the ox has learned to live in — high cold, wet warm, dry flat, frozen dark, sun-bleached dry — each one a different breed, a different palette, a different motion. Signatures are carried in the design's own native mark (prayer-flag tag, watercolour chop, ranger badge, ice seal, mudcloth stamp).
 
@@ -110,7 +110,7 @@ The ox as a sensing body — not a symbol, a sensorium. Each page is one sense, 
 </details>
 
 <details>
-  <summary><strong>Set VIII — OX LITHICA</strong> · five stones, five carvings · <em>designed by Kimi K2.6</em></summary>
+  <summary><strong>Set VIII — OX LITHICA</strong> · five stones, five carvings · <em>designed by Kimi 2.6</em></summary>
 
 Five archaeological layers — the ox as aurochs scratched into granite, zebu carved into Assyrian gypsum, solar ox sunk into Egyptian limestone, bull head layered in Roman sardonyx, and ox-demon gargoyle leering from Gothic limestone. Each design carries its signature in the stone's own native mark (petroglyph incision, cuneiform wedge, Egyptian cartouche, gem-cutter's mark, mason's stamp).
 
@@ -121,6 +121,21 @@ Five archaeological layers — the ox as aurochs scratched into granite, zebu ca
 | 03 | **Sunken** | Egyptian limestone | Sunken relief of solar ox with disk between horns, lotus and ankh attendants, museum label |
 | 04 | **Cameo** | Roman sardonyx | Layered shell bull head in oval gold mount, velvet ground, gem-cutter's mark |
 | 05 | **Grotesque** | Gothic limestone | Ox-demon gargoyle in pointed arch frame, rain streaks, stained glass glow, mason's stamp |
+
+</details>
+
+<details>
+  <summary><strong>Set IX — OX MATERIA</strong> · five substances of the bovine body · <em>designed by Grok 4.5</em></summary>
+
+Five workshops, five yields — the ox as living quarry: hide, horn, bone, milk, dung. Each page is a working plate from that atelier, signed in its own native mark (leather-punch die, scorched maker's brand, specimen label, bottle-cap emboss, adobe thumb-stamp).
+
+| # | Design | Substance | Direction |
+|---|--------|-----------|-----------|
+| 01 | **Corium** | Hide | Chrome-tannery floor: wet-blue and oak-bark, hide layers peeling from a standing ox, drum and pH strip, leather-punch signature |
+| 02 | **Cornu** | Horn | Victorian horn atelier: translucent honey-horn vessels, ox head with lantern-blank horns, brass and walnut, scorched maker's brand |
+| 03 | **Ossein** | Bone | Cold osteology gallery: articulated ox skeleton with muscle ghost, button blanks and bone-meal, specimen-label signature |
+| 04 | **Lactis** | Milk | Bauhaus dairy pavilion: primary geometry, milking zebu elevation, butterfat centrifuge, bottle-cap seal |
+| 05 | **Stercus** | Dung | Rajasthani courtyard board: dung-cake lattice wall, shaded zebu, biogas dome cutaway, adobe thumb-stamp |
 
 </details>
 

@@ -5,7 +5,7 @@ export default {
   name: 'OX NUMISMATICA',
   tagline: 'five millennia of value measured in the horn, the hide, and the hoof',
   accent: '#d97736',
-  credit: 'Antigravity',
+  credit: 'Gemini 3.7 Flash',
   designs: [
     {
       id: 'pecunia',

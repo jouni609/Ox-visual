@@ -257,7 +257,7 @@ export default function Pecunia() {
               <path d="M 8 16 L 16 8 L 24 16 L 16 24 Z" stroke="#6CC4AE" strokeWidth="1.5" />
               <circle cx="16" cy="16" r="3" fill="#D97736" />
             </svg>
-            <span className="oxn-pec-stamp-text">SET VI · DESIGNED BY ANTIGRAVITY</span>
+            <span className="oxn-pec-stamp-text">SET VI · DESIGNED BY GEMINI 3.7 FLASH</span>
           </div>
           <div className="oxn-pec-sig-colophon">
             <span>OFFICINA METALLICA · BRONZE INGOT SERIES · 01 OF 05</span>

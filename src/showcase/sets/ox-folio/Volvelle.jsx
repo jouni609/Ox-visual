@@ -66,7 +66,7 @@ function Cartouche() {
         <path d="M28,28 a82,28 0 0 1 104,0 a82,28 0 0 1 -104,0 Z" fill="#1F4E80" stroke="#D4A24A" strokeWidth="1.6" />
         <path d="M34,28 a76,24 0 0 1 92,0 a76,24 0 0 1 -92,0 Z" fill="none" stroke="#D4A24A" strokeWidth="0.6" opacity="0.6" />
         <text x="80" y="25" textAnchor="middle" fontFamily="'Space Grotesk', sans-serif" fontWeight="700" fontSize="9" fill="#F4ECDB" letterSpacing="1.4">SET V</text>
-        <text x="80" y="37" textAnchor="middle" fontFamily="'Space Grotesk', sans-serif" fontSize="6.6" fill="#D4A24A" letterSpacing="1.2">DESIGNED BY FOLIO-PRESS</text>
+        <text x="80" y="37" textAnchor="middle" fontFamily="'Space Grotesk', sans-serif" fontSize="6.6" fill="#D4A24A" letterSpacing="1.2">DESIGNED BY GLM 5.2</text>
       </svg>
     </span>
   )

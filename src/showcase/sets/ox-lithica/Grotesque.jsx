@@ -116,7 +116,7 @@ export default function Grotesque() {
           <svg viewBox="0 0 260 52" aria-hidden="true">
             <rect x="2" y="2" width="256" height="48" rx="3" fill="none" stroke="#5A6B4E" strokeWidth="1.5" opacity="0.4" />
             <rect x="8" y="8" width="244" height="36" rx="2" fill="none" stroke="#5A6B4E" strokeWidth="1" opacity="0.25" />
-            <text x="130" y="32" textAnchor="middle" fontFamily="'UnifrakturMaguntia', cursive" fontSize="16" fill="#B8B0A0" letterSpacing="1" opacity="0.7">Set VIII · Designed by OpenCode</text>
+            <text x="130" y="32" textAnchor="middle" fontFamily="'UnifrakturMaguntia', cursive" fontSize="16" fill="#B8B0A0" letterSpacing="1" opacity="0.7">Set VIII · Designed by Kimi 2.6</text>
           </svg>
         </div>
       </footer>

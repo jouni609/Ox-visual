@@ -1,0 +1,207 @@
+.th-stercus {
+  --adobe: #c4a06a;
+  --indigo: #1f3a5f;
+  --dung: #6b4e2e;
+  --neem: #3d5c4a;
+  --bleach: #e8d7b0;
+  --dust: #d4b888;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse 70% 50% at 10% 80%, rgba(107, 78, 46, 0.25), transparent 55%),
+    linear-gradient(160deg, #e8d7b0 0%, var(--adobe) 45%, #b89058 100%);
+  color: var(--indigo);
+  font-family: Mukta, system-ui, sans-serif;
+  line-height: 1.5;
+  padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 40px) 140px;
+}
+
+.th-stercus ::selection {
+  background: var(--indigo);
+  color: var(--bleach);
+}
+
+.th-stercus :focus-visible {
+  outline: 3px solid var(--indigo);
+  outline-offset: 3px;
+}
+
+.stercus-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(20px, 3.5vw, 44px);
+  align-items: start;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.stercus-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stercus-wall {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+  padding: 12px;
+  background: var(--dung);
+  border: 3px solid var(--indigo);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stercus-cake {
+  aspect-ratio: 1;
+  border-radius: 40% 40% 35% 35%;
+  background: radial-gradient(circle at 35% 30%, #8a6a3e, var(--dung) 70%);
+  border: 1px solid rgba(31, 58, 95, 0.35);
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.stercus-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(232, 215, 176, 0.35) 50%, transparent 60%);
+  pointer-events: none;
+}
+
+.stercus-yard {
+  background: rgba(232, 215, 176, 0.55);
+  border: 2px solid var(--indigo);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.stercus-ox {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.stercus-cap {
+  margin: 8px 0 0;
+  text-align: center;
+  font-family: Kalam, cursive;
+  font-size: 0.95rem;
+  color: var(--neem);
+}
+
+.stercus-main {
+  background: rgba(232, 215, 176, 0.72);
+  border: 2px solid var(--indigo);
+  padding: clamp(18px, 3vw, 28px);
+  box-shadow: 6px 6px 0 rgba(61, 92, 74, 0.35);
+}
+
+.stercus-kicker {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--neem);
+  font-weight: 700;
+}
+
+.stercus-h1 {
+  margin: 0 0 12px;
+  font-family: Kalam, cursive;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  line-height: 1.1;
+  color: var(--indigo);
+}
+
+.stercus-h1 em {
+  display: block;
+  font-style: normal;
+  color: var(--dung);
+}
+
+.stercus-lead {
+  margin: 0 0 18px;
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+  color: #243848;
+  max-width: 42ch;
+}
+
+.stercus-dome {
+  width: 140px;
+  margin-bottom: 16px;
+}
+
+.stercus-uses {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.stercus-uses li {
+  padding: 12px 14px;
+  background: rgba(61, 92, 74, 0.12);
+  border-left: 4px solid var(--neem);
+}
+
+.stercus-uses strong {
+  display: block;
+  font-family: Kalam, cursive;
+  font-size: 1.15rem;
+  color: var(--indigo);
+  margin-bottom: 2px;
+}
+
+.stercus-uses span {
+  font-size: 0.9rem;
+  color: #334858;
+}
+
+.stercus-stamp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border: 2px dashed var(--dung);
+  background: rgba(196, 160, 106, 0.4);
+}
+
+.stercus-stamp svg {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.stercus-stamp p {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  color: var(--indigo);
+}
+
+.stercus-stamp b {
+  display: block;
+  margin-top: 4px;
+  font-family: Kalam, cursive;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: var(--dung);
+}
+
+@media (max-width: 800px) {
+  .stercus-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stercus-wall {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

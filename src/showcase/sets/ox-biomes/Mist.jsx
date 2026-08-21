@@ -262,7 +262,7 @@ export default function Mist() {
           <TibetanTag />
         </div>
         <div className="mist-signature">
-          <span className="mist-signature-mark">SET IV · DESIGNED BY MOOR-RUNNER</span>
+          <span className="mist-signature-mark">SET IV · DESIGNED BY MINIMAX M3</span>
           <span className="mist-signature-sub">OX BIOMES — MIST · STRUCK INTO PRINTED PAPER</span>
         </div>
       </footer>

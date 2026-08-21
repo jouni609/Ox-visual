@@ -58,7 +58,7 @@ function LeadStamp() {
   return (
     <span className="lab-stamp" aria-hidden="true">
       <span className="lab-stamp-strip" />
-      <span className="lab-stamp-text">SET V · DESIGNED BY FOLIO-PRESS</span>
+      <span className="lab-stamp-text">SET V · DESIGNED BY GLM 5.2</span>
       <span className="lab-stamp-strip" />
     </span>
   )
@@ -183,7 +183,7 @@ export default function Labyrinth() {
 
       <footer className="lab-foot">
         <p className="lab-foot-line" lang="la">Haec figura ostendit taurum in sepse — Tab. III</p>
-        <p className="lab-foot-credit">GLOSIERS DE FOLIO-PRESS · LEADWORK SET V</p>
+        <p className="lab-foot-credit">GLOSIERS DE GLM 5.2 · LEADWORK SET V</p>
       </footer>
     </div>
   )

@@ -108,7 +108,7 @@ function MakerPunch() {
         <path d="M60,4 L116,40 L60,76 L4,40 Z" fill="#2A1A12" stroke="#C99849" strokeWidth="1.4" />
         <path d="M60,14 L104,40 L60,66 L16,40 Z" fill="none" stroke="#9C5A2C" strokeWidth="0.8" opacity="0.6" />
         <text x="60" y="34" textAnchor="middle" fontFamily="'Alfa Slab One', serif" fontSize="11" fill="#F4E9D2">SET V</text>
-        <text x="60" y="50" textAnchor="middle" fontFamily="'Alfa Slab One', serif" fontSize="6.4" fill="#D6A85A" letterSpacing="0.8">DESIGNED BY FOLIO-PRESS</text>
+        <text x="60" y="50" textAnchor="middle" fontFamily="'Alfa Slab One', serif" fontSize="6.4" fill="#D6A85A" letterSpacing="0.8">DESIGNED BY GLM 5.2</text>
       </svg>
     </span>
   )
@@ -192,7 +192,7 @@ export default function BrandBook() {
 
       <footer className="brd-foot">
         <MakerPunch />
-        <p className="brd-foot-line">Struck at the Folio-Press ironworks, county of OX — every brand forged cold, never twice alike.</p>
+        <p className="brd-foot-line">Struck at the GLM 5.2 ironworks, county of OX — every brand forged cold, never twice alike.</p>
       </footer>
     </div>
   )

@@ -5,7 +5,7 @@ export default {
   name: 'OX BIOMES',
   tagline: 'Where the ox lives — five climates, five breeds',
   accent: '#2B8C8E',
-  credit: 'Designed by moor-runner',
+  credit: 'Designed by Minimax M3',
   designs: [
     {
       id: 'mist',

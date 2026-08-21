@@ -101,7 +101,7 @@ function WaxSeal() {
         <circle cx="45" cy="45" r="36" fill="none" stroke="#F1E7D2" strokeWidth="0.6" opacity="0.6" />
         <path d="M45,18 C58,18 66,28 66,40 C66,54 56,64 45,68 C34,64 24,54 24,40 C24,28 32,18 45,18 Z" fill="none" stroke="#F1E7D2" strokeWidth="1" opacity="0.5" />
         <text fill="#F1E7D2" fontFamily="'Cinzel', serif" fontSize="6.4" letterSpacing="1.6">
-          <textPath href="#myo-rim" startOffset="50%" textAnchor="middle">SET V · DESIGNED BY FOLIO-PRESS</textPath>
+          <textPath href="#myo-rim" startOffset="50%" textAnchor="middle">SET V · DESIGNED BY GLM 5.2</textPath>
         </text>
         <text x="45" y="44" textAnchor="middle" fill="#F1E7D2" fontFamily="'Cinzel', serif" fontSize="6" letterSpacing="1.4">OX</text>
         <text x="45" y="56" textAnchor="middle" fill="#F1E7D2" fontFamily="'Cinzel', serif" fontSize="13" fontWeight="700">V</text>

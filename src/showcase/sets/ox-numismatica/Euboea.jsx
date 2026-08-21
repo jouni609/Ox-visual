@@ -341,7 +341,7 @@ export default function Euboea() {
               <path d="M7 4 L17 4 M9 4 L9 8 C9 13 4 15 4 19 C4 21 8 22 12 22 C16 22 20 21 20 19 C20 15 15 13 15 8 L15 4" stroke="#5EEAD4" strokeWidth="1.5" />
               <path d="M4 11 C2 11 2 15 4 15 M20 11 C22 11 22 15 20 15" stroke="#5EEAD4" strokeWidth="1.5" />
             </svg>
-            <span className="oxn-eub-sig-text">SET VI · DESIGNED BY ANTIGRAVITY</span>
+            <span className="oxn-eub-sig-text">SET VI · DESIGNED BY GEMINI 3.7 FLASH</span>
           </div>
           <div className="oxn-eub-sig-colophon">
             <span>OFFICINA NUMISMATICA · HELLENIC STATER SERIES · 02 OF 05</span>

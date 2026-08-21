@@ -51,7 +51,7 @@ function SpliceLabel() {
       <span className="pit-splice-tape pit-splice-tape-l" />
       <span className="pit-splice-body">
         <span className="pit-splice-line">DESIGNED BY</span>
-        <span className="pit-splice-line pit-splice-line-sub">FOLIO-PRESS · SET V</span>
+        <span className="pit-splice-line pit-splice-line-sub">GLM 5.2 · SET V</span>
       </span>
       <span className="pit-splice-tape pit-splice-tape-r" />
     </span>
@@ -158,7 +158,7 @@ export default function Pitch() {
 
       <footer className="pit-foot">
         <p className="pit-foot-line" lang="la">Consigna Vocis Bos — Tab. II</p>
-        <p className="pit-foot-credit">FOLIO-PRESS · STUDIO TAPE · SET V</p>
+        <p className="pit-foot-credit">GLM 5.2 · STUDIO TAPE · SET V</p>
       </footer>
     </div>
   )

@@ -179,7 +179,7 @@ function WaterStamp() {
         KALABAW
       </text>
       <text x="100" y="56" textAnchor="middle" fontFamily="Karla, sans-serif" fontWeight="700" fontSize="9" letterSpacing="3" fill="#C2412A">
-        SET IV · MOOR-RUNNER
+        SET IV · MINIMAX M3
       </text>
     </motion.svg>
   )

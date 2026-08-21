@@ -61,7 +61,7 @@ export default function Cameo() {
 
             <g transform="translate(220, 475)">
               <ellipse cx="0" cy="0" rx="55" ry="18" fill="none" stroke="#C9A227" strokeWidth="1" opacity="0.5" />
-              <text x="0" y="5" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="9" fill="#8B6914" letterSpacing="1.5" opacity="0.7">OPENCODE</text>
+              <text x="0" y="5" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="9" fill="#8B6914" letterSpacing="1.5" opacity="0.7">KIMI 2.6</text>
             </g>
           </svg>
         </motion.div>
@@ -102,7 +102,7 @@ export default function Cameo() {
         <div className="cameo-signature">
           <svg viewBox="0 0 200 40" aria-hidden="true">
             <path d="M20 20 L30 10 L40 20 L50 10 L60 20" fill="none" stroke="#C9A227" strokeWidth="1.5" opacity="0.5" />
-            <text x="100" y="25" textAnchor="middle" fontFamily="'Playfair Display', serif" fontSize="11" fill="#8B6914" letterSpacing="2" opacity="0.8">SET VIII · DESIGNED BY OPENCODE</text>
+            <text x="100" y="25" textAnchor="middle" fontFamily="'Playfair Display', serif" fontSize="11" fill="#8B6914" letterSpacing="2" opacity="0.8">SET VIII · DESIGNED BY KIMI 2.6</text>
             <path d="M140 20 L150 10 L160 20 L170 10 L180 20" fill="none" stroke="#C9A227" strokeWidth="1.5" opacity="0.5" />
           </svg>
         </div>

@@ -280,7 +280,7 @@ export default function Nomisma() {
               <path d="M 12 4 L 12 20 M 4 12 L 20 12" stroke="#F59E0B" strokeWidth="1.5" />
               <circle cx="12" cy="12" r="4" fill="#DC2626" />
             </svg>
-            <span className="oxn-nom-bulla-text">SET VI · DESIGNED BY ANTIGRAVITY</span>
+            <span className="oxn-nom-bulla-text">SET VI · DESIGNED BY GEMINI 3.7 FLASH</span>
           </div>
           <div className="oxn-nom-colophon">
             <span>OFFICINA CHRYSOGRAPHICA · NOMISMA SERIES · 04 OF 05</span>

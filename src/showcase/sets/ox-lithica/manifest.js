@@ -5,7 +5,7 @@ export default {
   name: 'OX LITHICA',
   tagline: 'Five stones, five carvings',
   accent: '#5A5A5A',
-  credit: 'Designed by OpenCode',
+  credit: 'Designed by Kimi 2.6',
   designs: [
     {
       id: 'menhir',

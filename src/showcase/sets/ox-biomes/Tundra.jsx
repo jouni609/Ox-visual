@@ -206,7 +206,7 @@ function IceStamp() {
           UMINGMAK
         </text>
         <text x="100" y="106" textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontWeight="700" fontSize="7" letterSpacing="2" fill="#0D1B2A">
-          SET IV · MOOR-RUNNER
+          SET IV · MINIMAX M3
         </text>
       </svg>
     </motion.div>
@@ -375,7 +375,7 @@ export default function Tundra() {
         <div className="td-foot-meta">
           <span className="td-foot-line-1">CRYSTAL ARCHIVE · ARCTIC SERIES</span>
           <span className="td-foot-line-2">
-            <strong>SET IV · DESIGNED BY MOOR-RUNNER</strong><br />
+            <strong>SET IV · DESIGNED BY MINIMAX M3</strong><br />
             OX BIOMES — TUNDRA · FROZEN INTO THE BUNDLE
           </span>
         </div>

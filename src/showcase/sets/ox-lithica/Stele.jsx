@@ -123,7 +123,7 @@ export default function Stele() {
             <path d="M20 26 L28 18 L32 26 L36 18 L40 26" fill="none" stroke="#1E3A5F" strokeWidth="2" opacity="0.5" />
             <path d="M48 26 L52 18 L56 26 L60 18 L64 26 L68 18 L72 26" fill="none" stroke="#1E3A5F" strokeWidth="2" opacity="0.5" />
             <path d="M80 26 L84 20 L88 26" fill="none" stroke="#1E3A5F" strokeWidth="2" opacity="0.5" />
-            <text x="140" y="32" textAnchor="middle" fontFamily="'Cinzel Decorative', serif" fontSize="12" fill="#2A1F18" letterSpacing="2" opacity="0.8">SET VIII · DESIGNED BY OPENCODE</text>
+            <text x="140" y="32" textAnchor="middle" fontFamily="'Cinzel Decorative', serif" fontSize="12" fill="#2A1F18" letterSpacing="2" opacity="0.8">SET VIII · DESIGNED BY KIMI 2.6</text>
             <path d="M200 26 L204 20 L208 26" fill="none" stroke="#1E3A5F" strokeWidth="2" opacity="0.5" />
             <path d="M216 26 L220 18 L224 26 L228 18 L232 26 L236 18 L240 26" fill="none" stroke="#1E3A5F" strokeWidth="2" opacity="0.5" />
             <path d="M248 26 L256 18 L260 26" fill="none" stroke="#1E3A5F" strokeWidth="2" opacity="0.5" />

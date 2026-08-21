@@ -1,0 +1,263 @@
+.th-lactis {
+  --ink: #111111;
+  --paper: #f5f2ea;
+  --red: #e62828;
+  --yellow: #f0c400;
+  --blue: #1f4b99;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  line-height: 1.45;
+  padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 40px) 140px;
+}
+
+.th-lactis ::selection {
+  background: var(--red);
+  color: var(--paper);
+}
+
+.th-lactis :focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.lactis-blocks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.lactis-b {
+  position: absolute;
+  display: block;
+}
+
+.lactis-b-r {
+  top: 0;
+  right: 0;
+  width: min(28vw, 280px);
+  height: min(28vw, 280px);
+  background: var(--red);
+}
+
+.lactis-b-y {
+  bottom: 12%;
+  left: 0;
+  width: min(18vw, 160px);
+  height: min(18vw, 160px);
+  background: var(--yellow);
+}
+
+.lactis-b-u {
+  top: 42%;
+  right: 8%;
+  width: min(12vw, 110px);
+  height: min(12vw, 110px);
+  background: var(--blue);
+}
+
+.lactis-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(220px, 0.65fr);
+  grid-template-areas:
+    'head head'
+    'art aside';
+  gap: clamp(20px, 3vw, 36px);
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.lactis-head {
+  grid-area: head;
+  max-width: 640px;
+  border-left: 8px solid var(--ink);
+  padding-left: 18px;
+}
+
+.lactis-kicker {
+  margin: 0 0 8px;
+  font-family: Oswald, sans-serif;
+  font-size: clamp(0.75rem, 1.3vw, 0.9rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.lactis-h1 {
+  margin: 0 0 12px;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.lactis-h1 span {
+  display: block;
+  color: var(--red);
+}
+
+.lactis-lead {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  max-width: 48ch;
+  color: #2a2a2a;
+}
+
+.lactis-art {
+  grid-area: art;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  padding: clamp(12px, 2vw, 24px);
+  box-shadow: 8px 8px 0 var(--yellow);
+}
+
+.lactis-ox {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lactis-aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.lactis-spin {
+  width: 120px;
+  align-self: center;
+}
+
+.lactis-glass {
+  position: relative;
+  height: 120px;
+  border: 3px solid var(--ink);
+  background: #fff;
+  overflow: hidden;
+}
+
+.lactis-cream {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #fff8dc, #f0c400);
+}
+
+.lactis-glass span {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: Oswald, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.lactis-metrics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border: 3px solid var(--ink);
+}
+
+.lactis-metrics li {
+  display: grid;
+  gap: 2px;
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.lactis-metrics li:last-child {
+  border-bottom: none;
+}
+
+.lactis-metrics li:nth-child(1) {
+  background: var(--red);
+  color: var(--paper);
+}
+
+.lactis-metrics li:nth-child(2) {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.lactis-metrics li:nth-child(3) {
+  background: var(--blue);
+  color: var(--paper);
+}
+
+.lactis-metrics strong {
+  font-family: Oswald, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.lactis-metrics span {
+  font-size: 0.8rem;
+}
+
+.lactis-cap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border: 3px solid var(--ink);
+  background: var(--paper);
+}
+
+.lactis-cap svg {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.lactis-cap p {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.lactis-cap b {
+  display: block;
+  margin-top: 4px;
+  font-family: Oswald, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 800px) {
+  .lactis-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'head'
+      'art'
+      'aside';
+  }
+
+  .lactis-b-r {
+    width: 120px;
+    height: 120px;
+  }
+
+  .lactis-b-y,
+  .lactis-b-u {
+    display: none;
+  }
+}

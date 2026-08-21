@@ -173,7 +173,7 @@ function MudclothChop() {
           <path d="M-12,0 C-12,-7 -6,-10 0,-10 C6,-10 12,-7 12,0 C12,7 6,10 0,10 C-6,10 -12,7 -12,0 Z" fill="#E8DCC2" />
         </g>
         <text x="90" y="118" textAnchor="middle" fontFamily="Big Shoulders Display, sans-serif" fontWeight="800" fontSize="12" letterSpacing="0.18em" fill="#1F2A52">
-          SET IV · MOOR-RUNNER
+          SET IV · MINIMAX M3
         </text>
         <text x="90" y="138" textAnchor="middle" fontFamily="Karla, sans-serif" fontWeight="700" fontSize="8" letterSpacing="0.32em" fill="#A63A1E">
           NG'OMBE · HORN OF AFRICA
@@ -354,7 +354,7 @@ export default function Savanna() {
         <div className="sv-foot-meta">
           <span className="sv-foot-line-1">OX BIOMES — SAVANNA · 05 / 05</span>
           <span className="sv-foot-line-2">
-            <strong>SET IV · DESIGNED BY MOOR-RUNNER</strong><br />
+            <strong>SET IV · DESIGNED BY MINIMAX M3</strong><br />
             WOVEN FROM MEMORY · BORORO-BOZO TEXTILE TRADITION · MUDCLOTH-FROM-PRINT
           </span>
         </div>

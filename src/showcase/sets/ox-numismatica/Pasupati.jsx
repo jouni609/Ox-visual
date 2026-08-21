@@ -247,7 +247,7 @@ export default function Pasupati() {
               <rect x="3" y="3" width="18" height="18" rx="3" stroke="#C85632" strokeWidth="2" />
               <path d="M 7 12 C 9 8 15 8 17 12 C 15 16 9 16 7 12 Z" fill="#E58A2E" />
             </svg>
-            <span className="oxn-pas-sig-text">SET VI · DESIGNED BY ANTIGRAVITY</span>
+            <span className="oxn-pas-sig-text">SET VI · DESIGNED BY GEMINI 3.7 FLASH</span>
           </div>
           <div className="oxn-pas-sig-colophon">
             <span>HARAPPAN GLYPTIC ARCHIVE · MOHENJO-DARO · 03 OF 05</span>

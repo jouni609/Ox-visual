@@ -5,7 +5,7 @@ export default {
   name: 'OX FOLIO',
   tagline: 'Five documents, one animal',
   accent: '#0E3B43',
-  credit: 'Designed by folio-press',
+  credit: 'Designed by GLM 5.2',
   designs: [
     {
       id: 'myology',

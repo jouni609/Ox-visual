@@ -143,7 +143,7 @@ export default function Menhir() {
             <path d="M10 24 L30 24" stroke="#7B5E8B" strokeWidth="2" opacity="0.5" />
             <path d="M230 24 L250 24" stroke="#7B5E8B" strokeWidth="2" opacity="0.5" />
             <text x="130" y="30" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="11" fill="#5A5A5A" letterSpacing="3">
-              SET VIII · DESIGNED BY OPENCODE
+              SET VIII · DESIGNED BY KIMI 2.6
             </text>
           </svg>
         </div>
