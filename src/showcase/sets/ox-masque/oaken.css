@@ -1,0 +1,203 @@
+.th-oaken {
+  --moss: #2f4a2e;
+  --bark: #6b4a2a;
+  --cream: #f4ecd8;
+  --leaf: #3e5e33;
+  --ink: #2b2118;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(140% 90% at 50% 10%, #fbf5e4 0%, var(--cream) 55%, #e6d6b2 100%);
+  color: var(--ink);
+  font-family: 'Spectral', serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-oaken ::selection {
+  background: var(--moss);
+  color: var(--cream);
+}
+
+.th-oaken :focus-visible {
+  outline: 3px solid var(--moss);
+  outline-offset: 3px;
+}
+
+.oaken-field {
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  width: min(120vw, 760px);
+  height: min(120vw, 760px);
+  transform: translateX(-50%);
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.oaken-ring {
+  width: 100%;
+  height: 100%;
+}
+
+.oaken-ring-line {
+  fill: none;
+  stroke: var(--bark);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 8;
+}
+
+.oaken-horn {
+  fill: var(--bark);
+  stroke: #3d2a17;
+  stroke-width: 2;
+}
+
+.oaken-tie {
+  fill: var(--moss);
+}
+
+.oaken-head {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: clamp(30px, 6vw, 70px) 20px 0;
+}
+
+.oaken-kicker {
+  margin: 0 0 16px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(11px, 1.6vw, 14px);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
+.oaken-title {
+  margin: 0;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: clamp(48px, 11vw, 116px);
+  line-height: 0.94;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.oaken-sub {
+  margin: 14px 0 0;
+  font-style: italic;
+  font-size: clamp(14px, 2.2vw, 20px);
+  color: var(--bark);
+}
+
+.oaken-maskwrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: clamp(10px, 3vw, 36px) 0;
+}
+
+.oaken-mask {
+  width: min(80vw, 380px);
+  height: auto;
+  filter: drop-shadow(0 14px 28px rgba(60, 42, 23, 0.25));
+}
+
+.oaken-face {
+  stroke: var(--bark);
+  stroke-width: 4;
+}
+
+.oaken-grain {
+  fill: none;
+  stroke: #d8c39a;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.oaken-eye {
+  fill: #efe2c4;
+  stroke: var(--bark);
+  stroke-width: 2;
+}
+
+.oaken-pupil {
+  fill: var(--ink);
+}
+
+.oaken-snout {
+  fill: #e9d7ad;
+  stroke: var(--bark);
+  stroke-width: 3;
+}
+
+.oaken-nostril {
+  fill: #5a3f24;
+}
+
+.oaken-mouth {
+  fill: none;
+  stroke: #5a3f24;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.oaken-ear {
+  fill: #e3d2ab;
+  stroke: var(--bark);
+  stroke-width: 3;
+}
+
+.oaken-leaves path {
+  fill: var(--leaf);
+}
+
+.oaken-lede {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  margin: 6px auto clamp(46px, 9vw, 96px);
+  padding: 0 24px;
+  text-align: center;
+  font-size: clamp(13px, 1.9vw, 16px);
+  color: #53422f;
+}
+
+.oaken-tag {
+  position: absolute;
+  left: clamp(14px, 4vw, 48px);
+  bottom: clamp(14px, 4vw, 48px);
+  width: clamp(96px, 15vw, 150px);
+  height: auto;
+  transform: rotate(-5deg);
+  opacity: 0.92;
+  z-index: 3;
+}
+
+.oaken-tag-board {
+  fill: #e7d4ad;
+  stroke: var(--bark);
+  stroke-width: 3;
+}
+
+.oaken-tag-hole {
+  fill: var(--ink);
+}
+
+.oaken-tag-line1,
+.oaken-tag-line2,
+.oaken-tag-line3 {
+  fill: var(--ink);
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-anchor: middle;
+}
+
+.oaken-tag-line1 { fill: var(--moss); font-weight: 800; }
+
+@media (prefers-reduced-motion: reduce) {
+  .oaken-ring { animation: none; }
+}

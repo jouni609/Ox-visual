@@ -1,0 +1,196 @@
+.th-percht {
+  --ice: #dce7ec;
+  --pine: #23432f;
+  --charcoal: #20242a;
+  --brass: #b88a2e;
+  --frost: #afc2cc;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    linear-gradient(180deg, #2b3138 0%, #1b2025 50%, #11141a 100%);
+  color: var(--ice);
+  font-family: 'Spectral', serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-percht ::selection {
+  background: var(--brass);
+  color: #14161a;
+}
+
+.th-percht :focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 3px;
+}
+
+.percht-snow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.percht-flake {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, var(--frost) 80%, transparent 100%);
+  opacity: 0.7;
+}
+
+.percht-head {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: clamp(30px, 6vw, 68px) 20px 0;
+}
+
+.percht-kicker {
+  margin: 0 0 16px;
+  font-size: clamp(11px, 1.6vw, 14px);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.percht-title {
+  margin: 0;
+  font-family: 'UnifrakturMaguntia', serif;
+  font-weight: 400;
+  font-size: clamp(46px, 11vw, 120px);
+  line-height: 1;
+  color: var(--ice);
+  text-shadow: 0 2px 18px rgba(175, 194, 204, 0.25);
+}
+
+.percht-sub {
+  margin: 14px 0 0;
+  font-style: italic;
+  font-size: clamp(13px, 2vw, 19px);
+  color: var(--frost);
+}
+
+.percht-stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: clamp(8px, 3vw, 28px) 0;
+}
+
+.percht-mask {
+  width: min(78vw, 340px);
+  height: auto;
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.55));
+}
+
+.percht-horn {
+  fill: url(#percht-horn-g);
+  stroke: #6e5a30;
+  stroke-width: 2;
+}
+
+.percht-face {
+  stroke: #8aa0ab;
+  stroke-width: 3;
+}
+
+.percht-carve {
+  fill: none;
+  stroke: #9bb0ba;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.percht-eye {
+  fill: #20303a;
+  stroke: #8aa0ab;
+  stroke-width: 2;
+}
+
+.percht-pupil {
+  fill: var(--brass);
+}
+
+.percht-brow {
+  fill: #20303a;
+}
+
+.percht-snout {
+  fill: #cdd9df;
+  stroke: #8aa0ab;
+  stroke-width: 3;
+}
+
+.percht-nostril {
+  fill: #5a6b73;
+}
+
+.percht-mouth {
+  fill: none;
+  stroke: #5a6b73;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.percht-ear {
+  fill: #c2d2da;
+  stroke: #8aa0ab;
+  stroke-width: 3;
+}
+
+.percht-lede {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  margin: 6px auto clamp(48px, 9vw, 96px);
+  padding: 0 24px;
+  text-align: center;
+  font-size: clamp(13px, 1.9vw, 16px);
+  color: #c3d0d7;
+}
+
+.percht-lede em {
+  color: var(--brass);
+  font-style: italic;
+}
+
+.percht-plate {
+  position: absolute;
+  right: clamp(16px, 4vw, 48px);
+  bottom: clamp(16px, 4vw, 48px);
+  width: clamp(110px, 17vw, 168px);
+  height: auto;
+  transform: rotate(3deg);
+  z-index: 3;
+}
+
+.percht-plate-bg {
+  fill: #2a2113;
+  stroke: var(--brass);
+  stroke-width: 3;
+}
+
+.percht-plate-inner {
+  fill: none;
+  stroke: var(--brass);
+  stroke-width: 1.5;
+}
+
+.percht-plate-l1,
+.percht-plate-l2 {
+  fill: var(--brass);
+  font-family: 'Spectral', serif;
+  text-anchor: middle;
+  letter-spacing: 0.12em;
+}
+
+.percht-plate-l1 { font-size: 18px; font-weight: 700; }
+.percht-plate-l2 { font-size: 12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .percht-flake { animation: none; opacity: 0.5; }
+}

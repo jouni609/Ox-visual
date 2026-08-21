@@ -1,0 +1,220 @@
+.th-jin {
+  --lacquer: #9e1b1b;
+  --deep: #6e1010;
+  --gold: #e8b54b;
+  --ink: #1c1714;
+  --paper: #f0e6cf;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(120% 80% at 50% 0%, #f7efda 0%, var(--paper) 60%, #e3d3ad 100%);
+  color: var(--ink);
+  font-family: 'Cinzel', serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-jin ::selection {
+  background: var(--deep);
+  color: var(--gold);
+}
+
+.th-jin :focus-visible {
+  outline: 3px solid var(--deep);
+  outline-offset: 3px;
+}
+
+.jin-frame {
+  position: absolute;
+  inset: clamp(14px, 3vw, 32px);
+  border: 3px solid var(--lacquer);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.jin-corner {
+  position: absolute;
+  width: clamp(24px, 5vw, 46px);
+  height: clamp(24px, 5vw, 46px);
+  border: 3px solid var(--gold);
+}
+
+.jin-corner-tl { top: -3px; left: -3px; border-right: none; border-bottom: none; }
+.jin-corner-tr { top: -3px; right: -3px; border-left: none; border-bottom: none; }
+.jin-corner-bl { bottom: -3px; left: -3px; border-right: none; border-top: none; }
+.jin-corner-br { bottom: -3px; right: -3px; border-left: none; border-top: none; }
+
+.jin-head {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: clamp(34px, 7vw, 80px) 20px 0;
+}
+
+.jin-kicker {
+  margin: 0 0 14px;
+  font-size: clamp(12px, 1.8vw, 15px);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--deep);
+}
+
+.jin-title {
+  margin: 0;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-weight: 400;
+  font-size: clamp(52px, 13vw, 130px);
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: var(--lacquer);
+  text-shadow: 0 2px 0 rgba(232, 181, 75, 0.5);
+}
+
+.jin-sub {
+  margin: 12px 0 0;
+  font-style: italic;
+  font-size: clamp(13px, 2vw, 19px);
+  color: var(--deep);
+}
+
+.jin-stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(6px, 2vw, 22px);
+  padding: clamp(8px, 3vw, 30px) 0;
+}
+
+.jin-mask {
+  width: min(76vw, 360px);
+  height: auto;
+  filter: drop-shadow(0 16px 34px rgba(110, 16, 16, 0.35));
+}
+
+.jin-disc { stroke: var(--gold); stroke-width: 4; }
+.jin-disc-ring { fill: none; stroke: var(--gold); stroke-width: 2; stroke-dasharray: 3 7; }
+
+.jin-flame {
+  fill: url(#jin-gold);
+}
+
+.jin-horn {
+  fill: url(#jin-gold);
+  stroke: #8a6312;
+  stroke-width: 2;
+}
+
+.jin-face {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 3;
+}
+
+.jin-eye {
+  fill: var(--gold);
+  stroke: #8a6312;
+  stroke-width: 2;
+}
+
+.jin-pupil {
+  fill: var(--ink);
+}
+
+.jin-brow {
+  fill: var(--gold);
+}
+
+.jin-ruyi {
+  fill: var(--gold);
+}
+
+.jin-ear {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 3;
+}
+
+.jin-snout {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 3;
+}
+
+.jin-nostril {
+  fill: var(--gold);
+}
+
+.jin-mouth {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.jin-petals {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.4vw, 14px);
+  width: clamp(14px, 3vw, 30px);
+}
+
+.jin-petal {
+  display: block;
+  width: 100%;
+  height: clamp(22px, 5vw, 44px);
+  background: linear-gradient(var(--gold), var(--deep));
+  border-radius: 0 100% 0 100%;
+  transform-origin: top center;
+  opacity: 0.9;
+}
+
+.jin-petals-r .jin-petal {
+  border-radius: 100% 0 100% 0;
+  transform-origin: top center;
+}
+
+.jin-lede {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  margin: 6px auto clamp(48px, 9vw, 96px);
+  padding: 0 24px;
+  text-align: center;
+  font-size: clamp(13px, 1.9vw, 16px);
+  color: #4a2418;
+}
+
+.jin-seal {
+  position: absolute;
+  right: clamp(18px, 5vw, 56px);
+  bottom: clamp(18px, 5vw, 56px);
+  width: clamp(74px, 12vw, 110px);
+  height: clamp(74px, 12vw, 110px);
+  z-index: 3;
+}
+
+.jin-seal-box {
+  fill: var(--lacquer);
+  stroke: var(--deep);
+  stroke-width: 3;
+}
+
+.jin-seal-l1,
+.jin-seal-l2,
+.jin-seal-l3 {
+  fill: var(--paper);
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-anchor: middle;
+  letter-spacing: 0.1em;
+}
+
+.jin-seal-l1 { font-size: 18px; }
+.jin-seal-l2 { font-size: 22px; }
+.jin-seal-l3 { font-size: 16px; fill: var(--gold); }
+
+@media (prefers-reduced-motion: reduce) {
+  .jin-petal { transform: scaleY(1); opacity: 1; }
+}

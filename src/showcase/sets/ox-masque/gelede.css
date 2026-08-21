@@ -1,0 +1,198 @@
+.th-gelede {
+  --indigo: #1b2a4a;
+  --indigo-deep: #121e36;
+  --ochre: #c9772b;
+  --saffron: #e9a93b;
+  --cream: #f2e8d5;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(120% 80% at 50% 0%, #243a63 0%, var(--indigo) 55%, var(--indigo-deep) 100%);
+  color: var(--cream);
+  font-family: 'Sora', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-gelede ::selection {
+  background: var(--saffron);
+  color: var(--indigo-deep);
+}
+
+.th-gelede :focus-visible {
+  outline: 3px solid var(--saffron);
+  outline-offset: 3px;
+}
+
+.gelede-weave {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(90deg, rgba(201, 119, 43, 0.16) 0 14px, transparent 14px 30px),
+    repeating-linear-gradient(0deg, rgba(242, 232, 213, 0.06) 0 18px, transparent 18px 38px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gelede-head {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: clamp(32px, 6vw, 72px) 20px 0;
+}
+
+.gelede-kicker {
+  margin: 0 0 16px;
+  font-size: clamp(11px, 1.6vw, 14px);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--saffron);
+}
+
+.gelede-title {
+  margin: 0;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(42px, 10vw, 104px);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+  color: var(--cream);
+}
+
+.gelede-sub {
+  margin: 14px 0 0;
+  font-size: clamp(13px, 2vw, 19px);
+  color: var(--saffron);
+}
+
+.gelede-stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: clamp(8px, 3vw, 28px) 0;
+}
+
+.gelede-mask {
+  width: min(74vw, 320px);
+  height: auto;
+  filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.45));
+}
+
+.gelede-crown {
+  fill: none;
+  stroke: var(--saffron);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.gelede-crown-band {
+  fill: var(--ochre);
+  stroke: #7c4416;
+  stroke-width: 2;
+}
+
+.gelede-horn {
+  fill: url(#gelede-horn-g);
+  stroke: #7c4416;
+  stroke-width: 2;
+}
+
+.gelede-face {
+  fill: #14110d;
+  stroke: var(--saffron);
+  stroke-width: 3;
+}
+
+.gelede-mark {
+  fill: var(--saffron);
+}
+
+.gelede-eye {
+  fill: var(--cream);
+  stroke: var(--saffron);
+  stroke-width: 2;
+}
+
+.gelede-pupil {
+  fill: #14110d;
+}
+
+.gelede-cheek {
+  fill: none;
+  stroke: var(--ochre);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.gelede-snout {
+  fill: #211b12;
+  stroke: var(--saffron);
+  stroke-width: 3;
+}
+
+.gelede-nostril {
+  fill: var(--saffron);
+}
+
+.gelede-mouth {
+  fill: none;
+  stroke: var(--saffron);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.gelede-collar {
+  fill: var(--ochre);
+  stroke: #7c4416;
+  stroke-width: 2;
+}
+
+.gelede-lede {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  margin: 6px auto clamp(46px, 9vw, 92px);
+  padding: 0 24px;
+  text-align: center;
+  font-size: clamp(13px, 1.9vw, 16px);
+  color: #d9cfb6;
+}
+
+.gelede-cloth {
+  position: absolute;
+  left: clamp(16px, 4vw, 48px);
+  bottom: clamp(16px, 4vw, 48px);
+  width: clamp(92px, 14vw, 140px);
+  height: auto;
+  transform: rotate(-3deg);
+  z-index: 3;
+}
+
+.gelede-cloth-bg {
+  fill: var(--indigo-deep);
+  stroke: var(--saffron);
+  stroke-width: 3;
+}
+
+.gelede-cloth-stripe {
+  fill: none;
+  stroke: var(--ochre);
+  stroke-width: 3;
+}
+
+.gelede-cloth-l1,
+.gelede-cloth-l2 {
+  fill: var(--cream);
+  font-family: 'Marcellus', serif;
+  text-anchor: middle;
+  letter-spacing: 0.14em;
+}
+
+.gelede-cloth-l1 { font-size: 16px; fill: var(--saffron); }
+.gelede-cloth-l2 { font-size: 22px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gelede-mask { animation: none; }
+}

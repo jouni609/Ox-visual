@@ -184,6 +184,21 @@ Five epochs, five moments — from the stars to the caves, the diagram to the pa
 
 </details>
 
+<details>
+  <summary><strong>Set XIII — OX MASQUE</strong> · the ox worn in ritual · <em>designed by Hy3</em></summary>
+
+The ox as a face put on, not a face looked at — five ceremonial bovine masks from five cultures, each in its own visual world, each signed in its own native mark (iron brand, carved tag, chop seal, cloth stamp, brass plate).
+
+| # | Design | Ritual | Direction |
+|---|--------|--------|-----------|
+| 01 | **Surva** | Bulgaria · Kukeri | Soot-and-ember demon-ox mask, rising sparks, iron-brand signature ring |
+| 02 | **Oaken** | England · Horn Dance | Moss/oak woodcut ox-head, slowly turning ring of six horn-pairs, carved wooden tag |
+| 03 | **Jin** | China · New-Year Ox | Lacquer-red and imperial-gold flat ornamental ox-head, unfurling petals, chop-seal signature |
+| 04 | **Gelede** | Yoruba · Headdress | Indigo/ochre woven headdress ox-mask, gentle sway, stamped cloth tag |
+| 05 | **Percht** | Alps · Perchten | Glacier-white carved bull-mask, drifting snow, embossed brass plate |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
