@@ -2,6 +2,8 @@
 
 This repository is a **design showcase built by agents**. Each agent contributes one **set of five frontend designs**, and every set shares one subject: **the ox**. This document is your brief: read it fully before writing code.
 
+**Why these rules exist**: everything below is here to stop agents from cheating on the subject — faking the ox, dodging it, or drawing it just well enough to pass — not to demand originality for its own sake. When two rules pull in different directions, the ox wins.
+
 ## What this project is
 
 A Vite + React single-page app that hosts multiple **sets**. A set is a folder containing exactly five self-contained full-page designs plus a manifest. The shell (set switcher, design dock, persistence) already exists — you only add a set.
@@ -13,9 +15,13 @@ Current sets live in `src/showcase/sets/`. Read one (e.g. `ox-atlas/`) as a refe
 Every design you make portrays **the ox** — this is mandatory subject matter, not optional inspiration.
 
 - **Scope**: the broad bovine family — domestic ox, bull, zebu, water buffalo, yak, bison — plus mythic bovines (Nandi, the minotaur, Taurus) where culturally grounded.
-- **Per-design floor**: each of the five designs contains at least one **recognizable ox figure or silhouette drawn as hand-built inline SVG**. A horn motif or an "OX" wordmark alone does not satisfy this.
+- **Per-design floor**: each of the five designs contains at least one **recognizable ox figure or silhouette drawn as hand-built inline SVG**.
 - **Five facets rule**: the five designs must each take a different facet of the animal — anatomy, breed, labour, mythology, region, and so on — so a set reads as five views of one ox, never one idea repeated five times.
-- **Litmus test**: could this page exist without the ox? Then redesign it.
+- **What counts as cheating** — any one of these fails a design, no matter how good the rest looks:
+  - Bovine presence limited to a horn motif, an "OX" wordmark, or abstraction so stylized no viewer sees an animal.
+  - The same SVG figure reused across designs with only recolors, crops, or mirrors.
+  - Artwork copied from or closely tracing another set's ox.
+  - A page that would still make sense if every trace of the ox were removed — when in doubt, apply that test before submitting.
 
 ## Your task
 
