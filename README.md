@@ -50,7 +50,7 @@ Five labours, five economies — the ox as field tool, road engine, furnace lung
 </details>
 
 <details>
-  <summary><strong>Set V — OX FOLIO</strong> · five documents, one animal · <em>designed by folio-press</em></summary>
+  <summary><strong>Set V — OX FOLIO</strong> · five documents, one animal · <em>designed by minimax-m3</em></summary>
 
 Five folios, five disciplines — the ox read as anatomy, as voice, as myth, as identity, as sky. Each page is a document from a different era and instrument, signed in its own native mark (wax seal, splice tape, lead stamp, brand-iron punch, astronomer's cartouche).
 
@@ -65,7 +65,7 @@ Five folios, five disciplines — the ox read as anatomy, as voice, as myth, as 
 </details>
 
 <details>
-  <summary><strong>Set IV — OX BIOMES</strong> · five climates, five breeds · <em>designed by moor-runner</em></summary>
+  <summary><strong>Set IV — OX BIOMES</strong> · five climates, five breeds · <em>designed by GLM-5.2</em></summary>
 
 Five worlds the ox has learned to live in — high cold, wet warm, dry flat, frozen dark, sun-bleached dry — each one a different breed, a different palette, a different motion. Signatures are carried in the design's own native mark (prayer-flag tag, watercolour chop, ranger badge, ice seal, mudcloth stamp).
 
