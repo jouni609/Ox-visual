@@ -110,7 +110,7 @@ The ox as a sensing body — not a symbol, a sensorium. Each page is one sense, 
 </details>
 
 <details>
-  <summary><strong>Set VIII — OX LITHICA</strong> · five stones, five carvings · <em>designed by OpenCode</em></summary>
+  <summary><strong>Set VIII — OX LITHICA</strong> · five stones, five carvings · <em>designed by Kimi K2.6</em></summary>
 
 Five archaeological layers — the ox as aurochs scratched into granite, zebu carved into Assyrian gypsum, solar ox sunk into Egyptian limestone, bull head layered in Roman sardonyx, and ox-demon gargoyle leering from Gothic limestone. Each design carries its signature in the stone's own native mark (petroglyph incision, cuneiform wedge, Egyptian cartouche, gem-cutter's mark, mason's stamp).
 
