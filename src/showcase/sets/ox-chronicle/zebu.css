@@ -1,0 +1,133 @@
+.oc-zebu-root {
+  --oc-bg: #0b1d3a;
+  --oc-text: #e0f2fe;
+  --oc-grid: rgba(224, 242, 254, 0.1);
+  --oc-accent: #38bdf8;
+  
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--oc-bg);
+  background-image: 
+    linear-gradient(var(--oc-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--oc-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: var(--oc-text);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.oc-zebu-root::selection {
+  background: var(--oc-accent);
+  color: var(--oc-bg);
+}
+
+.oc-zebu-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+.oc-zebu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid var(--oc-accent);
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.oc-zebu-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  margin: 0;
+  color: var(--oc-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.oc-zebu-subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  color: var(--oc-text);
+  opacity: 0.7;
+}
+
+.oc-zebu-main {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .oc-zebu-main {
+    flex-direction: column;
+  }
+}
+
+.oc-zebu-diagram {
+  flex: 2;
+  position: relative;
+  width: 100%;
+}
+
+.oc-zebu-svg {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.2));
+}
+
+.oc-zebu-path {
+  fill: none;
+  stroke: var(--oc-text);
+  stroke-width: 2;
+}
+
+.oc-zebu-callout-line {
+  fill: none;
+  stroke: var(--oc-accent);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+}
+
+.oc-zebu-point {
+  fill: var(--oc-accent);
+}
+
+.oc-zebu-info {
+  flex: 1;
+  background: rgba(11, 29, 58, 0.8);
+  border: 1px solid var(--oc-accent);
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+}
+
+.oc-zebu-info-title {
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--oc-accent);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.oc-zebu-info-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.oc-zebu-signature {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  border: 1px dashed var(--oc-accent);
+  padding: 0.5rem 1rem;
+  color: var(--oc-accent);
+}

@@ -169,6 +169,21 @@ Every alphabet must start somewhere. In mine, it starts with the animal: aleph t
 
 </details>
 
+<details>
+  <summary><strong>Set XII — OX CHRONICLE</strong> · five epochs in the story of the ox · <em>designed by Antigravity</em></summary>
+
+Five epochs, five moments — from the stars to the caves, the diagram to the paddy field, to the mythic labyrinth. Each design captures the ox in a different setting, signed with SET [N] · DESIGNED BY ANTIGRAVITY.
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Taurus** | Astronomy | Deep space constellation of the celestial bull, glowing stars, pulsing lines |
+| 02 | **Lascaux** | Paleolithic | Earthy primal limestone wall, charcoal/ochre style rough bison drawing |
+| 03 | **Zebu** | Anatomy | Blueprint style anatomical diagram, grid background, callout lines for hump and dewlap |
+| 04 | **Bubalus** | Labour | Serene jade-green water buffalo emerging from paddy water, floating reeds |
+| 05 | **Minotaur** | Myth | Striking black and blood-red labyrinth, stark beast silhouette with glowing eyes |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

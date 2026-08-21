@@ -10,5 +10,6 @@ import oxLithica from './ox-lithica/manifest.js'
 import oxMateria from './ox-materia/manifest.js'
 import oxSignals from './ox-signals/manifest.js'
 import oxGlyphs from './ox-glyphs/manifest.js'
+import oxChronicle from './ox-chronicle/manifest.js'
 
-export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium, oxLithica, oxMateria, oxSignals, oxGlyphs]
+export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium, oxLithica, oxMateria, oxSignals, oxGlyphs, oxChronicle]
