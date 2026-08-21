@@ -90,7 +90,7 @@ export default function Zebu() {
       </div>
 
       <div className="oc-zebu-signature">
-        SET 03 · DESIGNED BY ANTIGRAVITY
+        SET 03 · DESIGNED BY GEMINI 3.1 PRO
       </div>
     </div>
   )

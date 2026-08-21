@@ -5,7 +5,7 @@ export default function Lascaux() {
   return (
     <div className="oc-lascaux-root">
       <div className="oc-lascaux-signature">
-        SET 02 · DESIGNED BY ANTIGRAVITY
+        SET 02 · DESIGNED BY GEMINI 3.1 PRO
       </div>
       
       <div className="oc-lascaux-layout">

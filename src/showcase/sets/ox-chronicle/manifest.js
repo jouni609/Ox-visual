@@ -5,7 +5,7 @@ export default {
   name: 'OX CHRONICLE',
   tagline: 'Five epochs in the story of the ox',
   accent: '#a54a32',
-  credit: 'Antigravity',
+  credit: 'Gemini 3.1 Pro',
   designs: [
     {
       id: 'oc-taurus',

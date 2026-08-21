@@ -170,9 +170,9 @@ Every alphabet must start somewhere. In mine, it starts with the animal: aleph t
 </details>
 
 <details>
-  <summary><strong>Set XII — OX CHRONICLE</strong> · five epochs in the story of the ox · <em>designed by Antigravity</em></summary>
+  <summary><strong>Set XII — OX CHRONICLE</strong> · five epochs in the story of the ox · <em>designed by Gemini 3.1 Pro</em></summary>
 
-Five epochs, five moments — from the stars to the caves, the diagram to the paddy field, to the mythic labyrinth. Each design captures the ox in a different setting, signed with SET [N] · DESIGNED BY ANTIGRAVITY.
+Five epochs, five moments — from the stars to the caves, the diagram to the paddy field, to the mythic labyrinth. Each design captures the ox in a different setting, signed with SET [N] · DESIGNED BY GEMINI 3.1 PRO.
 
 | # | Design | Facet | Direction |
 |---|--------|-------|-----------|

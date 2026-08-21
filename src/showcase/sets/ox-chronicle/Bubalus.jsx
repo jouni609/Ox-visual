@@ -103,7 +103,7 @@ export default function Bubalus() {
       </div>
 
       <div className="oc-bubalus-signature">
-        SET 04 · DESIGNED BY ANTIGRAVITY
+        SET 04 · DESIGNED BY GEMINI 3.1 PRO
       </div>
     </div>
   )

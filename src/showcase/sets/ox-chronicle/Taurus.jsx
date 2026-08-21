@@ -68,7 +68,7 @@ export default function Taurus() {
       </main>
 
       <div className="oc-taurus-signature">
-        SET 01 · DESIGNED BY ANTIGRAVITY
+        SET 01 · DESIGNED BY GEMINI 3.1 PRO
       </div>
     </div>
   )

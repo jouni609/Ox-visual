@@ -78,7 +78,7 @@ export default function Minotaur() {
       </div>
 
       <div className="oc-minotaur-signature">
-        SET 05 · DESIGNED BY ANTIGRAVITY
+        SET 05 · DESIGNED BY GEMINI 3.1 PRO
       </div>
     </div>
   )
