@@ -1,0 +1,167 @@
+.th-vespers {
+  --dusk: #241e3a;
+  --violet: #3b3155;
+  --amber: #f2c879;
+  --amberdeep: #e3a05b;
+  --glow: #f6dfa0;
+  --ink: #1c1728;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--dusk);
+  color: var(--glow);
+  font-family: 'Source Serif 4', serif;
+}
+
+.th-vespers ::selection {
+  background: var(--amber);
+  color: var(--ink);
+}
+
+.th-vespers :focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 3px;
+}
+
+.vespers-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  padding: clamp(24px, 4.5vh, 50px) clamp(18px, 4vw, 56px) clamp(18px, 3vh, 34px);
+}
+
+.vespers-kicker {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: clamp(9px, 1.2vw, 11px);
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--amberdeep);
+}
+
+.vespers-title {
+  margin-top: 12px;
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+  font-size: clamp(56px, 9vw, 118px);
+  line-height: 0.92;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--glow);
+}
+
+.vespers-sub {
+  margin-top: 12px;
+  font-style: italic;
+  font-size: clamp(13px, 1.9vw, 17px);
+  color: #cdb98a;
+}
+
+.vespers-folio {
+  flex: none;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: clamp(12px, 1.6vw, 15px);
+  letter-spacing: 0.4em;
+  color: var(--amberdeep);
+  border: 1px solid rgba(227, 160, 91, 0.55);
+  padding: 10px 16px;
+}
+
+.vespers-frieze {
+  position: relative;
+  height: clamp(340px, 58vh, 600px);
+  overflow: hidden;
+}
+
+.vespers-frieze-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vespers-dust {
+  filter: blur(16px);
+}
+
+.vespers-panel {
+  position: relative;
+  background: var(--ink);
+  padding: clamp(36px, 6vh, 66px) clamp(18px, 5vw, 60px) clamp(40px, 6vh, 70px);
+}
+
+.vespers-panel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--violet), var(--amberdeep), var(--violet));
+}
+
+.vespers-verse {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(19px, 2.8vw, 26px);
+  color: var(--amber);
+}
+
+.vespers-verse-en {
+  margin-top: 6px;
+  font-style: italic;
+  font-size: clamp(12px, 1.6vw, 14px);
+  color: #9a8bb8;
+}
+
+.vespers-lede {
+  margin-top: 24px;
+  max-width: 72ch;
+  font-size: clamp(14.5px, 1.9vw, 17px);
+  line-height: 1.75;
+  color: #e6d9c2;
+}
+
+.vespers-colophon {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 420px;
+}
+
+.vespers-colophon-rule {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--amberdeep), transparent);
+}
+
+.vespers-colophon-l1 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--amber);
+}
+
+.vespers-colophon-l2 {
+  font-style: italic;
+  font-size: 12.5px;
+  letter-spacing: 0.14em;
+  color: #9a8bb8;
+}
+
+@media (max-width: 640px) {
+  .vespers-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vespers-frieze {
+    height: clamp(300px, 46vh, 420px);
+  }
+}

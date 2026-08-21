@@ -1,0 +1,374 @@
+.th-matins {
+  --night: #12162c;
+  --deep: #1b2044;
+  --lavender: #8b8fb8;
+  --rose: #c97b63;
+  --gold: #b98a2f;
+  --goldlight: #d9b45c;
+  --parchment: #efe6cf;
+  --ink: #2a2440;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #0e1126 0%, #1b2044 46%, #34315c 72%, #6e4c5e 90%, #a96b57 100%);
+  color: #e9e4f2;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.th-matins ::selection {
+  background: var(--gold);
+  color: var(--night);
+}
+
+.th-matins :focus-visible {
+  outline: 3px solid var(--goldlight);
+  outline-offset: 3px;
+}
+
+.matins-sky {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.matins-star {
+  position: absolute;
+  border-radius: 50%;
+  background: #dfe3f6;
+  animation: matins-twinkle 4.2s ease-in-out infinite;
+}
+
+.matins-venus {
+  position: absolute;
+  left: 69%;
+  top: 11%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff4d6;
+  box-shadow: 0 0 14px 3px rgba(255, 240, 200, 0.75);
+}
+
+.matins-venus::before,
+.matins-venus::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(255, 244, 214, 0.7);
+}
+
+.matins-venus::before {
+  width: 26px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+}
+
+.matins-venus::after {
+  width: 1px;
+  height: 26px;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes matins-twinkle {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+.matins-dawn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 150vw;
+  height: 62vh;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse 52% 68% at 50% 100%,
+    rgba(233, 160, 120, 0.52),
+    rgba(226, 148, 116, 0.2) 45%,
+    transparent 72%
+  );
+  animation: matins-dawn-breathe 12s ease-in-out infinite alternate;
+}
+
+@keyframes matins-dawn-breathe {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 0.95;
+  }
+}
+
+.matins-scene {
+  position: relative;
+  margin-top: 14vh;
+  height: 58vh;
+  min-height: 380px;
+}
+
+.matins-landscape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.matins-mist {
+  position: absolute;
+  left: -15%;
+  width: 130%;
+  height: 84px;
+  filter: blur(14px);
+  border-radius: 50%;
+}
+
+.matins-mist--far {
+  bottom: 22%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(139, 143, 184, 0.14) 22%,
+    rgba(139, 143, 184, 0.2) 50%,
+    rgba(139, 143, 184, 0.14) 78%,
+    transparent
+  );
+  animation: matins-drift 30s ease-in-out infinite alternate;
+}
+
+.matins-mist--near {
+  bottom: 7%;
+  height: 110px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(160, 158, 200, 0.16) 25%,
+    rgba(190, 170, 190, 0.24) 52%,
+    rgba(160, 158, 200, 0.16) 80%,
+    transparent
+  );
+  animation: matins-drift 21s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes matins-drift {
+  from {
+    transform: translateX(-4%);
+  }
+  to {
+    transform: translateX(5%);
+  }
+}
+
+.matins-breath {
+  position: absolute;
+  left: 16%;
+  bottom: 42%;
+}
+
+.matins-puff {
+  position: absolute;
+  width: 28px;
+  height: 19px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(216, 222, 242, 0.5), transparent);
+  filter: blur(3px);
+}
+
+.matins-folio {
+  position: relative;
+  z-index: 3;
+  width: min(620px, 92vw);
+  margin: -70px auto 0;
+  padding: clamp(72px, 9vw, 104px) clamp(24px, 6vw, 62px) clamp(40px, 5vw, 54px);
+  background: linear-gradient(180deg, #f2e9d2 0%, #e9ddbd 100%);
+  color: var(--ink);
+  border-radius: 999px 999px 12px 12px;
+  box-shadow:
+    0 34px 70px rgba(8, 10, 25, 0.6),
+    inset 0 0 0 9px var(--parchment),
+    inset 0 0 0 10.5px rgba(185, 138, 47, 0.55);
+  text-align: center;
+}
+
+.matins-bell {
+  width: clamp(66px, 9vw, 84px);
+  margin: 0 auto 20px;
+}
+
+.matins-bell svg {
+  width: 100%;
+  height: auto;
+}
+
+.matins-kicker {
+  margin-bottom: 20px;
+  font-size: clamp(9.5px, 1.4vw, 11.5px);
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #8a6a1f;
+}
+
+.matins-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: clamp(58px, 10vw, 100px);
+  line-height: 0.95;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+}
+
+.matins-rubric {
+  margin-top: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(15px, 2vw, 18px);
+  color: #9a3b22;
+}
+
+.matins-antiphon {
+  margin-top: 26px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(18px, 2.6vw, 23px);
+  color: #6e5a24;
+}
+
+.matins-antiphon-en {
+  margin-top: 4px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: clamp(12px, 1.6vw, 13.5px);
+  color: #55496b;
+}
+
+.matins-rule {
+  position: relative;
+  width: 190px;
+  height: 1px;
+  margin: 26px auto;
+  background: rgba(185, 138, 47, 0.7);
+}
+
+.matins-rule::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--gold);
+}
+
+.matins-lede {
+  font-family: 'Spectral', serif;
+  font-size: clamp(14px, 1.8vw, 15.5px);
+  line-height: 1.78;
+  color: #3b3352;
+  text-align: left;
+}
+
+.matins-dropcap {
+  float: left;
+  padding: 4px 10px 0 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 0.72;
+  color: var(--gold);
+}
+
+.matins-note {
+  margin-top: 22px;
+  font-size: clamp(9px, 1.3vw, 10.5px);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #7c6f52;
+}
+
+.matins-footer {
+  padding: 52px 16px 64px;
+  text-align: center;
+}
+
+.matins-colophon {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid rgba(185, 138, 47, 0.6);
+  border-radius: 999px;
+  background: rgba(185, 138, 47, 0.09);
+}
+
+.matins-colophon::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 1px solid rgba(185, 138, 47, 0.28);
+  border-radius: 999px;
+}
+
+.matins-colophon-ring {
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  width: 26px;
+  height: 26px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(217, 180, 92, 0.75);
+  border-radius: 50%;
+  background: var(--night);
+}
+
+.matins-colophon-ring::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--goldlight);
+}
+
+.matins-colophon-l1 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--goldlight);
+}
+
+.matins-colophon-l2 {
+  margin-top: 5px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  color: var(--lavender);
+}
+
+@media (max-width: 560px) {
+  .matins-scene {
+    margin-top: 10vh;
+    height: 46vh;
+    min-height: 320px;
+  }
+
+  .matins-folio {
+    margin-top: -52px;
+  }
+
+  .matins-breath {
+    left: 12%;
+    bottom: 46%;
+  }
+}

@@ -199,6 +199,21 @@ The ox as a face put on, not a face looked at — five ceremonial bovine masks f
 
 </details>
 
+<details>
+  <summary><strong>Set XIV — OX HOURS</strong> · one day in the life of an ox · <em>designed by Qwen 3.8 Max</em></summary>
+
+A book of hours for the ox — five canonical offices of one working day, each folio signed in its own native mark (gilded scriptorium colophon, chalk inspection stamp, teal chop, woodcut colophon, night-watch roundel).
+
+| # | Design | Hour | Direction |
+|---|--------|------|-----------|
+| 01 | **Matins** | Before dawn | Illuminated folio under fading stars: the ox rising in the mist, drifting breath, swinging bell roundel, gold-leaf drop cap |
+| 02 | **Terce** | Mid-morning | Straw-paper working almanac: yoked ox at the plough under a turning sun, scrolling furrows, count-up ledger, chalk inspection stamp |
+| 03 | **Sext** | Noon | Blazing flat-colour ford: the ox wading in to drink, expanding ripple rings, mirrored reflection, swaying willow, watchful heron |
+| 04 | **Vespers** | Dusk | Engraved banded-sky frieze: the herd walking itself home through gold dust, long shadows, birds crossing, woodcut colophon |
+| 05 | **Compline** | Night | Minimal nocturne: the sleeping ox breathing slow under a cratered moon, fireflies, silver night-watch roundel |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

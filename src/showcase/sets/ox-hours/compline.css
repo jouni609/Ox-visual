@@ -1,0 +1,172 @@
+.th-compline {
+  --abyss: #0b0f1d;
+  --indigo: #141a2e;
+  --silver: #c9cfe0;
+  --moon: #e9e4d2;
+  --amber: #d9a63c;
+  --faint: #8b93bc;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(120% 90% at 50% 0%, #161c33 0%, var(--abyss) 58%, #070910 100%);
+  color: var(--silver);
+  font-family: 'Figtree', sans-serif;
+}
+
+.th-compline ::selection {
+  background: var(--silver);
+  color: var(--abyss);
+}
+
+.th-compline :focus-visible {
+  outline: 3px solid var(--silver);
+  outline-offset: 3px;
+}
+
+.compline-sky {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.compline-star {
+  position: absolute;
+  border-radius: 50%;
+  background: #dfe4f4;
+  animation: compline-twinkle 5s ease-in-out infinite;
+}
+
+@keyframes compline-twinkle {
+  0%,
+  100% {
+    opacity: 0.18;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.compline-moon {
+  position: absolute;
+  right: 7vw;
+  top: 9vh;
+  width: clamp(110px, 15vw, 190px);
+  height: auto;
+}
+
+.compline-firefly {
+  position: absolute;
+  bottom: 16%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--amber);
+  box-shadow: 0 0 9px 2px rgba(217, 166, 60, 0.55);
+  opacity: 0;
+}
+
+.compline-main {
+  position: relative;
+  z-index: 2;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: clamp(30px, 6vh, 68px) 20px 90px;
+  text-align: center;
+}
+
+.compline-kicker {
+  font-size: clamp(9px, 1.2vw, 10.5px);
+  font-weight: 600;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.compline-title {
+  margin-top: 14px;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(50px, 8.5vw, 100px);
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--moon);
+}
+
+.compline-rubric {
+  margin-top: 14px;
+  font-size: clamp(12px, 1.7vw, 15px);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+}
+
+.compline-scene {
+  position: relative;
+  width: min(780px, 96vw);
+  margin: clamp(18px, 4vh, 40px) auto 0;
+}
+
+.compline-scene-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.compline-breath {
+  position: absolute;
+  left: 32%;
+  top: 64%;
+  width: 26px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(201, 207, 224, 0.35), transparent);
+  filter: blur(3px);
+  opacity: 0;
+}
+
+.compline-words {
+  margin-top: clamp(24px, 5vh, 48px);
+}
+
+.compline-verse {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(19px, 2.7vw, 26px);
+  letter-spacing: 0.05em;
+  color: var(--silver);
+}
+
+.compline-verse-en {
+  margin-top: 8px;
+  font-size: clamp(11.5px, 1.5vw, 13px);
+  font-style: italic;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+.compline-lede {
+  margin: 26px auto 0;
+  max-width: 62ch;
+  font-size: clamp(14px, 1.8vw, 16px);
+  line-height: 1.85;
+  color: #b9c0d6;
+}
+
+.compline-watch {
+  width: clamp(112px, 14vw, 142px);
+  margin: 46px auto 0;
+  color: var(--silver);
+}
+
+.compline-watch svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .compline-moon {
+    right: 4vw;
+    top: 4vh;
+  }
+}

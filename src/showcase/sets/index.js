@@ -12,5 +12,6 @@ import oxSignals from './ox-signals/manifest.js'
 import oxGlyphs from './ox-glyphs/manifest.js'
 import oxChronicle from './ox-chronicle/manifest.js'
 import oxMasque from './ox-masque/manifest.js'
+import oxHours from './ox-hours/manifest.js'
 
-export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium, oxLithica, oxMateria, oxSignals, oxGlyphs, oxChronicle, oxMasque]
+export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium, oxLithica, oxMateria, oxSignals, oxGlyphs, oxChronicle, oxMasque, oxHours]
