@@ -1,0 +1,442 @@
+.th-mist {
+  --snow: #f4efe3;
+  --sky: #d9e3ee;
+  --stone: #5d6b7e;
+  --night: #2b3a6b;
+  --saffron: #e89b2a;
+  --cinnabar: #c2412a;
+  --jade: #1f6e5c;
+  --ink: #2b2418;
+  --hair: #1f1a12;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--snow);
+  color: var(--ink);
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.th-mist ::selection {
+  background: var(--saffron);
+  color: var(--snow);
+}
+
+.th-mist :focus-visible {
+  outline: 3px solid var(--cinnabar);
+  outline-offset: 3px;
+}
+
+.mist-flags-wrap {
+  border-bottom: 2px solid var(--ink);
+  background: var(--snow);
+}
+
+.mist-flags {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 130px;
+}
+
+.mist-flag {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: mist-flag-sway 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.mist-flag-1 { animation-delay: -0.4s; animation-duration: 5.4s; }
+.mist-flag-2 { animation-delay: -0.9s; animation-duration: 6.8s; }
+.mist-flag-3 { animation-delay: -1.3s; animation-duration: 5.9s; }
+.mist-flag-4 { animation-delay: -1.7s; animation-duration: 7.2s; }
+
+@keyframes mist-flag-sway {
+  0%, 100% { transform: rotate(-2deg) skewY(-1deg); }
+  50% { transform: rotate(2deg) skewY(1deg); }
+}
+
+.mist-hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 80px) clamp(20px, 4vw, 56px) clamp(28px, 4vw, 48px);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+
+.mist-kicker {
+  margin: 0 0 18px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.34em;
+  color: var(--cinnabar);
+  text-transform: uppercase;
+}
+
+.mist-headline {
+  margin: 0 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  line-height: 0.92;
+}
+
+.mist-tibetan-mist {
+  font-family: 'Noto Serif Tibetan', 'Shippori Mincho', serif;
+  font-weight: 400;
+  font-size: clamp(72px, 11vw, 132px);
+  color: var(--night);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.mist-headline-en {
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 700;
+  font-size: clamp(56px, 8vw, 100px);
+  letter-spacing: 0.18em;
+  color: var(--ink);
+  text-indent: 0.2em;
+}
+
+.mist-subline {
+  margin: 0 0 18px;
+  font-family: 'Cormorant Garamond', 'Shippori Mincho', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(18px, 2.4vw, 24px);
+  color: var(--jade);
+}
+
+.mist-lede {
+  margin: 0;
+  max-width: 56ch;
+  font-size: clamp(15px, 1.85vw, 17px);
+  line-height: 1.7;
+  color: rgba(43, 36, 24, 0.85);
+}
+
+.mist-hero-art {
+  background: var(--snow);
+  border: 2px solid var(--ink);
+  box-shadow: 10px 10px 0 rgba(31, 26, 18, 0.18);
+  overflow: hidden;
+}
+
+.mist-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mist-mid-a,
+.mist-mid-b,
+.mist-far-a {
+  animation: mist-pan 22s ease-in-out infinite alternate;
+  transform-box: view-box;
+}
+
+.mist-mid-b {
+  animation-duration: 30s;
+}
+
+@keyframes mist-pan {
+  0% { transform: translateX(-6px); }
+  100% { transform: translateX(6px); }
+}
+
+.mist-mistdrift ellipse {
+  animation: mist-drift 14s ease-in-out infinite alternate;
+  transform-box: view-box;
+}
+
+.mist-mistdrift ellipse:nth-child(2) { animation-duration: 18s; animation-delay: -2s; }
+.mist-mistdrift ellipse:nth-child(3) { animation-duration: 16s; animation-delay: -5s; }
+.mist-mistdrift ellipse:nth-child(4) { animation-duration: 20s; animation-delay: -3s; }
+
+@keyframes mist-drift {
+  0% { transform: translateX(-12px); opacity: 0.35; }
+  100% { transform: translateX(14px); opacity: 0.55; }
+}
+
+.mist-strip {
+  max-width: 1080px;
+  margin: clamp(40px, 6vw, 80px) auto 0;
+  padding: 0 clamp(20px, 4vw, 48px);
+}
+
+.mist-strip-rule {
+  height: 2px;
+  background: var(--ink);
+}
+
+.mist-strip-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 4vw, 56px);
+  padding: clamp(22px, 3vw, 36px) 0;
+}
+
+.mist-stat {
+  text-align: center;
+  border-left: 1px solid rgba(43, 36, 24, 0.25);
+  padding-left: clamp(8px, 2vw, 24px);
+}
+
+.mist-stat:first-child {
+  border-left: none;
+}
+
+.mist-num {
+  display: block;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 700;
+  font-size: clamp(48px, 6vw, 84px);
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--cinnabar);
+  font-variant-numeric: tabular-nums;
+}
+
+.mist-affix {
+  font-size: 0.42em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  vertical-align: top;
+  margin: 0 4px;
+}
+
+.mist-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(43, 36, 24, 0.75);
+}
+
+.mist-quote {
+  max-width: 720px;
+  margin: clamp(48px, 7vw, 88px) auto 0;
+  padding: 0 clamp(20px, 4vw, 48px);
+  text-align: center;
+  position: relative;
+}
+
+.mist-quote::before,
+.mist-quote::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--saffron);
+  margin: 0 auto 22px;
+}
+
+.mist-quote::after {
+  margin: 22px auto 0;
+}
+
+.mist-quote-tib {
+  margin: 0 0 14px;
+  font-family: 'Noto Serif Tibetan', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.4vw, 38px);
+  color: var(--night);
+  line-height: 1.3;
+}
+
+.mist-quote p:nth-of-type(1) {
+  margin: 0 0 18px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(22px, 3vw, 32px);
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.mist-quote cite {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(43, 36, 24, 0.7);
+}
+
+.mist-monastic {
+  max-width: 920px;
+  margin: clamp(64px, 9vw, 120px) auto 0;
+  padding: 0 clamp(20px, 4vw, 48px);
+}
+
+.mist-monastic-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--ink);
+  color: var(--snow);
+  padding: 14px 22px;
+  font-family: 'Noto Serif Tibetan', serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+.mist-monastic-body {
+  border: 2px solid var(--ink);
+  border-top: none;
+  background: var(--snow);
+}
+
+.mist-monastic-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  padding: 14px 22px;
+  border-bottom: 1px solid rgba(43, 36, 24, 0.18);
+  align-items: center;
+}
+
+.mist-monastic-row-last {
+  border-bottom: none;
+}
+
+.mist-monastic-key {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--cinnabar);
+}
+
+.mist-monastic-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(16px, 1.8vw, 20px);
+  color: var(--ink);
+}
+
+.mist-foot {
+  margin-top: clamp(64px, 9vw, 120px);
+  background: var(--night);
+  color: var(--snow);
+  padding: clamp(28px, 4vw, 48px) clamp(20px, 4vw, 56px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(20px, 4vw, 40px);
+  flex-wrap: wrap;
+  border-top: 6px solid var(--saffron);
+}
+
+.mist-tag-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.mist-tibetan-tag {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 22px;
+  background: var(--snow);
+  color: var(--ink);
+  border: 2px dashed var(--saffron);
+}
+
+.mist-tibetan-glyph {
+  font-family: 'Noto Serif Tibetan', serif;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--cinnabar);
+  letter-spacing: 0.05em;
+}
+
+.mist-tibetan-line {
+  font-family: 'Noto Serif Tibetan', serif;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.mist-signature {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: right;
+}
+
+.mist-signature-mark {
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.32em;
+}
+
+.mist-signature-sub {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--saffron);
+}
+
+@media (max-width: 980px) {
+  .mist-hero {
+    grid-template-columns: 1fr;
+  }
+  .mist-monastic-row {
+    grid-template-columns: 130px 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .mist-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .mist-stat {
+    border-left: none;
+    border-top: 1px solid rgba(43, 36, 24, 0.18);
+    padding-left: 0;
+    padding-top: 18px;
+  }
+  .mist-stat:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+  .mist-monastic-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .mist-foot {
+    justify-content: center;
+    text-align: center;
+  }
+  .mist-signature {
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .mist-hero-art {
+    box-shadow: 6px 6px 0 rgba(31, 26, 18, 0.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mist-flag,
+  .mist-mid-a,
+  .mist-mid-b,
+  .mist-far-a,
+  .mist-mistdrift ellipse {
+    animation: none;
+  }
+}

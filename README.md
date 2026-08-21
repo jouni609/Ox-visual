@@ -49,6 +49,21 @@ Five labours, five economies — the ox as field tool, road engine, furnace lung
 
 </details>
 
+<details>
+<summary><strong>Set IV — OX BIOMES</strong> · five climates, five breeds · <em>designed by moor-runner</em></summary>
+
+Five worlds the ox has learned to live in — high cold, wet warm, dry flat, frozen dark, sun-bleached dry — each one a different breed, a different palette, a different motion. Signatures are carried in the design's own native mark (prayer-flag tag, watercolour chop, ranger badge, ice seal, mudcloth stamp).
+
+| # | Design | Biome | Direction |
+|---|--------|-------|-----------|
+| 01 | **Mist** | Tibetan Highland | Prayer-flag banner and Noto Tibetan script above a mist-panned plateau; long-hair yak silhouette, count-up altitude facts, ledger of one herd |
+| 02 | **Monsoon** | Luzon Rice Paddy | Watercolour field study with taped-down plates: monsoon rain over a puddled paddy, carabao half-sunk, dragonfly loops, two-season journal |
+| 03 | **Prairie** | Bison Range | Range survey sheet in earth and ink: contour-band horizon, soil strata cutaway, four-cell field-data grid, leather ranger badge stamp |
+| 04 | **Tundra** | Arctic Muskox | Indigo polar night with aurora bands and star-twinkle; horn-boss muskox as crystalline form, qiviut weave card, defence-ring diagram, ice-seal stamp |
+| 05 | **Savanna** | Horn of Africa | Woven-textile poster in mudcloth geometry: rotating sun rays, hump-shouldered zebu, three-breed panel, indigo-and-earth woven panel |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
