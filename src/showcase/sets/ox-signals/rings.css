@@ -1,0 +1,43 @@
+.th-orn {
+  --orn-paper: #F5EEDC;
+  --orn-blue: #D5E1F1;
+  --orn-ink: #172744;
+  --orn-coral: #EC6A51;
+  --orn-muted: #4C6280;
+  --orn-line: #A6BBD6;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--orn-blue);
+  color: var(--orn-ink);
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.th-orn ::selection { background: var(--orn-coral); color: var(--orn-paper); }
+.th-orn :focus-visible { outline: 3px solid var(--orn-coral); outline-offset: 4px; }
+.orn-header, .orn-footer { display: flex; justify-content: space-between; align-items: center; gap: 16px 28px; flex-wrap: wrap; padding: 16px clamp(18px, 4vw, 64px); color: var(--orn-muted); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.orn-header { border-bottom: 1px solid var(--orn-line); }
+.orn-title { color: var(--orn-ink); }.orn-year { color: var(--orn-coral); }
+.orn-hero { display: grid; grid-template-columns: minmax(240px, .66fr) minmax(430px, 1.34fr); gap: clamp(28px, 6vw, 104px); align-items: center; max-width: 1440px; margin: 0 auto; padding: clamp(42px, 7vw, 94px) clamp(18px, 4vw, 64px) clamp(54px, 8vw, 110px); }
+.orn-kicker { margin: 0 0 24px; color: var(--orn-coral); font-size: 10px; font-weight: 800; letter-spacing: .18em; }
+.orn-copy h1 { margin: 0; font-family: 'Bodoni Moda', serif; font-size: clamp(74px, 11vw, 160px); font-style: italic; font-weight: 900; letter-spacing: -.09em; line-height: .76; }
+.orn-lede { max-width: 39ch; margin: 30px 0 0; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.7; }
+.orn-note { display: flex; gap: 12px; max-width: 360px; margin-top: 34px; padding-top: 15px; border-top: 1px solid var(--orn-ink); }
+.orn-note-mark { color: var(--orn-coral); font-size: 23px; line-height: 1; }.orn-note p { margin: 0; font-family: 'Bodoni Moda', serif; font-size: 19px; font-style: italic; line-height: 1.2; }
+.orn-figure-wrap { position: relative; min-width: 0; padding: clamp(10px, 1.7vw, 20px); background: var(--orn-paper); border: 1px solid var(--orn-ink); box-shadow: 15px 15px 0 var(--orn-coral); }
+.orn-study { display: block; width: 100%; height: auto; }
+.orn-orbit { transform-origin: 380px 350px; animation: orn-rotate 35s linear infinite; }.orn-orbit-b { animation-direction: reverse; animation-duration: 27s; }
+@keyframes orn-rotate { to { transform: rotate(360deg); } }
+.orn-head { transform-origin: 380px 350px; animation: orn-breathe 4.3s ease-in-out infinite; }
+@keyframes orn-breathe { 0%, 100% { transform: translate(210px, 160px) scaleY(1); } 50% { transform: translate(210px, 157px) scaleY(1.01); } }
+.orn-figure-caption { display: block; padding: 11px 4px 0; border-top: 1px solid var(--orn-line); color: var(--orn-muted); font-size: 10px; letter-spacing: .05em; }
+.orn-timeline { max-width: 1440px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 64px) clamp(58px, 8vw, 112px); }
+.orn-timeline-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 13px 0; border-top: 1px solid var(--orn-ink); border-bottom: 1px solid var(--orn-line); }.orn-timeline-heading span { color: var(--orn-coral); font-size: 10px; font-weight: 800; letter-spacing: .17em; }.orn-timeline-heading strong { font-family: 'Bodoni Moda', serif; font-size: 24px; font-style: italic; font-weight: 600; }
+.orn-years { display: grid; grid-template-columns: repeat(4, 1fr); }
+.orn-year-card { position: relative; min-height: 190px; padding: 18px 18px 22px; border-right: 1px solid var(--orn-line); }.orn-year-card:first-child { border-left: 1px solid var(--orn-line); }
+.orn-year-number { color: var(--orn-coral); font-family: 'Bodoni Moda', serif; font-size: 36px; font-style: italic; font-weight: 700; line-height: 1; }.orn-year-card h2 { margin: 30px 0 0; font-family: 'Bodoni Moda', serif; font-size: 25px; font-weight: 700; line-height: 1; }.orn-year-card p { max-width: 22ch; margin: 10px 0 0; color: var(--orn-muted); font-size: 13px; line-height: 1.5; }.orn-year-card i { position: absolute; right: 18px; bottom: 20px; width: 9px; height: 9px; border: 2px solid var(--orn-coral); border-radius: 50%; }
+.orn-footer { border-top: 1px solid var(--orn-ink); }.orn-patent { padding: 7px 10px; border: 1px solid var(--orn-ink); color: var(--orn-ink); }.orn-signature { padding: 6px 12px; border: 1px solid var(--orn-coral); color: var(--orn-coral); font-family: 'Bodoni Moda', serif; font-size: 16px; font-style: italic; }
+@media (max-width: 900px) { .orn-hero { grid-template-columns: 1fr; }.orn-figure-wrap { max-width: 720px; margin: 0 auto; }.orn-years { grid-template-columns: repeat(2, 1fr); }.orn-year-card { border-bottom: 1px solid var(--orn-line); }.orn-year-card:nth-child(3) { border-left: 1px solid var(--orn-line); } }
+@media (max-width: 520px) { .orn-hero { padding-top: 44px; }.orn-copy h1 { font-size: clamp(78px, 23vw, 140px); }.orn-figure-wrap { box-shadow: 8px 8px 0 var(--orn-coral); }.orn-timeline-heading { align-items: flex-start; flex-direction: column; gap: 5px; }.orn-years { grid-template-columns: 1fr; }.orn-year-card, .orn-year-card:nth-child(3) { border-left: 1px solid var(--orn-line); }.orn-footer { align-items: flex-start; flex-direction: column; } }
+@media (prefers-reduced-motion: reduce) { .orn-orbit, .orn-head { animation: none; } }

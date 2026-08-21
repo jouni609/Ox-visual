@@ -139,6 +139,21 @@ Five workshops, five yields — the ox as living quarry: hide, horn, bone, milk,
 
 </details>
 
+<details>
+<summary><strong>Set X / OX SIGNALS</strong> · five systems that keep an ox alive · <em>designed by GTP 5.6 Luna</em></summary>
+
+Five living systems, five visual instruments. The ox is in motion, in contact with its herd, turning grass into energy, carrying time in its horn, and finding room to return. Each page carries its signature as a calibration mark, woven label, lab sticker, patent label, or field letter.
+
+| # | Design | System | Direction |
+|---|--------|--------|-----------|
+| 01 | **Stride** | Locomotion | Kinetic biomechanics plate: cobalt working ox, annotated center of mass, three-phase footfall readout |
+| 02 | **Hush** | Herd communication | Lilac listening map: frontal ox in a low-frequency field, four listeners, distance-based call log |
+| 03 | **Ferment** | Digestion | Blue-violet bioprocess instrument: rumen cutaway with moving microbial bubbles, four-chamber process cards |
+| 04 | **Rings** | Growth | Porcelain-and-coral horn study: frontal ox, orbiting growth rings, four seasonal readings in keratin |
+| 05 | **Return** | Rewilding | Green field letter: aurochs silhouette, species-memory archive, corridor notes for a wild herd |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
