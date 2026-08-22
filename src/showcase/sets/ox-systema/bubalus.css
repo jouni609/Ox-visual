@@ -1,0 +1,204 @@
+.th-ox-systema-bub {
+  --sys-bub-bg: #0c2b31;
+  --sys-bub-deep: #081e23;
+  --sys-bub-moon: #e9e4c8;
+  --sys-bub-glow: #7fd4c1;
+  --sys-bub-ink: #dceee9;
+}
+
+.ox-systema-bub {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, var(--sys-bub-bg) 0%, var(--sys-bub-deep) 100%);
+  color: var(--sys-bub-ink);
+  font-family: 'Figtree', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 4rem);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.ox-systema-bub ::selection {
+  background: var(--sys-bub-glow);
+  color: var(--sys-bub-deep);
+}
+
+.ox-systema-bub-rain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ox-systema-bub-drop {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 64px;
+  background: linear-gradient(180deg, transparent, rgba(127, 212, 193, 0.35));
+}
+
+.ox-systema-bub-head {
+  position: relative;
+  z-index: 2;
+}
+
+.ox-systema-bub-kicker {
+  margin: 0 0 1rem;
+  font-size: clamp(0.7rem, 1.4vw, 0.85rem);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sys-bub-glow);
+}
+
+.ox-systema-bub-title {
+  margin: 0;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+}
+
+.ox-systema-bub-lede {
+  margin: 1.4rem 0 0;
+  max-width: 48ch;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  color: rgba(220, 238, 233, 0.85);
+}
+
+.ox-systema-bub-facts {
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.ox-systema-bub-facts li {
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  color: rgba(220, 238, 233, 0.75);
+}
+
+.ox-systema-bub-facts li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--sys-bub-glow);
+}
+
+.ox-systema-bub-figure {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.ox-systema-bub-moon {
+  position: absolute;
+  top: -4%;
+  right: 6%;
+  width: clamp(80px, 14vw, 150px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--sys-bub-moon);
+  box-shadow: 0 0 70px 18px rgba(233, 228, 200, 0.25);
+}
+
+.ox-systema-bub-svg {
+  width: min(100%, 500px);
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.ox-systema-bub-body {
+  fill: #10262b;
+  stroke: rgba(127, 212, 193, 0.4);
+  stroke-width: 2;
+}
+
+.ox-systema-bub-horn {
+  fill: var(--sys-bub-moon);
+  opacity: 0.9;
+}
+
+.ox-systema-bub-eye {
+  fill: var(--sys-bub-glow);
+}
+
+.ox-systema-bub-line {
+  stroke: rgba(127, 212, 193, 0.5);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.ox-systema-bub-water-fill {
+  fill: rgba(8, 30, 35, 0.85);
+}
+
+.ox-systema-bub-ripple {
+  fill: none;
+  stroke: var(--sys-bub-glow);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.ox-systema-bub-caption {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: clamp(0.62rem, 1.3vw, 0.75rem);
+  letter-spacing: 0.32em;
+  color: rgba(220, 238, 233, 0.6);
+}
+
+.ox-systema-bub-sign {
+  position: absolute;
+  bottom: clamp(1.2rem, 3vw, 2.2rem);
+  left: clamp(1.5rem, 4vw, 4rem);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 600;
+  font-size: clamp(0.6rem, 1.2vw, 0.72rem);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--sys-bub-glow);
+  border: 1px solid rgba(127, 212, 193, 0.45);
+  padding: 0.7rem 1.2rem;
+  background: rgba(8, 30, 35, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.ox-systema-bub-sign-bell {
+  width: 14px;
+  height: 14px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  border: 2px solid var(--sys-bub-glow);
+  display: inline-block;
+}
+
+@media (max-width: 860px) {
+  .ox-systema-bub {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-systema-bub-drop,
+  .ox-systema-bub-ripple {
+    display: none;
+  }
+}

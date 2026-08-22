@@ -1,0 +1,218 @@
+.th-ox-systema-ind {
+  --sys-ind-bg: #f5e9d0;
+  --sys-ind-red: #d64000;
+  --sys-ind-teal: #0f6b6b;
+  --sys-ind-ink: #26150c;
+}
+
+.ox-systema-ind {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--sys-ind-bg);
+  color: var(--sys-ind-ink);
+  font-family: 'Mukta', sans-serif;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 4rem);
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.ox-systema-ind ::selection {
+  background: var(--sys-ind-red);
+  color: var(--sys-ind-bg);
+}
+
+.ox-systema-ind-sun {
+  position: absolute;
+  top: -12vh;
+  right: -10vw;
+  width: 46vw;
+  height: 46vw;
+  max-width: 560px;
+  max-height: 560px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(214, 64, 0, 0.35), rgba(214, 64, 0, 0.08) 60%, transparent 72%);
+  z-index: 0;
+}
+
+.ox-systema-ind-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(90deg, transparent 0 39px, rgba(15, 107, 107, 0.12) 39px 40px);
+  mask-image: linear-gradient(180deg, transparent 30%, black 100%);
+  z-index: 0;
+}
+
+.ox-systema-ind-head {
+  position: relative;
+  z-index: 2;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  max-width: 60ch;
+}
+
+.ox-systema-ind-kicker {
+  display: inline-block;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  font-size: clamp(0.7rem, 1.4vw, 0.85rem);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--sys-ind-bg);
+  background: var(--sys-ind-teal);
+  padding: 0.4rem 0.9rem;
+  transform: rotate(-1.5deg);
+}
+
+.ox-systema-ind-title {
+  margin: 0;
+  font-family: 'Rozha One', serif;
+  font-size: clamp(3.4rem, 11vw, 7.5rem);
+  line-height: 0.95;
+  display: flex;
+  align-items: baseline;
+  gap: 0.35em;
+  flex-wrap: wrap;
+}
+
+.ox-systema-ind-title-hi {
+  font-size: 0.5em;
+  color: var(--sys-ind-red);
+}
+
+.ox-systema-ind-lede {
+  margin: 1.2rem 0 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.55;
+  max-width: 52ch;
+}
+
+.ox-systema-ind-figure {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.ox-systema-ind-svg {
+  width: min(100%, 470px);
+  height: auto;
+  display: block;
+}
+
+.ox-systema-ind-shadow {
+  fill: rgba(38, 21, 12, 0.18);
+}
+
+.ox-systema-ind-body {
+  fill: var(--sys-ind-ink);
+}
+
+.ox-systema-ind-hump {
+  fill: var(--sys-ind-red);
+}
+
+.ox-systema-ind-dewlap {
+  fill: var(--sys-ind-teal);
+}
+
+.ox-systema-ind-horn {
+  fill: #f5e9d0;
+  stroke: var(--sys-ind-ink);
+  stroke-width: 4;
+}
+
+.ox-systema-ind-eye {
+  fill: var(--sys-ind-bg);
+}
+
+.ox-systema-ind-mark {
+  stroke: var(--sys-ind-red);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.ox-systema-ind-paint {
+  fill: rgba(245, 233, 208, 0.85);
+  transform-origin: 200px 170px;
+}
+
+.ox-systema-ind-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.ox-systema-ind-stats div {
+  background: var(--sys-ind-bg);
+  border: 2.5px solid var(--sys-ind-ink);
+  padding: 0.7rem 0.5rem;
+  text-align: center;
+  box-shadow: 5px 5px 0 var(--sys-ind-red);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ox-systema-ind-stats strong {
+  font-family: 'Rozha One', serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+}
+
+.ox-systema-ind-stats span {
+  font-size: clamp(0.65rem, 1.4vw, 0.8rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(38, 21, 12, 0.7);
+}
+
+.ox-systema-ind-ticker {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  border-top: 3px solid var(--sys-ind-ink);
+  border-bottom: 3px solid var(--sys-ind-ink);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.4rem 0;
+  z-index: 2;
+}
+
+.ox-systema-ind-ticker-track {
+  display: inline-block;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  letter-spacing: 0.14em;
+  color: var(--sys-ind-teal);
+}
+
+.ox-systema-ind-seal {
+  position: absolute;
+  top: clamp(4.5rem, 9vw, 7rem);
+  right: clamp(1rem, 4vw, 3.5rem);
+  z-index: 3;
+  font-weight: 700;
+  font-size: clamp(0.58rem, 1.2vw, 0.7rem);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--sys-ind-bg);
+  background: var(--sys-ind-red);
+  border: 2px solid var(--sys-ind-ink);
+  padding: 0.8rem 1.1rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 var(--sys-ind-ink);
+}
+
+@media (max-width: 860px) {
+  .ox-systema-ind {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-systema-ind-seal {
+    top: auto;
+    bottom: clamp(4rem, 10vw, 6rem);
+  }
+}

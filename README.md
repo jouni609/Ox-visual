@@ -214,6 +214,21 @@ A book of hours for the ox — five canonical offices of one working day, each f
 
 </details>
 
+<details>
+  <summary><strong>Set XV — OX SYSTEMA</strong> · one family, five branches of the bovine tree · <em>designed by GLM 5.3</em></summary>
+
+A field taxonomy of the bovine family — five branches from the extinct aurochs to the plains bison, each design a different scientific-illustration vernacular and each signed in its native mark (ochre stamp, engraver's colophon, market brand, river bell, brass ear-tag).
+
+| # | Design | Branch | Direction |
+|---|--------|--------|-----------|
+| 01 | **Primigenius** | Aurochs (extinct) | Cave-wall vernacular: torch-lit limestone, ochre aurochs drawn stroke by stroke, blown hand stencils, timeline of strata |
+| 02 | **Taurus** | Domestic ox | 19th-century naturalist plate: double-ruled frame, hatched specimen with animated engraving lines, Latin captions, measurement ledger |
+| 03 | **Indicus** | Zebu | Cattle-market poster: vermilion and teal flat shapes, giant shoulder hump and dewlap, breed ticker, hard-shadow stat cards |
+| 04 | **Bubalus** | Water buffalo | Monsoon-river nocturne: deep teal night, falling rain, buffalo silhouette bobbing in animated ripples under a low moon |
+| 05 | **Bison** | Plains bison | Prairie-winter broadside: snowfield white and brown, humped silhouette with steaming breath, drifting snow lines, brass ear-tag |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
