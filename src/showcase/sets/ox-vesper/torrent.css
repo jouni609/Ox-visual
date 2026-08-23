@@ -1,0 +1,402 @@
+.th-ox-vesper.ox-vesper-torrent {
+  --deep-water: #0D3B3E;
+  --monsoon: #1A6B5A;
+  --surface: #87CEBC;
+  --mist: #E8F0ED;
+  --buffalo-dark: #3A3A3A;
+  --buffalo-highlight: #646E6C;
+  --buffalo-wet: #9DB5AF;
+  --sand-silt: #072023;
+  --card-bg: rgba(13, 59, 62, 0.78);
+  --card-border: rgba(135, 206, 188, 0.28);
+  --accent-foam: #C8EAE2;
+  --text-muted: #A3C5BF;
+  --font-display: 'Rozha One', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  background: linear-gradient(180deg, #E8F0ED 0%, #B2D8CF 18%, #1A6B5A 38%, #0D3B3E 62%, #072023 100%);
+  color: var(--mist);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.th-ox-vesper.ox-vesper-torrent ::selection {
+  background-color: var(--surface);
+  color: var(--deep-water);
+}
+
+.th-ox-vesper.ox-vesper-torrent *:focus-visible {
+  outline: 2px solid var(--surface);
+  outline-offset: 3px;
+}
+
+.ox-vesper-torrent-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.ox-vesper-torrent-rain-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.ox-vesper-torrent-rain-streak {
+  position: absolute;
+  width: 1.5px;
+  background: linear-gradient(180deg, transparent, rgba(232, 240, 237, 0.6), transparent);
+  animation: ox-vesper-torrent-rain-fall 1.4s linear infinite;
+}
+
+@keyframes ox-vesper-torrent-rain-fall {
+  0% {
+    transform: translateY(-120px) skewX(-7deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) skewX(-7deg);
+    opacity: 0;
+  }
+}
+
+.ox-vesper-torrent-mist-zone {
+  position: relative;
+  z-index: 3;
+  padding-top: clamp(2.5rem, 6vw, 4.5rem);
+  padding-bottom: clamp(1rem, 3vw, 2.5rem);
+  text-align: center;
+  color: var(--deep-water);
+}
+
+.ox-vesper-torrent-badge-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.35rem 1rem;
+  background: rgba(13, 59, 62, 0.08);
+  border: 1px solid rgba(26, 107, 90, 0.25);
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+
+.ox-vesper-torrent-kicker {
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 1.1vw, 0.875rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--monsoon);
+}
+
+.ox-vesper-torrent-badge-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--monsoon);
+}
+
+.ox-vesper-torrent-badge-meta {
+  font-size: clamp(0.7rem, 0.95vw, 0.8rem);
+  letter-spacing: 0.12em;
+  color: var(--deep-water);
+  opacity: 0.85;
+}
+
+.ox-vesper-torrent-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3.8rem, 11vw, 8.5rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  color: var(--deep-water);
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  text-shadow: 0 2px 24px rgba(13, 59, 62, 0.12);
+}
+
+.ox-vesper-torrent-subhead {
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--monsoon);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.ox-vesper-torrent-hero-stage {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.ox-vesper-torrent-svg-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: block;
+}
+
+.ox-vesper-torrent-buffalo-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 12px 30px rgba(7, 32, 35, 0.45));
+}
+
+.ox-vesper-torrent-caption-wrap {
+  max-width: 860px;
+  margin: -1rem auto 3rem auto;
+  padding: 1rem 1.5rem;
+  background: rgba(13, 59, 62, 0.65);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 4;
+}
+
+.ox-vesper-torrent-caption {
+  font-size: clamp(0.85rem, 1.1vw, 0.95rem);
+  color: var(--mist);
+  margin: 0;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.ox-vesper-torrent-caption strong {
+  color: var(--surface);
+  font-weight: 700;
+}
+
+.ox-vesper-torrent-submerged-zone {
+  position: relative;
+  z-index: 4;
+  padding-top: clamp(2rem, 5vw, 4rem);
+  padding-bottom: clamp(3rem, 6vw, 6rem);
+}
+
+.ox-vesper-torrent-lede-block {
+  max-width: 880px;
+  margin: 0 auto clamp(3rem, 6vw, 5rem) auto;
+  text-align: center;
+}
+
+.ox-vesper-torrent-lede-text {
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--mist);
+  margin-bottom: 1.5rem;
+}
+
+.ox-vesper-torrent-lede-sub {
+  font-size: clamp(0.95rem, 1.25vw, 1.125rem);
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.ox-vesper-torrent-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: clamp(3.5rem, 7vw, 6rem);
+}
+
+.ox-vesper-torrent-metric-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.ox-vesper-torrent-metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--monsoon), var(--surface));
+}
+
+.ox-vesper-torrent-metric-tag {
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--surface);
+  margin-bottom: 0.75rem;
+}
+
+.ox-vesper-torrent-metric-value {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  line-height: 1;
+  color: var(--mist);
+  margin-bottom: 0.5rem;
+}
+
+.ox-vesper-torrent-metric-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-foam);
+  margin-bottom: 0.75rem;
+}
+
+.ox-vesper-torrent-metric-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.ox-vesper-torrent-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: clamp(3.5rem, 7vw, 6rem);
+}
+
+.ox-vesper-torrent-story-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  backdrop-filter: blur(12px);
+}
+
+.ox-vesper-torrent-story-num {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--surface);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.ox-vesper-torrent-story-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--mist);
+  margin: 0 0 1.25rem 0;
+}
+
+.ox-vesper-torrent-story-body {
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0 0 1rem 0;
+}
+
+.ox-vesper-torrent-story-body:last-child {
+  margin-bottom: 0;
+}
+
+.ox-vesper-torrent-quote-box {
+  max-width: 920px;
+  margin: 0 auto clamp(3.5rem, 7vw, 6rem) auto;
+  padding: clamp(2rem, 4vw, 3rem);
+  border-left: 4px solid var(--surface);
+  background: rgba(26, 107, 90, 0.2);
+  border-radius: 0 12px 12px 0;
+}
+
+.ox-vesper-torrent-quote-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.45;
+  color: var(--mist);
+  margin: 0 0 1.25rem 0;
+}
+
+.ox-vesper-torrent-quote-cite {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--surface);
+  font-style: normal;
+  display: block;
+}
+
+.ox-vesper-torrent-signature-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ox-vesper-torrent-stone {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+}
+
+.ox-vesper-torrent-stone-text {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+@media (max-width: 960px) {
+  .ox-vesper-torrent-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .ox-vesper-torrent-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ox-vesper-torrent-container {
+    padding: 0 1rem;
+  }
+
+  .ox-vesper-torrent-badge-row {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .ox-vesper-torrent-badge-dot {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-vesper-torrent-rain-streak {
+    animation: none !important;
+    opacity: 0.4;
+  }
+}

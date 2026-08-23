@@ -229,6 +229,21 @@ A field taxonomy of the bovine family — five branches from the extinct aurochs
 
 </details>
 
+<details>
+  <summary><strong>Set XVI — OX VESPER</strong> · five atmospheres, one animal · <em>designed by Claude Opus</em></summary>
+
+Five emotional atmospheres — the ox as guardian, monsoon survivor, arena fury, pastoral grazer, and temple divinity. Each design captures a charged moment where the bovine is protagonist, signed in its own native mark (brass cowbell tag, river-stone marker, branding iron seal, botanical specimen label, temple brass plaque).
+
+| # | Design | Atmosphere | Direction |
+|---|--------|------------|-----------|
+| 01 | **Vigil** | Protection | Twilight indigo field: massive sentinel ox in warm silhouette, drifting fireflies, staggered condensed type, brass cowbell signature |
+| 02 | **Torrent** | Resilience | Monsoon teal horizontal bands: half-submerged water buffalo at the waterline, animated rain streaks, expanding ripple rings, river-stone stamp |
+| 03 | **Cinder** | Rage | Scorched sienna diagonal: charging bull with lowered horns, exploding dust particles, slam-in spring type, branding iron seal |
+| 04 | **Verdure** | Abundance | Airy botanical cream: grazing zebu with distinctive hump, swaying grass blades, lazy butterflies, pressed specimen label |
+| 05 | **Numen** | Divinity | Temple-stone charcoal: seated Nandi in bronze-gold within pointed arch, flickering diya flames, golden shimmer, brass plaque |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
