@@ -1,0 +1,221 @@
+.th-ox-arena {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ox-arena-rodeo {
+  --kraft: #e7d3a6;
+  --cream: #f4ebd7;
+  --ink: #211c18;
+  --barn: #a93226;
+  --sun: #c2532a;
+  background: var(--kraft);
+  color: var(--ink);
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5;
+  padding: clamp(18px, 3vw, 34px) clamp(16px, 4vw, 44px) 0;
+}
+
+.ox-arena-rodeo ::selection {
+  background: var(--barn);
+  color: var(--cream);
+}
+
+.ox-arena-rodeo :focus-visible {
+  outline: 3px solid var(--barn);
+  outline-offset: 3px;
+}
+
+.ox-arena-rodeo-topbar {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  border-top: 4px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding: 10px 4px;
+}
+
+.ox-arena-rodeo-top-left,
+.ox-arena-rodeo-top-right {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(13px, 1.9vw, 19px);
+  letter-spacing: 0.22em;
+}
+
+.ox-arena-rodeo-top-right {
+  color: var(--barn);
+}
+
+.ox-arena-rodeo-h1 {
+  margin: clamp(26px, 4.5vw, 48px) auto 0;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+.ox-arena-rodeo-line {
+  font-size: clamp(72px, 16.5vw, 210px);
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-shadow: 7px 7px 0 var(--barn), 14px 14px 0 rgba(33, 28, 24, 0.14);
+}
+
+.ox-arena-rodeo-sub {
+  margin: clamp(18px, 3vw, 28px) auto 0;
+  max-width: 1080px;
+  text-align: center;
+  font-size: clamp(12px, 1.7vw, 17px);
+  letter-spacing: 0.3em;
+  color: var(--barn);
+}
+
+.ox-arena-rodeo-art {
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+  margin: clamp(24px, 4vw, 44px) auto 0;
+  height: auto;
+}
+
+.ox-arena-rodeo-rays {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ox-arena-rodeo-spin 90s linear infinite;
+}
+
+@keyframes ox-arena-rodeo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ox-arena-rodeo-facts {
+  max-width: 1080px;
+  margin: clamp(28px, 4vw, 44px) auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(14px, 2.6vw, 28px);
+}
+
+.ox-arena-rodeo-fact {
+  border: 3px solid var(--ink);
+  background: var(--cream);
+  padding: clamp(16px, 2.4vw, 26px);
+  box-shadow: 6px 6px 0 rgba(33, 28, 24, 0.9);
+}
+
+.ox-arena-rodeo-fact-num {
+  display: block;
+  font-family: 'Alfa Slab One', serif;
+  font-size: clamp(30px, 4.4vw, 52px);
+  line-height: 1;
+  color: var(--barn);
+}
+
+.ox-arena-rodeo-fact-text {
+  margin: 12px 0 0;
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(13px, 1.5vw, 15px);
+  line-height: 1.55;
+  color: rgba(33, 28, 24, 0.88);
+}
+
+.ox-arena-rodeo-ticketbar {
+  max-width: 1080px;
+  margin: clamp(28px, 4vw, 44px) auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  border-top: 4px solid var(--ink);
+  border-bottom: 4px solid var(--ink);
+  padding: 18px 4px;
+  flex-wrap: wrap;
+}
+
+.ox-arena-rodeo-ticket-text {
+  margin: 0;
+  font-size: clamp(12px, 1.7vw, 17px);
+  letter-spacing: 0.16em;
+}
+
+.ox-arena-rodeo-stamp {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  background: var(--barn);
+  color: var(--cream);
+  border: 3px solid var(--ink);
+  outline: 2px dashed var(--cream);
+  outline-offset: -9px;
+  padding: 12px 20px;
+  transform: rotate(-2deg);
+  text-align: center;
+}
+
+.ox-arena-rodeo-stamp-small {
+  font-size: 10px;
+  letter-spacing: 0.34em;
+  opacity: 0.85;
+}
+
+.ox-arena-rodeo-stamp-sig {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(14px, 1.8vw, 18px);
+  letter-spacing: 0.2em;
+}
+
+.ox-arena-rodeo-footer {
+  margin-top: clamp(40px, 6vw, 64px);
+  background: var(--ink);
+  color: var(--cream);
+  padding: 18px clamp(16px, 4vw, 44px);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+}
+
+@media (max-width: 800px) {
+  .ox-arena-rodeo-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-arena-rodeo-line {
+    text-shadow: 5px 5px 0 var(--barn), 10px 10px 0 rgba(33, 28, 24, 0.14);
+  }
+}
+
+@media (max-width: 560px) {
+  .ox-arena-rodeo-topbar {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .ox-arena-rodeo-ticketbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ox-arena-rodeo-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-arena-rodeo-rays {
+    animation: none;
+  }
+}

@@ -1,0 +1,321 @@
+.th-ox-arena {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ox-arena-encierro {
+  --paper: #f4edda;
+  --ink: #201d1a;
+  --red: #c92c2c;
+  --grey: #8a8578;
+  background: #ded4ba;
+  color: var(--ink);
+  font-family: 'Source Serif 4', serif;
+  line-height: 1.55;
+  padding-bottom: clamp(30px, 5vw, 60px);
+}
+
+.ox-arena-encierro ::selection {
+  background: var(--red);
+  color: var(--paper);
+}
+
+.ox-arena-encierro :focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+}
+
+.ox-arena-encierro-ticker {
+  background: var(--red);
+  color: #ffffff;
+  overflow: hidden;
+  border-bottom: 3px solid var(--ink);
+}
+
+.ox-arena-encierro-tickertrack {
+  display: flex;
+  width: max-content;
+  animation: ox-arena-encierro-ticker 34s linear infinite;
+  will-change: transform;
+}
+
+.ox-arena-encierro-tickercopy {
+  display: flex;
+  flex: none;
+}
+
+.ox-arena-encierro-tickeritem {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  padding: 9px 26px;
+  white-space: nowrap;
+}
+
+.ox-arena-encierro-tickeritem b {
+  margin-left: 18px;
+  opacity: 0.8;
+}
+
+@keyframes ox-arena-encierro-ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ox-arena-encierro-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--paper);
+  border-left: 1px solid rgba(32, 29, 26, 0.25);
+  border-right: 1px solid rgba(32, 29, 26, 0.25);
+  padding: clamp(26px, 4.5vw, 56px) clamp(20px, 5vw, 64px) clamp(30px, 5vw, 56px);
+  box-shadow: 0 22px 48px rgba(32, 29, 26, 0.22);
+}
+
+.ox-arena-encierro-masthead {
+  text-align: center;
+  border-bottom: 6px double var(--ink);
+  padding-bottom: 18px;
+}
+
+.ox-arena-encierro-masthead-top {
+  margin: 0 0 8px;
+  font-family: 'Archivo', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(32, 29, 26, 0.72);
+}
+
+.ox-arena-encierro-masthead-name {
+  margin: 0;
+  font-family: 'UnifrakturMaguntia', serif;
+  font-size: clamp(38px, 7.5vw, 76px);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+}
+
+.ox-arena-encierro-masthead-bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-family: 'Archivo', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(32, 29, 26, 0.72);
+}
+
+.ox-arena-encierro-h1 {
+  margin: clamp(24px, 3.5vw, 36px) 0 0;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: clamp(34px, 6vw, 66px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.ox-arena-encierro-deck {
+  margin: 14px auto 0;
+  max-width: 60ch;
+  text-align: center;
+  font-style: italic;
+  font-size: clamp(15px, 1.9vw, 19px);
+  color: rgba(32, 29, 26, 0.82);
+}
+
+.ox-arena-encierro-byline {
+  margin: 16px 0 0;
+  text-align: center;
+  font-family: 'Archivo', sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.ox-arena-encierro-columns {
+  margin-top: clamp(24px, 3.5vw, 36px);
+  columns: 3;
+  column-gap: 28px;
+  column-rule: 1px solid rgba(32, 29, 26, 0.35);
+  border-top: 3px solid var(--ink);
+  padding-top: 20px;
+}
+
+.ox-arena-encierro-col {
+  break-inside: avoid;
+  margin-bottom: 22px;
+}
+
+.ox-arena-encierro-col p {
+  margin: 0 0 14px;
+  font-size: 14.5px;
+  text-align: justify;
+  hyphens: auto;
+  color: rgba(32, 29, 26, 0.9);
+}
+
+.ox-arena-encierro-col p:first-child::first-letter {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: 3.1em;
+  float: left;
+  line-height: 0.82;
+  padding: 4px 8px 0 0;
+}
+
+.ox-arena-encierro-engravingbox {
+  border: 2px solid var(--ink);
+  padding: 10px 10px 0;
+  margin-bottom: 22px;
+}
+
+.ox-arena-encierro-engraving {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ox-arena-encierro-caption {
+  margin: 10px 2px 8px !important;
+  font-style: italic;
+  font-size: 12.5px !important;
+  text-align: center !important;
+  color: rgba(32, 29, 26, 0.75) !important;
+}
+
+.ox-arena-encierro-routebox {
+  border-top: 2px solid var(--ink);
+  padding-top: 14px;
+  margin-bottom: 22px;
+}
+
+.ox-arena-encierro-routehead,
+.ox-arena-encierro-facthead {
+  margin: 0 0 12px !important;
+  font-family: 'Archivo', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: left !important;
+  color: var(--red) !important;
+}
+
+.ox-arena-encierro-route {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid var(--red);
+}
+
+.ox-arena-encierro-route li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 5px 0 5px 14px;
+  position: relative;
+  font-size: 13.5px;
+}
+
+.ox-arena-encierro-route li::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--red);
+  transform: translateY(-50%);
+}
+
+.ox-arena-encierro-route-time {
+  font-family: 'Archivo', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.ox-arena-encierro-route-name {
+  font-weight: 600;
+}
+
+.ox-arena-encierro-factbox {
+  border: 2px solid var(--ink);
+  padding: 16px 16px 6px;
+  margin-bottom: 22px;
+}
+
+.ox-arena-encierro-quote {
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding: 14px 6px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.ox-arena-encierro-quote p {
+  margin: 0 0 6px !important;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 17px !important;
+  text-align: center !important;
+}
+
+.ox-arena-encierro-quote-attr {
+  font-family: 'Archivo', sans-serif !important;
+  font-style: normal !important;
+  font-size: 9.5px !important;
+  letter-spacing: 0.26em;
+  color: rgba(32, 29, 26, 0.6) !important;
+}
+
+.ox-arena-encierro-rulesbox {
+  border-left: 4px solid var(--red);
+  padding-left: 14px;
+}
+
+.ox-arena-encierro-imprint {
+  margin-top: clamp(24px, 3.5vw, 36px);
+  border-top: 6px double var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 16px 0 14px;
+  text-align: center;
+}
+
+.ox-arena-encierro-imprint p {
+  margin: 0 0 4px;
+  font-family: 'Archivo', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(32, 29, 26, 0.7);
+}
+
+.ox-arena-encierro-imprint-sig {
+  font-weight: 700 !important;
+  color: var(--ink) !important;
+  font-size: 11px !important;
+}
+
+@media (max-width: 800px) {
+  .ox-arena-encierro-columns {
+    columns: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-arena-encierro-tickertrack {
+    animation: none;
+  }
+}

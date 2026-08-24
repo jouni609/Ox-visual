@@ -1,0 +1,327 @@
+.th-ox-arena {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ox-arena-leap {
+  --cream: #f2e8d5;
+  --ink: #2b2b26;
+  --lapis: #1f4e79;
+  --lapis-deep: #14283e;
+  --terra: #c0532f;
+  --ochre: #d9a441;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.55;
+  padding: clamp(22px, 4vw, 48px) clamp(16px, 4vw, 48px) 0;
+}
+
+.ox-arena-leap ::selection {
+  background: var(--lapis);
+  color: var(--cream);
+}
+
+.ox-arena-leap :focus-visible {
+  outline: 3px solid var(--terra);
+  outline-offset: 3px;
+}
+
+.ox-arena-leap-head {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ox-arena-leap-kicker {
+  margin: 0 0 14px;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(10px, 1.5vw, 13px);
+  letter-spacing: 0.42em;
+  color: var(--terra);
+}
+
+.ox-arena-leap-h1 {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: clamp(44px, 8vw, 96px);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.ox-arena-leap-greek {
+  margin: 14px 0 0;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(20px, 3vw, 32px);
+  letter-spacing: 0.28em;
+  color: var(--lapis);
+}
+
+.ox-arena-leap-standfirst {
+  margin: 26px auto 0;
+  max-width: 58ch;
+  font-size: clamp(17px, 2.1vw, 21px);
+  font-style: italic;
+  color: rgba(43, 43, 38, 0.85);
+}
+
+.ox-arena-leap-fresco-wrap {
+  position: relative;
+  max-width: 1000px;
+  margin: clamp(34px, 5vw, 56px) auto 0;
+  filter: drop-shadow(0 18px 30px rgba(20, 40, 62, 0.28));
+}
+
+.ox-arena-leap-fresco {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ox-arena-leap-frag {
+  position: absolute;
+  background: #efe3c8;
+  filter: drop-shadow(0 3px 4px rgba(20, 40, 62, 0.25));
+}
+
+.ox-arena-leap-frag-a {
+  width: 44px;
+  height: 30px;
+  left: -26px;
+  top: 18%;
+  clip-path: polygon(0 100%, 12% 20%, 38% 0, 78% 14%, 100% 60%, 82% 100%, 28% 88%);
+  animation: ox-arena-leap-frag-float 6.5s ease-in-out infinite;
+}
+
+.ox-arena-leap-frag-b {
+  width: 30px;
+  height: 38px;
+  right: -18px;
+  top: 62%;
+  clip-path: polygon(18% 0, 62% 10%, 100% 40%, 88% 84%, 46% 100%, 0 66%);
+  animation: ox-arena-leap-frag-float 7.5s ease-in-out 1.2s infinite;
+}
+
+@keyframes ox-arena-leap-frag-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(2deg); }
+}
+
+.ox-arena-leap-plaque-row {
+  max-width: 1000px;
+  margin: clamp(26px, 3.5vw, 40px) auto 0;
+  display: grid;
+  grid-template-columns: 1fr minmax(230px, 300px);
+  gap: clamp(16px, 3vw, 36px);
+  align-items: stretch;
+}
+
+.ox-arena-leap-plaque {
+  background: #fdf9ee;
+  border: 2px solid var(--ink);
+  padding: clamp(18px, 2.6vw, 28px);
+}
+
+.ox-arena-leap-plaque-title {
+  margin: 0 0 10px;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(13px, 1.7vw, 16px);
+  letter-spacing: 0.22em;
+  color: var(--terra);
+}
+
+.ox-arena-leap-plaque-text {
+  margin: 0;
+  font-size: clamp(15px, 1.9vw, 18px);
+  color: rgba(43, 43, 38, 0.88);
+}
+
+.ox-arena-leap-label {
+  border: 2px dashed var(--ink);
+  background: rgba(239, 227, 200, 0.5);
+  padding: clamp(16px, 2.4vw, 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+
+.ox-arena-leap-label-head {
+  margin: 0 0 6px;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: var(--lapis);
+}
+
+.ox-arena-leap-label-line {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: rgba(43, 43, 38, 0.75);
+}
+
+.ox-arena-leap-label-sig {
+  margin: 4px 0;
+  font-family: 'Cinzel', serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--terra);
+}
+
+.ox-arena-leap-grid {
+  max-width: 1000px;
+  margin: clamp(44px, 7vw, 84px) auto 0;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+
+.ox-arena-leap-h2 {
+  margin: 0 0 18px;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(20px, 2.6vw, 28px);
+  letter-spacing: 0.26em;
+  color: var(--lapis);
+}
+
+.ox-arena-leap-body {
+  margin: 0 0 18px;
+  font-size: clamp(16px, 1.9vw, 19px);
+  color: rgba(43, 43, 38, 0.9);
+}
+
+.ox-arena-leap-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ox-arena-leap-phase {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: #fdf9ee;
+  border-left: 4px solid var(--ochre);
+  border-bottom: 1px solid rgba(43, 43, 38, 0.18);
+  padding: 14px 18px 14px 16px;
+}
+
+.ox-arena-leap-phase-num {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--terra);
+}
+
+.ox-arena-leap-phase-name {
+  margin: 0 0 5px;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--ink);
+}
+
+.ox-arena-leap-phase-text {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(43, 43, 38, 0.82);
+}
+
+.ox-arena-leap-stats {
+  max-width: 1000px;
+  margin: clamp(48px, 7vw, 80px) auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 3px solid var(--ink);
+}
+
+.ox-arena-leap-stat {
+  padding: 22px 18px 0;
+  border-right: 1px solid rgba(43, 43, 38, 0.25);
+}
+
+.ox-arena-leap-stat:last-child {
+  border-right: none;
+}
+
+.ox-arena-leap-stat-num {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(30px, 4.5vw, 48px);
+  line-height: 1;
+  color: var(--terra);
+}
+
+.ox-arena-leap-stat-label {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 10.5px;
+  letter-spacing: 0.24em;
+  color: rgba(43, 43, 38, 0.72);
+}
+
+.ox-arena-leap-footer {
+  margin-top: clamp(60px, 9vw, 110px);
+  border-top: 3px solid var(--ink);
+  background: var(--lapis-deep);
+  color: var(--cream);
+  padding: 20px clamp(16px, 4vw, 48px);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+}
+
+@media (max-width: 860px) {
+  .ox-arena-leap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-arena-leap-plaque-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .ox-arena-leap-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-arena-leap-stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(43, 43, 38, 0.25);
+    padding-bottom: 16px;
+  }
+
+  .ox-arena-leap-frag-a {
+    left: -10px;
+  }
+
+  .ox-arena-leap-frag-b {
+    right: -8px;
+  }
+
+  .ox-arena-leap-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-arena-leap-frag-a,
+  .ox-arena-leap-frag-b {
+    animation: none;
+  }
+}

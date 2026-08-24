@@ -244,6 +244,21 @@ Five emotional atmospheres — the ox as guardian, monsoon survivor, arena fury,
 
 </details>
 
+<details>
+  <summary><strong>Set XVII — OX ARENA</strong> — five games of the ox — <em>designed by DeepSeek V4 Pro</em></summary>
+
+Five arenas, five rules — the ox as adversary, engine and champion in Crete, the American West, Pamplona, Madurai and coastal Karnataka. Each design is a working document from its arena, signed in its own native mark (excavation label, stencilled sanction stamp, newspaper imprint, festival committee stamp, race bib).
+
+| # | Design | Game | Direction |
+|---|--------|------|-----------|
+| 01 | **Leap** | Minoan bull-leaping | Lapis fresco panel with chipped plaster edges: flying-gallop bull, vaulting acrobat on a slow handspring loop, museum plaque, excavation-label signature |
+| 02 | **Eight Seconds** | American rodeo bull riding | WPA letterpress poster on kraft: rotating red sunburst, bucking bull silhouette with cream rider, slam-in slab type, stencilled sanction stamp |
+| 03 | **Encierro** | Running of the bulls | Pamplona newspaper front page: blackletter masthead, three-column Spanish reporting, linocut bull engraving, route diagram, scrolling live ticker, imprint signature |
+| 04 | **Jallikattu** | Tamil bull-taming | Madurai festival banner: gopuram skyline, swaying marigold strands, painted charging zebu through the vaadi vaasal, kolam borders, Tamil display type, committee stamp |
+| 05 | **Kambala** | Buffalo racing | Paddy race-day board: chequered finish band, twin buffaloes splashing through the flooded track with jockey on the halage plank, scrolling speed dashes, race-bib signature |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
