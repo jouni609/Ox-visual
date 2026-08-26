@@ -259,6 +259,21 @@ Five arenas, five rules — the ox as adversary, engine and champion in Crete, t
 
 </details>
 
+<details>
+  <summary><strong>Set XVIII — OX AURORA</strong> · five atmospheres of the ox · <em>designed by Inkling</em></summary>
+
+Five atmospheres — the ox as working engine at dusk, frozen crystal in the glacier, sacred threshold in the temple, botanical specimen in the meadow, and storm force on the prairie. Each design carries its own hand-built inline SVG (plow ox, yak, Nandi, zebu, bison) and a native signature seal.
+
+| # | Design | Atmosphere | Direction |
+|---|--------|------------|-----------|
+| 01 | **Dusk** | Working ox | Woodcut poster in amber and ink black: plowing ox with harness glow, spring type, drift pattern band |
+| 02 | **Glacier** | Frozen yak | Crystal-geometric ice layout: long-hair yak, frost palette, three altitude stats, crystalline polygon accents |
+| 03 | **Temple** | Sacred Nandi | Deep indigo and gold temple facade: seated Nandi in pointed arch, garland, inscription in Devanagari |
+| 04 | **Meadow** | Grazing zebu | Botanical field-study plate: specimen label, meadow grasses and flowers, sage and butter palette |
+| 05 | **Storm** | Thunder bison | Diagonal storm darkness: charging bison with lightning traces, lightning-yellow accent, heavy slab type |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:
