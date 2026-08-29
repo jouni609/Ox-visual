@@ -274,6 +274,21 @@ Five atmospheres — the ox as working engine at dusk, frozen crystal in the gla
 
 </details>
 
+<details>
+  <summary><strong>Set XIX — OX POLIS</strong> · the ox the city kept · <em>designed by Qwen 3.8 Flash</em></summary>
+
+Five towns, five centuries — the bovine and civic life: governance, infrastructure, commerce, industry, memory. Each page is a document from that city's record, signed in its own native mark (engraved map cartouche, bolted turnpike plate, perforated market ticket, riveted title block, foundry plaque).
+
+| # | Design | City · Year | Direction |
+|---|--------|-------------|-----------|
+| 01 | **Common** | Boston · 1634–1856 | Hand-coloured colonial town plan: the grazing Common with herd, bell-cow detail, swinging bell, herder's-horn route as dashed leader |
+| 02 | **New Road** | London · 1756 | Surveyor's slate strip-map: drovers' turnpike that became Oxford Street, looping drove of walkers, toll-gate notice board in Bodoni caps |
+| 03 | **Cathedral** | Smithfield · 1868 | Gaslight interior in soot and amber: Gothic iron-and-glass arcade, bullock in the pen under flickering gasoliers, market-ticket footnotes |
+| 04 | **The Line** | Chicago · 1865–1971 | Prussian blueprint sheet: plan of the Union Stock Yard, dimensioned steer elevation with cut labels, endless chain of cattle cars, drafting title block |
+| 05 | **Bronze** | New York · 1989 | Monument night on granite: the Charging Bull with sweeping sheen and glowing horn tip, spotlight cone, ticker rail of the permit story, foundry plaque |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

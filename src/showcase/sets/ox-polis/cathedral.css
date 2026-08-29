@@ -1,0 +1,188 @@
+.th-ox-polis {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ox-polis-cath {
+  --opcat-soot: #131110;
+  --opcat-iron: #1b1712;
+  --opcat-bone: #e4d9be;
+  --opcat-lamp: #e8a94a;
+  --opcat-verd: #7fae9b;
+  --opcat-mute: #b9ab8c;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--opcat-soot);
+  color: var(--opcat-bone);
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.65;
+}
+
+.ox-polis-cath ::selection {
+  background: var(--opcat-lamp);
+  color: var(--opcat-soot);
+}
+
+.ox-polis-cath :focus-visible {
+  outline: 3px solid var(--opcat-lamp);
+  outline-offset: 3px;
+}
+
+.ox-polis-cath-wrap {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: clamp(30px, 5vw, 66px) clamp(16px, 4vw, 44px) clamp(40px, 6vw, 72px);
+}
+
+.ox-polis-cath-head {
+  text-align: center;
+}
+
+.ox-polis-cath-kicker {
+  margin: 0 0 clamp(12px, 2vw, 18px);
+  font-size: clamp(10px, 1.3vw, 12px);
+  font-weight: 600;
+  letter-spacing: 0.46em;
+  text-transform: uppercase;
+  color: var(--opcat-lamp);
+}
+
+.ox-polis-cath-h1 {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: clamp(54px, 10.5vw, 128px);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--opcat-bone);
+  text-shadow: 0 0 46px rgba(232, 169, 74, 0.28);
+}
+
+.ox-polis-cath-sub {
+  margin: clamp(10px, 1.6vw, 16px) 0 0;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(14px, 2vw, 19px);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--opcat-mute);
+}
+
+.ox-polis-cath-deck {
+  max-width: 62ch;
+  margin: clamp(16px, 2.4vw, 26px) auto 0;
+  font-size: clamp(14px, 1.7vw, 17px);
+  color: #cfc4a8;
+}
+
+.ox-polis-cath-nave {
+  margin: clamp(26px, 4.4vw, 48px) 0 0;
+  border: 1px solid rgba(232, 169, 74, 0.35);
+  box-shadow:
+    0 0 0 6px var(--opcat-soot),
+    0 0 0 7px rgba(232, 169, 74, 0.2),
+    0 30px 80px rgba(0, 0, 0, 0.55) inset;
+}
+
+.ox-polis-cath-nave svg {
+  display: block;
+  width: 100%;
+  height: clamp(340px, 56vh, 620px);
+}
+
+.ox-polis-cath-stubs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2.8vw, 28px);
+  margin-top: clamp(30px, 5vw, 52px);
+}
+
+.ox-polis-cath-stub {
+  position: relative;
+  padding: clamp(20px, 2.8vw, 28px) clamp(18px, 2.4vw, 24px);
+  background: linear-gradient(180deg, #1a1612, #15120f);
+  border: 1px solid #463a28;
+}
+
+.ox-polis-cath-stub--sig {
+  padding-bottom: clamp(56px, 7vw, 74px);
+}
+
+.ox-polis-cath-stub-no {
+  margin: 0 0 10px;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(11px, 1.3vw, 13px);
+  letter-spacing: 0.3em;
+  color: var(--opcat-lamp);
+}
+
+.ox-polis-cath-stub h2 {
+  margin: 0 0 10px;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(19px, 2.3vw, 24px);
+  letter-spacing: 0.05em;
+  color: var(--opcat-bone);
+}
+
+.ox-polis-cath-stub p {
+  margin: 0;
+  font-size: clamp(13.5px, 1.55vw, 15.5px);
+  color: #cfc4a8;
+}
+
+.ox-polis-cath-stub-perf {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: clamp(30px, 4.4vw, 44px);
+  display: flex;
+  justify-content: space-around;
+}
+
+.ox-polis-cath-stub-perf span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--opcat-soot);
+  box-shadow: inset 0 1px 2px rgba(232, 169, 74, 0.4);
+}
+
+.ox-polis-cath-sign {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: clamp(12px, 1.8vw, 18px);
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(10px, 1.2vw, 12px) !important;
+  letter-spacing: 0.26em;
+  color: var(--opcat-lamp) !important;
+}
+
+.ox-polis-cath-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 2vw, 20px);
+  margin-top: clamp(34px, 5vw, 56px);
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #8d8067;
+}
+
+.ox-polis-cath-diamond {
+  color: var(--opcat-lamp);
+  font-size: 9px;
+}
+
+@media (max-width: 900px) {
+  .ox-polis-cath-stubs {
+    grid-template-columns: 1fr;
+  }
+}

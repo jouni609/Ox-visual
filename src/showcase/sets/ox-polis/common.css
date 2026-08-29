@@ -1,0 +1,214 @@
+.th-ox-polis {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ox-polis-common {
+  --opc-paper: #e6e5db;
+  --opc-linen: #dde0d3;
+  --opc-ink: #243b4a;
+  --opc-green: #7c9463;
+  --opc-brick: #a64a2e;
+  --opc-brass: #b98a34;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(166, 74, 46, 0.06), transparent 60%),
+    var(--opc-paper);
+  color: var(--opc-ink);
+  font-family: 'Spectral', Georgia, serif;
+  line-height: 1.6;
+}
+
+.ox-polis-common ::selection {
+  background: var(--opc-green);
+  color: var(--opc-paper);
+}
+
+.ox-polis-common :focus-visible {
+  outline: 3px solid var(--opc-brick);
+  outline-offset: 3px;
+}
+
+.ox-polis-common-frame {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 64px) clamp(16px, 4vw, 44px) clamp(40px, 6vw, 72px);
+}
+
+.ox-polis-common-kicker {
+  margin: 0 0 clamp(10px, 1.6vw, 16px);
+  font-family: 'Marcellus', serif;
+  font-size: clamp(11px, 1.5vw, 14px);
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--opc-brick);
+}
+
+.ox-polis-common-h1 {
+  margin: 0;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(58px, 11vw, 132px);
+  line-height: 0.94;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--opc-ink);
+}
+
+.ox-polis-common-h1::after {
+  content: '';
+  display: block;
+  width: min(320px, 60%);
+  height: 3px;
+  margin-top: clamp(14px, 2vw, 22px);
+  background: linear-gradient(90deg, var(--opc-ink) 55%, var(--opc-brass));
+}
+
+.ox-polis-common-deck {
+  max-width: 56ch;
+  margin: clamp(16px, 2.4vw, 24px) 0 0;
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-style: italic;
+  color: #3d4f4a;
+}
+
+.ox-polis-common-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(14px, 3vw, 34px);
+  margin: clamp(18px, 2.6vw, 26px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ox-polis-common-stats li {
+  font-family: 'Karla', sans-serif;
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #4b5a51;
+}
+
+.ox-polis-common-stats span {
+  display: block;
+  font-family: 'Marcellus', serif;
+  font-size: clamp(26px, 4vw, 40px);
+  letter-spacing: 0.02em;
+  color: var(--opc-brick);
+}
+
+.ox-polis-common-sheet {
+  margin: clamp(30px, 5vw, 54px) 0 0;
+  padding: clamp(10px, 1.6vw, 18px);
+  background: var(--opc-linen);
+  border: 2px solid var(--opc-ink);
+  box-shadow: 0 0 0 1px var(--opc-paper) inset, 14px 16px 0 rgba(36, 59, 74, 0.14);
+}
+
+.ox-polis-common-map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ox-polis-common-legend {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(18px, 3.4vw, 36px);
+  margin: clamp(34px, 5vw, 58px) 0 0;
+}
+
+.ox-polis-common-note {
+  position: relative;
+  padding-top: clamp(34px, 4vw, 44px);
+  border-top: 2px solid var(--opc-ink);
+}
+
+.ox-polis-common-dot {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  transform: translate(-40%, -50%);
+  display: grid;
+  place-items: center;
+  width: clamp(30px, 3vw, 38px);
+  height: clamp(30px, 3vw, 38px);
+  border-radius: 50%;
+  background: var(--opc-brick);
+  color: var(--opc-paper);
+  font-family: 'Marcellus', serif;
+  font-size: clamp(13px, 1.6vw, 16px);
+}
+
+.ox-polis-common-note h2 {
+  margin: 0 0 8px;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(18px, 2.2vw, 23px);
+  letter-spacing: 0.03em;
+}
+
+.ox-polis-common-note p {
+  margin: 0;
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #3d4f4a;
+}
+
+.ox-polis-common-colophon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(14px, 3vw, 28px);
+  margin-top: clamp(36px, 5vw, 60px);
+  padding-top: clamp(18px, 2.6vw, 26px);
+  border-top: 1px solid rgba(36, 59, 74, 0.4);
+}
+
+.ox-polis-common-seal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 18px 10px 14px;
+  border: 1.5px double var(--opc-brass);
+}
+
+.ox-polis-common-seal svg {
+  width: 34px;
+  height: auto;
+}
+
+.ox-polis-common-seal p {
+  margin: 0;
+  font-family: 'Marcellus', serif;
+  font-size: clamp(11px, 1.3vw, 13px);
+  letter-spacing: 0.24em;
+  color: #6d5722;
+}
+
+.ox-polis-common-setline {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #5c6a5e;
+}
+
+@media (max-width: 860px) {
+  .ox-polis-common-legend {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .ox-polis-common-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 18px;
+  }
+}

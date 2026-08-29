@@ -1,0 +1,243 @@
+.th-ox-polis {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ox-polis-road {
+  --opr-slate: #2c363c;
+  --opr-deep: #222b30;
+  --opr-chalk: #e9e3d3;
+  --opr-dust: #8fa0a8;
+  --opr-vermilion: #d24b2a;
+  --opr-iron: #14181b;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(90% 60% at 12% 0%, rgba(233, 227, 211, 0.08), transparent 55%),
+    linear-gradient(180deg, var(--opr-slate), var(--opr-deep) 70%);
+  color: var(--opr-chalk);
+  font-family: 'Karla', sans-serif;
+  line-height: 1.65;
+}
+
+.ox-polis-road ::selection {
+  background: var(--opr-vermilion);
+  color: var(--opr-chalk);
+}
+
+.ox-polis-road :focus-visible {
+  outline: 3px solid var(--opr-vermilion);
+  outline-offset: 3px;
+}
+
+.ox-polis-road-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: clamp(30px, 5vw, 72px) clamp(16px, 4vw, 44px) clamp(44px, 6vw, 80px);
+}
+
+.ox-polis-road-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: end;
+  gap: clamp(18px, 3vw, 40px);
+}
+
+.ox-polis-road-kicker {
+  margin: 0 0 12px;
+  font-size: clamp(10px, 1.3vw, 12px);
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--opr-vermilion);
+}
+
+.ox-polis-road-h1 {
+  margin: 0;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  font-size: clamp(64px, 12vw, 148px);
+  line-height: 0.86;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--opr-chalk);
+}
+
+.ox-polis-road-h1 em {
+  display: block;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--opr-vermilion);
+  letter-spacing: 0.14em;
+  font-size: 0.62em;
+  padding-left: 0.12em;
+}
+
+.ox-polis-road-deck {
+  margin: 0 0 clamp(8px, 1.4vw, 18px);
+  font-size: clamp(14px, 1.6vw, 17px);
+  color: #cfd6d2;
+  max-width: 46ch;
+}
+
+.ox-polis-road-strip {
+  margin: clamp(28px, 4.6vw, 56px) 0 0;
+  padding: clamp(8px, 1.4vw, 18px) 0;
+  border-top: 1px solid rgba(233, 227, 211, 0.35);
+  border-bottom: 1px solid rgba(233, 227, 211, 0.35);
+  overflow: hidden;
+}
+
+.ox-polis-road-strip svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ox-polis-road-mile {
+  font-family: 'Space Mono', monospace;
+}
+
+.ox-polis-road-body {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(22px, 4vw, 48px);
+  margin-top: clamp(30px, 5vw, 56px);
+}
+
+.ox-polis-road-board {
+  position: relative;
+  padding: clamp(22px, 3.4vw, 36px) clamp(20px, 3vw, 32px);
+  background: var(--opr-iron);
+  border: 3px solid var(--opr-chalk);
+  box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.ox-polis-road-board::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px dashed rgba(233, 227, 211, 0.4);
+  pointer-events: none;
+}
+
+.ox-polis-road-board-top {
+  margin: 0 0 14px;
+  text-align: center;
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--opr-dust);
+}
+
+.ox-polis-road-board-main {
+  margin: 0;
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 4.4vw, 46px);
+  line-height: 1.08;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--opr-chalk);
+}
+
+.ox-polis-road-board-main span {
+  display: block;
+  margin-top: 6px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  color: var(--opr-vermilion);
+}
+
+.ox-polis-road-board-fine {
+  margin: clamp(14px, 2vw, 20px) auto 0;
+  max-width: 40ch;
+  text-align: center;
+  font-size: clamp(12px, 1.4vw, 13.5px);
+  color: #aeb9bb;
+}
+
+.ox-polis-road-notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(16px, 2.6vw, 26px);
+}
+
+.ox-polis-road-note h3 {
+  margin: 0 0 6px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  font-size: clamp(19px, 2.4vw, 25px);
+  letter-spacing: 0.04em;
+  color: var(--opr-chalk);
+}
+
+.ox-polis-road-note h3::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 2px;
+  margin-top: 8px;
+  background: var(--opr-vermilion);
+}
+
+.ox-polis-road-note p {
+  margin: 0;
+  font-size: clamp(13.5px, 1.6vw, 15.5px);
+  color: #c4ccc9;
+  max-width: 52ch;
+}
+
+.ox-polis-road-plate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: clamp(40px, 6vw, 70px);
+  padding: 14px clamp(46px, 7vw, 80px);
+  background: linear-gradient(180deg, #3a464d, #29333a);
+  border: 1px solid rgba(233, 227, 211, 0.5);
+}
+
+.ox-polis-road-plate p {
+  margin: 0;
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(11px, 1.4vw, 14px);
+  letter-spacing: 0.3em;
+  color: var(--opr-chalk);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.ox-polis-road-bolt {
+  position: absolute;
+  left: 16px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 32%, #d9d4c5, #5d6a70 70%);
+  box-shadow: 0 0 0 2px rgba(20, 24, 27, 0.8);
+}
+
+.ox-polis-road-bolt--end {
+  left: auto;
+  right: 16px;
+}
+
+@media (max-width: 900px) {
+  .ox-polis-road-head,
+  .ox-polis-road-body {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-polis-road-h1 {
+    font-size: clamp(58px, 16vw, 96px);
+  }
+}
