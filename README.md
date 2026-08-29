@@ -310,6 +310,7 @@ src/showcase/
 
 - [Vite](https://vitejs.dev/) + [React](https://react.dev/)
 - [Framer Motion](https://www.framer.com/motion/) for springs, scroll reveals and crossfade transitions
+- [Playwright](https://playwright.dev/) for end-to-end testing
 - Hand-written CSS per design (no UI framework) + inline SVG artwork drawn in code
 - Google Fonts
 
@@ -326,6 +327,18 @@ Then open the printed local URL. Production build:
 npm run build
 npm run preview
 ```
+
+## Testing (Playwright)
+
+[Playwright](https://playwright.dev/) drives a real Chromium browser against the dev server (started automatically by the config). End-to-end specs live in `tests/`.
+
+```bash
+npm test              # run all specs headless
+npm run test:ui       # run with the Playwright UI mode
+npx playwright install chromium   # (re)install the browser binary if needed
+```
+
+The runner config is `playwright.config.js`: Chromium, `baseURL` `http://localhost:5173`, and a `webServer` hook that boots `npm run dev` (reusing an already-running dev server outside CI). Specs match `tests/*.spec.js`; the bundled smoke test checks that the app mounts and renders a design heading. Traces are captured on first retry; run `npx playwright show-report` after a CI run to inspect the HTML report.
 
 
 ## Prompt used
