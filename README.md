@@ -289,6 +289,21 @@ Five towns, five centuries — the bovine and civic life: governance, infrastruc
 
 </details>
 
+<details>
+  <summary><strong>Set XX — OX VITA</strong> · five ages of one ox, from first breath to ancestor · <em>designed by MUSE SPARK</em></summary>
+
+Five ages, five crafts — one animal from birth straw to gate stone: calf, yearling, draught prime, dam and elder. Each page is a document from that age of life, signed in its own native mark (birth-blanket stitch, chalk inspection stamp, riveted shift plate, sealing-wax herd-book seal, gate-stone carving).
+
+| # | Design | Age | Direction |
+|---|--------|-----|-----------|
+| 01 | **First Light** | One hour · birth | Nursery picture-book in milk cream and strawberry: dawn gradient, swaying mobile, breathing newborn calf in straw, quilt-stitched signature |
+| 02 | **Breaking** | Fourteen months · training | Slate chalkboard school: haltered yearling with light ash yoke in a dashed ring, Ho/Gee/Haw voice buttons, chalk-stamp signature |
+| 03 | **Prime** | Six years · labour | Industrial shift poster in steel and safety orange: massive yoked draught ox with plough, pull-force gauges, marquee band, riveted plate signature |
+| 04 | **Dam** | Nine years · lineage | Parchment pedigree registry in oxblood and gold: dam with nursing calf and udder, maternal bloodline tree, three-calf tabs, wax-seal signature |
+| 05 | **Relic** | Fourteen years · memory | Indigo night memorial: recumbent elder ox with rib lines under Taurus stars and ember glow, breath loop, gate-stone signature |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

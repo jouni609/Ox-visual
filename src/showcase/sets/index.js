@@ -18,5 +18,7 @@ import oxVesper from './ox-vesper/manifest.js'
 import oxArena from './ox-arena/manifest.js'
 import oxAurora from './ox-aurora/manifest.js'
 import oxPolis from './ox-polis/manifest.js'
+import oxVita from './ox-vita/manifest.js'
 
-export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium, oxLithica, oxMateria, oxSignals, oxGlyphs, oxChronicle, oxMasque, oxHours, oxSystema, oxVesper, oxArena, oxAurora, oxPolis]
+export const SETS = [oxFaces, oxAtlas, oxWorks, oxBiomes, oxFolio, oxNumismatica, oxSensorium, oxLithica, oxMateria, oxSignals, oxGlyphs, oxChronicle, oxMasque, oxHours, oxSystema, oxVesper, oxArena, oxAurora, oxPolis, oxVita]
+

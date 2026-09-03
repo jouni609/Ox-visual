@@ -1,0 +1,225 @@
+.th-ox-vita-prime {
+  --ox-vita-steel: #1A1E22;
+  --ox-vita-steel2: #23282E;
+  --ox-vita-bone: #F2EAD8;
+  --ox-vita-ink2: #141414;
+  --ox-vita-orange: #FF5A1F;
+  --ox-vita-yellow: #FFC42E;
+  --ox-vita-body: #D8CFC0;
+}
+.th-ox-vita-prime::selection {
+  background: #FF5A1F;
+  color: #1A1E22;
+}
+.ox-vita-prime {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-vita-steel);
+  color: var(--ox-vita-bone);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+.ox-vita-prime-hazard {
+  background: var(--ox-vita-yellow);
+  color: #141414;
+  border-bottom: 4px solid #141414;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ox-vita-prime-hazard-track {
+  display: inline-flex;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.12em;
+  padding: 9px 0;
+  animation: ox-vita-prime-slide 14s linear infinite;
+}
+.ox-vita-prime-hazard-track span { padding-right: 0; }
+@keyframes ox-vita-prime-slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.ox-vita-prime-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: clamp(42px, 6vw, 84px) clamp(20px, 4vw, 48px) 90px;
+}
+.ox-vita-prime-eyebrow {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ox-vita-yellow);
+  margin: 0 0 12px;
+}
+.ox-vita-prime-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  font-size: clamp(70px, 14vw, 164px);
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--ox-vita-bone);
+}
+.ox-vita-prime-title::after {
+  content: "";
+  display: block;
+  width: min(420px, 70%);
+  height: 12px;
+  background: var(--ox-vita-orange);
+  margin-top: 12px;
+  transform: skewX(-18deg);
+}
+.ox-vita-prime-lede {
+  font-size: clamp(16px, 2.1vw, 19px);
+  line-height: 1.65;
+  max-width: 62ch;
+  color: var(--ox-vita-body);
+  margin: 20px 0 26px;
+}
+.ox-vita-prime-stage {
+  background: var(--ox-vita-steel2);
+  border: 3px solid var(--ox-vita-bone);
+  border-radius: 18px;
+  padding: clamp(18px, 3vw, 34px);
+  position: relative;
+  overflow: hidden;
+}
+.ox-vita-prime-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 10px;
+  background: repeating-linear-gradient(-45deg, var(--ox-vita-yellow) 0 18px, #141414 18px 36px);
+}
+.ox-vita-prime-gauges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 12px 0 8px;
+}
+.ox-vita-prime-gauge {
+  background: #141414;
+  border: 2px solid rgba(242,234,216,0.35);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.ox-vita-prime-gauge p {
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ox-vita-body);
+  margin: 0 0 6px;
+}
+.ox-vita-prime-gauge strong {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.ox-vita-prime-bar {
+  display: block;
+  height: 10px;
+  background: #33383F;
+  border-radius: 999px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.ox-vita-prime-bar span { display: block; height: 100%; width: 82%; background: var(--ox-vita-orange); border-radius: 999px; transition: width 500ms ease; }
+.ox-vita-prime-bar span.mid { width: 64%; background: var(--ox-vita-yellow); }
+.ox-vita-prime-bar span.long { width: 88%; }
+.ox-vita-prime-bar span.short { width: 18%; background: #7AC6FF; }
+.ox-vita-prime-bar span.is-rest { width: 8%; background: #7AC6FF; }
+.ox-vita-prime-ox {
+  width: min(680px, 100%);
+  height: auto;
+  display: block;
+  margin: 6px auto 0;
+  animation: ox-vita-prime-heave 2.8s ease-in-out infinite;
+  transform-origin: 50% 80%;
+}
+.ox-vita-prime-ox.is-rest { animation-duration: 5.6s; }
+@keyframes ox-vita-prime-heave {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-5px) scale(1.008, 1.014); }
+}
+.ox-vita-prime-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+.ox-vita-prime-btn {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #141414;
+  background: var(--ox-vita-yellow);
+  border: 3px solid #141414;
+  border-radius: 10px;
+  padding: 10px 22px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #000;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.ox-vita-prime-btn:hover { transform: translate(-1px, -2px); box-shadow: 6px 7px 0 #000; }
+.ox-vita-prime-btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 #000; }
+.ox-vita-prime-btn:focus-visible { outline: 4px solid #7AC6FF; outline-offset: 3px; }
+.ox-vita-prime-note { color: var(--ox-vita-body); font-size: 14px; margin: 0; }
+.ox-vita-prime-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+.ox-vita-prime-cards article {
+  background: var(--ox-vita-bone);
+  color: var(--ox-vita-ink2);
+  border-radius: 12px;
+  padding: 18px 16px;
+  border: 3px solid #141414;
+}
+.ox-vita-prime-cards h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+.ox-vita-prime-cards p { font-size: 14.5px; line-height: 1.6; margin: 0; color: #3A3733; }
+.ox-vita-prime-plate {
+  position: relative;
+  margin-top: 26px;
+  background: linear-gradient(180deg, #3A4048, #23282E);
+  border: 2px solid var(--ox-vita-bone);
+  border-radius: 12px;
+  padding: 16px 20px 16px 56px;
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--ox-vita-bone);
+}
+.ox-vita-prime-plate p { margin: 0; }
+.ox-vita-prime-rivet {
+  position: absolute;
+  left: 18px;
+  top: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff, #8A93A0 60%, #23282E);
+}
+.ox-vita-prime-rivet.r2 { left: auto; right: 18px; }
+.ox-vita-prime-rivet.r3 { top: auto; bottom: 16px; }
+.ox-vita-prime-rivet.r4 { left: auto; right: 18px; top: auto; bottom: 16px; }
+@media (max-width: 860px) {
+  .ox-vita-prime-gauges, .ox-vita-prime-cards { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ox-vita-prime-hazard-track, .ox-vita-prime-ox { animation: none; }
+}

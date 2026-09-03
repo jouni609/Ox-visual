@@ -1,0 +1,185 @@
+.th-ox-vita-dam {
+  --ox-vita-paper: #F3EAD3;
+  --ox-vita-ink: #2A201A;
+  --ox-vita-body: #4E3B2E;
+  --ox-vita-blood: #5E1F1F;
+  --ox-vita-green: #2F4A33;
+  --ox-vita-gold: #8A6420;
+  --ox-vita-card: #FBF6E8;
+}
+.th-ox-vita-dam::selection {
+  background: #5E1F1F;
+  color: #F3EAD3;
+}
+.ox-vita-dam {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-vita-paper);
+  color: var(--ox-vita-ink);
+  font-family: "IBM Plex Serif", Georgia, serif;
+  background-image: linear-gradient(rgba(94,31,31,0.06) 1px, transparent 1px);
+  background-size: 100% 34px;
+}
+.ox-vita-dam-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(54px, 7vw, 100px) clamp(20px, 4vw, 48px) 90px;
+}
+.ox-vita-dam-eyebrow {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ox-vita-blood);
+  margin: 0 0 12px;
+}
+.ox-vita-dam-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(64px, 12vw, 142px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+}
+.ox-vita-dam-lede {
+  font-size: clamp(17px, 2.2vw, 20px);
+  line-height: 1.7;
+  max-width: 64ch;
+  color: var(--ox-vita-body);
+  margin: 0 0 26px;
+}
+.ox-vita-dam-sheet {
+  background: var(--ox-vita-card);
+  border: 2px solid var(--ox-vita-ink);
+  border-radius: 6px;
+  box-shadow: 8px 8px 0 rgba(42,32,26,0.9);
+  padding: clamp(20px, 3vw, 36px);
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 26px;
+  align-items: start;
+}
+.ox-vita-dam-kicker {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ox-vita-gold);
+  margin: 0 0 12px;
+}
+.ox-vita-dam-tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 18px;
+  border-left: 2px solid var(--ox-vita-gold);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ox-vita-dam-tree li {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ox-vita-body);
+}
+.ox-vita-dam-tree li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ox-vita-paper);
+  border: 2px solid var(--ox-vita-gold);
+}
+.ox-vita-dam-tree li.is-you::before { background: var(--ox-vita-blood); border-color: var(--ox-vita-blood); }
+.ox-vita-dam-tree strong { display: block; color: var(--ox-vita-ink); font-size: 15px; }
+.ox-vita-dam-ox {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ox-vita-dam-calves {
+  grid-column: 1 / -1;
+  border-top: 2px solid var(--ox-vita-ink);
+  padding-top: 18px;
+}
+.ox-vita-dam-tabs { display: flex; gap: 10px; flex-wrap: wrap; }
+.ox-vita-dam-tab {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background: transparent;
+  color: var(--ox-vita-ink);
+  border: 2px solid var(--ox-vita-ink);
+  border-radius: 999px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+.ox-vita-dam-tab.is-on { background: var(--ox-vita-blood); border-color: var(--ox-vita-blood); color: #F3EAD3; }
+.ox-vita-dam-tab:hover { background: rgba(94,31,31,0.12); }
+.ox-vita-dam-tab.is-on:hover { background: var(--ox-vita-blood); }
+.ox-vita-dam-tab:focus-visible { outline: 4px solid var(--ox-vita-green); outline-offset: 3px; }
+.ox-vita-dam-calfname {
+  font-family: "Fraunces", serif;
+  font-size: clamp(26px, 4vw, 38px);
+  margin: 14px 0 8px;
+}
+.ox-vita-dam-calfnote { font-size: 16px; line-height: 1.65; color: var(--ox-vita-body); max-width: 60ch; margin: 0 0 8px; }
+.ox-vita-dam-weight {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ox-vita-green);
+  margin: 0;
+}
+.ox-vita-dam-sealrow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+.ox-vita-dam-seal {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #8A2E2E, #5E1F1F 62%, #3A1212);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(94,31,31,0.4), inset 0 2px 6px rgba(255,255,255,0.35);
+  flex: none;
+  transform: rotate(-8deg);
+}
+.ox-vita-dam-sealinner {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px dashed rgba(243,234,211,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #F3EAD3;
+  font-size: 22px;
+}
+.ox-vita-dam-sign {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: var(--ox-vita-blood);
+  margin: 0;
+}
+.ox-vita-dam-signsub { font-size: 13.5px; color: var(--ox-vita-body); margin: 6px 0 0; }
+@media (max-width: 900px) {
+  .ox-vita-dam-sheet { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ox-vita-dam-ox { transform: none; }
+}

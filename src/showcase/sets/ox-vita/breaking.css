@@ -1,0 +1,189 @@
+.th-ox-vita-break {
+  --ox-vita-slate: #1E2A26;
+  --ox-vita-slate2: #26332E;
+  --ox-vita-chalk: #F4F1E6;
+  --ox-vita-dim: #C9C4B2;
+  --ox-vita-yellow: #F2C14E;
+  --ox-vita-pink: #E88CA0;
+  --ox-vita-rope: #C9A86A;
+}
+.th-ox-vita-break::selection {
+  background: #F2C14E;
+  color: #1E2A26;
+}
+.ox-vita-break {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-vita-slate);
+  color: var(--ox-vita-chalk);
+  font-family: "Space Mono", monospace;
+}
+.ox-vita-break-frame {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(54px, 7vw, 100px) clamp(20px, 4vw, 48px) 90px;
+}
+.ox-vita-break-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ox-vita-yellow);
+  margin: 0 0 14px;
+}
+.ox-vita-break-title {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: clamp(58px, 11vw, 128px);
+  line-height: 0.95;
+  margin: 0 0 14px;
+  transform: rotate(-1.2deg);
+}
+.ox-vita-break-lede {
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.7;
+  max-width: 64ch;
+  color: var(--ox-vita-chalk);
+  margin: 0 0 26px;
+}
+.ox-vita-break-board {
+  position: relative;
+  background: var(--ox-vita-slate2);
+  border: 10px solid #4A3421;
+  border-radius: 14px;
+  padding: clamp(20px, 3vw, 38px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45), inset 0 0 90px rgba(0,0,0,0.35);
+  overflow: hidden;
+}
+.ox-vita-break-dust {
+  position: absolute;
+  inset: auto 0 0 0;
+  width: 100%;
+  height: 90px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.ox-vita-break-ring {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: min(560px, 86%);
+  height: 150px;
+  border: 3px dashed rgba(244,241,230,0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-4deg);
+  pointer-events: none;
+}
+.ox-vita-break-ox {
+  width: min(640px, 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.ox-vita-break-lessons {
+  position: relative;
+  border-top: 2px dashed rgba(244,241,230,0.35);
+  margin-top: 18px;
+  padding-top: 18px;
+}
+.ox-vita-break-kicker {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ox-vita-dim);
+  margin: 0 0 12px;
+}
+.ox-vita-break-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.ox-vita-break-cmd {
+  font-family: "Kalam", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ox-vita-chalk);
+  background: transparent;
+  border: 3px solid var(--ox-vita-chalk);
+  border-radius: 14px;
+  padding: 4px 26px 8px;
+  cursor: pointer;
+  transform: rotate(-1deg);
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+.ox-vita-break-cmd:nth-child(2) { transform: rotate(1.2deg); }
+.ox-vita-break-cmd:nth-child(3) { transform: rotate(-0.6deg); }
+.ox-vita-break-cmd:hover { background: rgba(244,241,230,0.14); transform: rotate(0deg) scale(1.04); }
+.ox-vita-break-cmd.is-on {
+  background: var(--ox-vita-yellow);
+  color: var(--ox-vita-slate);
+  border-color: var(--ox-vita-yellow);
+}
+.ox-vita-break-cmd:focus-visible {
+  outline: 4px solid var(--ox-vita-pink);
+  outline-offset: 3px;
+}
+.ox-vita-break-note {
+  font-family: "Kalam", cursive;
+  font-size: clamp(19px, 2.6vw, 24px);
+  line-height: 1.45;
+  color: var(--ox-vita-yellow);
+  min-height: 3.2em;
+  margin: 14px 0 16px;
+  max-width: 46ch;
+}
+.ox-vita-break-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.ox-vita-break-list li {
+  border: 2px solid rgba(244,241,230,0.4);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ox-vita-chalk);
+}
+.ox-vita-break-list li span:first-child {
+  font-family: "Kalam", cursive;
+  font-size: 19px;
+  color: #fff;
+}
+.ox-vita-break-stamp {
+  margin-top: 30px;
+  display: inline-block;
+  border: 3px double var(--ox-vita-pink);
+  border-radius: 10px;
+  padding: 12px 22px;
+  transform: rotate(-4deg);
+  color: var(--ox-vita-pink);
+}
+.ox-vita-break-stamptext {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  margin: 0;
+}
+.ox-vita-break-stampsub {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  margin: 4px 0 0;
+  color: var(--ox-vita-dim);
+}
+@media (max-width: 860px) {
+  .ox-vita-break-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .ox-vita-break-list { grid-template-columns: 1fr; }
+  .ox-vita-break-ring { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ox-vita-break-title { transform: none; }
+}
