@@ -1,0 +1,350 @@
+.th-ox-mythos-kamadhenu {
+  --kam-bg: #141a1f;
+  --kam-surface: #1b242b;
+  --kam-surface-elevated: #232f38;
+  --kam-border: #354754;
+  --kam-gold: #d4af37;
+  --kam-gold-bright: #f6e05e;
+  --kam-vermilion: #c53030;
+  --kam-vermilion-glow: rgba(197, 48, 48, 0.25);
+  --kam-peacock: #19535f;
+  --kam-peacock-light: #2a7b8c;
+  --kam-marigold: #d97706;
+  --kam-text: #f7fafc;
+  --kam-text-muted: #a0aec0;
+  --kam-text-dim: #718096;
+}
+
+.th-ox-mythos-kamadhenu ::selection {
+  background: var(--kam-marigold);
+  color: #ffffff;
+}
+
+.ox-mythos-kam-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--kam-bg);
+  color: var(--kam-text);
+  font-family: 'DM Sans', sans-serif;
+  padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 3.5vw, 3rem) 6rem;
+  background-image:
+    radial-gradient(ellipse at 50% 10%, rgba(217, 119, 6, 0.1) 0%, transparent 60%),
+    radial-gradient(circle at 10% 90%, rgba(25, 83, 95, 0.2) 0%, transparent 50%);
+}
+
+.ox-mythos-kam-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ox-mythos-kam-header {
+  border-bottom: 1px solid var(--kam-border);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ox-mythos-kam-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--kam-marigold);
+  font-weight: 700;
+}
+
+.ox-mythos-kam-mandala-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--kam-marigold);
+  border-radius: 50%;
+}
+
+.ox-mythos-kam-title {
+  font-family: 'Yatra One', 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.ox-mythos-kam-title-highlight {
+  color: var(--kam-marigold);
+  background: linear-gradient(135deg, #fefcbf 0%, #f6ad55 50%, #c53030 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ox-mythos-kam-subtitle {
+  font-size: clamp(0.92rem, 1.8vw, 1.2rem);
+  color: var(--kam-text-muted);
+  max-width: 820px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.ox-mythos-kam-stage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 960px) {
+  .ox-mythos-kam-stage {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+  }
+}
+
+.ox-mythos-kam-canvas-frame {
+  position: relative;
+  background: linear-gradient(180deg, #182229 0%, #11171d 100%);
+  border: 1px solid var(--kam-border);
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.8), 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ox-mythos-kam-svg-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ox-mythos-kam-svg {
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  overflow: visible;
+}
+
+.ox-mythos-kam-ocean-wave {
+  animation: ox-mythos-kam-drift 8s ease-in-out infinite alternate;
+}
+
+@keyframes ox-mythos-kam-drift {
+  0% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+.ox-mythos-kam-bell-swing {
+  transform-origin: 395px 235px;
+  animation: ox-mythos-kam-bell-chime 4s ease-in-out infinite;
+}
+
+@keyframes ox-mythos-kam-bell-chime {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(4deg); }
+}
+
+.ox-mythos-kam-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ox-mythos-kam-card {
+  background: var(--kam-surface);
+  border: 1px solid var(--kam-border);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.ox-mythos-kam-card-title {
+  font-family: 'Yatra One', serif;
+  font-size: 1.15rem;
+  color: var(--kam-marigold);
+  margin: 0 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ox-mythos-kam-offering-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ox-mythos-kam-offering-btn {
+  background: var(--kam-surface-elevated);
+  border: 1px solid var(--kam-border);
+  color: var(--kam-text);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  transition: all 0.25s ease;
+}
+
+.ox-mythos-kam-offering-btn:hover {
+  border-color: var(--kam-marigold);
+  background: #2b3944;
+}
+
+.ox-mythos-kam-offering-btn:focus-visible {
+  outline: 2px solid var(--kam-gold-bright);
+  outline-offset: 2px;
+}
+
+.ox-mythos-kam-offering-btn.is-active {
+  border-color: var(--kam-gold-bright);
+  background: #31424f;
+  box-shadow: 0 0 15px rgba(217, 119, 6, 0.25);
+}
+
+.ox-mythos-kam-offering-btn-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.ox-mythos-kam-offering-btn-trans {
+  font-size: 0.8rem;
+  color: var(--kam-text-muted);
+}
+
+.ox-mythos-kam-offering-panel {
+  background: #182229;
+  border-left: 2px solid var(--kam-vermilion);
+  padding: 1rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+  margin-top: 1rem;
+}
+
+.ox-mythos-kam-offering-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--kam-gold-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.ox-mythos-kam-offering-desc {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--kam-text);
+  margin: 0;
+}
+
+.ox-mythos-kam-mandala-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.ox-mythos-kam-stat {
+  background: var(--kam-surface-elevated);
+  border: 1px solid var(--kam-border);
+  padding: 0.75rem 0.5rem;
+  border-radius: 4px;
+}
+
+.ox-mythos-kam-stat-val {
+  font-family: 'Yatra One', serif;
+  font-size: 1.35rem;
+  color: var(--kam-gold-bright);
+  display: block;
+}
+
+.ox-mythos-kam-stat-lbl {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--kam-text-dim);
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.ox-mythos-kam-scripture {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .ox-mythos-kam-scripture {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ox-mythos-kam-scripture-card {
+  background: var(--kam-surface);
+  border: 1px solid var(--kam-border);
+  padding: 1.5rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ox-mythos-kam-scripture-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--kam-marigold), transparent);
+}
+
+.ox-mythos-kam-scripture-card h3 {
+  font-family: 'Yatra One', serif;
+  font-size: 1.1rem;
+  color: var(--kam-text);
+  margin: 0 0 0.5rem;
+}
+
+.ox-mythos-kam-scripture-card p {
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--kam-text-muted);
+  margin: 0;
+}
+
+.ox-mythos-kam-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--kam-border);
+}
+
+.ox-mythos-kam-plaque {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.65rem 1.6rem;
+  background: #19242d;
+  border: 1px solid var(--kam-gold);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.ox-mythos-kam-plaque-lotus {
+  color: var(--kam-vermilion);
+  font-size: 1.1rem;
+}
+
+.ox-mythos-kam-sig {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--kam-gold-bright);
+  font-weight: 700;
+  text-transform: uppercase;
+}

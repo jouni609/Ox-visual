@@ -1,0 +1,360 @@
+.th-ox-mythos-gugalanna {
+  --gug-bg: #180d07;
+  --gug-surface: #24140b;
+  --gug-surface-elevated: #331c11;
+  --gug-border: #4d2b1a;
+  --gug-copper: #dd6b20;
+  --gug-copper-glow: rgba(221, 107, 32, 0.25);
+  --gug-copper-bright: #f6ad55;
+  --gug-terracotta: #9c4221;
+  --gug-lapis: #2b6cb0;
+  --gug-text: #f5ebe1;
+  --gug-text-muted: #bfa18f;
+  --gug-text-dim: #7a5c4c;
+}
+
+.th-ox-mythos-gugalanna ::selection {
+  background: var(--gug-copper);
+  color: var(--gug-bg);
+}
+
+.ox-mythos-gug-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--gug-bg);
+  color: var(--gug-text);
+  font-family: 'Literata', serif;
+  padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 3.5vw, 3rem) 6rem;
+  background-image:
+    radial-gradient(ellipse at 50% 10%, rgba(221, 107, 32, 0.09) 0%, transparent 60%),
+    radial-gradient(circle at 90% 85%, rgba(156, 66, 33, 0.12) 0%, transparent 50%);
+}
+
+.ox-mythos-gug-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ox-mythos-gug-header {
+  border-bottom: 1px solid var(--gug-border);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ox-mythos-gug-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--gug-copper-bright);
+  font-weight: 700;
+}
+
+.ox-mythos-gug-cunei-mark {
+  color: var(--gug-text-dim);
+  font-size: 0.9rem;
+}
+
+.ox-mythos-gug-title {
+  font-family: 'Rozha One', 'Cinzel', serif;
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.ox-mythos-gug-title-highlight {
+  color: var(--gug-copper-bright);
+  background: linear-gradient(135deg, #fbd38d 0%, #dd6b20 60%, #9c4221 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ox-mythos-gug-subtitle {
+  font-size: clamp(0.92rem, 1.8vw, 1.2rem);
+  color: var(--gug-text-muted);
+  max-width: 820px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.ox-mythos-gug-stage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 960px) {
+  .ox-mythos-gug-stage {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+  }
+}
+
+.ox-mythos-gug-canvas-frame {
+  position: relative;
+  background: linear-gradient(180deg, #22120a 0%, #170d06 100%);
+  border: 1px solid var(--gug-border);
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.9), 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.ox-mythos-gug-canvas-frame.is-tremoring {
+  animation: ox-mythos-gug-earthquake 0.5s ease-in-out;
+}
+
+@keyframes ox-mythos-gug-earthquake {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-3px, 2px); }
+  40% { transform: translate(3px, -2px); }
+  60% { transform: translate(-2px, -1px); }
+  80% { transform: translate(2px, 1px); }
+}
+
+.ox-mythos-gug-svg-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ox-mythos-gug-svg {
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  overflow: visible;
+}
+
+.ox-mythos-gug-snort-dust {
+  transform-origin: 470px 220px;
+  animation: ox-mythos-gug-dust-puff 3s ease-in-out infinite;
+}
+
+@keyframes ox-mythos-gug-dust-puff {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.9) translate(0, 0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.2) translate(10px, -5px);
+  }
+}
+
+.ox-mythos-gug-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ox-mythos-gug-card {
+  background: var(--gug-surface);
+  border: 1px solid var(--gug-border);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.ox-mythos-gug-card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gug-copper-bright);
+  margin: 0 0 1rem;
+  letter-spacing: 0.08em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ox-mythos-gug-snort-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.ox-mythos-gug-snort-btn {
+  background: var(--gug-surface-elevated);
+  border: 1px solid var(--gug-border);
+  color: var(--gug-text);
+  padding: 0.85rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  transition: all 0.25s ease;
+}
+
+.ox-mythos-gug-snort-btn:hover {
+  border-color: var(--gug-copper);
+  background: #3f2214;
+}
+
+.ox-mythos-gug-snort-btn:focus-visible {
+  outline: 2px solid var(--gug-copper-bright);
+  outline-offset: 2px;
+}
+
+.ox-mythos-gug-snort-btn.is-active {
+  border-color: var(--gug-copper-bright);
+  background: #4a2717;
+  box-shadow: 0 0 16px rgba(221, 107, 32, 0.3);
+}
+
+.ox-mythos-gug-snort-tag {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  color: var(--gug-copper-bright);
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.ox-mythos-gug-snort-label {
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: block;
+}
+
+.ox-mythos-gug-fissure-panel {
+  background: #2a160d;
+  border-left: 2px solid var(--gug-copper);
+  padding: 1rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.ox-mythos-gug-fissure-depth {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.76rem;
+  color: var(--gug-copper-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.ox-mythos-gug-fissure-desc {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--gug-text);
+  margin: 0;
+}
+
+.ox-mythos-gug-tablet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.ox-mythos-gug-stat {
+  background: var(--gug-surface-elevated);
+  border: 1px solid var(--gug-border);
+  padding: 0.75rem 0.5rem;
+  border-radius: 4px;
+}
+
+.ox-mythos-gug-stat-val {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gug-copper-bright);
+  display: block;
+}
+
+.ox-mythos-gug-stat-lbl {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--gug-text-dim);
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.ox-mythos-gug-epic {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .ox-mythos-gug-epic {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ox-mythos-gug-epic-card {
+  background: var(--gug-surface);
+  border: 1px solid var(--gug-border);
+  padding: 1.5rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ox-mythos-gug-epic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gug-copper), transparent);
+}
+
+.ox-mythos-gug-epic-card h3 {
+  font-family: 'Rozha One', serif;
+  font-size: 1.15rem;
+  color: var(--gug-text);
+  margin: 0 0 0.5rem;
+}
+
+.ox-mythos-gug-epic-card p {
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--gug-text-muted);
+  margin: 0;
+}
+
+.ox-mythos-gug-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--gug-border);
+}
+
+.ox-mythos-gug-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.65rem 1.6rem;
+  background: #1e1008;
+  border: 1px solid var(--gug-copper);
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(221, 107, 32, 0.2);
+}
+
+.ox-mythos-gug-seal-mark {
+  color: var(--gug-copper-bright);
+  font-size: 1rem;
+}
+
+.ox-mythos-gug-sig {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--gug-copper-bright);
+  font-weight: 700;
+  text-transform: uppercase;
+}

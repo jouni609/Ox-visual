@@ -304,6 +304,21 @@ Five ages, five crafts — one animal from birth straw to gate stone: calf, year
 
 </details>
 
+<details>
+  <summary><strong>Set XXI — OX MYTHOS</strong> · five primeval mythologies, five cosmic cattle · <em>designed by Gemini 3.8 Flash</em></summary>
+
+Five primeval mythologies, five cosmic cattle — the bovine as creator, cataclysm, and living flesh of divinity in Egypt, Scandinavia, Mesopotamia, Vedic India, and ancient Persia. Each page is an artifact of its culture's sacred craft, signed in its own native mark (royal basalt cartouche, chiseled runestone, cuneiform cylinder seal, scalloped brass temple plaque, Sasanian silver coin bezel).
+
+| # | Design | Mythology | Direction |
+|---|--------|-----------|-----------|
+| 01 | **Apis** | Memphis · Egypt | Monumental basalt and electrum gold: sacred black bull with gold solar disk and uraeus between horns, 3 divine bodily marks, Serapeum crypt stats, royal cartouche seal |
+| 02 | **Auðumbla** | Ginnungagap · Norse | Glacial runestone in abyssal slate and rime ice: colossal prehistoric rime-cow with 4 streaming milk rivers, steaming breath, interactive 3-day salt-stone lick reveal, runestone signature |
+| 03 | **Gugalanna** | Uruk · Mesopotamia | Baked cuneiform clay tablet and hammered raw copper: ferocious charging aurochs-bull spitting dust, interactive seismic tremor and bellow gauge splitting the Euphrates, cylinder seal signature |
+| 04 | **Kamadhenu** | Kshirasagara · Vedic | Pichwai lotus sanctuary in ivory and temple vermilion: graceful white Zebu cow on floating lotus with nursing calf, bell garland, 5 sacred Panchagavya offerings, scalloped brass plaque signature |
+| 05 | **Gavaevodata** | Veh Daiti · Persia | Sasanian lunar astrolabe in starlit midnight indigo and silver-gilt: luminous celestial bull with sprouting botanical tendrils, constellation points, transmutation of grains and healing herbs, silver coin signature |
+
+</details>
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

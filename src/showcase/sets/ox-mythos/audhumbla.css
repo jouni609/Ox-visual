@@ -1,0 +1,375 @@
+.th-ox-mythos-audhumbla {
+  --aud-bg: #050a10;
+  --aud-surface: #0a131f;
+  --aud-surface-card: #101c2b;
+  --aud-border: #1a2c3f;
+  --aud-ice: #e2f1f8;
+  --aud-ice-glow: rgba(79, 209, 197, 0.25);
+  --aud-cyan: #38b2ac;
+  --aud-cyan-bright: #4fd1c5;
+  --aud-deep-chasm: #03060a;
+  --aud-text: #e8f4fa;
+  --aud-text-muted: #8ba2b8;
+  --aud-text-dim: #506980;
+}
+
+.th-ox-mythos-audhumbla ::selection {
+  background: var(--aud-cyan-bright);
+  color: var(--aud-bg);
+}
+
+.ox-mythos-aud-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--aud-bg);
+  color: var(--aud-text);
+  font-family: 'Space Mono', monospace;
+  padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 3.5vw, 3rem) 6rem;
+  background-image:
+    radial-gradient(ellipse at 80% 0%, rgba(79, 209, 197, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 20% 90%, rgba(26, 75, 110, 0.12) 0%, transparent 50%);
+}
+
+.ox-mythos-aud-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ox-mythos-aud-header {
+  border-bottom: 1px solid var(--aud-border);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ox-mythos-aud-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--aud-cyan-bright);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ox-mythos-aud-runic {
+  font-family: 'Noto Sans Runic', sans-serif;
+  letter-spacing: 0.25em;
+  color: var(--aud-text-dim);
+}
+
+.ox-mythos-aud-title {
+  font-family: 'Unbounded', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.ox-mythos-aud-title-highlight {
+  color: var(--aud-cyan-bright);
+  background: linear-gradient(135deg, #ffffff 0%, #4fd1c5 50%, #2c7a7b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ox-mythos-aud-subtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(0.88rem, 1.6vw, 1.1rem);
+  color: var(--aud-text-muted);
+  max-width: 820px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ox-mythos-aud-stage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 960px) {
+  .ox-mythos-aud-stage {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+  }
+}
+
+.ox-mythos-aud-canvas-frame {
+  position: relative;
+  background: linear-gradient(180deg, #09121d 0%, #060b12 100%);
+  border: 1px solid var(--aud-border);
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.9), 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ox-mythos-aud-chasm-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(79, 209, 197, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 209, 197, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.ox-mythos-aud-svg-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ox-mythos-aud-svg {
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  overflow: visible;
+}
+
+.ox-mythos-aud-breath-cloud {
+  transform-origin: 435px 225px;
+  animation: ox-mythos-aud-breath 4s ease-in-out infinite;
+}
+
+@keyframes ox-mythos-aud-breath {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.9) translate(0, 0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.15) translate(8px, -4px);
+  }
+}
+
+.ox-mythos-aud-milk-river {
+  stroke-dasharray: 6, 4;
+  animation: ox-mythos-aud-milk-flow 2s linear infinite;
+}
+
+@keyframes ox-mythos-aud-milk-flow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.ox-mythos-aud-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ox-mythos-aud-card {
+  background: var(--aud-surface);
+  border: 1px solid var(--aud-border);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.ox-mythos-aud-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ox-mythos-aud-card-title {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--aud-cyan-bright);
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.ox-mythos-aud-day-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.ox-mythos-aud-day-btn {
+  background: var(--aud-surface-card);
+  border: 1px solid var(--aud-border);
+  color: var(--aud-text);
+  padding: 0.75rem 0.5rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.ox-mythos-aud-day-btn:hover {
+  border-color: var(--aud-cyan);
+  background: #152438;
+}
+
+.ox-mythos-aud-day-btn:focus-visible {
+  outline: 2px solid var(--aud-cyan-bright);
+  outline-offset: 2px;
+}
+
+.ox-mythos-aud-day-btn.is-active {
+  border-color: var(--aud-cyan-bright);
+  background: #142a3e;
+  box-shadow: 0 0 15px rgba(79, 209, 197, 0.2);
+}
+
+.ox-mythos-aud-day-tag {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--aud-cyan-bright);
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.ox-mythos-aud-day-name {
+  font-weight: 700;
+  display: block;
+}
+
+.ox-mythos-aud-reveal-panel {
+  background: #0d1826;
+  border-left: 2px solid var(--aud-cyan-bright);
+  padding: 1rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.ox-mythos-aud-reveal-tag {
+  font-size: 0.75rem;
+  color: var(--aud-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.ox-mythos-aud-reveal-desc {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--aud-text);
+  margin: 0;
+}
+
+.ox-mythos-aud-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.ox-mythos-aud-metric {
+  background: var(--aud-surface-card);
+  border: 1px solid var(--aud-border);
+  padding: 0.75rem 0.5rem;
+  border-radius: 4px;
+}
+
+.ox-mythos-aud-metric-val {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--aud-cyan-bright);
+  display: block;
+}
+
+.ox-mythos-aud-metric-lbl {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--aud-text-dim);
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.ox-mythos-aud-chronicle {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .ox-mythos-aud-chronicle {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ox-mythos-aud-chronicle-card {
+  background: var(--aud-surface);
+  border: 1px solid var(--aud-border);
+  padding: 1.5rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ox-mythos-aud-chronicle-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--aud-cyan), transparent);
+}
+
+.ox-mythos-aud-chronicle-card h3 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 0.95rem;
+  color: var(--aud-text);
+  margin: 0 0 0.65rem;
+}
+
+.ox-mythos-aud-chronicle-card p {
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: var(--aud-text-muted);
+  margin: 0;
+}
+
+.ox-mythos-aud-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--aud-border);
+}
+
+.ox-mythos-aud-stone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.65rem 1.6rem;
+  background: #07101a;
+  border: 1px solid var(--aud-cyan);
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(79, 209, 197, 0.15);
+}
+
+.ox-mythos-aud-stone-rune {
+  color: var(--aud-cyan-bright);
+  font-size: 1.1rem;
+}
+
+.ox-mythos-aud-sig {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--aud-ice);
+  font-weight: 700;
+  text-transform: uppercase;
+}
