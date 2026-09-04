@@ -4,7 +4,7 @@
 **Method:** full Playwright render of every design (desktop 1440px full-page + 375px mobile, scroll-through to trigger reveals), automated console-error & horizontal-overflow sweep (0 errors, 0 overflow across all 105), static source audit of every set, SVG path-hash originality sweep, plus visual review of every desktop render.
 
 **Quality score (0–100):** ox legibility & presence /30 · five distinct visual directions /25 · craft (type, layout, color) /25 · subject-grounded copy /10 · a11y + responsive + motion /10.
-**PASS/FAIL gate (per user definition):** the ox figure is distinct and understandable as a bovine in the rendered image. Set passes at 4/5 or better under the acceptance baseline adopted after review; per-design results shown.
+**OX gate (canonical wording, per AGENTS.md):** every design is judged on its rendered page by one question — **does the image portray a bovine in any form, and does it resemble one?** The set passes at 4 of 5 designs or better; per-design results shown. (The review of 2026-09-03/04 applied this same test under the earlier wording "distinct and understandable as a bovine"; the question now lives verbatim in the brief so agents and judges share one sentence.)
 Static-rule violations (signing, banned techniques, naming, a11y floor) are listed as gate flags and weighed in the score. Visual verdicts were produced in a two-pass process: a primary review of all 105 desktop renders, an independent blind re-review of sampled sets (no set verdict changed; single-design borderline drift only), reviewer verification of every verdict that flipped a set outcome, and a 12-page mobile sweep at 375px.
 
 ---

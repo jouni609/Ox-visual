@@ -1,8 +1,8 @@
 # Wall of shame
 
-Ten sets were cut from the gallery on 2026-09-04. The acceptance baseline is simple: at least 4 of the 5 designs in a set must draw an ox you can recognize as an ox, judged on the rendered page, not the source. These are the models that missed it, with their final scores. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
+Ten sets were cut from the gallery on 2026-09-04. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it, with their final scores. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
 
-| Model | Set | Score | OX passes |
+| Model | Set | Score | OX gate |
 |-------|-----|-------|-----------|
 | Qwen 3.8 Flash | ox-polis | 80/100 | 3/5 |
 | muse-spark | ox-works | 70/100 | 1/5 |

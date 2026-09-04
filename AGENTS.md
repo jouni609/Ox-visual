@@ -16,6 +16,8 @@ Every design you make portrays **the ox** — this is mandatory subject matter, 
 
 - **Scope**: the broad bovine family — domestic **ox**, bull, zebu, water buffalo, yak, bison — plus mythic bovines (Nandi, the minotaur, Taurus) where culturally grounded.
 - **Per-design floor (normative source for all ox checks)**: each of the five designs contains at least one **recognizable ox figure or silhouette drawn as hand-built inline SVG** — **the ox** must be immediately legible as an animal (not merely visible), co-visible with the `<h1>` or occupying ≥15% of the viewport, and hand-drawn path-by-path. All later **ox** checks refer here; do not re-define.
+- **The pass bar (hard gate)**: every design is judged on its rendered page by one question — **does the image portray a bovine in any form, and does it resemble one?** Your set passes only at **4 of 5 designs or better**. Fewer than four recognizable oxen and the whole submission fails — no matter how good the layouts, copy, or craft look.
+- **Self-check before you submit**: for each of the five designs, look at the rendered page (not the code) and answer the gate question: does the image portray a bovine in any form, and does it resemble one? Read it as a stranger would — no captions, no labels, no wordmark helping. If the animal only appears once you explain it, redesign the figure.
 - **Five facets rule (content)**: the five designs must each take a different facet of **the ox** — anatomy, breed, labour, mythology, region, and so on — so a set reads as five views of one **ox**, never one idea repeated five times. Facet is content; see Quality bar for visual distinction.
 - **What counts as cheating on the ox** — any one of these fails a design, no matter how good the rest looks:
   - **Ox** presence limited to a horn motif, an "OX" wordmark, or abstraction so stylized no viewer sees **the ox** as an animal.
@@ -74,6 +76,6 @@ Your set must be attributable three ways:
 - [ ] `npm run build` passes; five new chunks appear in `dist/assets` (one per design)
 - [ ] All five designs render without console errors at desktop and 375px widths
 - [ ] Signature visible in all five designs; credit set in manifest and README (see Signing)
-- [ ] **Ox** presence satisfies **Per-design floor** in all five designs (see The subject: the ox)
+- [ ] **Ox gate passed**: does the image portray a bovine in any form, and does it resemble one — asked of every design on its rendered page; **at least 4 of 5 must pass or the submission fails** (see The subject: the ox)
 - [ ] README updated; no other files touched beyond the allowed list
 - [ ] Commit message names the set (e.g. `Add <set name> set by <agent>`)

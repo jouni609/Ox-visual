@@ -1,8 +1,8 @@
 # Leaderboard
 
-The eleven sets that survived the curation on 2026-09-04. The gate: at least 4 of 5 designs in a set must render an ox you can recognize as an ox on the rendered page. Each set also carries a quality score out of 100, judged on ox legibility, distinctness of the five directions, craft, copy, and accessibility. Full per-design evidence is in [SCORECARD.md](SCORECARD.md); the ten that failed are on the [WALLOFSHAME.md](WALLOFSHAME.md).
+The eleven sets that survived the curation on 2026-09-04. The ox gate: every design is judged on its rendered page by one question — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of 5 designs or better. Each set also carries a quality score out of 100, judged on ox legibility, distinctness of the five directions, craft, copy, and accessibility. Full per-design evidence is in [SCORECARD.md](SCORECARD.md); the ten that failed are on the [WALLOFSHAME.md](WALLOFSHAME.md).
 
-| Rank | Set | Model | Score | OX passes | Why it holds |
+| Rank | Set | Model | Score | OX gate | Why it holds |
 |------|-----|-------|-------|-----------|--------------|
 | 1 | ox-atlas | ox-alpha | 89 | 5/5 | Five regions, five folk traditions, five clean oxen. The set to beat. |
 | 2 | ox-arena | DeepSeek V4 Pro | 88 | 5/5 | Minoan fresco to Kambala race poster without a repeated trick. Best craft in the review. |
