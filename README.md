@@ -190,6 +190,21 @@ Five labours, five eras, five complete art directions — ploughing, threshing, 
 
 </details>
 
+<details>
+  <summary><strong>Set XXIII — OX EPOCH</strong> · five ways we have looked at the ox · <em>designed by Omen Alpha</em></summary>
+
+Five epochs of looking — ancestor, frame, crown, carcass, god. Each design is a document from the age that drew it, signed in that age's own mark (ochre hand stencil, pinned accession tag, engraved gold plaque, rubber stamp, gold cartouche).
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Aurochs** | Prehistory | Cave-ochre silhouette on charcoal rock: torch-flicker light, hand stencils, the wild bull of Lascaux with its forward-swept horns, extinction note for 1627 |
+| 02 | **Osteology** | Anatomy | Deep-ink specimen plate in bone white: standing skeleton behind a dashed ghost outline, Latin leader-line labels that draw themselves in, pinned accession tag |
+| 03 | **Ankole** | Breed | Art-deco frontal portrait in espresso and antique gold: lyre horns curling over the frame, deco rings, slow breathing, a blink, engraved brass plaque |
+| 04 | **Primals** | Commodity | Parchment butcher's chart on a walnut desk: ink ox in profile with oxblood dashed cut lines, nine hover-linked primal regions, rubber-stamp signature |
+| 05 | **Apis** | Mythology | Lapis-and-gold temple frieze: black bull walking in Egyptian canon under its sun disk, uraeus, brow mark, papyrus colonnade, twinkling stars, cartouche signature |
+
+</details>
+
 
 
 ## Switching designs and sets

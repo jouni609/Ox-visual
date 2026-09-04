@@ -1,0 +1,173 @@
+.th-ox-epoch.ox-epoch-o-page {
+  --oxo-bg: #0f1420;
+  --oxo-panel: #131a2b;
+  --oxo-bone: #ede7d3;
+  --oxo-ink: #20263a;
+  --oxo-mut: #a9b4ce;
+  --oxo-line: rgba(122, 135, 168, 0.35);
+  --oxo-accent: #b3703b;
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(100% 80% at 50% 0%, #18213a 0%, var(--oxo-bg) 62%);
+  color: var(--oxo-bone);
+  font-family: 'Newsreader', serif;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.4rem, 3.5vw, 3.2rem);
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.th-ox-epoch.ox-epoch-o-page ::selection {
+  background: var(--oxo-bone);
+  color: var(--oxo-ink);
+}
+
+.ox-epoch-o-page :focus-visible {
+  outline: 2px solid var(--oxo-accent);
+  outline-offset: 3px;
+}
+
+.ox-epoch-o-head {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ox-epoch-o-kicker {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(0.66rem, 1vw, 0.8rem);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--oxo-mut);
+  margin-bottom: 0.8rem;
+}
+
+.ox-epoch-o-h1 {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(1.9rem, 3.8vw, 3.4rem);
+  line-height: 1.1;
+  color: var(--oxo-bone);
+}
+
+.ox-epoch-o-h1::after {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 1px;
+  margin: 1.1rem auto 0;
+  background: var(--oxo-accent);
+}
+
+.ox-epoch-o-plate {
+  position: relative;
+  width: min(1020px, 100%);
+  margin: 0 auto;
+  background: var(--oxo-panel);
+  border: 1px solid var(--oxo-line);
+  outline: 1px solid var(--oxo-line);
+  outline-offset: 6px;
+  padding: clamp(0.8rem, 2.2vw, 2rem) clamp(0.6rem, 2vw, 1.6rem);
+}
+
+.ox-epoch-o-art {
+  width: 100%;
+  height: auto;
+}
+
+.ox-epoch-o-lbl {
+  font-family: 'Newsreader', serif;
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  fill: var(--oxo-mut);
+}
+
+.ox-epoch-o-tag {
+  position: absolute;
+  top: clamp(0.8rem, 2vw, 1.6rem);
+  right: clamp(-0.6rem, 1vw, 1rem);
+  transform: rotate(4deg);
+  background: linear-gradient(160deg, #f4ecd7 0%, #ddd2b4 100%);
+  color: #2a2416;
+  padding: 0.7rem 1.1rem 0.75rem 1.4rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  min-width: 200px;
+}
+
+.ox-epoch-o-tagpin {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle at 35% 35%, #cfd8ea, #55617e 70%);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ox-epoch-o-tagno {
+  font-family: 'Marcellus', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6b5a33;
+}
+
+.ox-epoch-o-tagsig {
+  font-family: 'Newsreader', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  border-top: 1px solid rgba(74, 60, 30, 0.4);
+  padding-top: 0.3rem;
+}
+
+.ox-epoch-o-cap {
+  text-align: center;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--oxo-mut);
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--oxo-line);
+  margin-top: 0.6rem;
+}
+
+.ox-epoch-o-facts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 4vw, 3.5rem);
+}
+
+.ox-epoch-o-facts > div {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oxo-mut);
+}
+
+.ox-epoch-o-facts span {
+  font-family: 'Marcellus', serif;
+  font-size: 1.5rem;
+  color: var(--oxo-accent);
+  letter-spacing: 0;
+}
+
+@media (max-width: 640px) {
+  .ox-epoch-o-tag {
+    position: static;
+    margin: 1rem auto 0;
+    transform: rotate(-1deg);
+    width: fit-content;
+  }
+}

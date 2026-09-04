@@ -10,5 +10,6 @@ import oxArena from './ox-arena/manifest.js'
 import oxVita from './ox-vita/manifest.js'
 import oxMythos from './ox-mythos/manifest.js'
 import oxYoke from './ox-yoke/manifest.js'
+import oxEpoch from './ox-epoch/manifest.js'
 
-export const SETS = [oxAtlas, oxBiomes, oxSensorium, oxSignals, oxGlyphs, oxMasque, oxHours, oxVesper, oxArena, oxVita, oxMythos, oxYoke]
+export const SETS = [oxAtlas, oxBiomes, oxSensorium, oxSignals, oxGlyphs, oxMasque, oxHours, oxVesper, oxArena, oxVita, oxMythos, oxYoke, oxEpoch]

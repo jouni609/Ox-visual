@@ -1,0 +1,190 @@
+.th-ox-epoch.ox-epoch-a-page {
+  --oxa-bg: #1c0d06;
+  --oxa-wall: #241107;
+  --oxa-ochre: #b4551d;
+  --oxa-ochre-deep: #8e4517;
+  --oxa-char: #2a1206;
+  --oxa-sand: #e8c496;
+  --oxa-dim: #b89573;
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(120% 90% at 30% 40%, #351809 0%, var(--oxa-bg) 70%);
+  color: var(--oxa-sand);
+  font-family: 'Sen', sans-serif;
+}
+
+.th-ox-epoch.ox-epoch-a-page ::selection {
+  background: var(--oxa-ochre);
+  color: #1c0d06;
+}
+
+.ox-epoch-a-page :focus-visible {
+  outline: 2px dashed var(--oxa-ochre);
+  outline-offset: 4px;
+}
+
+.ox-epoch-a-stage {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(1.5rem, 5vw, 5rem) clamp(1.25rem, 5vw, 5rem);
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.ox-epoch-a-art {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.55));
+}
+
+.ox-epoch-a-torch {
+  animation: ox-epoch-flicker 4.6s ease-in-out infinite;
+  transform-origin: 38% 42%;
+}
+
+@keyframes ox-epoch-flicker {
+  0%, 100% { opacity: 0.9; }
+  18% { opacity: 0.62; }
+  32% { opacity: 1; }
+  47% { opacity: 0.7; }
+  61% { opacity: 0.96; }
+  74% { opacity: 0.66; }
+}
+
+.ox-epoch-a-breath {
+  animation: ox-epoch-drift 7s ease-in-out infinite;
+  transform-origin: 96px 238px;
+}
+
+@keyframes ox-epoch-drift {
+  0%, 100% { opacity: 0.4; transform: translate(0, 0) scale(0.9); }
+  50% { opacity: 1; transform: translate(-10px, -8px) scale(1.08); }
+}
+
+.ox-epoch-a-copy {
+  position: relative;
+  max-width: 560px;
+}
+
+.ox-epoch-a-kicker {
+  font-size: clamp(0.68rem, 1.1vw, 0.8rem);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--oxa-dim);
+  margin-bottom: 1.1rem;
+}
+
+.ox-epoch-a-h1 {
+  font-family: 'Rubik Dirt', display;
+  font-weight: 400;
+  font-size: clamp(2.6rem, 5.6vw, 5.2rem);
+  line-height: 0.98;
+  color: var(--oxa-ochre);
+  margin-bottom: 1.4rem;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.45);
+}
+
+.ox-epoch-a-h1 span {
+  color: var(--oxa-sand);
+  font-size: 0.62em;
+  display: block;
+  letter-spacing: 0.04em;
+}
+
+.ox-epoch-a-lede {
+  font-size: clamp(0.98rem, 1.35vw, 1.15rem);
+  line-height: 1.75;
+  color: var(--oxa-sand);
+  margin-bottom: 1.6rem;
+}
+
+.ox-epoch-a-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(180, 85, 29, 0.4);
+  border: 1px solid rgba(180, 85, 29, 0.4);
+  margin-bottom: 1.5rem;
+}
+
+.ox-epoch-a-facts > div {
+  background: rgba(20, 9, 4, 0.6);
+  padding: 0.9rem 1rem;
+}
+
+.ox-epoch-a-facts dt {
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--oxa-dim);
+  margin-bottom: 0.4rem;
+}
+
+.ox-epoch-a-facts dd {
+  font-family: 'Rubik Dirt', display;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  color: var(--oxa-ochre);
+  margin: 0;
+}
+
+.ox-epoch-a-note {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--oxa-dim);
+  border-left: 2px solid var(--oxa-ochre);
+  padding-left: 1rem;
+}
+
+.ox-epoch-a-sig {
+  position: absolute;
+  left: clamp(1.25rem, 5vw, 5rem);
+  bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 1rem 0.55rem 0.7rem;
+  border: 1px solid rgba(180, 85, 29, 0.5);
+  background: rgba(16, 8, 3, 0.72);
+  transform: rotate(-1.2deg);
+}
+
+.ox-epoch-a-sig svg {
+  width: 34px;
+  height: 34px;
+}
+
+.ox-epoch-a-sig span {
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--oxa-ochre);
+}
+
+@media (max-width: 900px) {
+  .ox-epoch-a-stage {
+    grid-template-columns: 1fr;
+    padding-bottom: 7rem;
+  }
+  .ox-epoch-a-art {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .ox-epoch-a-sig {
+    left: 50%;
+    transform: translateX(-50%) rotate(-1.2deg);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .ox-epoch-a-facts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
