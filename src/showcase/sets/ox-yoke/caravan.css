@@ -1,0 +1,251 @@
+.th-ox-yoke-caravan {
+  --c-sky-top: #cfdde4;
+  --c-sky-mid: #e2eaed;
+  --c-sky-low: #eef2f2;
+  --c-mist: #f6f8f8;
+  --c-far: #9fb0bd;
+  --c-snowcap: #f4f7f7;
+  --c-ridge: #7c90a0;
+  --c-ridge-ink: #46586a;
+  --c-fore: #5f7280;
+  --c-fore-deep: #4d5f6c;
+  --c-yak: #3a2e26;
+  --c-yak-deep: #2a211b;
+  --c-yak-shine: #6b5a4c;
+  --c-hoof: #221a15;
+  --c-horn: #a89278;
+  --c-horn-pale: #d8cfc2;
+  --c-muzzle: #5d4c40;
+  --c-tail: #241c16;
+  --c-rope: #8a6a44;
+  --c-strap: #a38052;
+  --c-tea: #7c5a3a;
+  --c-tea-deep: #5d4229;
+  --c-breath: #ffffff;
+  --c-lacquer: #a63b2a;
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, var(--c-sky-top), var(--c-sky-low));
+  padding: clamp(20px, 4vw, 52px) clamp(14px, 4vw, 56px) clamp(28px, 5vw, 64px);
+  font-family: 'Source Serif 4', serif;
+  color: #22303c;
+}
+
+.th-ox-yoke-caravan ::selection {
+  background: var(--c-lacquer);
+  color: #f6f8f8;
+}
+
+.ox-yoke-caravan-head {
+  max-width: 640px;
+  margin: 0 auto clamp(18px, 3vw, 30px);
+  text-align: center;
+}
+
+.ox-yoke-caravan-kicker {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.ox-yoke-caravan-tibetan {
+  font-family: 'Noto Serif Tibetan', serif;
+  font-size: clamp(20px, 3vw, 30px);
+  color: var(--c-ridge-ink);
+}
+
+.ox-yoke-caravan-kicker-sub {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: clamp(10px, 1.3vw, 12px);
+  letter-spacing: 0.4em;
+  color: var(--c-lacquer);
+}
+
+.ox-yoke-caravan-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: clamp(34px, 5.6vw, 64px);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+
+.ox-yoke-caravan-lede {
+  font-size: clamp(15.5px, 1.9vw, 19.5px);
+  line-height: 1.6;
+  font-style: italic;
+  color: #3c4c59;
+}
+
+.ox-yoke-caravan-scene {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(34, 48, 60, 0.28);
+}
+
+.ox-yoke-caravan-art {
+  display: block;
+  width: 100%;
+  height: clamp(300px, 62vh, 640px);
+}
+
+.ox-yoke-caravan-mist-a {
+  animation: ox-yoke-caravan-drift 46s ease-in-out infinite alternate;
+}
+
+.ox-yoke-caravan-mist-b {
+  animation: ox-yoke-caravan-drift 34s ease-in-out infinite alternate-reverse;
+}
+
+.ox-yoke-caravan-mist-c {
+  animation: ox-yoke-caravan-drift 26s ease-in-out infinite alternate;
+}
+
+@keyframes ox-yoke-caravan-drift {
+  from {
+    transform: translateX(-36px);
+  }
+  to {
+    transform: translateX(36px);
+  }
+}
+
+.ox-yoke-caravan-file {
+  animation: ox-yoke-caravan-shuffle 60s linear infinite alternate;
+}
+
+@keyframes ox-yoke-caravan-shuffle {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
+
+.ox-yoke-caravan-yak {
+  animation: ox-yoke-caravan-plod 5s ease-in-out infinite;
+}
+
+@keyframes ox-yoke-caravan-plod {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.ox-yoke-caravan-breath {
+  animation: ox-yoke-caravan-breath 4.2s ease-in-out infinite;
+  transform-origin: 520px 612px;
+}
+
+@keyframes ox-yoke-caravan-breath {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  35% {
+    opacity: 0.85;
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.25) translateX(-14px);
+  }
+}
+
+.ox-yoke-caravan-waybill {
+  position: absolute;
+  left: clamp(14px, 3vw, 40px);
+  bottom: clamp(14px, 3vw, 36px);
+  background: #f7f3ea;
+  border: 1.5px solid #8a6a44;
+  color: #4a3622;
+  padding: 14px 20px 12px 30px;
+  display: grid;
+  gap: 4px;
+  transform: rotate(-2deg);
+  box-shadow: 3px 4px 0 rgba(34, 48, 60, 0.25);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+
+.ox-yoke-caravan-waybill-hole {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid #8a6a44;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.ox-yoke-caravan-waybill-line {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  font-size: clamp(11px, 1.4vw, 13px);
+  letter-spacing: 0.16em;
+  color: #4a3622;
+}
+
+.ox-yoke-caravan-waybill-meta {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  color: #8a6a44;
+}
+
+.ox-yoke-caravan-foot {
+  max-width: 860px;
+  margin: clamp(22px, 3.4vw, 36px) auto 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: clamp(20px, 4vw, 56px);
+  align-items: start;
+}
+
+.ox-yoke-caravan-body {
+  font-size: clamp(14px, 1.7vw, 17px);
+  line-height: 1.7;
+  color: #2a3946;
+}
+
+.ox-yoke-caravan-stats {
+  display: grid;
+  gap: 14px;
+  border-left: 2px solid var(--c-lacquer);
+  padding-left: 18px;
+}
+
+.ox-yoke-caravan-stat dt {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: clamp(17px, 2vw, 22px);
+  color: var(--c-lacquer);
+}
+
+.ox-yoke-caravan-stat dd {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: clamp(11px, 1.3vw, 13px);
+  color: #46586a;
+}
+
+@media (max-width: 760px) {
+  .ox-yoke-caravan-foot {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-yoke-caravan-stats {
+    border-left: none;
+    border-top: 2px solid var(--c-lacquer);
+    padding-left: 0;
+    padding-top: 14px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

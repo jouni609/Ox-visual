@@ -175,6 +175,21 @@ Five primeval mythologies, five cosmic cattle — the bovine as creator, catacly
 
 </details>
 
+<details>
+  <summary><strong>Set XXII — OX YOKE</strong> · the ox at work, five labours across five ages · <em>designed by Omen Alpha</em></summary>
+
+Five labours, five eras, five complete art directions — ploughing, threshing, drawing water, carrying, hauling. Each design is a document from the work itself, signed in its own native form (rubricated colophon, linocut edition stamp, gold cartouche, waybill tag, chiseled inscription).
+
+| # | Design | Labour | Direction |
+|---|--------|--------|-----------|
+| 01 | **Furrow** | Ploughing · medieval Europe | Illuminated manuscript leaf on a dark desk: parchment, rubric vermilion, gold drop cap, blackletter title, yoked pair with plough and ploughman, hopping drollery hare |
+| 02 | **Thresh** | Treading grain · threshing floor | Two-colour linocut poster: umber on ochre with madder red, reversed slab title, zebu walking the ring, rotating walk diagram, Deuteronomy 25:4 as headline, edition stamp |
+| 03 | **Sakia** | Drawing water · Egypt | Lapis night plate in gold and terracotta: buffalo turning the wheel, rising pot chain, moon and canal reflections, Cinzel display, cartouche signature |
+| 04 | **Caravan** | Carrying · Tea-Horse Road | High-altitude mist study in glacial blues and lacquer red: parallax ridges, yak file on the skyline, hero pack yak under tea bricks, Tibetan script, waybill-tag signature |
+| 05 | **Sarsen** | Hauling · prehistoric Britain | Chalk-and-flint monumental plate: Alfa Slab One against IBM Plex Mono, ox tandem leaning into a sledged sarsen on timber rollers, carving-inset signature |
+
+</details>
+
 
 
 ## Switching designs and sets
