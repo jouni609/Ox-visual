@@ -51,20 +51,6 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 **Gate flags:** signatures read "SET III · DESIGNED BY MUSE-SPARK" in all five (set ordinal + uppercased name vs credit "muse-spark") — present but not per-design verbatim.
 **Verdict:** The best-designed set to fail the gate: magazine-grade layouts and copy, but the actual oxen — the mandatory subject — are missing, cropped, head-only, or unrecognizable in four of five designs.
 
-## ox-biomes — Ox Biomes (credit: Minimax M3) — SCORE 84 · PASS
-
-| # | Design | Ox gate | Notes |
-|---|--------|---------|-------|
-| 01 | Mist | PASS | Shaggy yak in snow drift, low horns, visible eye — atmospheric and legible. Tibetan epigraphy and mist layers are lovely. |
-| 02 | Monsoon | PASS | Carabao half-submerged in rain; layered downpour sells the biome. Signature here omits "DESIGNED BY". |
-| 03 | Prairie | PASS | Bison over soil-strata contours, unmistakable hump-and-head mass. |
-| 04 | Tundra | PASS | Muskox built from crystalline horn-boss forms under aurora bands — stylized but clearly a horned quadruped. |
-| 05 | Savanna | PASS | Hump-shouldered zebu with acacia scene; clean figure. |
-
-**Quality:** ox 24/30 · directions 22/25 · craft 21/25 · copy 9/10 · a11y/responsive/motion 8/10 → **84/100**
-**Gate flags:** signatures use "SET IV" ordinal, Monsoon's omits "DESIGNED BY", 3/5 share one footer-signature form · design-level prefixes (`mist-`, `mon-`…) instead of `ox-biomes-*` · `☂` dingbat in Monsoon.
-**Verdict:** Coherent biome atlas with five solid, distinct animal renderings; weaker only in signature discipline and signature-form variety.
-
 ## ox-folio — Ox Folio (credit: GLM 5.2) — SCORE 68 · FAIL
 
 | # | Design | Ox gate | Notes |
@@ -134,34 +120,6 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 **Quality:** ox 6/30 · directions 23/25 · craft 21/25 · copy 9/10 · a11y/responsive/motion 7/10 → **66/100**
 **Gate flags:** signatures all "SET IX · DESIGNED BY GROK 4.5" (set ordinal); Stercus signature collides with the thumb-stamp graphic; design-level class prefixes.
 **Verdict:** The five-substances concept (hide, horn, bone, milk, dung) is the most original framing in the showcase — and its animals are its failure: four of five read as clouds, insects, or pats.
-
-## ox-signals — Ox Signals (credit: GTP 5.6 Luna) — SCORE 86 · PASS
-
-| # | Design | Ox gate | Notes |
-|---|--------|---------|-------|
-| 01 | Stride | PASS | Geometric blue ox in locomotion plate with center-of-mass annotations; horn disc reads slightly abstract but the animal is clear. |
-| 02 | Hush | **FAIL (borderline)** | The radar ox reads as a cartoon ghost/hippo — pom ears, no horns; species illegible without the caption. |
-| 03 | Ferment | PASS | Purple ox with lime rumen cutaway; sheep-adjacent stylization but horns/hooves/tail anchor it. |
-| 04 | Rings | PASS | Frontal ox face with coral horn-leaves — clearly bovine; horn-growth calendar concept is excellent. |
-| 05 | Return | PASS | Aurochs silhouette with long forward horns — unambiguous and handsome rewilding letter. |
-
-**Quality:** ox 24/30 · directions 23/25 · craft 22/25 · copy 9/10 · a11y/responsive/motion 8/10 → **86/100**
-**Gate flags:** signatures all "SET X · DESIGNED BY GTP 5.6 LUNA" (set ordinal; credit uppercased) and structurally the same footer-bar form in all five — the set's one real discipline gap.
-**Verdict:** Scientific-plate design of a high order with the best copy in the showcase ("Momentum is not speed. It is the body agreeing with itself."); signature monotony and one fuzzy creature are the only dents.
-
-## ox-glyphs — Ox Glyphs (credit: DeepSeek V4) — SCORE 79 · PASS
-
-| # | Design | Ox gate | Notes |
-|---|--------|---------|-------|
-| 01 | Alef | PASS | Golden horned ox head on the Serabit stele — clear and handsome; alphabet-history storytelling is first rate. |
-| 02 | Boustrophedon | PASS (borderline) | Black-figure vase ox is faint scratch-work but the quadruped reads; the interactive boustrophedon script toy is brilliant. |
-| 03 | Uruz | PASS (borderline) | Carved aurochs on green stone — horn arcs read slightly tusk-like (warthog gestalt) but a horned beast is discernible. |
-| 04 | Niu | PASS (borderline) | The ox appears as the oracle-bone pictograph 牛 in four scripts — glyph-as-figure is defensible (horns visible) but weak as an animal image; typographically gorgeous. |
-| 05 | Oxen | PASS (borderline) | Letterpress ox plate — same body as Uruz's figure (see flag); horned animal readable. |
-
-**Quality:** ox 20/30 · directions 22/25 · craft 21/25 · copy 10/10 · a11y/responsive/motion 6/10 → **79/100**
-**Gate flags:** **HARD VIOLATION — designs 03 (Uruz) and 05 (Oxen) reuse the same ox figure**, translated (+68,+6) with different rendering treatment: prohibited "same figure reused across designs"; IBM Plex Mono used 5× in uruz.css but never loaded in index.html (silent fallback); signatures all "SET XI · DESIGNED BY DEEPSEEK V4" (set ordinal).
-**Verdict:** The best-written set in the showcase, held back by a genuine originality breach between two of its five designs and an unloaded font.
 
 ## ox-chronicle — Ox Chronicle (credit: Gemini 3.1 Pro) — SCORE 53 · FAIL
 
@@ -309,44 +267,43 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 ## FINAL RANKING
 
+**Note (2026-09-04, post-review):** three sets that passed this review, ox-signals, ox-biomes and ox-glyphs, were later failed when the maintainer manually re-graded the rendered pages. Their sections are removed from this card and their verdicts live in [WALLOFSHAME.md](WALLOFSHAME.md). The ranking below reflects the review as it stood; the passes marked for those three sets are void.
+
 | Rank | Set | Credit | Score | Gate | Designs passing ox gate |
 |------|-----|--------|-------|------|-------------------------|
 | 1 | ox-atlas | ox-alpha | **89** | PASS | 5/5 |
 | 2 | ox-arena | DeepSeek V4 Pro | **88** | PASS | 5/5 |
-| 3 | ox-signals | GTP 5.6 Luna | **86** | PASS | 4/5 |
-| 4 | ox-vita | MUSE SPARK | **85** | PASS | 5/5 |
-| 5 | ox-biomes | Minimax M3 | **84** | PASS | 5/5 |
-| 5 | ox-sensorium | Grok 4.6 | **84** | PASS | 5/5 |
-| 5 | ox-vesper | Claude Opus | **84** | PASS | 5/5 |
-| 8 | ox-polis | Qwen 3.8 Flash | **80** | **FAIL** | 3/5 |
-| 9 | ox-glyphs | DeepSeek V4 | **79** | PASS | 5/5 |
-| 9 | ox-hours | Qwen 3.8 Max | **79** | PASS | 5/5 |
-| 11 | ox-mythos | Gemini 3.8 Flash | **75** | PASS | 4/5 |
-| 12 | ox-works | muse-spark | **70** | **FAIL** | 1/5 |
-| 13 | ox-folio | GLM 5.2 | **68** | **FAIL** | 2/5 |
-| 14 | ox-numismatica | Gemini 3.7 Flash | **66** | **FAIL** | 1/5 |
-| 14 | ox-materia | Grok 4.5 | **66** | **FAIL** | 1/5 |
-| 16 | ox-masque | Hy3 | **64** | PASS | 4/5 |
-| 17 | ox-faces | (Set I — no agent name) | **60** | **FAIL** | 3/5 |
-| 17 | ox-systema | GLM 5.3 | **60** | **FAIL** | 0/5 |
-| 19 | ox-aurora | Inkling | **58** | **FAIL** | 0/5 |
-| 20 | ox-lithica | Kimi 2.6 | **54** | **FAIL** | 0/5 |
-| 21 | ox-chronicle | Gemini 3.1 Pro | **53** | **FAIL** | 0/5 |
+| 3 | ox-vita | MUSE SPARK | **85** | PASS | 5/5 |
+| 4 | ox-sensorium | Grok 4.6 | **84** | PASS | 5/5 |
+| 4 | ox-vesper | Claude Opus | **84** | PASS | 5/5 |
+| 6 | ox-polis | Qwen 3.8 Flash | **80** | **FAIL** | 3/5 |
+| 7 | ox-hours | Qwen 3.8 Max | **79** | PASS | 5/5 |
+| 8 | ox-mythos | Gemini 3.8 Flash | **75** | PASS | 4/5 |
+| 9 | ox-works | muse-spark | **70** | **FAIL** | 1/5 |
+| 10 | ox-folio | GLM 5.2 | **68** | **FAIL** | 2/5 |
+| 11 | ox-numismatica | Gemini 3.7 Flash | **66** | **FAIL** | 1/5 |
+| 11 | ox-materia | Grok 4.5 | **66** | **FAIL** | 1/5 |
+| 13 | ox-masque | Hy3 | **64** | PASS | 4/5 |
+| 14 | ox-faces | (Set I — no agent name) | **60** | **FAIL** | 3/5 |
+| 14 | ox-systema | GLM 5.3 | **60** | **FAIL** | 0/5 |
+| 16 | ox-aurora | Inkling | **58** | **FAIL** | 0/5 |
+| 17 | ox-lithica | Kimi 2.6 | **54** | **FAIL** | 0/5 |
+| 18 | ox-chronicle | Gemini 3.1 Pro | **53** | **FAIL** | 0/5 |
 
-**Bottom line: 11 of 21 sets pass the ox gate; 63 of 105 designs render a recognizable bovine.**
+**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.**
 
 ---
 
 ## GLOBAL FINDINGS
 
-**The showcase's #1 failure mode is horn rendering.** Across the failing sets, horns are drawn as thin double-line strokes that read as insect antennae or rabbit ears on rounded blob bodies — numismatica's coin oxen (rabbits/beetles), materia's substance mascots (clouds/poop), lithica (jugs/rabbits), chronicle (loafs/domes), systema and aurora (birds/rabbits). The passing sets draw horns as *masses* (atlas, arena, vesper, sensorium, signals, mythos) — the single most predictive craft difference between pass and fail.
+**The showcase's #1 failure mode is horn rendering.** Across the failing sets, horns are drawn as thin double-line strokes that read as insect antennae or rabbit ears on rounded blob bodies — numismatica's coin oxen (rabbits/beetles), materia's substance mascots (clouds/poop), lithica (jugs/rabbits), chronicle (loafs/domes), systema and aurora (birds/rabbits). The passing sets draw horns as *masses* (atlas, arena, vesper, sensorium, mythos) — the single most predictive craft difference between pass and fail.
 
 **Second failure mode: dark-on-dark contrast.** polis/Cathedral, vesper/Cinder, chronicle (all five), hours/Matins+Compline, mythos/Gavaevodata — animals that exist in code but vanish on screen.
 
-**Signature discipline is weak league-wide.** Only ox-systema rendered the template with per-design "SET 1–5" and five distinct native forms. Most sets used their set ordinal ("SET XVII") — treated here as acceptable since AGENTS.md's "SET <n>" is ambiguous — but real breaches exist: ox-faces has **no signature at all in any design** and no agent name in credit; ox-atlas (3 designs), ox-masque (2), ox-hours (1) omit "DESIGNED BY"; aurora, signals, chronicle repeat one identical footer form five times.
+**Signature discipline is weak league-wide.** Only ox-systema rendered the template with per-design "SET 1–5" and five distinct native forms. Most sets used their set ordinal ("SET XVII") — treated here as acceptable since AGENTS.md's "SET <n>" is ambiguous — but real breaches exist: ox-faces has **no signature at all in any design** and no agent name in credit; ox-atlas (3 designs), ox-masque (2), ox-hours (1) omit "DESIGNED BY"; aurora, chronicle repeat one identical footer form five times.
 
-**Hard rule breaches:** ox-glyphs reuses one ox figure between Uruz and Oxen (translated +68,+6) — the only cross-design figure reuse found; ox-aurora and ox-chronicle ship JSX comments in all five designs (banned); ox-aurora has no h1 element in any design (plus faces/Stillness); IBM Plex Mono is used but never loaded in ox-glyphs and ox-polis; ox-faces' credit is "Set I", not an agent name, and its README summary lacks "designed by".
+**Hard rule breaches:** ox-aurora and ox-chronicle ship JSX comments in all five designs (banned); ox-aurora has no h1 element in any design (plus faces/Stillness); IBM Plex Mono is used but never loaded in ox-polis; ox-faces' credit is "Set I", not an agent name, and its README summary lacks "designed by".
 
 **Infrastructure is solid:** zero console errors and zero horizontal overflow at 375px across all 105 designs; no shell file touched by any set; both WIP sets (mythos, vita) were committed before review. One shell-level note for the maintainer: the showcase's own dock pill overlaps body copy or captions on roughly a third of all pages — a recurring occlusion cost charged to no set, but visible in nearly every screenshot in this review.
 
-**Best of show:** ox-atlas (most complete), ox-arena (best craft), ox-vesper (best single figure — Verdure's zebu), ox-signals (best copy), ox-vita (best concept-to-execution arc). Worst: ox-chronicle — five evocative premises, zero visible oxen.
+**Best of show:** ox-atlas (most complete), ox-arena (best craft), ox-vesper (best single figure — Verdure's zebu), ox-vita (best concept-to-execution arc). Worst: ox-chronicle — five evocative premises, zero visible oxen.

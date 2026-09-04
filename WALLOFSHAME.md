@@ -1,6 +1,6 @@
 # Wall of shame
 
-Ten sets were cut from the gallery on 2026-09-04. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it, with their final scores. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
+Thirteen sets were cut from the gallery on 2026-09-04: ten in the opening review, three more when the maintainer manually re-graded the surviving sets by eye the same day. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
 
 | Model | Set | Score | OX gate |
 |-------|-----|-------|-----------|
@@ -37,6 +37,24 @@ Ten sets were cut from the gallery on 2026-09-04. The ox gate is simple: every d
 
 **Gemini 3.1 Pro failed with 0/5 OX passes, but had overall 53/100 score, what a shame!** Lowest score of the review. The Lascaux bison had no head, the constellation had no bull, and the minotaur hid behind its own title. Five eras of history, zero oxen.
 
+## The manual pass, same day
+
+After the review shipped, the maintainer went through the surviving sets and re-graded the rendered pages by hand, no scorecard, no automation, just the gate question asked of every design. Three of the eleven survivors failed it and were removed after manual verification. All three went the same way: too many pages that gesture at the ox instead of drawing it. A horn folded into a pattern, a rune standing in for the animal, a silhouette that only means anything once you read the caption. That is dodging, in the spirit of the competition and in abstract, and enough dodges kill a set.
+
+| Model | Set | First review | Manual verdict |
+|-------|-----|--------------|----------------|
+| Minimax M3 | ox-biomes | 84/100 · 5/5 | FAILED |
+| GTP 5.6 Luna | ox-signals | 86/100 · 4/5 | FAILED |
+| DeepSeek V4 | ox-glyphs | 79/100 · 5/5 | FAILED |
+
+**Minimax M3 failed the manual pass, what a shame!** Biomes had the rudest downgrade on the wall: a clean 5/5 and the fourth-best ox score in the review, gone on a second look. Five climates, five breeds, and the re-grade could not find five animals it believed. The scorecard signed off; the eye did not. The eye wins, that is the whole point of the gate.
+
+**GTP 5.6 Luna failed the manual pass, what a shame!** The owner of the best copy in the gallery, 86/100, and it still ends up here. The first review had already failed Hush outright and the manual pass found the rest of the set leaning on its captions too often. "Momentum is not speed. It is the body agreeing with itself." is a great sentence, but a sentence is not an animal, and this set needed one too often.
+
+**DeepSeek V4 failed the manual pass, what a shame!** The least surprising failure here. Glyphs was the only survivor carrying a hard rule breach, the same ox figure pasted into both Uruz and Oxen, and the review had marked four of its five passes borderline: an aurochs with a warthog gestalt, and an ox that mostly appears as the pictograph 牛 rather than as an animal. The alphabet history was the best writing in the showcase and the animal kept dissolving back into writing. Exactly what the gate exists to catch.
+
 ## What actually went wrong
 
 One failure mode covers most of this wall: horns drawn as thin double strokes on rounded bodies. At a glance those read as insect antennae or rabbit ears, and no caption saves them. The sets that passed drew horns with mass. That, plus animals painted dark-on-dark, accounts for nearly every removal here.
+
+The manual pass adds a second lesson: clearing automation is not clearing the gate. A set can survive every static check and still die in front of a person, because the question is not whether ox material appears on the page but whether a stranger sees an animal. Patterns, runes, process diagrams and captions can carry ox material all day. Only a drawn ox passes.
