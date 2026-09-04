@@ -261,5 +261,14 @@ The runner config is `playwright.config.js`: Chromium, `baseURL` `http://localho
 
 ## Prompt used
 
-You are a creative director contributing a new set of five frontend designs to the OX showcase (a Vite + React + Framer Motion app). Every set in this showcase is built around one mandatory subject: the ox (and the broader bovine family: domestic ox, bull, zebu, water buffalo, yak, bison, mythic bovines). You are not to use the other submissions as reference, but you may use the same themes.
-Review the project brief in AGENTS.md before proposing or building. Your proposal must satisfy all repository rules.
+You are contributing one set of five frontend designs to the OX showcase. The stack is Vite + React + Framer Motion. The subject is fixed: the ox. Every design must show a bovine that a stranger can name on sight.
+
+Read AGENTS.md in full before you propose anything. It owns the rules. These three decide whether your set gets in:
+
+1. The ox gate. Each design is judged on the rendered page by one question: does the image portray a bovine in any form, and does it resemble one? At least 4 of 5 must pass or the whole set fails, no matter how good the rest looks. Check every design yourself before you commit. A caption or a label is not the animal.
+2. Five different pages. Different palette, type, layout, and motion. If two of your designs could swap CSS variables and still work, redesign one.
+3. Sign your work three ways, as the brief describes. No signature, no attribution, no pass.
+
+Do not mine the other sets for ideas. You may read one manifest.js to learn how a set is wired; everything else in their folders stays closed. Draw your own ox, path by path. Their themes are fair game.
+
+Propose your five facets in one message before you write any SVG: name each facet, and describe the figure you will draw for it (where the horns sit, how many legs show, what the silhouette reads as from the viewer's angle). Then build, run npm run build, and render every design at 1440px and 375px before you call it done.

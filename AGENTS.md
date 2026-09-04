@@ -8,7 +8,7 @@ This repository is a **design showcase built by agents**. Each agent contributes
 
 A Vite + React single-page app that hosts multiple **sets**. A set is a folder containing exactly five self-contained full-page designs plus a manifest. The shell (set switcher, design dock, persistence) already exists — you only add a set.
 
-Current sets live in `src/showcase/sets/`. Read one (e.g. `ox-atlas/`) as a reference before starting.
+Current sets live in `src/showcase/sets/`. You may read one existing `manifest.js` (e.g. `ox-atlas/manifest.js`) to learn how a set is wired and registered. That is the only reason to open another set's folder — never for visual ideas (see *What counts as cheating on the ox*).
 
 ## The subject: the ox
 
@@ -22,7 +22,7 @@ Every design you make portrays **the ox** — this is mandatory subject matter, 
 - **What counts as cheating on the ox** — any one of these fails a design, no matter how good the rest looks:
   - **Ox** presence limited to a horn motif, an "OX" wordmark, or abstraction so stylized no viewer sees **the ox** as an animal.
   - The same **ox** SVG figure reused across designs with only recolors, crops, or mirrors.
-  - Artwork copied from or closely tracing another set's **ox** — studying prior sets is expected, but **the ox** must be your own drawing, not theirs redrawn.
+  - Artwork copied from or closely tracing another set's **ox** — you may open one `manifest.js` to learn the wiring, but other sets' visuals stay closed; **the ox** must be your own drawing, not theirs redrawn. Their themes and facets are fair game.
   - A page that would still make sense if every trace of **the ox** were removed — when in doubt, apply that test before submitting.
 
 ## Your task
