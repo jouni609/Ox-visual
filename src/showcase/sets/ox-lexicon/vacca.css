@@ -1,0 +1,332 @@
+.ox-lexicon-vacca {
+  --vacca-paper: #f2ecdd;
+  --vacca-paper-deep: #e6dcc3;
+  --vacca-ink: #1c1913;
+  --vacca-carmine: #a32638;
+  --vacca-sage: #6d7f63;
+  --vacca-rule: rgba(28, 25, 19, 0.32);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 60%),
+    var(--vacca-paper);
+  color: var(--vacca-ink);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  padding: clamp(16px, 3vw, 46px);
+  padding-bottom: 168px;
+}
+
+.ox-lexicon-vacca ::selection,
+.ox-lexicon-vacca::selection {
+  background: var(--vacca-carmine);
+  color: var(--vacca-paper);
+}
+
+.ox-lexicon-vacca-sheet {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  background: var(--vacca-paper);
+  border: 2px solid var(--vacca-ink);
+  padding: clamp(18px, 3.4vw, 56px);
+}
+
+.ox-lexicon-vacca-sheet::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px solid var(--vacca-rule);
+  pointer-events: none;
+}
+
+.ox-lexicon-vacca-masthead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 14px;
+  border-bottom: 3px double var(--vacca-ink);
+}
+
+.ox-lexicon-vacca-masthead-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 6px;
+}
+
+.ox-lexicon-vacca-issue {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 1.1vw, 13px);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.ox-lexicon-vacca-issue-sub {
+  font-size: clamp(11px, 1.1vw, 13px);
+  font-style: italic;
+  color: rgba(28, 25, 19, 0.72);
+}
+
+.ox-lexicon-vacca-stamp {
+  flex: 0 0 auto;
+  border: 3px double var(--vacca-carmine);
+  color: var(--vacca-carmine);
+  padding: 9px 14px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  text-align: center;
+  opacity: 0.92;
+}
+
+.ox-lexicon-vacca-stamp-line {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(9px, 0.95vw, 11.5px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.ox-lexicon-vacca-stamp-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-top: 1px solid currentColor;
+  padding-top: 3px;
+}
+
+.ox-lexicon-vacca-title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin: clamp(14px, 2vw, 26px) 0 clamp(18px, 2.6vw, 34px);
+}
+
+.ox-lexicon-vacca-title {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: clamp(58px, 12.5vw, 172px);
+  line-height: 0.82;
+  letter-spacing: -0.02em;
+}
+
+.ox-lexicon-vacca-pron {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  text-align: right;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(11px, 1.05vw, 13px);
+  letter-spacing: 0.04em;
+  padding-bottom: 6px;
+  max-width: 320px;
+}
+
+.ox-lexicon-vacca-ipa {
+  font-size: clamp(15px, 1.7vw, 20px);
+  color: var(--vacca-carmine);
+}
+
+.ox-lexicon-vacca-gloss {
+  font-style: italic;
+  border-top: 1px solid var(--vacca-rule);
+  padding-top: 4px;
+}
+
+.ox-lexicon-vacca-body {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.92fr) minmax(400px, 2fr) minmax(210px, 0.92fr);
+  gap: clamp(18px, 2.6vw, 42px);
+  align-items: start;
+}
+
+.ox-lexicon-vacca-side-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.ox-lexicon-vacca-side-head::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--vacca-rule);
+}
+
+.ox-lexicon-vacca-index p {
+  font-size: clamp(13px, 1.05vw, 14.5px);
+  line-height: 1.68;
+  margin-bottom: 13px;
+  color: rgba(28, 25, 19, 0.92);
+}
+
+.ox-lexicon-vacca-note {
+  border-left: 3px solid var(--vacca-carmine);
+  padding-left: 12px;
+  font-style: italic;
+  color: rgba(28, 25, 19, 0.78);
+}
+
+.ox-lexicon-vacca-plate {
+  border: 1px solid var(--vacca-ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(230, 220, 195, 0.5)),
+    var(--vacca-paper);
+  padding: clamp(10px, 1.6vw, 20px);
+  outline: 1px solid var(--vacca-rule);
+  outline-offset: 5px;
+}
+
+.ox-lexicon-vacca-cow {
+  width: 100%;
+  height: auto;
+}
+
+.ox-lexicon-vacca-plate figcaption {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--vacca-rule);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 0.92vw, 12px);
+  line-height: 1.6;
+  color: rgba(28, 25, 19, 0.8);
+}
+
+.ox-lexicon-vacca-labels text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  fill: var(--vacca-ink);
+}
+
+.ox-lexicon-vacca-leaders,
+.ox-lexicon-vacca-leaders-dots {
+  opacity: 0.8;
+}
+
+.ox-lexicon-vacca-case-list {
+  list-style: none;
+}
+
+.ox-lexicon-vacca-case-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 0;
+  border-top: 1px dashed var(--vacca-rule);
+}
+
+.ox-lexicon-vacca-case-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.ox-lexicon-vacca-case-head {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vacca-carmine);
+}
+
+.ox-lexicon-vacca-case-body {
+  font-size: clamp(12.5px, 1vw, 14px);
+  line-height: 1.6;
+}
+
+.ox-lexicon-vacca-band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(14px, 2.4vw, 36px);
+  margin-top: clamp(24px, 3.4vw, 46px);
+}
+
+.ox-lexicon-vacca-fig {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 12px;
+  border-top: 2px solid var(--vacca-ink);
+}
+
+.ox-lexicon-vacca-fig-value {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: clamp(30px, 3.6vw, 48px);
+  line-height: 1;
+  color: var(--vacca-carmine);
+}
+
+.ox-lexicon-vacca-fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 0.9vw, 11.5px);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(28, 25, 19, 0.78);
+}
+
+@media (max-width: 1060px) {
+  .ox-lexicon-vacca-body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ox-lexicon-vacca-plate {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .ox-lexicon-vacca-cases {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 720px) {
+  .ox-lexicon-vacca-body {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-lexicon-vacca-cases {
+    grid-column: auto;
+  }
+
+  .ox-lexicon-vacca-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ox-lexicon-vacca-pron {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .ox-lexicon-vacca-masthead {
+    flex-direction: column;
+  }
+
+  .ox-lexicon-vacca-stamp {
+    align-self: flex-start;
+  }
+
+  .ox-lexicon-vacca-stamp-line {
+    white-space: normal;
+  }
+
+  .ox-lexicon-vacca-band {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}

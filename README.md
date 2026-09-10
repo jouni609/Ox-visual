@@ -160,6 +160,20 @@ Five epochs of looking — ancestor, frame, crown, carcass, god. Each design is 
 
 </details>
 
+<details>
+  <summary><strong>Set XXIV — OX LEXICON</strong> · five words the ox gave us · <em>designed by DEEPSEEK FLASH</em></summary>
+
+One animal, five English words that carry it: vaccine, pecuniary, bucolic, Taurus, gregarious. Each page is a dictionary entry for the root word, rendered in a completely different visual world, and signed in that world's native mark (carmine office stamp, struck ingot, riso colophon, brass instrument plate, carved brand block).
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Vacca** | Medicine | Victorian public-health notice in chalk and carmine: engraved standing cow with poll, dewlap, udder and cloven hoof marked; Jenner, Phipps, and the cow inside the word vaccine; Bodoni Moda against IBM Plex Sans |
+| 02 | **Pecus** | Economy | Roman mint strongroom in marble black, silver and gold: bull struck in silver relief on a giant medallion, a tray of six denarii, reckoning ledger; Cinzel and Cormorant Garamond |
+| 03 | **Bucolic** | Pastoral poetry | Riso-print broadside in cyan, olive and coral: flat-colour pasture, grazing belled ox under a coral sun, drifting clouds, swaying grass, misregistered colophon; Fraunces and Karla || 04 | **Taurus** | Astronomy | Planetarium star atlas: constellation bull joined by star lines over a ghost bull, Hyades V and Pleiades, rotating degree dial, star positions table; Space Grotesk and Space Mono |
+| 05 | **Grex** | Herd behaviour | Black-on-bone woodcut frieze: five frontal ox busts in walking order, belled lead cow, thick curved horns, tally register of the line; Staatliches and Source Serif 4 |
+
+</details>
+
 
 
 ## Switching designs and sets

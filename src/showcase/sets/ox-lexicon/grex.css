@@ -1,0 +1,287 @@
+.ox-lexicon-grex {
+  --grex-bone: #ece3cd;
+  --grex-bone-deep: #e0d5b6;
+  --grex-soot: #17130e;
+  --grex-rust: #8d3b22;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    repeating-linear-gradient(0deg, rgba(23, 19, 14, 0.035) 0 1px, transparent 1px 8px),
+    radial-gradient(120% 70% at 50% 0%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 62%),
+    var(--grex-bone);
+  color: var(--grex-soot);
+  font-family: 'Source Serif 4', Georgia, serif;
+  padding: clamp(16px, 3vw, 42px);
+  padding-bottom: 172px;
+}
+
+.ox-lexicon-grex ::selection,
+.ox-lexicon-grex::selection {
+  background: var(--grex-rust);
+  color: var(--grex-bone);
+}
+
+.ox-lexicon-grex-board {
+  max-width: 1320px;
+  margin: 0 auto;
+  border: 3px solid var(--grex-soot);
+  outline: 1px solid var(--grex-soot);
+  outline-offset: 6px;
+  padding: clamp(18px, 3vw, 48px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(224, 213, 182, 0.5));
+}
+
+.ox-lexicon-grex-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 14px;
+  border-bottom: 3px solid var(--grex-soot);
+}
+
+.ox-lexicon-grex-head-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ox-lexicon-grex-kicker {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(10px, 1vw, 12px);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.ox-lexicon-grex-title {
+  font-family: 'Staatliches', 'Arial Narrow', sans-serif;
+  font-weight: 400;
+  font-size: clamp(64px, 12.5vw, 186px);
+  line-height: 0.84;
+  letter-spacing: 0.01em;
+}
+
+.ox-lexicon-grex-sub {
+  max-width: 560px;
+  font-style: italic;
+  font-size: clamp(15px, 1.35vw, 18.5px);
+  line-height: 1.5;
+}
+
+.ox-lexicon-grex-brand {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 14px 20px 11px;
+  background: var(--grex-soot);
+  color: var(--grex-bone);
+  clip-path: polygon(1% 8%, 4% 0, 32% 3%, 70% 0, 97% 5%, 100% 30%, 98% 62%, 100% 92%, 72% 100%, 30% 97%, 3% 100%, 0 70%, 2% 38%);
+}
+
+.ox-lexicon-grex-brand-line {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(9.5px, 0.95vw, 11.5px);
+  letter-spacing: 0.09em;
+  white-space: nowrap;
+}
+
+.ox-lexicon-grex-brand-sub {
+  font-size: 9px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(236, 227, 205, 0.45);
+  padding-top: 4px;
+}
+
+.ox-lexicon-grex-frieze {
+  margin: clamp(16px, 2.4vw, 32px) 0;
+  border-top: 2px solid var(--grex-soot);
+  border-bottom: 2px solid var(--grex-soot);
+  background: rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+
+.ox-lexicon-grex-frieze svg {
+  width: 100%;
+  height: clamp(230px, 24vw, 360px);
+  display: block;
+}
+
+.ox-lexicon-grex-march {
+  animation: ox-lexicon-grex-march 84s linear infinite;
+}
+
+@keyframes ox-lexicon-grex-march {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1200px);
+  }
+}
+
+.ox-lexicon-grex-bob {
+  animation: ox-lexicon-grex-bob 1.7s ease-in-out infinite;
+  animation-delay: var(--bob-delay, 0s);
+}
+
+@keyframes ox-lexicon-grex-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.ox-lexicon-grex-tail {
+  transform-box: fill-box;
+  transform-origin: 70% 0%;
+  animation: ox-lexicon-grex-tail 2.3s ease-in-out infinite;
+  animation-delay: var(--tail-delay, 0s);
+}
+
+@keyframes ox-lexicon-grex-tail {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+.ox-lexicon-grex-cols {
+  display: grid;
+  grid-template-columns: minmax(340px, 1.55fr) minmax(280px, 1fr);
+  gap: clamp(22px, 3vw, 46px);
+  align-items: start;
+}
+
+.ox-lexicon-grex-minihead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Staatliches', 'Arial Narrow', sans-serif;
+  font-weight: 400;
+  font-size: clamp(17px, 1.5vw, 21px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.ox-lexicon-grex-minihead::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--grex-soot);
+}
+
+.ox-lexicon-grex-entry p {
+  font-size: clamp(15px, 1.25vw, 17.5px);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.ox-lexicon-grex-lexicon {
+  margin-top: 22px;
+  border-top: 3px solid var(--grex-soot);
+  padding-top: 16px;
+}
+
+.ox-lexicon-grex-lexicon ul {
+  list-style: none;
+}
+
+.ox-lexicon-grex-lexicon li {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(23, 19, 14, 0.28);
+}
+
+.ox-lexicon-grex-word {
+  flex: 0 0 auto;
+  font-family: 'Staatliches', 'Arial Narrow', sans-serif;
+  font-size: clamp(19px, 1.7vw, 24px);
+  letter-spacing: 0.04em;
+  color: var(--grex-rust);
+}
+
+.ox-lexicon-grex-gloss {
+  font-size: clamp(13px, 1.1vw, 15.5px);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.ox-lexicon-grex-register {
+  border: 3px solid var(--grex-soot);
+  padding: clamp(18px, 2.2vw, 28px);
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.ox-lexicon-grex-list {
+  list-style: none;
+}
+
+.ox-lexicon-grex-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 11px 0;
+  border-top: 1px solid rgba(23, 19, 14, 0.28);
+}
+
+.ox-lexicon-grex-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.ox-lexicon-grex-tally {
+  flex: 0 0 auto;
+  width: 62px;
+  height: 22px;
+  margin-top: 3px;
+}
+
+.ox-lexicon-grex-member {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ox-lexicon-grex-member-name {
+  font-family: 'Staatliches', 'Arial Narrow', sans-serif;
+  font-size: clamp(15px, 1.3vw, 18px);
+  letter-spacing: 0.06em;
+}
+
+.ox-lexicon-grex-member-note {
+  font-size: clamp(12.5px, 1.05vw, 14.5px);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media (max-width: 940px) {
+  .ox-lexicon-grex-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .ox-lexicon-grex-head {
+    flex-direction: column;
+  }
+
+  .ox-lexicon-grex-brand-line {
+    white-space: normal;
+    text-align: center;
+  }
+}

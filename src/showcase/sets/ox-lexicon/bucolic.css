@@ -1,0 +1,323 @@
+.ox-lexicon-bucolic {
+  --buc-sky: #8ec9e8;
+  --buc-sky-pale: #b3ddf1;
+  --buc-grass: #6c9a4f;
+  --buc-grass-deep: #4f7c3c;
+  --buc-cream: #f6ecd2;
+  --buc-coral: #e4572e;
+  --buc-ink: #1f3049;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, var(--buc-sky) 0%, var(--buc-sky-pale) 46%, var(--buc-sky) 100%);
+  color: var(--buc-ink);
+  font-family: 'Karla', sans-serif;
+  padding: clamp(16px, 3vw, 40px) clamp(14px, 3vw, 40px) 176px;
+}
+
+.ox-lexicon-bucolic::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(31, 48, 73, 0.07) 1px, transparent 1.2px);
+  background-size: 4px 4px;
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+  z-index: 3;
+}
+
+.ox-lexicon-bucolic ::selection,
+.ox-lexicon-bucolic::selection {
+  background: var(--buc-ink);
+  color: var(--buc-cream);
+}
+
+.ox-lexicon-bucolic-sheet {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ox-lexicon-bucolic-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.ox-lexicon-bucolic-head-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ox-lexicon-bucolic-kicker {
+  font-size: clamp(10px, 1vw, 12px);
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.ox-lexicon-bucolic-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: clamp(58px, 10.5vw, 162px);
+  line-height: 0.86;
+  letter-spacing: -0.01em;
+}
+
+.ox-lexicon-bucolic-sub {
+  max-width: 460px;
+  font-size: clamp(15px, 1.4vw, 19px);
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.ox-lexicon-bucolic-colophon {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 13px 18px 11px;
+  background: var(--buc-cream);
+  border: 2px solid var(--buc-ink);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  max-width: 320px;
+}
+
+.ox-lexicon-bucolic-colophon-offset {
+  position: absolute;
+  inset: 0;
+  transform: translate(7px, 7px);
+  background: var(--buc-coral);
+  border: 2px solid var(--buc-ink);
+  color: transparent;
+  z-index: -1;
+}
+
+.ox-lexicon-bucolic-colophon-text {
+  font-size: clamp(9.5px, 0.95vw, 11.5px);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  white-space: nowrap;
+}
+
+.ox-lexicon-bucolic-colophon-sub {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-top: 1px solid var(--buc-ink);
+  padding-top: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+.ox-lexicon-bucolic-scene {
+  width: 100%;
+  height: auto;
+  margin-top: clamp(6px, 1vw, 16px);
+}
+
+.ox-lexicon-bucolic-cloud-a {
+  animation: ox-lexicon-bucolic-drift 82s linear infinite;
+}
+
+.ox-lexicon-bucolic-cloud-b {
+  animation: ox-lexicon-bucolic-drift 118s linear infinite;
+  animation-delay: -46s;
+}
+
+.ox-lexicon-bucolic-cloud-c {
+  animation: ox-lexicon-bucolic-drift 152s linear infinite;
+  animation-delay: -90s;
+}
+
+@keyframes ox-lexicon-bucolic-drift {
+  from {
+    transform: translateX(-280px);
+  }
+  to {
+    transform: translateX(1280px);
+  }
+}
+
+.ox-lexicon-bucolic-sun {
+  transform-box: view-box;
+  transform-origin: 976px 152px;
+  animation: ox-lexicon-bucolic-sunpulse 9s ease-in-out infinite;
+}
+
+@keyframes ox-lexicon-bucolic-sunpulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.ox-lexicon-bucolic-blade {
+  transform-box: view-box;
+  animation: ox-lexicon-bucolic-sway var(--blade-duration, 5s) ease-in-out infinite alternate;
+  animation-delay: var(--blade-delay, 0s);
+}
+
+@keyframes ox-lexicon-bucolic-sway {
+  from {
+    transform: rotate(-4deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+.ox-lexicon-bucolic-tail {
+  transform-box: view-box;
+  transform-origin: 800px 442px;
+  animation: ox-lexicon-bucolic-flick 3.6s ease-in-out infinite;
+}
+
+@keyframes ox-lexicon-bucolic-flick {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(7deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+}
+
+.ox-lexicon-bucolic-cols {
+  display: grid;
+  grid-template-columns: minmax(300px, 1.08fr) minmax(320px, 1fr);
+  gap: clamp(18px, 2.6vw, 36px);
+  margin-top: -130px;
+  position: relative;
+  z-index: 2;
+  padding: 0 clamp(4px, 2vw, 30px);
+}
+
+.ox-lexicon-bucolic-poem {
+  background: var(--buc-cream);
+  border: 2px solid var(--buc-ink);
+  box-shadow: 11px 11px 0 var(--buc-coral);
+  padding: clamp(20px, 2.6vw, 34px);
+}
+
+.ox-lexicon-bucolic-stanza {
+  margin-bottom: 16px;
+}
+
+.ox-lexicon-bucolic-stanza span {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(16px, 1.45vw, 21px);
+  line-height: 1.5;
+}
+
+.ox-lexicon-bucolic-poem footer {
+  margin-top: 6px;
+  padding-top: 12px;
+  border-top: 2px solid var(--buc-ink);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.ox-lexicon-bucolic-entry {
+  background: var(--buc-cream);
+  border: 2px solid var(--buc-ink);
+  box-shadow: 11px 11px 0 rgba(31, 48, 73, 0.28);
+  padding: clamp(20px, 2.6vw, 34px);
+  align-self: start;
+}
+
+.ox-lexicon-bucolic-minihead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.ox-lexicon-bucolic-minihead::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--buc-ink);
+}
+
+.ox-lexicon-bucolic-entry p {
+  font-size: clamp(14.5px, 1.25vw, 17px);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.ox-lexicon-bucolic-facts {
+  list-style: none;
+}
+
+.ox-lexicon-bucolic-facts li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 8px 0;
+  border-top: 1px solid rgba(31, 48, 73, 0.4);
+}
+
+.ox-lexicon-bucolic-fact-key {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: clamp(15px, 1.3vw, 18px);
+  color: var(--buc-coral);
+}
+
+.ox-lexicon-bucolic-fact-val {
+  font-size: clamp(12px, 1.05vw, 14px);
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .ox-lexicon-bucolic-head {
+    flex-direction: column;
+  }
+
+  .ox-lexicon-bucolic-colophon-text {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .ox-lexicon-bucolic-cols {
+    grid-template-columns: 1fr;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .ox-lexicon-bucolic-cols {
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .ox-lexicon-bucolic-poem {
+    box-shadow: 7px 7px 0 var(--buc-coral);
+  }
+
+  .ox-lexicon-bucolic-entry {
+    box-shadow: 7px 7px 0 rgba(31, 48, 73, 0.28);
+  }
+}

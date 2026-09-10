@@ -1,0 +1,336 @@
+.ox-lexicon-pecus {
+  --pecus-void: #0b0f0d;
+  --pecus-marble: #131915;
+  --pecus-silver: #c9ced4;
+  --pecus-silver-dim: #8b929a;
+  --pecus-gold: #c9a227;
+  --pecus-chalk: #e9e6df;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(80rem 55rem at 72% -12%, rgba(201, 162, 39, 0.09), transparent 58%),
+    radial-gradient(60rem 44rem at 4% 112%, rgba(170, 180, 190, 0.08), transparent 60%),
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.014) 0 1px, transparent 1px 92px),
+    repeating-linear-gradient(64deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 148px),
+    var(--pecus-void);
+  color: var(--pecus-silver);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  padding: clamp(16px, 3vw, 44px);
+  padding-bottom: 168px;
+}
+
+.ox-lexicon-pecus ::selection,
+.ox-lexicon-pecus::selection {
+  background: var(--pecus-gold);
+  color: var(--pecus-void);
+}
+
+.ox-lexicon-pecus-vault {
+  max-width: 1320px;
+  margin: 0 auto;
+  border: 1px solid rgba(201, 162, 39, 0.28);
+  padding: clamp(18px, 3vw, 48px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(0, 0, 0, 0.2));
+}
+
+.ox-lexicon-pecus-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(190, 198, 206, 0.24);
+}
+
+.ox-lexicon-pecus-head-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ox-lexicon-pecus-kicker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 1vw, 12px);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--pecus-gold);
+}
+
+.ox-lexicon-pecus-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: clamp(54px, 8.6vw, 122px);
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  background: linear-gradient(180deg, #f4f6f8 4%, #a9b0b7 52%, #e8ebee 96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ox-lexicon-pecus-sub {
+  max-width: 620px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(15px, 1.4vw, 19px);
+  font-style: italic;
+  line-height: 1.5;
+  color: rgba(201, 206, 212, 0.82);
+}
+
+.ox-lexicon-pecus-ingot {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  padding: 12px 18px 10px;
+  background: linear-gradient(165deg, #eef1f3 0%, #a7aeb6 38%, #dde1e5 60%, #868d96 100%);
+  clip-path: polygon(5% 0, 95% 0, 100% 22%, 100% 78%, 95% 100%, 5% 100%, 0 78%, 0 22%);
+  color: #23282d;
+  box-shadow: 0 18px 42px -18px rgba(0, 0, 0, 0.85);
+}
+
+.ox-lexicon-pecus-ingot-line {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(9.5px, 0.95vw, 11.5px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.ox-lexicon-pecus-ingot-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(35, 40, 45, 0.4);
+  padding-top: 3px;
+}
+
+.ox-lexicon-pecus-grid {
+  display: grid;
+  grid-template-columns: minmax(230px, 1fr) minmax(360px, 1.85fr) minmax(230px, 1.02fr);
+  gap: clamp(20px, 2.8vw, 42px);
+  align-items: start;
+  margin-top: clamp(20px, 3vw, 42px);
+}
+
+.ox-lexicon-pecus-ledger,
+.ox-lexicon-pecus-coins {
+  min-width: 0;
+}
+
+.ox-lexicon-pecus-minihead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--pecus-silver-dim);
+  margin-bottom: 14px;
+}
+
+.ox-lexicon-pecus-minihead::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(190, 198, 206, 0.22);
+}
+
+.ox-lexicon-pecus-account {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.ox-lexicon-pecus-account li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(190, 198, 206, 0.14);
+}
+
+.ox-lexicon-pecus-account-unit {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: var(--pecus-chalk);
+  white-space: nowrap;
+}
+
+.ox-lexicon-pecus-account-dots {
+  flex: 1;
+  border-bottom: 1px dotted rgba(190, 198, 206, 0.4);
+  transform: translateY(-3px);
+}
+
+.ox-lexicon-pecus-account-note {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--pecus-silver-dim);
+  text-align: right;
+}
+
+.ox-lexicon-pecus-lede {
+  font-size: clamp(15px, 1.25vw, 17.5px);
+  line-height: 1.62;
+  color: rgba(226, 230, 234, 0.88);
+}
+
+.ox-lexicon-pecus-note {
+  margin-top: 14px;
+  padding-left: 13px;
+  border-left: 2px solid var(--pecus-gold);
+  font-style: italic;
+  font-size: clamp(14px, 1.15vw, 16px);
+  line-height: 1.55;
+  color: rgba(201, 206, 212, 0.75);
+}
+
+.ox-lexicon-pecus-medal-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ox-lexicon-pecus-medallion {
+  width: min(100%, 660px);
+  height: auto;
+}
+
+.ox-lexicon-pecus-medal-wrap figcaption {
+  margin-top: 14px;
+  max-width: 560px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 0.95vw, 11.5px);
+  line-height: 1.65;
+  color: var(--pecus-silver-dim);
+}
+
+.ox-lexicon-pecus-rimtext {
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  letter-spacing: 0.34em;
+  fill: #a3abb3;
+}
+
+.ox-lexicon-pecus-rimtext-small {
+  font-size: 11px;
+  letter-spacing: 0.42em;
+  fill: #7e868e;
+}
+
+.ox-lexicon-pecus-coin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 1.6vw, 20px);
+}
+
+.ox-lexicon-pecus-coin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.ox-lexicon-pecus-coin svg {
+  width: 100%;
+  max-width: 128px;
+  height: auto;
+}
+
+.ox-lexicon-pecus-coin-legend {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  fill: #4e555d;
+}
+
+.ox-lexicon-pecus-coin-name {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: var(--pecus-chalk);
+}
+
+.ox-lexicon-pecus-coin-value {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--pecus-silver-dim);
+}
+
+.ox-lexicon-pecus-foot {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: clamp(22px, 3vw, 40px);
+  padding-top: 16px;
+  border-top: 1px solid rgba(190, 198, 206, 0.24);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 0.95vw, 12px);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pecus-gold);
+}
+
+.ox-lexicon-pecus-foot-rule {
+  flex: 1;
+  height: 1px;
+  background: rgba(201, 162, 39, 0.4);
+}
+
+@media (max-width: 1120px) {
+  .ox-lexicon-pecus-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ox-lexicon-pecus-medal-wrap {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .ox-lexicon-pecus-coins {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .ox-lexicon-pecus-head {
+    flex-direction: column;
+  }
+
+  .ox-lexicon-pecus-ingot-line {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .ox-lexicon-pecus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-lexicon-pecus-coins {
+    grid-column: auto;
+  }
+
+  .ox-lexicon-pecus-coin-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ox-lexicon-pecus-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .ox-lexicon-pecus-foot-rule {
+    display: none;
+  }
+}
