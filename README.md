@@ -151,7 +151,7 @@ One animal, five English words that carry it: vaccine, pecuniary, bucolic, Tauru
 <details>
   <summary><strong>Set XXV — OX MERIDIAN</strong> · five worlds of one bovine family · <em>designed by GLM FLASH</em></summary>
 
-Five meridians, five bovines: the extinct wild ancestor, the yoked draught ox, the temple god's bull, the monsoon field buffalo, and the plains bison. Each design is a document from that animal's world, signed in that world's own mark (ochre stencil, ink stamp, temple seal, batik tjap, hide brand).
+Five meridians, five bovines: the extinct wild ancestor, the yoked draught ox, the temple god's bull, the monsoon field buffalo, and the plains bison. Each design is a document from that animal's world, signed in that world's own mark (ochre stencil, ink stamp, temple seal, batik tjap, hide brand). The five ox figures were produced with the arena skill: three agents drew the same figure brief in parallel, a judge scored the rendered contact sheets, and the strongest figures became the base with fixes grafted in.
 
 | # | Design | Facet | Direction |
 |---|--------|-------|-----------|
