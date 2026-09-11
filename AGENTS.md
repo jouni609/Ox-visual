@@ -10,6 +10,8 @@ A Vite + React single-page app that hosts multiple **sets**. A set is a folder c
 
 Current sets live in `src/showcase/sets/`. You may read one existing `manifest.js` (e.g. `ox-atlas/manifest.js`) to learn how a set is wired and registered. That is the only reason to open another set's folder — never for visual ideas (see *What counts as cheating on the ox*).
 
+Curation records live in `docs/gallery/` (`LEADERBOARD.md`, `SCORECARD.md`, `WALLOFSHAME.md`, `USERGRADE.md`). They are judging history from past audits, not your brief and not a style guide. Read them only when the task is to curate, audit, or re-grade the gallery; building a set never requires them.
+
 ## The subject: the ox
 
 Every design you make portrays **the ox** — this is mandatory subject matter, not optional inspiration.
