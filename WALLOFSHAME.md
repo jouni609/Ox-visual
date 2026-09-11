@@ -1,6 +1,6 @@
 # Wall of shame
 
-Thirteen sets were cut from the gallery on 2026-09-04: ten in the opening review, three more when the maintainer manually re-graded the surviving sets by eye the same day. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
+Fourteen sets have been cut from the gallery: ten in the opening review of 2026-09-04, three more when the maintainer manually re-graded the surviving sets by eye the same day, and one more when a second full audit re-rendered every page of the gallery on 2026-09-11. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
 
 | Model | Set | Score | OX gate |
 |-------|-----|-------|-----------|
@@ -9,6 +9,7 @@ Thirteen sets were cut from the gallery on 2026-09-04: ten in the opening review
 | GLM 5.2 | ox-folio | 68/100 | 2/5 |
 | Gemini 3.7 Flash | ox-numismatica | 66/100 | 1/5 |
 | Grok 4.5 | ox-materia | 66/100 | 1/5 |
+| DeepSeek V4 Pro | ox-arena | 62/100 | 1/5 |
 | unknown ("Set I") | ox-faces | 60/100 | 3/5 |
 | GLM 5.3 | ox-systema | 60/100 | 0/5 |
 | Inkling | ox-aurora | 58/100 | 0/5 |
@@ -53,8 +54,20 @@ After the review shipped, the maintainer went through the surviving sets and re-
 
 **DeepSeek V4 failed the manual pass, what a shame!** The least surprising failure here. Glyphs was the only survivor carrying a hard rule breach, the same ox figure pasted into both Uruz and Oxen, and the review had marked four of its five passes borderline: an aurochs with a warthog gestalt, and an ox that mostly appears as the pictograph 牛 rather than as an animal. The alphabet history was the best writing in the showcase and the animal kept dissolving back into writing. Exactly what the gate exists to catch.
 
+## The second audit, 2026-09-11
+
+Four months of additions later the gallery stood at eleven sets, and the whole thing went back under the gate: every design re-rendered at desktop and mobile widths, re-judged page by page, the borderline calls checked by eye against full-page screenshots. Ten sets held. One did not — and it was the one nobody had bet against. The first review's runner-up, the set that beat every other submission on craft, could only show one bovine its own mother would recognize.
+
+| Model | Set | First review | Second audit |
+|-------|-----|--------------|----------------|
+| DeepSeek V4 Pro | ox-arena | 88/100 · 5/5 | FAILED |
+
+**DeepSeek V4 Pro failed the second audit with 1/5 OX passes, but had overall 62/100 score, what a shame!** The rudest downgrade the wall has ever taken: a first-review 88 at a clean 5/5, gone on a re-render. The Minoan bull of Leap draws its horns as two flat lobes swept straight back over a greyhound body and a canine muzzle — a leaping hare. Eight Seconds' bucking bull has a long equine muzzle with thin ear-spikes where the horns should be: a bronco. Encierro's only animal is a speck-scale vignette that needs its Spanish caption to resolve as anything, and Jallikattu's charging zebu grows one giant flat ear-blade and reads rabbit. Only Kambala's surging buffalo pair held, on a borderline. The best typography in the gallery, wrapped around a hare, a bronco and a rabbit.
+
 ## What actually went wrong
 
 One failure mode covers most of this wall: horns drawn as thin double strokes on rounded bodies. At a glance those read as insect antennae or rabbit ears, and no caption saves them. The sets that passed drew horns with mass. That, plus animals painted dark-on-dark, accounts for nearly every removal here.
 
 The manual pass adds a second lesson: clearing automation is not clearing the gate. A set can survive every static check and still die in front of a person, because the question is not whether ox material appears on the page but whether a stranger sees an animal. Patterns, runes, process diagrams and captions can carry ox material all day. Only a drawn ox passes.
+
+The second audit adds the third: a first-review pass is not a lifetime pass. ox-arena's animals carried the same thin-stroke horns, equine muzzles and stick legs as the rest of this wall — the first review simply looked away, because the typography around them was so good. Score and gate are different numbers; only one of them keeps a set in the gallery.

@@ -7,6 +7,8 @@
 **OX gate (canonical wording, per AGENTS.md):** every design is judged on its rendered page by one question — **does the image portray a bovine in any form, and does it resemble one?** The set passes at 4 of 5 designs or better; per-design results shown. (The review of 2026-09-03/04 applied this same test under the earlier wording "distinct and understandable as a bovine"; the question now lives verbatim in the brief so agents and judges share one sentence.)
 Static-rule violations (signing, banned techniques, naming, a11y floor) are listed as gate flags and weighed in the score. Visual verdicts were produced in a two-pass process: a primary review of all 105 desktop renders, an independent blind re-review of sampled sets (no set verdict changed; single-design borderline drift only), reviewer verification of every verdict that flipped a set outcome, and a 12-page mobile sweep at 375px.
 
+**Update (2026-09-11, second audit):** the current 11-set gallery was re-rendered end to end (55 designs, desktop 1440px full-page + 375px mobile, console-error and horizontal-overflow sweep: 0 errors, 0 overflow) and re-graded against the gate by panel review, with every gate-deciding page re-verified by eye against full-page screenshots. **ox-arena failed at 1/5 and was removed from the gallery** — its section below has been re-graded. Survivors were re-scored on the same rubric: ox-epoch 90 · ox-lexicon 89 · ox-yoke 89 · ox-vita 87 · ox-hours 83 · ox-mythos 83 · ox-vesper 79 · ox-atlas 76 · ox-sensorium 76 · ox-masque 74. The current ranking lives in [LEADERBOARD.md](LEADERBOARD.md); the per-set sections below remain the 2026-09-03/04 review as it stood, except where re-graded.
+
 ---
 
 ## ox-faces — Faces of the Ox (credit: "Set I") — SCORE 60 · FAIL
@@ -193,19 +195,21 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 **Gate flags:** signatures all "SET XVI · DESIGNED BY CLAUDE OPUS" (set ordinal); Numen/Verdure/Torrent roots lack the required min-height/position/overflow trio; unicode dingbats (✦ ❖) used as decorative accents; large empty dark regions in Numen.
 **Verdict:** Five distinct moods (nocturne, monsoon, ember, botanical plate, gold shrine) with consistently legible animals — the most professional all-rounder of the dark-palette sets.
 
-## ox-arena — Ox Arena (credit: DeepSeek V4 Pro) — SCORE 88 · PASS
+## ox-arena — Ox Arena (credit: DeepSeek V4 Pro) — SCORE 62 · FAIL (removed 2026-09-11)
+
+*Re-graded by the second audit of 2026-09-11; the first review's 88 · PASS at 5/5 is void. The set was removed from the gallery; its record lives in [WALLOFSHAME.md](WALLOFSHAME.md).*
 
 | # | Design | Ox gate | Notes |
 |---|--------|---------|-------|
-| 01 | Leap | PASS | Minoan flying-gallop bull with leaping acrobat — instantly legible, gorgeous fresco craft. |
-| 02 | Rodeo | PASS | Bucking bull + rider in a red sunburst letterpress poster — bold and clear. |
-| 03 | Encierro | PASS (borderline) | Running bull is a small column vignette in the San Fermín broadsheet — legible on inspection but not the visual hero. |
-| 04 | Jallikattu | PASS (borderline) | Leaping zebu over the vaadi vaasal — elongated body and one swept horn drift toward antelope abstraction. |
-| 05 | Kambala | PASS | Two surging buffalo with jockey through flooded paddy — clearly bovine. |
+| 01 | Leap | **FAIL** | The Minoan flying-gallop bull draws its horns as two flat lobes swept straight back over a greyhound-elongated body and a canine muzzle — a leaping hare, not a bull; the caption does the work the drawing doesn't. Gorgeous fresco panel and three-phase game cards. |
+| 02 | Eight Seconds | **FAIL** | Long equine muzzle with a curved mouth-slit, thin ear-spikes where horns should be — a bucking bronco. WPA letterpress idiom remains the strongest poster craft in the set. |
+| 03 | Encierro | **FAIL** | The page's only animal is a spot vignette ~9% of page width — pig-like at reading size, resolved only by "El toro de casta". Superb broadsheet otherwise. |
+| 04 | Jallikattu | **FAIL** | One giant flat ear-blade for a horn, fin crest, splinter-thin crossing legs — reads rabbit/gazelle, not a charging zebu. |
+| 05 | Kambala | PASS (borderline) | Two surging dark masses with eyes, muzzles and ropes to the jockey's plank — the buffalo read holds, though the bodies merge and eight splayed stick legs flirt with insect. |
 
-**Quality:** ox 24/30 · directions 24/25 · craft 23/25 · copy 9/10 · a11y/responsive/motion 8/10 → **88/100**
-**Gate flags:** signatures all "SET XVII · DESIGNED BY DEEPSEEK V4 PRO" (set ordinal — the set's only rule issue).
-**Verdict:** The best-made set in the showcase: five eras, five typographic systems, five cultures, all readable — held out of first place only by signature ordinals and two softened animal reads.
+**Quality:** ox 8/30 · directions 17/25 · craft 20/25 · copy 9/10 · a11y/responsive/motion 8/10 → **62/100**
+**Gate flags:** signatures all "SET XVII · DESIGNED BY DEEPSEEK V4 PRO" (set ordinal — the set's only rule issue); static audit otherwise clean.
+**Verdict:** The best typographic craft in the gallery, removed because its animals fail the stranger test in four of five designs — the same flat-lobe horns and stick legs that sank the rest of the wall, hidden in 2026-09-04 review behind the strength of everything around them.
 
 ## ox-aurora — Ox Aurora (credit: Inkling) — SCORE 58 · FAIL
 
@@ -269,10 +273,12 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 **Note (2026-09-04, post-review):** three sets that passed this review, ox-signals, ox-biomes and ox-glyphs, were later failed when the maintainer manually re-graded the rendered pages. Their sections are removed from this card and their verdicts live in [WALLOFSHAME.md](WALLOFSHAME.md). The ranking below reflects the review as it stood; the passes marked for those three sets are void.
 
+**Note (2026-09-11, second audit):** ox-arena, ranked 2nd below, failed the gate at 1/5 when the gallery was re-rendered and re-graded, and was removed from the showcase — its re-graded section is above. The other rows stand as the 2026-09-03/04 review recorded them; current scores for the surviving sets are in the 2026-09-11 update at the top of this card.
+
 | Rank | Set | Credit | Score | Gate | Designs passing ox gate |
 |------|-----|--------|-------|------|-------------------------|
 | 1 | ox-atlas | ox-alpha | **89** | PASS | 5/5 |
-| 2 | ox-arena | DeepSeek V4 Pro | **88** | PASS | 5/5 |
+| 2 | ox-arena | DeepSeek V4 Pro | **88** | PASS → **FAIL** | 5/5 → 1/5 · re-graded 2026-09-11, **removed** |
 | 3 | ox-vita | MUSE SPARK | **85** | PASS | 5/5 |
 | 4 | ox-sensorium | Grok 4.6 | **84** | PASS | 5/5 |
 | 4 | ox-vesper | Claude Opus | **84** | PASS | 5/5 |
@@ -290,7 +296,7 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 | 17 | ox-lithica | Kimi 2.6 | **54** | **FAIL** | 0/5 |
 | 18 | ox-chronicle | Gemini 3.1 Pro | **53** | **FAIL** | 0/5 |
 
-**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.**
+**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.** As re-graded on 2026-09-11: 45 of 105 designs, and 7 of the original 21 sets still standing after ox-arena's removal.
 
 ---
 
@@ -306,4 +312,4 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 **Infrastructure is solid:** zero console errors and zero horizontal overflow at 375px across all 105 designs; no shell file touched by any set; both WIP sets (mythos, vita) were committed before review. One shell-level note for the maintainer: the showcase's own dock pill overlaps body copy or captions on roughly a third of all pages — a recurring occlusion cost charged to no set, but visible in nearly every screenshot in this review.
 
-**Best of show:** ox-atlas (most complete), ox-arena (best craft), ox-vesper (best single figure — Verdure's zebu), ox-vita (best concept-to-execution arc). Worst: ox-chronicle — five evocative premises, zero visible oxen.
+**Best of show:** ox-atlas (most complete), ox-arena (best craft — since removed by the 2026-09-11 audit), ox-vesper (best single figure — Verdure's zebu), ox-vita (best concept-to-execution arc). Worst: ox-chronicle — five evocative premises, zero visible oxen.
