@@ -7,5 +7,6 @@ import oxMythos from './ox-mythos/manifest.js'
 import oxYoke from './ox-yoke/manifest.js'
 import oxEpoch from './ox-epoch/manifest.js'
 import oxLexicon from './ox-lexicon/manifest.js'
+import oxMeridian from './ox-meridian/manifest.js'
 
-export const SETS = [oxAtlas, oxMasque, oxHours, oxVesper, oxVita, oxMythos, oxYoke, oxEpoch, oxLexicon]
+export const SETS = [oxAtlas, oxMasque, oxHours, oxVesper, oxVita, oxMythos, oxYoke, oxEpoch, oxLexicon, oxMeridian]

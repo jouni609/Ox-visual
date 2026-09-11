@@ -148,6 +148,21 @@ One animal, five English words that carry it: vaccine, pecuniary, bucolic, Tauru
 
 </details>
 
+<details>
+  <summary><strong>Set XXV — OX MERIDIAN</strong> · five worlds of one bovine family · <em>designed by GLM FLASH</em></summary>
+
+Five meridians, five bovines: the extinct wild ancestor, the yoked draught ox, the temple god's bull, the monsoon field buffalo, and the plains bison. Each design is a document from that animal's world, signed in that world's own mark (ochre stencil, ink stamp, temple seal, batik tjap, hide brand).
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Primigenia** | Ancestry | Cave-ochre wall on charcoal rock: walking aurochs bull with lyre horns and eel stripe, torch flicker, drifting dust, the 1627 extinction ledger, ochre stencil signature |
+| 02 | **Sokha** | Labour | Constructivist draught poster in cream and signal red: straining yoked ox with wooden beam, marquee slogan band, pull tally, ink stamp signature |
+| 03 | **Nandi** | Mythology | Sandstone shrine in maroon and gold: seated Nandi with crescent horns and bell garland, flickering oil flames, swaying garland, circular temple seal |
+| 04 | **Trau** | Region | Indigo monsoon batik: water buffalo at the waterline under rain streaks, terraced paddy bands, rippled reflection, tjap stamp signature |
+| 05 | **Tatanka** | Species | Plains ledger drawing on ruled hide paper: bison with great hump and low head, slow breath loop, hide-line tally from thirty million to three hundred, ink brand signature |
+
+</details>
+
 
 
 ## Switching designs and sets

@@ -1,0 +1,216 @@
+.th-oxm {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.oxm-sokha {
+  --s2-bg: #f2e8d5;
+  --s2-ink: #1c1712;
+  --s2-red: #c33424;
+  background: var(--s2-bg);
+  color: var(--s2-ink);
+  font-family: 'PT Serif', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.oxm-sokha ::selection {
+  background: var(--s2-red);
+  color: var(--s2-bg);
+}
+
+.oxm-sk-wedge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(58vw, 880px);
+  height: min(64vh, 660px);
+  background: var(--s2-red);
+  clip-path: polygon(34% 0, 100% 0, 100% 100%);
+  z-index: 0;
+}
+
+.oxm-sk-mast {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.9em clamp(1.2rem, 4vw, 3rem);
+  border-bottom: 3px solid var(--s2-ink);
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.18em;
+  font-size: clamp(0.58rem, 1.1vw, 0.78rem);
+  text-transform: uppercase;
+}
+
+.oxm-sk-grid {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(1.6rem, 4vw, 3.2rem) clamp(1.2rem, 4vw, 3rem);
+  max-width: 1560px;
+  width: 100%;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.oxm-sokha h1 {
+  margin: 0 0 0.16em;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: clamp(4rem, 11vw, 9.6rem);
+  line-height: 0.88;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  color: var(--s2-ink);
+  text-shadow: 0.045em 0.045em 0 var(--s2-red);
+}
+
+.oxm-sk-sub {
+  margin: 0;
+  font-size: clamp(1.02rem, 1.6vw, 1.28rem);
+  line-height: 1.55;
+  max-width: 30ch;
+}
+
+.oxm-sk-ru {
+  margin: 1.3em 0 0;
+  color: var(--s2-red);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: clamp(0.78rem, 1.3vw, 1rem);
+}
+
+.oxm-sk-stage {
+  position: relative;
+}
+
+.oxm-sk-ox {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: oxm-sk-strain 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes oxm-sk-strain {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(5px) rotate(0.4deg); }
+}
+
+.oxm-sk-band {
+  position: relative;
+  z-index: 2;
+  background: var(--s2-red);
+  color: var(--s2-bg);
+  border-block: 3px solid var(--s2-ink);
+  transform: rotate(-1.2deg);
+  margin: 0 -2vw;
+  overflow: hidden;
+}
+
+.oxm-sk-track {
+  display: flex;
+  width: max-content;
+  animation: oxm-sk-marquee 15s linear infinite;
+}
+
+.oxm-sk-half {
+  display: flex;
+  flex: none;
+}
+
+.oxm-sk-band span {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  letter-spacing: 0.14em;
+  padding: 0.55em 0.55em;
+  white-space: nowrap;
+}
+
+@keyframes oxm-sk-marquee {
+  to { transform: translateX(-50%); }
+}
+
+.oxm-sk-stats {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  padding: clamp(1.4rem, 3vw, 2.4rem) clamp(1.2rem, 4vw, 3rem) 0;
+  max-width: 1560px;
+  width: 100%;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.oxm-sk-stats div {
+  border-top: 3px solid var(--s2-ink);
+  padding-top: 0.9em;
+}
+
+.oxm-sk-stats strong {
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3.4vw, 2.8rem);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.oxm-sk-stats span {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(28, 23, 18, 0.82);
+}
+
+.oxm-sk-sig {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding: clamp(1.2rem, 2.5vw, 2rem) clamp(1.2rem, 4vw, 3rem) clamp(4.5rem, 8vh, 6rem);
+  max-width: 1560px;
+  width: 100%;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.oxm-sk-sig span {
+  font-family: 'Anton', sans-serif;
+  border: 3px double var(--s2-red);
+  color: var(--s2-red);
+  letter-spacing: 0.24em;
+  padding: 0.5em 1.1em;
+  transform: rotate(-3deg);
+  font-size: clamp(0.64rem, 1vw, 0.82rem);
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .oxm-sk-grid {
+    grid-template-columns: 1fr;
+  }
+  .oxm-sk-stats {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+  .oxm-sk-wedge {
+    width: 120vw;
+    height: 44vh;
+    clip-path: polygon(20% 0, 100% 0, 100% 78%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oxm-sk-track,
+  .oxm-sk-ox {
+    animation: none;
+  }
+}
