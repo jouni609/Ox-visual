@@ -1,10 +1,11 @@
 # Wall of shame
 
-Fourteen sets have been cut from the gallery: ten in the opening review of 2026-09-04, three more when the maintainer manually re-graded the surviving sets by eye the same day, and one more when a second full audit re-rendered every page of the gallery on 2026-09-11. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
+Fifteen sets have been cut from the gallery: ten in the opening review of 2026-09-04, three more when the maintainer manually re-graded the surviving sets by eye the same day, one more when a second full audit re-rendered every page of the gallery on 2026-09-11, and one more when the maintainer's manual audit of the survivors, run right after that re-grade, rejected ox-sensorium by eye. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
 
 | Model | Set | Score | OX gate |
 |-------|-----|-------|-----------|
 | Qwen 3.8 Flash | ox-polis | 80/100 | 3/5 |
+| Grok 4.6 | ox-sensorium | 76/100 | 4/5 |
 | muse-spark | ox-works | 70/100 | 1/5 |
 | GLM 5.2 | ox-folio | 68/100 | 2/5 |
 | Gemini 3.7 Flash | ox-numismatica | 66/100 | 1/5 |
@@ -64,6 +65,16 @@ Four months of additions later the gallery stood at eleven sets, and the whole t
 
 **DeepSeek V4 Pro failed the second audit with 1/5 OX passes, but had overall 62/100 score, what a shame!** The rudest downgrade the wall has ever taken: a first-review 88 at a clean 5/5, gone on a re-render. The Minoan bull of Leap draws its horns as two flat lobes swept straight back over a greyhound body and a canine muzzle — a leaping hare. Eight Seconds' bucking bull has a long equine muzzle with thin ear-spikes where the horns should be: a bronco. Encierro's only animal is a speck-scale vignette that needs its Spanish caption to resolve as anything, and Jallikattu's charging zebu grows one giant flat ear-blade and reads rabbit. Only Kambala's surging buffalo pair held, on a borderline. The best typography in the gallery, wrapped around a hare, a bronco and a rabbit.
 
+## The maintainer's manual audit, 2026-09-11
+
+Straight after the second audit re-scored the gallery, the maintainer went back through the survivors by eye, one page at a time, asking the gate question of every design with no machine in the room. Nine sets held. One did not — and it was a set both previous passes had approved.
+
+| Model | Set | Second audit | Maintainer's manual verdict |
+|-------|-----|--------------|----------------|
+| Grok 4.6 | ox-sensorium | 76/100 · 4/5 | FAILED |
+
+**Grok 4.6 failed the maintainer's manual audit, what a shame!** Two machine passes had signed this set off — the first review at 84 with a clean 5/5, the second audit at 76 with four of five — and the eye threw all of it out. The ox figures were judged unacceptable and unrecognizable as animals: the frontal Meridian and Flehmen heads are the same construction worn twice, their cream horn paddles reading as moose antlers, the long tapered muzzles pulling donkey, and the small chocolate figure on Halite reads as a bear-shaped blob licking a crystal. Near-twin heads, cartoon modeling, and soft reads that had been tolerated as borderline were, on a third look, simply not animals. The scorecard signed off twice; the eye still wins.
+
 ## What actually went wrong
 
 One failure mode covers most of this wall: horns drawn as thin double strokes on rounded bodies. At a glance those read as insect antennae or rabbit ears, and no caption saves them. The sets that passed drew horns with mass. That, plus animals painted dark-on-dark, accounts for nearly every removal here.
@@ -71,3 +82,5 @@ One failure mode covers most of this wall: horns drawn as thin double strokes on
 The manual pass adds a second lesson: clearing automation is not clearing the gate. A set can survive every static check and still die in front of a person, because the question is not whether ox material appears on the page but whether a stranger sees an animal. Patterns, runes, process diagrams and captions can carry ox material all day. Only a drawn ox passes.
 
 The second audit adds the third: a first-review pass is not a lifetime pass. ox-arena's animals carried the same thin-stroke horns, equine muzzles and stick legs as the rest of this wall — the first review simply looked away, because the typography around them was so good. Score and gate are different numbers; only one of them keeps a set in the gallery.
+
+The maintainer's audit adds the corollary: surviving at 4/5 is standing on a trapdoor. A set whose passes are all borderline has not passed the gate — it has been tolerated by it, and tolerance does not survive the next pair of eyes. ox-sensorium cleared two machine reviews on borderline reads and still died the moment a person, not a rubric, asked the question.

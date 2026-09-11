@@ -9,6 +9,8 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 **Update (2026-09-11, second audit):** the current 11-set gallery was re-rendered end to end (55 designs, desktop 1440px full-page + 375px mobile, console-error and horizontal-overflow sweep: 0 errors, 0 overflow) and re-graded against the gate by panel review, with every gate-deciding page re-verified by eye against full-page screenshots. **ox-arena failed at 1/5 and was removed from the gallery** — its section below has been re-graded. Survivors were re-scored on the same rubric: ox-epoch 90 · ox-lexicon 89 · ox-yoke 89 · ox-vita 87 · ox-hours 83 · ox-mythos 83 · ox-vesper 79 · ox-atlas 76 · ox-sensorium 76 · ox-masque 74. The current ranking lives in [LEADERBOARD.md](LEADERBOARD.md); the per-set sections below remain the 2026-09-03/04 review as it stood, except where re-graded.
 
+**Update (2026-09-11, maintainer's manual audit):** straight after the re-grade, the maintainer went through the survivors by eye. **ox-sensorium (76 · 4/5 here) failed it — the ox figures were judged unacceptable and unrecognizable as animals — and was removed**; its section below has been re-graded. The full verdicts live in [WALLOFSHAME.md](WALLOFSHAME.md).
+
 ---
 
 ## ox-faces — Faces of the Ox (credit: "Set I") — SCORE 60 · FAIL
@@ -81,19 +83,21 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 **Gate flags:** weigh/bolt/star unicode glyphs inside artwork compositions (Pecunia scale pivot, Euboea bolt, SpecieScrip stars) brush against the no-emoji-artwork rule · signatures all "SET VI · DESIGNED BY GEMINI 3.7 FLASH" (set ordinal, uppercased).
 **Verdict:** Handsome layouts and genuinely good numismatic storytelling, but every animal is drawn with antennae horns on blob bodies — five coins, one recognizable bull.
 
-## ox-sensorium — Ox Sensorium (credit: Grok 4.6) — SCORE 84 · PASS
+## ox-sensorium — Ox Sensorium (credit: Grok 4.6) — SCORE 76 · FAIL (removed by the maintainer's manual audit, 2026-09-11)
 
-| # | Design | Ox gate | Notes |
+*Re-graded twice after the first review's 84 · PASS at 5/5: the second audit of 2026-09-11 scored it 76 with 4/5, and the maintainer's manual audit the same day rejected the figures outright and removed the set. Its record lives in [WALLOFSHAME.md](WALLOFSHAME.md).*
+
+| # | Design | Ox gate (second audit) | Notes |
 |---|--------|---------|-------|
-| 01 | Meridian | PASS | Cartoon frontal ox head with sweeping horns on a dichromatic split field; vision-science concept well told (330° ring, blind cone diagram). |
-| 02 | Flehmen | PASS | Same head construction re-used with curled lip and dental pad — near-twin of Meridian's figure, though the olfaction story (Jacobson's organ, scent cards) is great. |
-| 03 | Pinna | PASS | Side-view ox with rotating ears and sound bars; ears read slightly boar-like but horns+tail anchor the bovine. |
-| 04 | Pelage | PASS | Rain-soaked ox with hair-parting texture (reads a touch wood-grain); strong "the ox is a coat that thinks" copy. |
-| 05 | Halite | PASS | Ox licking a pink salt crystal, dotted tongue — clean, charming, legible. |
+| 01 | Meridian | **FAIL** | The frontal head's cream horn paddles read as moose antlers and the long tapered chin pulls donkey/moose; lateral eyes and muzzle are the only bovine cues left. Dock occludes the last stat row. |
+| 02 | Flehmen | PASS (borderline) | Best head of the set — curled lip, dental pad, real chemistry on the scent cards — but the same near-twin construction as Meridian with dark-on-dark ears. |
+| 03 | Pinna | PASS (borderline) | Standing quadruped with horns and tail; head clutter (horn, ears, squiggle mouth) and boar-like ears keep it soft. |
+| 04 | Pelage | PASS (borderline) | Grazing pose reads, but the hanging muzzle flirts with tapir and the legs nearly vanish dark-on-dark. |
+| 05 | Halite | PASS (borderline) | Small brown figure licking a salt crystal; weakest head modeling of the set, horn reads as a flopped ear, bear-ish gestalt. |
 
-**Quality:** ox 26/30 · directions 21/25 · craft 21/25 · copy 9/10 · a11y/responsive/motion 7/10 → **84/100**
+**Quality:** ox 19/30 · directions 21/25 · craft 19/25 · copy 10/10 · a11y/responsive/motion 7/10 → **76/100**
 **Gate flags:** classes/ids use design prefixes (`meridian-`, `pinna-`…) instead of `ox-sensorium-*` · signatures all "SET VII · DESIGNED BY GROK 4.6" (set ordinal).
-**Verdict:** A likeable science-museum set with real sensory facts and consistent signature discipline; docked for the near-twin frontal heads and naming-namespace drift.
+**Verdict:** The first review's "likeable science-museum set" could not survive a third look: five borderline reads built on one repeated head construction, paddle horns and tapered muzzles that the maintainer's manual audit judged unacceptable and unrecognizable as oxen. Removed despite two machine passes.
 
 ## ox-lithica — Ox Lithica (credit: Kimi 2.6) — SCORE 54 · FAIL
 
@@ -273,14 +277,14 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 **Note (2026-09-04, post-review):** three sets that passed this review, ox-signals, ox-biomes and ox-glyphs, were later failed when the maintainer manually re-graded the rendered pages. Their sections are removed from this card and their verdicts live in [WALLOFSHAME.md](WALLOFSHAME.md). The ranking below reflects the review as it stood; the passes marked for those three sets are void.
 
-**Note (2026-09-11, second audit):** ox-arena, ranked 2nd below, failed the gate at 1/5 when the gallery was re-rendered and re-graded, and was removed from the showcase — its re-graded section is above. The other rows stand as the 2026-09-03/04 review recorded them; current scores for the surviving sets are in the 2026-09-11 update at the top of this card.
+**Note (2026-09-11, second audit):** ox-arena, ranked 2nd below, failed the gate at 1/5 when the gallery was re-rendered and re-graded, and was removed from the showcase — its re-graded section is above. Later the same day the maintainer's manual audit removed ox-sensorium, ranked 4th below. The other rows stand as the 2026-09-03/04 review recorded them; current scores for the surviving sets are in the 2026-09-11 updates at the top of this card.
 
 | Rank | Set | Credit | Score | Gate | Designs passing ox gate |
 |------|-----|--------|-------|------|-------------------------|
 | 1 | ox-atlas | ox-alpha | **89** | PASS | 5/5 |
 | 2 | ox-arena | DeepSeek V4 Pro | **88** | PASS → **FAIL** | 5/5 → 1/5 · re-graded 2026-09-11, **removed** |
 | 3 | ox-vita | MUSE SPARK | **85** | PASS | 5/5 |
-| 4 | ox-sensorium | Grok 4.6 | **84** | PASS | 5/5 |
+| 4 | ox-sensorium | Grok 4.6 | **84** | PASS → **FAIL** | 5/5 → 4/5 · removed by the maintainer's manual audit, 2026-09-11 |
 | 4 | ox-vesper | Claude Opus | **84** | PASS | 5/5 |
 | 6 | ox-polis | Qwen 3.8 Flash | **80** | **FAIL** | 3/5 |
 | 7 | ox-hours | Qwen 3.8 Max | **79** | PASS | 5/5 |
@@ -296,13 +300,13 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 | 17 | ox-lithica | Kimi 2.6 | **54** | **FAIL** | 0/5 |
 | 18 | ox-chronicle | Gemini 3.1 Pro | **53** | **FAIL** | 0/5 |
 
-**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.** As re-graded on 2026-09-11: 45 of 105 designs, and 7 of the original 21 sets still standing after ox-arena's removal.
+**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.** As re-graded on 2026-09-11, with the maintainer's manual audit applied: 40 of 105 designs, and 6 of the original 21 sets still standing after the removals of ox-arena and ox-sensorium.
 
 ---
 
 ## GLOBAL FINDINGS
 
-**The showcase's #1 failure mode is horn rendering.** Across the failing sets, horns are drawn as thin double-line strokes that read as insect antennae or rabbit ears on rounded blob bodies — numismatica's coin oxen (rabbits/beetles), materia's substance mascots (clouds/poop), lithica (jugs/rabbits), chronicle (loafs/domes), systema and aurora (birds/rabbits). The passing sets draw horns as *masses* (atlas, arena, vesper, sensorium, mythos) — the single most predictive craft difference between pass and fail.
+**The showcase's #1 failure mode is horn rendering.** Across the failing sets, horns are drawn as thin double-line strokes that read as insect antennae or rabbit ears on rounded blob bodies — numismatica's coin oxen (rabbits/beetles), materia's substance mascots (clouds/poop), lithica (jugs/rabbits), chronicle (loafs/domes), systema and aurora (birds/rabbits). The passing sets draw horns as *masses* (atlas, vesper, mythos) — the single most predictive craft difference between pass and fail. Mass alone is not sufficient: ox-arena's flat lobes and ox-sensorium's antler-paddles both had weight and still failed, the one for equine heads, the other for donkey/moose gestalts that the maintainer's manual audit finally rejected.
 
 **Second failure mode: dark-on-dark contrast.** polis/Cathedral, vesper/Cinder, chronicle (all five), hours/Matins+Compline, mythos/Gavaevodata — animals that exist in code but vanish on screen.
 
