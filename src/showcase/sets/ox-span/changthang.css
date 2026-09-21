@@ -1,0 +1,205 @@
+.th-span-chang {
+  --ink: #1a1816;
+  --muted: #3e3a36;
+  --board: #e4ddd4;
+  --stamp: #8e2418;
+  --yak: #1a1614;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.15fr);
+  align-items: stretch;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, #d9d2c8 0%, #e7e1d8 30%, #efeae3 100%);
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.th-span-chang ::selection {
+  background: #8e2418;
+  color: #f7f4ef;
+}
+
+.ox-span-chang-board {
+  position: relative;
+  margin: clamp(0.8rem, 2vh, 1.4rem);
+  margin-bottom: 6rem;
+  padding: clamp(1rem, 2.4vh, 1.6rem);
+  background: var(--board);
+  clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 0 100%);
+  box-shadow: 0 16px 40px rgba(40, 32, 24, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ox-span-chang-rivet {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #eeeae4, #8a847c 55%, #3a3834);
+}
+
+.ox-span-chang-sign {
+  display: inline-block;
+  margin: 0 0 1rem 1.4rem;
+  padding: 0.5rem 0.7rem 0.55rem;
+  background: linear-gradient(180deg, #3a3836, #1c1b1a);
+  color: #f4f1ec;
+  border-radius: 2px 2px 12px 12px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  position: relative;
+}
+
+.ox-span-chang-sign::before,
+.ox-span-chang-sign::after {
+  content: '';
+  position: absolute;
+  top: 0.35rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #d5d0ca, #6a6560 60%, #2a2826);
+}
+
+.ox-span-chang-sign::before { left: 0.35rem; }
+.ox-span-chang-sign::after { right: 0.35rem; }
+
+.ox-span-chang-kicker {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stamp);
+}
+
+.th-span-chang h1 {
+  margin: 0;
+  font-family: 'Petrona', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: clamp(3.2rem, 5.4vw, 5.2rem);
+  line-height: 0.88;
+  letter-spacing: -0.03em;
+  color: #141210;
+}
+
+.ox-span-chang-lead {
+  margin: 0.8rem 0 0;
+  max-width: 38ch;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.ox-span-chang-swatches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.ox-span-chang-swatches div {
+  background: #f7f4ef;
+  padding: 0.4rem 0.4rem 0.6rem;
+  border-top: 4px solid #1a1614;
+}
+
+.ox-span-chang-swatches svg {
+  width: 100%;
+  height: 72px;
+  display: block;
+}
+
+.ox-span-chang-swatches strong {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.ox-span-chang-swatches span {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.ox-span-chang-figure {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1vh 1vw 6.5rem 0;
+  min-height: 100vh;
+}
+
+.ox-span-chang-ox {
+  width: min(100%, 640px);
+  height: auto;
+  max-height: 92vh;
+  display: block;
+}
+
+.ox-span-chang-skirt {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: ox-span-chang-sway 5.2s ease-in-out infinite;
+}
+
+.ox-span-chang-skirt-b {
+  animation-duration: 4.1s;
+  animation-delay: -1.4s;
+}
+
+@keyframes ox-span-chang-sway {
+  0%, 100% { transform: rotate(-1.6deg); }
+  50% { transform: rotate(1.8deg); }
+}
+
+@media (max-width: 800px) {
+  .th-span-chang {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-span-chang-board {
+    margin: 0.6rem 0.6rem 0;
+    margin-bottom: 0;
+  }
+
+  .ox-span-chang-lead {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ox-span-chang-swatches svg {
+    height: 42px;
+  }
+
+  .ox-span-chang-figure {
+    min-height: 0;
+    height: 48vh;
+    padding: 0 0 7.5rem;
+    overflow: hidden;
+  }
+
+  .ox-span-chang-ox {
+    max-height: 50vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-span-chang-skirt,
+  .ox-span-chang-skirt-b {
+    animation: none;
+  }
+}

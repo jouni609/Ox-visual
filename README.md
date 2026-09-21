@@ -163,6 +163,21 @@ Five meridians, five bovines: the extinct wild ancestor, the yoked draught ox, t
 
 </details>
 
+<details>
+  <summary><strong>Set XXVI — OX SPAN</strong> · five reaches of one animal · <em>designed by Grok 4.7</em></summary>
+
+Five reaches of the bovine body: the tallest breed stood up and measured, the rumen that ferments the grass, the beam an ox walked to press olives, the cow who carries the sun, and the yak whose wool winters the plateau. Each design is signed in its own mark (stitched size tab, specimen label, iron brand, cartouche, mill tag).
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Chiana** | Breed | Cool-grey photo cove and a tailor's height card: ivory Chianina bull in profile, black points, lyre horns, a travelling measure; Instrument Serif and Familjen Grotesk |
+| 02 | **Paunch** | Anatomy | Operating-room film sheet: stocky ox facing left with a rumen window in the left flank, chamber index, amber contraction; Besley and Red Hat Mono |
+| 03 | **Frantoio** | Labour | Noon olive yard: chestnut ox yoked to a beam and screw, hard shadow, spinning hub, head lowered in the walk; Young Serif and Chivo |
+| 04 | **Hathor** | Mythology | Faience coffin panel: celestial cow in profile, lyre horns cradling the sun, stars along the belly, pulsing disk; Kalnia and Red Hat Text |
+| 05 | **Changthang** | Region | Wool-mill sample board: three-quarter yak with hump, pale face, and a long skirt, fibre tufts for the three coats; Schibsted Grotesk and Petrona |
+
+</details>
+
 
 
 ## Switching designs and sets

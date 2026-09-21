@@ -1,0 +1,173 @@
+.th-span-chiana {
+  --ink: #16181c;
+  --muted: #2a3038;
+  --blood: #7a2430;
+  --paper: #f4f0e8;
+  --hide: #f7f3eb;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
+  align-items: stretch;
+  color: var(--ink);
+  background: radial-gradient(120% 90% at 72% 42%, #c5ced6 0%, #8e98a2 52%, #6a737c 100%);
+  font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.th-span-chiana ::selection {
+  background: #7a2430;
+  color: #f7f3eb;
+}
+
+.ox-span-chiana-copy {
+  position: relative;
+  z-index: 2;
+  padding: clamp(1.4rem, 4vh, 3.2rem) clamp(1.2rem, 2.4vw, 2.4rem) 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(198, 206, 214, 0.55), rgba(198, 206, 214, 0));
+}
+
+.ox-span-chiana-sign {
+  align-self: flex-start;
+  margin: 0 0 1.4rem;
+  padding: 0.45rem 0.7rem 0.5rem;
+  max-width: 16rem;
+  background:
+    linear-gradient(#f4f0e8, #f4f0e8) padding-box,
+    repeating-linear-gradient(90deg, #1a1c20 0 6px, transparent 6px 10px) border-box;
+  border: 1px dashed #1a1c20;
+  box-shadow: inset 0 0 0 4px #f4f0e8, inset 0 0 0 5px #1a1c20;
+  color: #1a1c20;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+}
+
+.ox-span-chiana-kicker {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.th-span-chiana h1 {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(4.6rem, 8vw, 8.4rem);
+  line-height: 0.78;
+  letter-spacing: -0.045em;
+  color: #121418;
+}
+
+.ox-span-chiana-lead {
+  margin: 1.1rem 0 0;
+  max-width: 36ch;
+  font-size: clamp(0.98rem, 1.3vw, 1.08rem);
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.ox-span-chiana-stats {
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  max-width: 22rem;
+}
+
+.ox-span-chiana-stats li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.42rem 0;
+  border-top: 1px solid rgba(22, 24, 28, 0.22);
+  font-size: 0.92rem;
+}
+
+.ox-span-chiana-stats strong {
+  font-weight: 600;
+  color: #121418;
+}
+
+.ox-span-chiana-stats li:first-child strong {
+  color: var(--blood);
+  font-size: 1.15rem;
+}
+
+.ox-span-chiana-stage {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4vh 2vw 8vh 0;
+  overflow: hidden;
+}
+
+.ox-span-chiana-ox {
+  width: min(100%, 980px);
+  height: auto;
+  max-height: 90vh;
+  display: block;
+}
+
+.ox-span-chiana-scan {
+  position: absolute;
+  left: 10%;
+  right: 6%;
+  height: 2px;
+  background: #7a2430;
+  pointer-events: none;
+}
+
+@media (max-width: 800px) {
+  .th-span-chiana {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .ox-span-chiana-copy {
+    order: 1;
+    padding: 1.1rem 1rem 0.4rem;
+    background: none;
+  }
+
+  .th-span-chiana h1 {
+    font-size: clamp(3.6rem, 22vw, 5.2rem);
+  }
+
+  .ox-span-chiana-lead {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ox-span-chiana-stats {
+    display: none;
+  }
+
+  .ox-span-chiana-stage {
+    order: 2;
+    min-height: 0;
+    height: 58vh;
+    padding: 0 0 5.5rem;
+  }
+
+  .ox-span-chiana-ox {
+    max-height: 56vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-span-chiana-scan {
+    top: 46%;
+  }
+}

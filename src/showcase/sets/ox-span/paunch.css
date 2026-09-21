@@ -1,0 +1,206 @@
+.th-span-paunch {
+  --ink: #e7f2ef;
+  --muted: #c5ddd6;
+  --amber: #f0d0a0;
+  --film: #e7e0d2;
+  --room: #101614;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.72fr);
+  gap: clamp(0.6rem, 2vw, 1.6rem);
+  align-items: center;
+  padding: clamp(1rem, 3vh, 2rem) clamp(1rem, 3vw, 2.4rem) 6.5rem;
+  color: var(--ink);
+  background:
+    radial-gradient(80% 70% at 30% 50%, #1a2622 0%, #101614 70%);
+  font-family: 'Besley', serif;
+}
+
+.th-span-paunch ::selection {
+  background: #e0a045;
+  color: #1a120c;
+}
+
+.ox-span-paunch-sheet {
+  position: relative;
+  background: var(--film);
+  border: 10px solid #8d928e;
+  box-shadow:
+    0 0 0 1px #3a403c,
+    0 24px 50px rgba(0, 0, 0, 0.35);
+  min-height: min(82vh, 760px);
+  display: grid;
+  place-items: center;
+  padding: 1.2rem 0.6rem 0.6rem;
+}
+
+.ox-span-paunch-screw {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #d5d8d4, #5c6360 60%, #2c312f);
+  box-shadow: inset 0 0 0 1px #2a2e2c;
+}
+
+.ox-span-paunch-screw::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 6px;
+  height: 1.5px;
+  background: #2a2e2c;
+}
+
+.ox-span-paunch-screw-a { top: 8px; left: 8px; }
+.ox-span-paunch-screw-b { top: 8px; right: 8px; }
+.ox-span-paunch-screw-c { bottom: 8px; left: 8px; }
+.ox-span-paunch-screw-d { bottom: 8px; right: 8px; }
+
+.ox-span-paunch-sign {
+  position: absolute;
+  top: 1.3rem;
+  left: 1.3rem;
+  z-index: 2;
+  margin: 0;
+  width: max-content;
+  max-width: calc(100% - 2.4rem);
+  padding: 0.45rem 0.6rem 0.5rem 1.55rem;
+  background: #f4efe4;
+  color: #1a120c;
+  border: 1px solid #1a120c;
+  box-shadow: inset 0 0 0 3px #f4efe4, inset 0 0 0 4px #1a120c;
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 0.62rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.ox-span-paunch-sign::before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 0.55rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #e07070, #8e2420 70%);
+}
+
+.ox-span-paunch-ox {
+  width: 100%;
+  height: auto;
+  max-height: 74vh;
+  display: block;
+}
+
+.ox-span-paunch-rail {
+  padding-bottom: 1rem;
+}
+
+.ox-span-paunch-kicker {
+  margin: 0 0 0.35rem;
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.th-span-paunch h1 {
+  margin: 0;
+  font-family: 'Besley', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: clamp(3.4rem, 6vw, 5.6rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: #f4f7f4;
+}
+
+.ox-span-paunch-lead {
+  margin: 0.8rem 0 0;
+  max-width: 38ch;
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.ox-span-paunch-chambers {
+  list-style: none;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ox-span-paunch-chambers li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.7rem;
+}
+
+.ox-span-paunch-chambers li > span {
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--amber);
+  padding-top: 0.25rem;
+}
+
+.ox-span-paunch-chambers h2 {
+  margin: 0;
+  font-family: 'Besley', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #f7f3ea;
+}
+
+.ox-span-paunch-chambers p {
+  margin: 0.15rem 0 0;
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+@media (max-width: 800px) {
+  .th-span-paunch {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    align-items: start;
+    padding: 0.8rem 0.8rem 5.5rem;
+  }
+
+  .ox-span-paunch-sheet {
+    min-height: 0;
+    order: 2;
+  }
+
+  .ox-span-paunch-rail {
+    order: 1;
+  }
+
+  .th-span-paunch h1 {
+    font-size: clamp(2.8rem, 16vw, 3.6rem);
+  }
+
+  .ox-span-paunch-lead {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ox-span-paunch-chambers {
+    display: none;
+  }
+
+  .ox-span-paunch-ox {
+    max-height: 50vh;
+  }
+}

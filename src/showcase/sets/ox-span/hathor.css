@@ -1,0 +1,146 @@
+.th-span-hathor {
+  --ink: #f3e6c4;
+  --muted: #d5e4dc;
+  --electrum: #f0d48a;
+  --faience: #1fa7a0;
+  --bg: #071e33;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  padding: clamp(0.8rem, 2.4vh, 1.6rem) clamp(1rem, 3vw, 2.4rem) 6.2rem;
+  color: var(--ink);
+  background:
+    linear-gradient(#0a2744, #0a2744) top / 100% 18% no-repeat,
+    linear-gradient(#071e33, #071e33);
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.th-span-hathor ::selection {
+  background: #f0d48a;
+  color: #1a1408;
+}
+
+.ox-span-hathor-sky {
+  pointer-events: none;
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 22%;
+  background-image: radial-gradient(circle, rgba(240, 212, 138, 0.85) 1px, transparent 1.4px);
+  background-size: 42px 36px;
+  mask-image: linear-gradient(#000, transparent);
+}
+
+.ox-span-hathor-head {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ox-span-hathor-kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faience);
+}
+
+.th-span-hathor h1 {
+  margin: 0;
+  font-family: 'Kalnia', serif;
+  font-weight: 600;
+  font-size: clamp(3.2rem, 7vw, 6rem);
+  letter-spacing: 0.12em;
+  line-height: 0.9;
+  color: var(--electrum);
+}
+
+.ox-span-hathor-ox {
+  width: 100%;
+  height: auto;
+  max-height: 62vh;
+  justify-self: center;
+  align-self: center;
+}
+
+.ox-span-hathor-tail {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: ox-span-hathor-swish 4.5s ease-in-out infinite;
+}
+
+@keyframes ox-span-hathor-swish {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(6deg); }
+}
+
+.ox-span-hathor-cartouche {
+  margin: 0 0 0.7rem;
+  display: inline-block;
+  padding: 0.4rem 1.15rem 0.4rem 0.9rem;
+  border: 2px solid var(--electrum);
+  border-radius: 999px;
+  color: #1a1408;
+  background: var(--electrum);
+  font-family: 'Kalnia', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+.ox-span-hathor-cartouche::after {
+  content: '';
+  position: absolute;
+  right: 0.4rem;
+  top: 20%;
+  bottom: 20%;
+  width: 3px;
+  background: #1a1408;
+  border-radius: 2px;
+}
+
+.ox-span-hathor-foot {
+  position: relative;
+  z-index: 2;
+}
+
+.ox-span-hathor-lead {
+  margin: 0;
+  max-width: 62ch;
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+@media (max-width: 800px) {
+  .th-span-hathor {
+    grid-template-rows: auto auto auto;
+    align-content: start;
+    padding-bottom: 7.5rem;
+  }
+
+  .th-span-hathor h1 {
+    letter-spacing: 0.06em;
+    font-size: clamp(2.6rem, 14vw, 3.4rem);
+  }
+
+  .ox-span-hathor-ox {
+    max-height: 38vh;
+  }
+
+  .ox-span-hathor-lead {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-span-hathor-tail {
+    animation: none;
+  }
+}
