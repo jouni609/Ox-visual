@@ -9,5 +9,6 @@ import oxEpoch from './ox-epoch/manifest.js'
 import oxLexicon from './ox-lexicon/manifest.js'
 import oxMeridian from './ox-meridian/manifest.js'
 import oxSpan from './ox-span/manifest.js'
+import oxTale from './ox-tale/manifest.js'
 
-export const SETS = [oxAtlas, oxMasque, oxHours, oxVesper, oxVita, oxMythos, oxYoke, oxEpoch, oxLexicon, oxMeridian, oxSpan]
+export const SETS = [oxAtlas, oxMasque, oxHours, oxVesper, oxVita, oxMythos, oxYoke, oxEpoch, oxLexicon, oxMeridian, oxSpan, oxTale]

@@ -1,0 +1,325 @@
+.th-ox-tale-europa {
+  --f-room: #8E8478;
+  --f-plaster: #F2E6D2;
+  --f-plaster-deep: #E4D2B4;
+  --f-red: #C4503A;
+  --f-blue: #2E7FA8;
+  --f-ink: #3A2A20;
+  --f-fade: #7A6754;
+}
+
+.th-ox-tale-europa::selection {
+  background: var(--f-red);
+  color: var(--f-plaster);
+}
+
+.ox-tale-e.ox-tale-page {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(140% 100% at 50% 0%, #A0958A, var(--f-room) 70%);
+  color: var(--f-ink);
+  font-family: 'Figtree', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3.5vh, 2.5rem) clamp(0.8rem, 3vw, 2rem);
+}
+
+.e-wall {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      92deg,
+      transparent 0 40px,
+      rgba(58, 42, 32, 0.04) 40px 42px
+    );
+  pointer-events: none;
+}
+
+.e-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  background:
+    radial-gradient(80% 60% at 20% 10%, rgba(255, 255, 255, 0.55), transparent 60%),
+    linear-gradient(160deg, var(--f-plaster) 0%, var(--f-plaster-deep) 100%);
+  box-shadow:
+    0 30px 70px rgba(30, 20, 12, 0.45),
+    inset 0 0 60px rgba(122, 103, 84, 0.18);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  grid-template-areas:
+    "head art"
+    "data art"
+    "plaque art";
+  gap: clamp(0.8rem, 2vh, 1.4rem) clamp(1.2rem, 3vw, 2.6rem);
+  padding: clamp(1.4rem, 4vh, 3rem) clamp(1.3rem, 3.5vw, 3rem) clamp(1.2rem, 3vh, 2.2rem);
+}
+
+.e-chips {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.e-chip-edge {
+  fill: none;
+  stroke: rgba(58, 42, 32, 0.35);
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+
+.e-crack {
+  fill: none;
+  stroke: rgba(58, 42, 32, 0.4);
+  stroke-width: 2.5;
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  animation: ox-tale-e-crack 2.4s ease-out 0.6s forwards;
+}
+
+.e-crack-b {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  animation-delay: 1s;
+}
+
+.e-crack-c {
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+  animation-delay: 1.4s;
+}
+
+@keyframes ox-tale-e-crack {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.e-head {
+  grid-area: head;
+}
+
+.e-kicker {
+  font-size: clamp(0.65rem, 1.3vw, 0.76rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--f-red);
+  margin-bottom: clamp(0.5rem, 1.5vh, 0.9rem);
+}
+
+.ox-tale-e h1 {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: clamp(2.3rem, 5.5vw, 4.2rem);
+  line-height: 1;
+  color: var(--f-ink);
+  letter-spacing: 0.01em;
+}
+
+.e-body {
+  margin-top: clamp(0.7rem, 2vh, 1.2rem);
+  font-size: clamp(0.92rem, 1.4vw, 1.02rem);
+  line-height: 1.65;
+  color: var(--f-ink);
+  max-width: 34rem;
+}
+
+.e-art {
+  grid-area: art;
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.e-svg {
+  width: 100%;
+  height: auto;
+  flex: 1;
+  min-height: 0;
+  border: 3px solid rgba(58, 42, 32, 0.55);
+  box-shadow: inset 0 0 0 6px var(--f-plaster), 0 8px 24px rgba(58, 42, 32, 0.25);
+}
+
+.e-fig {
+  font-size: clamp(0.68rem, 1.2vw, 0.78rem);
+  letter-spacing: 0.12em;
+  color: var(--f-fade);
+  font-style: italic;
+}
+
+.e-bob {
+  transform-origin: 450px 420px;
+  animation: ox-tale-e-bob 5s ease-in-out infinite;
+}
+
+@keyframes ox-tale-e-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+.e-wave-a {
+  animation: ox-tale-e-roll 11s linear infinite;
+}
+
+.e-wave-b {
+  animation: ox-tale-e-roll 14s linear infinite reverse;
+}
+
+@keyframes ox-tale-e-roll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(180px);
+  }
+}
+
+.e-foam path {
+  animation: ox-tale-e-foam 3.4s ease-in-out infinite;
+}
+
+.e-foam path:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.e-foam path:nth-child(3) {
+  animation-delay: 1.3s;
+}
+
+.e-foam path:nth-child(4) {
+  animation-delay: 1.9s;
+}
+
+@keyframes ox-tale-e-foam {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(6px);
+  }
+}
+
+.e-fish {
+  animation: ox-tale-e-fish 16s linear infinite;
+}
+
+@keyframes ox-tale-e-fish {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-900px);
+  }
+}
+
+.e-plaque {
+  grid-area: plaque;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: linear-gradient(180deg, #C8B48C, #A8906C);
+  border: 1px solid rgba(58, 42, 32, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 4px 10px rgba(58, 42, 32, 0.3);
+  padding: 0.55rem 0.9rem;
+}
+
+.e-screw {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #F0E6D2, #6A5A48 70%);
+  box-shadow: inset 0 0 0 1px rgba(58, 42, 32, 0.5);
+  flex: none;
+}
+
+.e-plaque-text {
+  font-size: clamp(0.66rem, 1.2vw, 0.78rem);
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: #2A1E14;
+}
+
+.e-plaque-sub {
+  font-size: clamp(0.58rem, 1vw, 0.66rem);
+  letter-spacing: 0.14em;
+  color: #4A3A2C;
+  border-left: 1px solid rgba(58, 42, 32, 0.4);
+  padding-left: 0.8rem;
+}
+
+.e-data {
+  grid-area: data;
+  display: grid;
+  gap: 0.45rem;
+  border-top: 2px solid rgba(58, 42, 32, 0.35);
+  padding-top: clamp(0.6rem, 1.5vh, 1rem);
+}
+
+.e-data div {
+  display: grid;
+  grid-template-columns: 5.4rem 1fr;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.e-data dt {
+  font-size: 0.64rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--f-red);
+}
+
+.e-data dd {
+  font-size: clamp(0.84rem, 1.3vw, 0.94rem);
+  color: var(--f-ink);
+}
+
+@media (max-width: 860px) {
+  .ox-tale-e.ox-tale-page {
+    padding-bottom: 9rem;
+    align-items: flex-start;
+  }
+
+  .e-panel {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "art"
+      "data"
+      "plaque";
+  }
+
+  .e-svg {
+    min-height: 46vw;
+  }
+
+  .e-plaque {
+    position: fixed;
+    left: clamp(1.1rem, 5vw, 2rem);
+    right: clamp(1.1rem, 5vw, 2rem);
+    bottom: 7.5rem;
+    z-index: 5;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: stretch;
+  }
+}

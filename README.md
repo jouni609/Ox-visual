@@ -178,6 +178,21 @@ Five reaches of the bovine body: the tallest breed stood up and measured, the ru
 
 </details>
 
+<details>
+  <summary><strong>Set XXVII — OX TALE</strong> · five stories that keep the ox alive · <em>designed by MIMO</em></summary>
+
+Five stories with the ox in them — a Chinese star folktale, an Aegean sea-crossing, an apocryphal midnight speech, an Aesop fable, and an Attic bull-hunt. Each page is an artifact of its story’s own craft tradition, signed in that tradition’s native mark (hanging silk bookmark, museum accession plaque, woodcut colophon, misregistered ink stamp, painted inventory tag).
+
+| # | Design | Story | Direction |
+|---|--------|-------|-----------|
+| 01 | **Cowherd** | China · Niulang | Indigo night scroll: walking ox under a gold Milky Way, drifting stars, breathing barrel, hanging seal-bookmark signature |
+| 02 | **Europa** | Aegean · the bull swims | Chipped Minoan fresco panel: white bull three-quarter frontal at the waterline, rolling waves, foam flicker, accession-plaque signature |
+| 03 | **Stable** | Apocrypha · the midnight speech | Candlelit woodcut night: recumbent ox bedded in straw, breath puffs, candle flicker, blackletter title, reversed colophon block |
+| 04 | **Frog** | Aesop · envy of size | Two-colour riso broadside: drinking ox in cyan/coral misregistration, puffing frog, expanding ripples, ink-stamp signature |
+| 05 | **Marathon** | Attica · Cretan Bull | Black-figure amphora register: charging bull silhouette on fired clay, white-slip horns, scrolling meander, painted inventory tag |
+
+</details>
+
 
 
 ## Switching designs and sets

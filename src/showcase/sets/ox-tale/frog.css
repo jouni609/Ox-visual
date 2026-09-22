@@ -1,0 +1,287 @@
+.th-ox-tale-frog {
+  --r-paper: #FBF6EE;
+  --r-cyan: #00A8C8;
+  --r-coral: #FF5B5E;
+  --r-ink: #17181C;
+  --r-mute: #4A4C55;
+}
+
+.th-ox-tale-frog::selection {
+  background: var(--r-coral);
+  color: var(--r-paper);
+}
+
+.ox-tale-f.ox-tale-page {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--r-paper);
+  color: var(--r-ink);
+  font-family: 'Outfit', system-ui, sans-serif;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  grid-template-areas:
+    "head art"
+    "copy art"
+    "stamp art";
+  grid-template-rows: auto 1fr auto;
+  gap: clamp(0.8rem, 2.5vh, 1.6rem) clamp(1.2rem, 4vw, 3.5rem);
+  padding: clamp(1.4rem, 4vh, 3.2rem) clamp(1.2rem, 5vw, 4.5rem);
+}
+
+.f-grain {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(rgba(23, 24, 28, 0.05) 1px, transparent 1.5px);
+  background-size: 4px 4px;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+
+.f-head {
+  grid-area: head;
+  position: relative;
+  z-index: 1;
+}
+
+.f-kicker {
+  font-size: clamp(0.66rem, 1.3vw, 0.78rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--r-cyan);
+  font-weight: 700;
+  margin-bottom: clamp(0.5rem, 1.5vh, 0.9rem);
+}
+
+.ox-tale-f h1 {
+  font-family: 'Unbounded', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.4rem, 5.8vw, 4.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--r-ink);
+}
+
+.f-art {
+  grid-area: art;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.f-svg {
+  width: 100%;
+  height: auto;
+  border: 3px solid var(--r-ink);
+  box-shadow: 12px 12px 0 var(--r-cyan);
+}
+
+.f-fig {
+  font-size: clamp(0.68rem, 1.2vw, 0.78rem);
+  letter-spacing: 0.1em;
+  color: var(--r-mute);
+}
+
+.f-layer-cyan {
+  fill: var(--r-cyan);
+  transform: translate(-7px, -5px);
+  animation: ox-tale-f-mis-a 3.4s steps(2, jump-none) infinite;
+}
+
+.f-layer-coral {
+  fill: var(--r-coral);
+  transform: translate(8px, 6px);
+  animation: ox-tale-f-mis-b 2.8s steps(2, jump-none) infinite;
+}
+
+.f-layer-ink {
+  animation: ox-tale-f-mis-c 4s ease-in-out infinite;
+}
+
+@keyframes ox-tale-f-mis-a {
+  0%,
+  100% {
+    transform: translate(-7px, -5px);
+  }
+  50% {
+    transform: translate(-9px, -4px);
+  }
+}
+
+@keyframes ox-tale-f-mis-b {
+  0%,
+  100% {
+    transform: translate(8px, 6px);
+  }
+  50% {
+    transform: translate(6px, 8px);
+  }
+}
+
+@keyframes ox-tale-f-mis-c {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(1px, -1px);
+  }
+}
+
+.f-ring {
+  transform-origin: 168px 552px;
+  animation: ox-tale-f-ring 3.6s ease-out infinite;
+  opacity: 0;
+}
+
+.f-ring:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.f-ring:nth-child(3) {
+  animation-delay: 2.4s;
+}
+
+@keyframes ox-tale-f-ring {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.35);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+.f-frog {
+  transform-origin: 96px 528px;
+  animation: ox-tale-f-puff 2.6s ease-in-out infinite;
+}
+
+@keyframes ox-tale-f-puff {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.14);
+  }
+}
+
+.f-specks {
+  animation: ox-tale-f-speck 12s linear infinite;
+}
+
+@keyframes ox-tale-f-speck {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+.f-copy {
+  grid-area: copy;
+  position: relative;
+  z-index: 1;
+  align-self: start;
+}
+
+.f-body {
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+  line-height: 1.7;
+  color: var(--r-ink);
+  max-width: 30rem;
+  border-left: 5px solid var(--r-coral);
+  padding-left: clamp(0.8rem, 1.5vw, 1.1rem);
+}
+
+.f-data {
+  margin-top: clamp(0.9rem, 2.5vh, 1.4rem);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.f-data div {
+  display: grid;
+  grid-template-columns: 4.6rem 1fr;
+  gap: 0.7rem;
+  align-items: baseline;
+  border-bottom: 2px dashed rgba(23, 24, 28, 0.25);
+  padding-bottom: 0.4rem;
+}
+
+.f-data dt {
+  font-size: 0.64rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--r-cyan);
+}
+
+.f-data dd {
+  font-size: clamp(0.86rem, 1.3vw, 0.96rem);
+  color: var(--r-ink);
+}
+
+.f-stamp {
+  grid-area: stamp;
+  position: relative;
+  z-index: 1;
+  justify-self: start;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  border: 3px double var(--r-ink);
+  background:
+    linear-gradient(0deg, rgba(0, 168, 200, 0.14), rgba(255, 91, 94, 0.14));
+  padding: 0.55rem 0.9rem;
+}
+
+.f-stamp-text {
+  font-size: clamp(0.68rem, 1.3vw, 0.8rem);
+  letter-spacing: 0.18em;
+  font-weight: 800;
+  color: var(--r-ink);
+}
+
+.f-stamp-sub {
+  font-size: 0.58rem;
+  letter-spacing: 0.3em;
+  color: var(--r-mute);
+}
+
+@media (max-width: 880px) {
+  .ox-tale-f.ox-tale-page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "art"
+      "copy"
+      "stamp";
+    padding-bottom: 9rem;
+  }
+
+  .f-svg {
+    box-shadow: 8px 8px 0 var(--r-cyan);
+    max-height: 58vh;
+  }
+
+  .f-stamp {
+    position: fixed;
+    left: clamp(1.1rem, 5vw, 2rem);
+    right: clamp(1.1rem, 5vw, 2rem);
+    bottom: 7.5rem;
+    justify-content: center;
+    background: var(--r-paper);
+  }
+}

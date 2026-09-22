@@ -1,0 +1,296 @@
+.th-ox-tale-marathon {
+  --m-clay: #C4622D;
+  --m-clay-deep: #A94F22;
+  --m-black: #1A1210;
+  --m-ivory: #F0E2C8;
+  --m-red: #9C2B1A;
+  --m-dim: #E8D4B4;
+}
+
+.th-ox-tale-marathon::selection {
+  background: var(--m-black);
+  color: var(--m-ivory);
+}
+
+.ox-tale-m.ox-tale-page {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, var(--m-clay) 0%, var(--m-clay-deep) 100%);
+  color: var(--m-black);
+  font-family: 'Libre Franklin', system-ui, sans-serif;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-areas:
+    "meander-top meander-top"
+    "head art"
+    "copy art"
+    "tag art"
+    "meander-bottom meander-bottom";
+  grid-template-rows: auto auto 1fr auto auto;
+  gap: clamp(0.7rem, 2vh, 1.3rem) clamp(1.2rem, 3.5vw, 3rem);
+  padding: clamp(0.9rem, 2.5vh, 1.6rem) clamp(1.1rem, 4vw, 3.5rem);
+}
+
+.m-meander {
+  color: var(--m-black);
+  opacity: 0.9;
+  overflow: hidden;
+}
+
+.m-meander-top {
+  grid-area: meander-top;
+}
+
+.m-meander-bottom {
+  grid-area: meander-bottom;
+}
+
+.m-meander svg {
+  width: 200%;
+  height: 14px;
+  animation: ox-tale-m-belt 30s linear infinite;
+}
+
+.m-meander-bottom svg {
+  animation-direction: reverse;
+  animation-duration: 40s;
+}
+
+@keyframes ox-tale-m-belt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.m-head {
+  grid-area: head;
+}
+
+.m-kicker {
+  font-size: clamp(0.62rem, 1.2vw, 0.74rem);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--m-red);
+  font-weight: 600;
+  margin-bottom: clamp(0.5rem, 1.5vh, 0.9rem);
+  background: rgba(240, 226, 200, 0.35);
+  display: inline-block;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--m-black);
+}
+
+.ox-tale-m h1 {
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(2.2rem, 5.4vw, 4.4rem);
+  line-height: 1.02;
+  color: var(--m-black);
+  letter-spacing: 0.01em;
+}
+
+.m-art {
+  grid-area: art;
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.m-svg {
+  width: 100%;
+  height: auto;
+  max-height: 74vh;
+  border: 4px solid var(--m-black);
+  box-shadow: 10px 10px 0 rgba(26, 18, 16, 0.35);
+}
+
+.m-fig {
+  font-size: clamp(0.68rem, 1.2vw, 0.78rem);
+  letter-spacing: 0.1em;
+  color: var(--m-black);
+  opacity: 0.75;
+  font-style: italic;
+}
+
+.m-bull {
+  transform-origin: 600px 420px;
+  animation: ox-tale-m-lunge 3.2s ease-in-out infinite;
+}
+
+@keyframes ox-tale-m-lunge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+.m-puff {
+  animation: ox-tale-m-puff 2.4s ease-out infinite;
+  opacity: 0;
+}
+
+.m-puff:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.m-puff:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.m-puff:nth-child(4) {
+  animation-delay: 1.7s;
+}
+
+@keyframes ox-tale-m-puff {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+}
+
+.m-rosette circle:first-child {
+  transform-origin: center;
+  animation: ox-tale-m-spin 24s linear infinite;
+}
+
+@keyframes ox-tale-m-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.m-copy {
+  grid-area: copy;
+  background: var(--m-black);
+  color: var(--m-ivory);
+  padding: clamp(1rem, 2.5vh, 1.5rem) clamp(1rem, 2vw, 1.5rem);
+  border: 3px solid var(--m-black);
+  box-shadow: inset 0 0 0 2px rgba(240, 226, 200, 0.25);
+  align-self: start;
+}
+
+.m-body {
+  font-size: clamp(0.92rem, 1.4vw, 1.02rem);
+  line-height: 1.7;
+  color: var(--m-ivory);
+}
+
+.m-data {
+  margin-top: clamp(0.8rem, 2vh, 1.2rem);
+  display: grid;
+  gap: 0.45rem;
+  border-top: 1px solid rgba(240, 226, 200, 0.35);
+  padding-top: clamp(0.6rem, 1.5vh, 0.9rem);
+}
+
+.m-data div {
+  display: grid;
+  grid-template-columns: 4.4rem 1fr;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.m-data dt {
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #E2A06A;
+}
+
+.m-data dd {
+  font-size: clamp(0.84rem, 1.3vw, 0.94rem);
+  color: var(--m-ivory);
+}
+
+.m-tag {
+  grid-area: tag;
+  justify-self: start;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background: var(--m-ivory);
+  border: 2px solid var(--m-black);
+  padding: 0.7rem 1rem 0.6rem 1.4rem;
+  box-shadow: 4px 4px 0 rgba(26, 18, 16, 0.45);
+}
+
+.m-tag-hole {
+  position: absolute;
+  left: 0.45rem;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--m-black);
+  background: var(--m-clay);
+  transform: translateY(-50%);
+}
+
+.m-tag-text {
+  font-size: clamp(0.68rem, 1.3vw, 0.8rem);
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: var(--m-black);
+}
+
+.m-tag-sub {
+  font-size: 0.58rem;
+  letter-spacing: 0.24em;
+  color: var(--m-red);
+}
+
+.m-graffiti {
+  font-style: italic;
+}
+
+@media (max-width: 880px) {
+  .ox-tale-m.ox-tale-page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "meander-top"
+      "head"
+      "art"
+      "copy"
+      "tag"
+      "meander-bottom";
+    padding-bottom: 9rem;
+  }
+
+  .m-svg {
+    max-height: 52vh;
+    box-shadow: 6px 6px 0 rgba(26, 18, 16, 0.35);
+  }
+
+  .m-tag {
+    position: fixed;
+    left: clamp(1.1rem, 5vw, 2rem);
+    right: clamp(1.1rem, 5vw, 2rem);
+    bottom: 7.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.55rem 0.8rem;
+    z-index: 5;
+  }
+
+  .m-tag-hole {
+    display: none;
+  }
+}

@@ -1,0 +1,290 @@
+.th-ox-tale-stable {
+  --s-night: #120E0A;
+  --s-hatch: #3A2E22;
+  --s-straw: #C9973F;
+  --s-amber: #E8B84B;
+  --s-cream: #F0E4C8;
+  --s-dim: #C4B494;
+  --s-red: #8C3A22;
+}
+
+.th-ox-tale-stable::selection {
+  background: var(--s-amber);
+  color: var(--s-night);
+}
+
+.ox-tale-s.ox-tale-page {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--s-night);
+  color: var(--s-cream);
+  font-family: 'PT Serif', Georgia, serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: clamp(1.3rem, 4vh, 3rem) clamp(1.2rem, 5vw, 4.5rem) clamp(1rem, 3vh, 2rem);
+}
+
+.s-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(45% 55% at 14% 42%, rgba(232, 184, 75, 0.2), transparent 70%),
+    radial-gradient(70% 50% at 70% 100%, rgba(201, 151, 63, 0.12), transparent 65%);
+  pointer-events: none;
+  animation: ox-tale-s-flicker 4.5s ease-in-out infinite;
+}
+
+@keyframes ox-tale-s-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.82;
+  }
+  58% {
+    opacity: 0.95;
+  }
+  74% {
+    opacity: 0.78;
+  }
+}
+
+.s-scene {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: min(72vh, 700px);
+  pointer-events: none;
+}
+
+.s-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.s-candle-halo {
+  animation: ox-tale-s-halo 3.2s ease-in-out infinite;
+}
+
+@keyframes ox-tale-s-halo {
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.s-candle path:first-of-type {
+  transform-origin: 211px 340px;
+  animation: ox-tale-s-flame 2.1s ease-in-out infinite;
+}
+
+@keyframes ox-tale-s-flame {
+  0%,
+  100% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  30% {
+    transform: scaleY(1.08) skewX(3deg);
+  }
+  65% {
+    transform: scaleY(0.94) skewX(-3deg);
+  }
+}
+
+.s-ox {
+  transform-origin: 560px 620px;
+  animation: ox-tale-s-rest 7s ease-in-out infinite;
+}
+
+@keyframes ox-tale-s-rest {
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.s-breath circle {
+  opacity: 0;
+  transform-origin: 1188px 416px;
+  animation: ox-tale-s-breath 4.5s ease-out infinite;
+}
+
+.s-breath circle:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.s-breath circle:nth-child(3) {
+  animation-delay: 3s;
+}
+
+@keyframes ox-tale-s-breath {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.5);
+  }
+  18% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(70px, -50px) scale(2.1);
+  }
+}
+
+.s-motes circle {
+  animation: ox-tale-s-mote 9s ease-in-out infinite;
+}
+
+.s-motes circle:nth-child(2n) {
+  animation-delay: 2.2s;
+  animation-duration: 11s;
+}
+
+.s-motes circle:nth-child(3n) {
+  animation-delay: 4.4s;
+  animation-duration: 8s;
+}
+
+@keyframes ox-tale-s-mote {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-26px);
+    opacity: 0.85;
+  }
+}
+
+.s-head {
+  position: relative;
+  z-index: 2;
+  max-width: 34rem;
+}
+
+.s-kicker {
+  font-family: 'Libre Franklin', system-ui, sans-serif;
+  font-size: clamp(0.66rem, 1.3vw, 0.78rem);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--s-amber);
+  margin-bottom: clamp(0.6rem, 1.8vh, 1rem);
+}
+
+.ox-tale-s h1 {
+  font-family: 'UnifrakturMaguntia', 'PT Serif', serif;
+  font-weight: 400;
+  font-size: clamp(2.8rem, 7vw, 5.4rem);
+  line-height: 1;
+  color: var(--s-cream);
+  letter-spacing: 0.01em;
+}
+
+.s-body {
+  margin-top: clamp(0.8rem, 2.2vh, 1.3rem);
+  font-size: clamp(0.94rem, 1.5vw, 1.06rem);
+  line-height: 1.7;
+  color: var(--s-dim);
+  max-width: 31rem;
+}
+
+.s-data {
+  margin-top: clamp(0.9rem, 2.5vh, 1.4rem);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.s-data div {
+  display: grid;
+  grid-template-columns: 5.4rem 1fr;
+  gap: 0.7rem;
+  align-items: baseline;
+}
+
+.s-data dt {
+  font-family: 'Libre Franklin', system-ui, sans-serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--s-amber);
+}
+
+.s-data dd {
+  font-size: clamp(0.86rem, 1.3vw, 0.96rem);
+  color: var(--s-cream);
+}
+
+.s-colophon {
+  position: relative;
+  z-index: 2;
+  grid-row: 3;
+  align-self: end;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: #0A0705;
+  border: 2px solid var(--s-cream);
+  outline: 1px solid #0A0705;
+  outline-offset: 3px;
+  padding: 0.6rem 1rem;
+}
+
+.s-colophon-text {
+  font-family: 'Libre Franklin', system-ui, sans-serif;
+  font-size: clamp(0.68rem, 1.3vw, 0.8rem);
+  letter-spacing: 0.26em;
+  font-weight: 600;
+  color: var(--s-cream);
+}
+
+.s-colophon-rule {
+  width: clamp(1.2rem, 3vw, 2.4rem);
+  height: 2px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--s-cream) 0 6px,
+      transparent 6px 10px
+    );
+}
+
+@media (max-width: 760px) {
+  .ox-tale-s.ox-tale-page {
+    padding-left: clamp(1.1rem, 5vw, 2rem);
+    padding-right: clamp(1.1rem, 5vw, 2rem);
+    padding-bottom: 9rem;
+  }
+
+  .s-scene {
+    height: 52vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+  }
+
+  .s-head {
+    max-width: none;
+  }
+
+  .s-body {
+    max-width: none;
+  }
+
+  .s-colophon {
+    position: fixed;
+    grid-row: auto;
+    left: clamp(1.1rem, 5vw, 2rem);
+    right: clamp(1.1rem, 5vw, 2rem);
+    bottom: 7.5rem;
+    justify-content: center;
+  }
+
+  .s-data div {
+    grid-template-columns: 5rem 1fr;
+  }
+}
