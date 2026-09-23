@@ -1,0 +1,267 @@
+.th-ox-apparatus-hoof {
+  --ox-apparatus-hoof-snow: #f5f3e8;
+  --ox-apparatus-hoof-mist: #d9f2eb;
+  --ox-apparatus-hoof-mint: #8ccfc0;
+  --ox-apparatus-hoof-slate: #16333b;
+  --ox-apparatus-hoof-rust: #c65b36;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-apparatus-hoof-mint);
+  color: var(--ox-apparatus-hoof-slate);
+  font-family: 'Newsreader', serif;
+}
+
+.th-ox-apparatus-hoof::selection {
+  color: var(--ox-apparatus-hoof-snow);
+  background: var(--ox-apparatus-hoof-rust);
+}
+
+.ox-apparatus-hoof-heading {
+  position: absolute;
+  top: clamp(24px, 4vw, 62px);
+  right: clamp(20px, 4vw, 68px);
+  left: clamp(20px, 4vw, 68px);
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+.ox-apparatus-hoof-heading p {
+  grid-column: 1 / -1;
+  margin: 0 0 10px;
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(10px, 0.9vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.ox-apparatus-hoof-heading h1 {
+  margin: 0;
+  color: var(--ox-apparatus-hoof-snow);
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(102px, 20vw, 292px);
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 0.72;
+  text-shadow: 5px 5px 0 var(--ox-apparatus-hoof-slate);
+}
+
+.ox-apparatus-hoof-heading span {
+  margin-top: 10px;
+  border: 2px solid var(--ox-apparatus-hoof-slate);
+  border-radius: 999px;
+  padding: 9px 12px;
+  background: var(--ox-apparatus-hoof-snow);
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(9px, 0.8vw, 12px);
+  font-weight: 700;
+  transform: rotate(3deg);
+}
+
+.ox-apparatus-hoof-stage {
+  position: relative;
+  min-height: 100vh;
+}
+
+.ox-apparatus-hoof-figure {
+  position: absolute;
+  right: -2%;
+  bottom: 0;
+  width: min(1220px, 96%);
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(12px 14px 0 rgba(22, 51, 59, 0.14));
+}
+
+.ox-apparatus-hoof-figure path {
+  vector-effect: non-scaling-stroke;
+  stroke: var(--ox-apparatus-hoof-slate);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ox-apparatus-hoof-mountain-back {
+  fill: #65ad9d;
+  stroke: var(--ox-apparatus-hoof-slate);
+  stroke-width: 5;
+}
+
+.ox-apparatus-hoof-contour {
+  fill: none;
+  stroke: var(--ox-apparatus-hoof-mist);
+  stroke-width: 5;
+}
+
+.ox-apparatus-hoof-snow {
+  fill: var(--ox-apparatus-hoof-snow);
+  stroke: var(--ox-apparatus-hoof-slate);
+  stroke-width: 5;
+}
+
+.ox-apparatus-hoof-tracks path {
+  fill: var(--ox-apparatus-hoof-rust);
+  stroke: var(--ox-apparatus-hoof-slate);
+  stroke-width: 5;
+}
+
+.ox-apparatus-hoof-body,
+.ox-apparatus-hoof-hump,
+.ox-apparatus-hoof-neck,
+.ox-apparatus-hoof-head,
+.ox-apparatus-hoof-leg,
+.ox-apparatus-hoof-tail,
+.ox-apparatus-hoof-tail-tuft,
+.ox-apparatus-hoof-ear {
+  fill: var(--ox-apparatus-hoof-slate);
+}
+
+.ox-apparatus-hoof-leg-far,
+.ox-apparatus-hoof-tail {
+  fill: #274a50;
+}
+
+.ox-apparatus-hoof-hoof {
+  fill: var(--ox-apparatus-hoof-rust);
+}
+
+.ox-apparatus-hoof-face {
+  fill: var(--ox-apparatus-hoof-mist);
+}
+
+.ox-apparatus-hoof-horn {
+  fill: var(--ox-apparatus-hoof-snow);
+}
+
+.ox-apparatus-hoof-eye,
+.ox-apparatus-hoof-nostril {
+  fill: var(--ox-apparatus-hoof-rust);
+  stroke: none;
+}
+
+.ox-apparatus-hoof-line,
+.ox-apparatus-hoof-fringe {
+  fill: none;
+  stroke: var(--ox-apparatus-hoof-mist);
+  stroke-width: 5;
+}
+
+.ox-apparatus-hoof-path {
+  position: absolute;
+  bottom: 9%;
+  left: clamp(20px, 4vw, 68px);
+  z-index: 3;
+  display: flex;
+  border: 2px solid var(--ox-apparatus-hoof-slate);
+  border-radius: 999px;
+  background: var(--ox-apparatus-hoof-snow);
+  box-shadow: 5px 5px 0 var(--ox-apparatus-hoof-slate);
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(8px, 0.8vw, 11px);
+  font-weight: 700;
+  transform: rotate(-4deg);
+}
+
+.ox-apparatus-hoof-path span {
+  padding: 10px 12px;
+}
+
+.ox-apparatus-hoof-path span + span {
+  border-left: 1px solid var(--ox-apparatus-hoof-slate);
+}
+
+.ox-apparatus-hoof-stage p {
+  position: absolute;
+  top: 31%;
+  right: clamp(20px, 4vw, 68px);
+  z-index: 3;
+  width: min(320px, 31vw);
+  margin: 0;
+  border-left: 8px solid var(--ox-apparatus-hoof-rust);
+  padding: 8px 0 8px 16px;
+  font-size: clamp(14px, 1.25vw, 19px);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.ox-apparatus-hoof-signature {
+  position: absolute;
+  right: clamp(20px, 4vw, 68px);
+  bottom: clamp(130px, 12vw, 174px);
+  z-index: 4;
+  display: grid;
+  width: min(310px, 43vw);
+  gap: 5px;
+  border: 4px double var(--ox-apparatus-hoof-slate);
+  padding: 12px 14px;
+  background: var(--ox-apparatus-hoof-rust);
+  box-shadow: inset 0 0 0 4px var(--ox-apparatus-hoof-rust), inset 0 0 0 6px var(--ox-apparatus-hoof-slate);
+  color: var(--ox-apparatus-hoof-snow);
+  transform: rotate(-3deg);
+  font-family: 'Space Mono', monospace;
+}
+
+.ox-apparatus-hoof-signature span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.ox-apparatus-hoof-signature strong {
+  font-size: clamp(9px, 0.85vw, 12px);
+}
+
+@media (max-width: 700px) {
+  .ox-apparatus-hoof-stage {
+    min-height: 840px;
+  }
+
+  .ox-apparatus-hoof-heading h1 {
+    font-size: clamp(66px, 20vw, 76px);
+    letter-spacing: -0.07em;
+    text-shadow: 3px 3px 0 var(--ox-apparatus-hoof-slate);
+  }
+
+  .ox-apparatus-hoof-heading span {
+    padding: 7px 8px;
+    font-size: 8px;
+  }
+
+  .ox-apparatus-hoof-figure {
+    right: -21%;
+    bottom: 150px;
+    width: 125%;
+  }
+
+  .ox-apparatus-hoof-stage p {
+    top: 29%;
+    right: 20px;
+    width: 210px;
+    font-size: 12px;
+  }
+
+  .ox-apparatus-hoof-path {
+    bottom: 20%;
+    left: 20px;
+  }
+
+  .ox-apparatus-hoof-path span {
+    padding: 8px 9px;
+  }
+
+  .ox-apparatus-hoof-signature {
+    right: 20px;
+    bottom: 130px;
+    width: 230px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-apparatus-hoof-figure g,
+  .ox-apparatus-hoof-tracks path,
+  .ox-apparatus-hoof-stage p {
+    animation: none !important;
+  }
+}

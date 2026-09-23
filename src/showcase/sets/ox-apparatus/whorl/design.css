@@ -1,0 +1,317 @@
+.th-ox-apparatus-whorl {
+  --ox-apparatus-whorl-violet: #7157ff;
+  --ox-apparatus-whorl-orange: #ff5b35;
+  --ox-apparatus-whorl-butter: #f7e66b;
+  --ox-apparatus-whorl-ink: #2d2845;
+  --ox-apparatus-whorl-pink: #ffb8c8;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-apparatus-whorl-violet);
+  color: var(--ox-apparatus-whorl-ink);
+  font-family: 'Karla', sans-serif;
+}
+
+.th-ox-apparatus-whorl::selection {
+  color: var(--ox-apparatus-whorl-butter);
+  background: var(--ox-apparatus-whorl-ink);
+}
+
+.ox-apparatus-whorl-marquee {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+  border-bottom: 3px solid var(--ox-apparatus-whorl-ink);
+  background: var(--ox-apparatus-whorl-butter);
+  white-space: nowrap;
+}
+
+.ox-apparatus-whorl-marquee span {
+  min-width: 100%;
+  padding: 9px 0 7px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-align: center;
+}
+
+.ox-apparatus-whorl-heading {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  padding: clamp(54px, 7vw, 106px) clamp(20px, 4vw, 68px) 0;
+}
+
+.ox-apparatus-whorl-heading p {
+  grid-column: 1;
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 0.9vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.ox-apparatus-whorl-heading h1 {
+  grid-column: 1;
+  margin: -0.1em 0 0 -0.05em;
+  color: var(--ox-apparatus-whorl-butter);
+  font-family: 'Fraunces', serif;
+  font-size: clamp(92px, 21vw, 310px);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.095em;
+  line-height: 0.86;
+  text-shadow: 7px 7px 0 var(--ox-apparatus-whorl-orange);
+}
+
+.ox-apparatus-whorl-index {
+  display: inline-block;
+  margin-top: 12px;
+  border: 3px solid var(--ox-apparatus-whorl-ink);
+  border-radius: 50%;
+  padding: 15px 13px;
+  background: var(--ox-apparatus-whorl-pink);
+  font-family: 'Fraunces', serif;
+  font-size: clamp(20px, 2.4vw, 38px);
+  font-style: italic;
+  font-weight: 900;
+  transform: rotate(8deg);
+}
+
+.ox-apparatus-whorl-board {
+  position: relative;
+  z-index: 1;
+  min-height: clamp(470px, 58vw, 780px);
+  margin-top: clamp(-50px, -3vw, -18px);
+}
+
+.ox-apparatus-whorl-board::before,
+.ox-apparatus-whorl-board::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.ox-apparatus-whorl-board::before {
+  top: 22%;
+  right: 3%;
+  width: clamp(90px, 14vw, 210px);
+  aspect-ratio: 1;
+  border: clamp(18px, 3vw, 44px) solid var(--ox-apparatus-whorl-orange);
+  border-radius: 50%;
+}
+
+.ox-apparatus-whorl-board::after {
+  bottom: 12%;
+  left: 4%;
+  width: clamp(130px, 18vw, 280px);
+  height: clamp(18px, 2.5vw, 38px);
+  background: repeating-linear-gradient(90deg, var(--ox-apparatus-whorl-butter) 0 18px, transparent 18px 30px);
+  transform: rotate(-7deg);
+}
+
+.ox-apparatus-whorl-figure {
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+  width: min(1000px, 84%);
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(12px 14px 0 rgba(45, 40, 69, 0.22));
+}
+
+.ox-apparatus-whorl-figure path {
+  vector-effect: non-scaling-stroke;
+  stroke: var(--ox-apparatus-whorl-ink);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ox-apparatus-whorl-body,
+.ox-apparatus-whorl-neck,
+.ox-apparatus-whorl-leg {
+  fill: var(--ox-apparatus-whorl-orange);
+}
+
+.ox-apparatus-whorl-hump {
+  fill: var(--ox-apparatus-whorl-pink);
+}
+
+.ox-apparatus-whorl-leg-rear,
+.ox-apparatus-whorl-leg-left {
+  fill: var(--ox-apparatus-whorl-violet);
+}
+
+.ox-apparatus-whorl-head,
+.ox-apparatus-whorl-ear {
+  fill: var(--ox-apparatus-whorl-butter);
+}
+
+.ox-apparatus-whorl-horn,
+.ox-apparatus-whorl-hoof {
+  fill: var(--ox-apparatus-whorl-pink);
+}
+
+.ox-apparatus-whorl-face {
+  fill: var(--ox-apparatus-whorl-butter);
+}
+
+.ox-apparatus-whorl-nose {
+  fill: var(--ox-apparatus-whorl-pink);
+}
+
+.ox-apparatus-whorl-spot {
+  fill: var(--ox-apparatus-whorl-ink);
+  stroke-width: 4;
+}
+
+.ox-apparatus-whorl-eye,
+.ox-apparatus-whorl-nostril {
+  fill: var(--ox-apparatus-whorl-ink);
+  stroke: none;
+}
+
+.ox-apparatus-whorl-copy {
+  position: absolute;
+  bottom: 14%;
+  left: clamp(20px, 4vw, 68px);
+  z-index: 3;
+  width: min(310px, 29vw);
+  margin: 0;
+  border: 3px solid var(--ox-apparatus-whorl-ink);
+  padding: 16px 18px;
+  background: var(--ox-apparatus-whorl-butter);
+  box-shadow: 8px 8px 0 var(--ox-apparatus-whorl-ink);
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 700;
+  line-height: 1.35;
+  transform: rotate(-2deg);
+}
+
+.ox-apparatus-whorl-swatches {
+  position: absolute;
+  top: 16%;
+  left: clamp(20px, 4vw, 68px);
+  z-index: 3;
+  display: flex;
+  box-shadow: 6px 6px 0 var(--ox-apparatus-whorl-ink);
+  transform: rotate(5deg);
+}
+
+.ox-apparatus-whorl-swatches span {
+  width: clamp(28px, 4vw, 56px);
+  height: clamp(28px, 4vw, 56px);
+  border: 3px solid var(--ox-apparatus-whorl-ink);
+}
+
+.ox-apparatus-whorl-swatch-labels {
+  position: absolute;
+  top: calc(16% + clamp(38px, 5.5vw, 78px));
+  left: clamp(20px, 4vw, 68px);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--ox-apparatus-whorl-ink);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(8px, 0.7vw, 10px);
+  font-weight: 700;
+}
+
+.ox-apparatus-whorl-signature {
+  position: absolute;
+  right: clamp(20px, 4vw, 68px);
+  bottom: clamp(130px, 12vw, 172px);
+  z-index: 4;
+  display: grid;
+  width: min(290px, 42vw);
+  gap: 4px;
+  border: 3px solid var(--ox-apparatus-whorl-ink);
+  padding: 11px 13px;
+  background: var(--ox-apparatus-whorl-pink);
+  box-shadow: -6px 6px 0 var(--ox-apparatus-whorl-butter);
+  transform: rotate(3deg);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.ox-apparatus-whorl-signature span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.ox-apparatus-whorl-signature strong {
+  font-size: clamp(8px, 0.8vw, 11px);
+}
+
+@media (max-width: 700px) {
+  .ox-apparatus-whorl-heading {
+    padding-top: 48px;
+  }
+
+  .ox-apparatus-whorl-heading h1 {
+    font-size: clamp(64px, 20vw, 76px);
+    letter-spacing: -0.07em;
+    text-shadow: 3px 3px 0 var(--ox-apparatus-whorl-orange);
+  }
+
+  .ox-apparatus-whorl-index {
+    padding: 9px 8px;
+    font-size: 18px;
+  }
+
+  .ox-apparatus-whorl-board {
+    min-height: 505px;
+    margin-top: -24px;
+  }
+
+  .ox-apparatus-whorl-figure {
+    right: -4%;
+    bottom: 66px;
+    width: 130%;
+  }
+
+  .ox-apparatus-whorl-copy {
+    top: 30%;
+    right: auto;
+    bottom: auto;
+    left: 20px;
+    width: 170px;
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+
+  .ox-apparatus-whorl-swatches {
+    top: 9%;
+  }
+
+  .ox-apparatus-whorl-swatch-labels {
+    top: calc(9% + 45px);
+  }
+
+  .ox-apparatus-whorl-board::before {
+    top: 15%;
+    right: -6%;
+  }
+
+  .ox-apparatus-whorl-signature {
+    right: 20px;
+    bottom: 130px;
+    width: 225px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-apparatus-whorl-figure,
+  .ox-apparatus-whorl-copy {
+    animation: none !important;
+  }
+}

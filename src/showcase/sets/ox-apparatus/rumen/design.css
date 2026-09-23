@@ -1,0 +1,361 @@
+.th-ox-apparatus-rumen {
+  --ox-apparatus-rumen-paper: #f2f0e8;
+  --ox-apparatus-rumen-ink: #102a43;
+  --ox-apparatus-rumen-blue: #1f5f8b;
+  --ox-apparatus-rumen-pale: #cde8ec;
+  --ox-apparatus-rumen-coral: #ef553f;
+  --ox-apparatus-rumen-yellow: #f4d35e;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-apparatus-rumen-paper);
+  color: var(--ox-apparatus-rumen-ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.th-ox-apparatus-rumen::before {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(16, 42, 67, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 42, 67, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  content: '';
+  pointer-events: none;
+}
+
+.th-ox-apparatus-rumen::selection {
+  color: var(--ox-apparatus-rumen-paper);
+  background: var(--ox-apparatus-rumen-coral);
+}
+
+.ox-apparatus-rumen-shell {
+  position: relative;
+  width: min(1480px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 64px) clamp(20px, 4vw, 70px) clamp(112px, 9vw, 140px);
+}
+
+.ox-apparatus-rumen-heading {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.65fr);
+  align-items: end;
+  gap: 30px;
+  max-width: 1280px;
+}
+
+.ox-apparatus-rumen-kicker {
+  grid-column: 1 / -1;
+  color: var(--ox-apparatus-rumen-blue);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(11px, 1vw, 14px);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.ox-apparatus-rumen-heading h1 {
+  margin: 0;
+  color: var(--ox-apparatus-rumen-ink);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(76px, 14vw, 208px);
+  font-weight: 700;
+  letter-spacing: -0.085em;
+  line-height: 0.75;
+}
+
+.ox-apparatus-rumen-heading p {
+  max-width: 440px;
+  margin: 0 0 4px;
+  color: var(--ox-apparatus-rumen-ink);
+  font-size: clamp(15px, 1.4vw, 20px);
+  line-height: 1.5;
+}
+
+.ox-apparatus-rumen-stage {
+  position: relative;
+  z-index: 1;
+  min-height: clamp(360px, 51vw, 690px);
+  margin-top: clamp(-30px, -2vw, -14px);
+}
+
+.ox-apparatus-rumen-figure {
+  position: absolute;
+  right: -2%;
+  bottom: 0;
+  width: min(1000px, 88%);
+  height: auto;
+  overflow: visible;
+}
+
+.ox-apparatus-rumen-figure path,
+.ox-apparatus-rumen-figure defs {
+  vector-effect: non-scaling-stroke;
+}
+
+.ox-apparatus-rumen-body,
+.ox-apparatus-rumen-neck,
+.ox-apparatus-rumen-head,
+.ox-apparatus-rumen-leg,
+.ox-apparatus-rumen-tail,
+.ox-apparatus-rumen-ear,
+.ox-apparatus-rumen-horn,
+.ox-apparatus-rumen-hoof {
+  stroke: var(--ox-apparatus-rumen-ink);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ox-apparatus-rumen-body,
+.ox-apparatus-rumen-neck,
+.ox-apparatus-rumen-head,
+.ox-apparatus-rumen-ear {
+  fill: var(--ox-apparatus-rumen-paper);
+}
+
+.ox-apparatus-rumen-leg,
+.ox-apparatus-rumen-tail {
+  fill: var(--ox-apparatus-rumen-pale);
+}
+
+.ox-apparatus-rumen-leg-far {
+  opacity: 0.65;
+}
+
+.ox-apparatus-rumen-hoof,
+.ox-apparatus-rumen-horn {
+  fill: var(--ox-apparatus-rumen-yellow);
+}
+
+.ox-apparatus-rumen-horn-far {
+  fill: var(--ox-apparatus-rumen-paper);
+}
+
+.ox-apparatus-rumen-eye,
+.ox-apparatus-rumen-nostril {
+  fill: var(--ox-apparatus-rumen-ink);
+  stroke: none;
+}
+
+.ox-apparatus-rumen-line,
+.ox-apparatus-rumen-organ-line {
+  fill: none;
+  stroke: var(--ox-apparatus-rumen-ink);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.ox-apparatus-rumen-organ {
+  fill: var(--ox-apparatus-rumen-coral);
+  stroke: var(--ox-apparatus-rumen-ink);
+  stroke-width: 6;
+}
+
+.ox-apparatus-rumen-organ-line {
+  stroke: var(--ox-apparatus-rumen-paper);
+  stroke-width: 5;
+}
+
+.ox-apparatus-rumen-scan {
+  stroke: var(--ox-apparatus-rumen-yellow);
+  stroke-width: 7;
+}
+
+.ox-apparatus-rumen-organ-hatch {
+  color: var(--ox-apparatus-rumen-coral);
+  fill: url('#ox-apparatus-rumen-hatch');
+  opacity: 0.18;
+}
+
+.ox-apparatus-rumen-callout {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 8px;
+  align-items: center;
+  color: var(--ox-apparatus-rumen-ink);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(10px, 0.9vw, 13px);
+  letter-spacing: 0.04em;
+}
+
+.ox-apparatus-rumen-callout::after {
+  position: absolute;
+  height: 1px;
+  background: var(--ox-apparatus-rumen-ink);
+  content: '';
+  transform-origin: left;
+}
+
+.ox-apparatus-rumen-callout span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid var(--ox-apparatus-rumen-ink);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.ox-apparatus-rumen-callout-one {
+  top: 25%;
+  right: 18%;
+}
+
+.ox-apparatus-rumen-callout-one::after {
+  top: 15px;
+  right: calc(100% + 12px);
+  width: clamp(45px, 7vw, 100px);
+  transform: rotate(20deg);
+}
+
+.ox-apparatus-rumen-callout-two {
+  top: 42%;
+  right: 1%;
+}
+
+.ox-apparatus-rumen-callout-two::after {
+  top: 15px;
+  right: calc(100% + 12px);
+  width: clamp(45px, 7vw, 100px);
+  transform: rotate(6deg);
+}
+
+.ox-apparatus-rumen-callout-three {
+  top: 60%;
+  right: 22%;
+}
+
+.ox-apparatus-rumen-callout-three::after {
+  top: 15px;
+  right: calc(100% + 12px);
+  width: clamp(45px, 7vw, 100px);
+  transform: rotate(-13deg);
+}
+
+.ox-apparatus-rumen-axis {
+  position: absolute;
+  right: 0;
+  bottom: 4%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--ox-apparatus-rumen-ink);
+  color: var(--ox-apparatus-rumen-blue);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(8px, 0.8vw, 11px);
+  padding-top: 7px;
+}
+
+.ox-apparatus-rumen-signature {
+  position: absolute;
+  right: clamp(20px, 4vw, 70px);
+  bottom: clamp(130px, 12vw, 172px);
+  z-index: 3;
+  display: grid;
+  width: min(320px, 43vw);
+  gap: 5px;
+  border: 2px solid var(--ox-apparatus-rumen-ink);
+  border-radius: 3px;
+  padding: 10px 12px;
+  background: var(--ox-apparatus-rumen-yellow);
+  box-shadow: 5px 5px 0 var(--ox-apparatus-rumen-ink);
+  transform: rotate(-2deg);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.ox-apparatus-rumen-signature span {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.ox-apparatus-rumen-signature strong {
+  font-size: clamp(9px, 0.85vw, 12px);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 700px) {
+  .ox-apparatus-rumen-shell {
+    padding-top: 24px;
+  }
+
+  .ox-apparatus-rumen-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .ox-apparatus-rumen-heading h1 {
+    font-size: clamp(62px, 24vw, 112px);
+  }
+
+  .ox-apparatus-rumen-heading p {
+    max-width: 330px;
+    font-size: 14px;
+  }
+
+  .ox-apparatus-rumen-stage {
+    min-height: 430px;
+    margin-top: -8px;
+  }
+
+  .ox-apparatus-rumen-figure {
+    right: -17%;
+    bottom: 0;
+    width: 125%;
+  }
+
+  .ox-apparatus-rumen-callout {
+    grid-template-columns: 25px 1fr;
+    font-size: 9px;
+  }
+
+  .ox-apparatus-rumen-callout span {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ox-apparatus-rumen-callout::after {
+    display: none;
+  }
+
+  .ox-apparatus-rumen-callout-one {
+    top: 18%;
+    right: 5%;
+  }
+
+  .ox-apparatus-rumen-callout-two {
+    top: 37%;
+    right: 1%;
+  }
+
+  .ox-apparatus-rumen-callout-three {
+    top: 56%;
+    right: 9%;
+  }
+
+  .ox-apparatus-rumen-axis {
+    bottom: 1%;
+  }
+
+  .ox-apparatus-rumen-axis span:nth-child(2),
+  .ox-apparatus-rumen-axis span:nth-child(4) {
+    display: none;
+  }
+
+  .ox-apparatus-rumen-signature {
+    right: 20px;
+    bottom: 128px;
+    width: 225px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-apparatus-rumen-organ,
+  .ox-apparatus-rumen-scan,
+  .ox-apparatus-rumen-heading,
+  .ox-apparatus-rumen-figure {
+    animation: none !important;
+  }
+}

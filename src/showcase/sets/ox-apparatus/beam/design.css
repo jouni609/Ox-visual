@@ -1,0 +1,332 @@
+.th-ox-apparatus-beam {
+  --ox-apparatus-beam-ink: #171717;
+  --ox-apparatus-beam-safety: #f4511e;
+  --ox-apparatus-beam-yellow: #f3b61f;
+  --ox-apparatus-beam-steel: #c7cfcc;
+  --ox-apparatus-beam-blue: #174ac7;
+  --ox-apparatus-beam-paper: #f1f0e8;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-apparatus-beam-paper);
+  color: var(--ox-apparatus-beam-ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.th-ox-apparatus-beam::selection {
+  color: var(--ox-apparatus-beam-paper);
+  background: var(--ox-apparatus-beam-blue);
+}
+
+.ox-apparatus-beam-rail {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--ox-apparatus-beam-ink);
+  padding: 10px clamp(20px, 3vw, 52px);
+  background: var(--ox-apparatus-beam-yellow);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(9px, 0.8vw, 12px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.ox-apparatus-beam-heading {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(270px, 0.65fr);
+  align-items: end;
+  gap: 30px;
+  padding: clamp(34px, 5vw, 76px) clamp(20px, 4vw, 68px) 0;
+}
+
+.ox-apparatus-beam-heading h1 {
+  margin: 0;
+  color: var(--ox-apparatus-beam-ink);
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(104px, 20vw, 286px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.76;
+}
+
+.ox-apparatus-beam-heading p {
+  max-width: 430px;
+  margin: 0 0 8px;
+  border-left: 10px solid var(--ox-apparatus-beam-safety);
+  padding-left: 18px;
+  font-size: clamp(15px, 1.35vw, 20px);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.ox-apparatus-beam-stage {
+  position: relative;
+  z-index: 1;
+  min-height: clamp(420px, 54vw, 720px);
+  margin-top: clamp(-52px, -4vw, -22px);
+}
+
+.ox-apparatus-beam-stage::before {
+  position: absolute;
+  top: 16%;
+  right: -5%;
+  bottom: 4%;
+  left: 30%;
+  border: 2px solid var(--ox-apparatus-beam-ink);
+  background-image: linear-gradient(rgba(23, 23, 23, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(23, 23, 23, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+  content: '';
+  transform: skewX(-9deg);
+}
+
+.ox-apparatus-beam-figure {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(1050px, 87%);
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(13px 15px 0 rgba(23, 23, 23, 0.12));
+}
+
+.ox-apparatus-beam-figure path {
+  vector-effect: non-scaling-stroke;
+  stroke: var(--ox-apparatus-beam-ink);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ox-apparatus-beam-body,
+.ox-apparatus-beam-neck,
+.ox-apparatus-beam-head,
+.ox-apparatus-beam-leg,
+.ox-apparatus-beam-tail,
+.ox-apparatus-beam-ear {
+  fill: var(--ox-apparatus-beam-steel);
+}
+
+.ox-apparatus-beam-leg-far,
+.ox-apparatus-beam-tail {
+  fill: #e2e5df;
+}
+
+.ox-apparatus-beam-hoof {
+  fill: var(--ox-apparatus-beam-ink);
+}
+
+.ox-apparatus-beam-horn {
+  fill: var(--ox-apparatus-beam-paper);
+}
+
+.ox-apparatus-beam-eye,
+.ox-apparatus-beam-nostril,
+.ox-apparatus-beam-pull-arrow,
+.ox-apparatus-beam-force-arrow {
+  fill: var(--ox-apparatus-beam-ink);
+  stroke: none;
+}
+
+.ox-apparatus-beam-line {
+  fill: none;
+  stroke-width: 4;
+}
+
+.ox-apparatus-beam-yoke {
+  fill: var(--ox-apparatus-beam-blue);
+}
+
+.ox-apparatus-beam-yoke-line {
+  fill: none;
+  stroke: var(--ox-apparatus-beam-paper);
+  stroke-width: 5;
+}
+
+.ox-apparatus-beam-strap {
+  fill: var(--ox-apparatus-beam-safety);
+}
+
+.ox-apparatus-beam-ring,
+.ox-apparatus-beam-pull,
+.ox-apparatus-beam-force {
+  fill: none;
+  stroke: var(--ox-apparatus-beam-ink);
+  stroke-width: 12;
+}
+
+.ox-apparatus-beam-yoke-stripe {
+  color: var(--ox-apparatus-beam-paper);
+  fill: url('#ox-apparatus-beam-stripe');
+  opacity: 0.45;
+  stroke: none;
+}
+
+.ox-apparatus-beam-pull {
+  stroke: var(--ox-apparatus-beam-safety);
+  stroke-dasharray: 30 18;
+}
+
+.ox-apparatus-beam-force {
+  stroke: var(--ox-apparatus-beam-blue);
+}
+
+.ox-apparatus-beam-ground {
+  fill: none;
+  stroke-width: 5;
+}
+
+.ox-apparatus-beam-load {
+  position: absolute;
+  top: 14%;
+  left: clamp(20px, 4vw, 68px);
+  z-index: 3;
+  display: grid;
+  width: clamp(110px, 12vw, 180px);
+  aspect-ratio: 1;
+  place-content: center;
+  border: 3px solid var(--ox-apparatus-beam-ink);
+  border-radius: 50%;
+  background: var(--ox-apparatus-beam-safety);
+  text-align: center;
+  transform: rotate(-8deg);
+}
+
+.ox-apparatus-beam-load span,
+.ox-apparatus-beam-load small {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(8px, 0.8vw, 11px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.ox-apparatus-beam-load strong {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(42px, 5vw, 78px);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.ox-apparatus-beam-note {
+  position: absolute;
+  right: clamp(20px, 4vw, 68px);
+  bottom: 10%;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 12px;
+  border-left: 5px solid var(--ox-apparatus-beam-blue);
+  padding: 10px 12px;
+  background: var(--ox-apparatus-beam-yellow);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(9px, 0.9vw, 12px);
+  font-weight: 700;
+}
+
+.ox-apparatus-beam-note span {
+  color: var(--ox-apparatus-beam-safety);
+}
+
+.ox-apparatus-beam-note p {
+  margin: 0;
+}
+
+.ox-apparatus-beam-signature {
+  position: absolute;
+  bottom: clamp(82px, 8vw, 118px);
+  left: clamp(20px, 4vw, 68px);
+  z-index: 4;
+  display: grid;
+  width: min(320px, 43vw);
+  gap: 5px;
+  border: 3px solid var(--ox-apparatus-beam-ink);
+  border-radius: 6px;
+  padding: 11px 14px 14px;
+  background: var(--ox-apparatus-beam-steel);
+  box-shadow: inset 0 0 0 3px var(--ox-apparatus-beam-paper), 0 0 0 3px var(--ox-apparatus-beam-ink);
+  transform: rotate(1deg);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.ox-apparatus-beam-signature span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.ox-apparatus-beam-signature strong {
+  font-size: clamp(9px, 0.85vw, 12px);
+}
+
+.ox-apparatus-beam-signature i {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ox-apparatus-beam-ink);
+  box-shadow: -285px 0 0 var(--ox-apparatus-beam-ink);
+}
+
+@media (max-width: 700px) {
+  .ox-apparatus-beam-rail span:nth-child(2) {
+    display: none;
+  }
+
+  .ox-apparatus-beam-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 34px;
+  }
+
+  .ox-apparatus-beam-heading h1 {
+    font-size: clamp(92px, 33vw, 145px);
+  }
+
+  .ox-apparatus-beam-heading p {
+    max-width: 340px;
+    font-size: 14px;
+  }
+
+  .ox-apparatus-beam-stage {
+    min-height: 450px;
+    margin-top: -22px;
+  }
+
+  .ox-apparatus-beam-stage::before {
+    top: 18%;
+    right: -30%;
+    left: 10%;
+  }
+
+  .ox-apparatus-beam-figure {
+    right: -3%;
+    width: 113%;
+  }
+
+  .ox-apparatus-beam-load {
+    top: 13%;
+    left: 18px;
+  }
+
+  .ox-apparatus-beam-note {
+    right: 18px;
+    bottom: 8%;
+  }
+
+  .ox-apparatus-beam-signature {
+    bottom: 130px;
+    left: 20px;
+    width: 230px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-apparatus-beam-strain,
+  .ox-apparatus-beam-force {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,313 @@
+.th-ox-apparatus-bell {
+  --ox-apparatus-bell-plum: #4b183d;
+  --ox-apparatus-bell-rose: #f1c9c1;
+  --ox-apparatus-bell-moss: #5f7d63;
+  --ox-apparatus-bell-copper: #c87946;
+  --ox-apparatus-bell-cream: #f6ead8;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--ox-apparatus-bell-rose);
+  color: var(--ox-apparatus-bell-plum);
+  font-family: 'Space Mono', monospace;
+}
+
+.th-ox-apparatus-bell::selection {
+  color: var(--ox-apparatus-bell-cream);
+  background: var(--ox-apparatus-bell-copper);
+}
+
+.ox-apparatus-bell-sun {
+  position: absolute;
+  top: -10vw;
+  right: -5vw;
+  width: clamp(260px, 42vw, 650px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--ox-apparatus-bell-copper);
+  box-shadow: 0 0 0 clamp(20px, 3vw, 48px) var(--ox-apparatus-bell-cream);
+}
+
+.ox-apparatus-bell-heading {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  padding: clamp(54px, 7vw, 108px) clamp(20px, 4vw, 68px) 0;
+}
+
+.ox-apparatus-bell-heading p {
+  grid-column: 1 / -1;
+  margin: 0 0 clamp(10px, 2vw, 28px);
+  font-size: clamp(10px, 0.9vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.ox-apparatus-bell-heading h1 {
+  margin: 0 0 -0.1em -0.04em;
+  color: var(--ox-apparatus-bell-cream);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(112px, 23vw, 340px);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.08em;
+  line-height: 0.72;
+  text-shadow: 5px 5px 0 var(--ox-apparatus-bell-plum);
+}
+
+.ox-apparatus-bell-heading > div {
+  display: flex;
+  gap: 7px;
+  margin-top: 8px;
+  transform: rotate(4deg);
+}
+
+.ox-apparatus-bell-heading strong {
+  border: 2px solid var(--ox-apparatus-bell-plum);
+  border-radius: 999px;
+  padding: 8px 11px;
+  background: var(--ox-apparatus-bell-rose);
+  font-size: clamp(8px, 0.8vw, 11px);
+  letter-spacing: 0.08em;
+}
+
+.ox-apparatus-bell-heading strong:nth-child(2) {
+  background: var(--ox-apparatus-bell-moss);
+  color: var(--ox-apparatus-bell-cream);
+}
+
+.ox-apparatus-bell-heading strong:nth-child(3) {
+  background: var(--ox-apparatus-bell-plum);
+  color: var(--ox-apparatus-bell-cream);
+}
+
+.ox-apparatus-bell-stage {
+  position: relative;
+  z-index: 1;
+  min-height: clamp(470px, 57vw, 760px);
+  margin-top: clamp(-64px, -5vw, -24px);
+}
+
+.ox-apparatus-bell-stage::before,
+.ox-apparatus-bell-stage::after {
+  position: absolute;
+  right: -8%;
+  left: -8%;
+  z-index: -1;
+  height: 28%;
+  border-radius: 50% 50% 0 0;
+  content: '';
+}
+
+.ox-apparatus-bell-stage::before {
+  bottom: 8%;
+  background: var(--ox-apparatus-bell-moss);
+  transform: rotate(-2deg);
+}
+
+.ox-apparatus-bell-stage::after {
+  bottom: -11%;
+  background: var(--ox-apparatus-bell-plum);
+  transform: rotate(2deg);
+}
+
+.ox-apparatus-bell-figure {
+  position: absolute;
+  right: -1%;
+  bottom: 3%;
+  width: min(1120px, 94%);
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(11px 13px 0 rgba(75, 24, 61, 0.16));
+}
+
+.ox-apparatus-bell-figure path {
+  vector-effect: non-scaling-stroke;
+  stroke: var(--ox-apparatus-bell-plum);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ox-apparatus-bell-body,
+.ox-apparatus-bell-neck,
+.ox-apparatus-bell-head,
+.ox-apparatus-bell-leg,
+.ox-apparatus-bell-tail,
+.ox-apparatus-bell-tail-tuft,
+.ox-apparatus-bell-ear {
+  fill: var(--ox-apparatus-bell-cream);
+}
+
+.ox-apparatus-bell-leg-far,
+.ox-apparatus-bell-tail {
+  fill: var(--ox-apparatus-bell-rose);
+}
+
+.ox-apparatus-bell-hoof {
+  fill: var(--ox-apparatus-bell-plum);
+}
+
+.ox-apparatus-bell-horn {
+  fill: var(--ox-apparatus-bell-copper);
+}
+
+.ox-apparatus-bell-muzzle {
+  fill: var(--ox-apparatus-bell-copper);
+}
+
+.ox-apparatus-bell-eye,
+.ox-apparatus-bell-eye-far,
+.ox-apparatus-bell-nostril {
+  fill: var(--ox-apparatus-bell-plum);
+  stroke: none;
+}
+
+.ox-apparatus-bell-line {
+  fill: none;
+  stroke-width: 4;
+}
+
+.ox-apparatus-bell-ground,
+.ox-apparatus-bell-grass {
+  fill: none;
+  stroke-width: 5;
+}
+
+.ox-apparatus-bell-strap {
+  fill: none;
+  stroke-width: 12;
+}
+
+.ox-apparatus-bell-bell-body {
+  fill: var(--ox-apparatus-bell-copper);
+}
+
+.ox-apparatus-bell-bell-line {
+  fill: none;
+  stroke: var(--ox-apparatus-bell-cream);
+  stroke-width: 5;
+}
+
+.ox-apparatus-bell-wave {
+  fill: none;
+  stroke: var(--ox-apparatus-bell-copper);
+  stroke-width: 8;
+}
+
+.ox-apparatus-bell-stage p {
+  position: absolute;
+  bottom: 12%;
+  left: clamp(20px, 4vw, 68px);
+  z-index: 3;
+  width: min(330px, 34vw);
+  margin: 0;
+  border: 2px solid var(--ox-apparatus-bell-plum);
+  border-radius: 50% 50% 10px 10px;
+  padding: 17px 20px 20px;
+  background: var(--ox-apparatus-bell-rose);
+  box-shadow: 7px 8px 0 var(--ox-apparatus-bell-plum);
+  font-size: clamp(12px, 1.1vw, 16px);
+  font-weight: 700;
+  line-height: 1.45;
+  transform: rotate(-2deg);
+}
+
+.ox-apparatus-bell-signature {
+  position: absolute;
+  right: clamp(20px, 4vw, 68px);
+  bottom: clamp(130px, 12vw, 172px);
+  z-index: 4;
+  display: grid;
+  width: min(295px, 43vw);
+  gap: 7px;
+  border: 2px solid var(--ox-apparatus-bell-cream);
+  border-radius: 10px 4px 12px 5px;
+  padding: 12px 14px;
+  background: var(--ox-apparatus-bell-plum);
+  box-shadow: inset 0 0 0 1px var(--ox-apparatus-bell-copper);
+  color: var(--ox-apparatus-bell-cream);
+  transform: rotate(2deg);
+}
+
+.ox-apparatus-bell-signature::before,
+.ox-apparatus-bell-signature::after {
+  position: absolute;
+  top: 7px;
+  bottom: 7px;
+  width: 1px;
+  border-left: 1px dashed var(--ox-apparatus-bell-copper);
+  content: '';
+}
+
+.ox-apparatus-bell-signature::before {
+  left: 6px;
+}
+
+.ox-apparatus-bell-signature::after {
+  right: 6px;
+}
+
+.ox-apparatus-bell-signature span {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+.ox-apparatus-bell-signature strong {
+  font-size: clamp(8px, 0.8vw, 11px);
+}
+
+@media (max-width: 700px) {
+  .ox-apparatus-bell-heading {
+    padding-top: 50px;
+  }
+
+  .ox-apparatus-bell-heading h1 {
+    font-size: clamp(94px, 32vw, 148px);
+    text-shadow: 4px 4px 0 var(--ox-apparatus-bell-plum);
+  }
+
+  .ox-apparatus-bell-heading > div {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    flex-direction: column;
+  }
+
+  .ox-apparatus-bell-stage {
+    min-height: 500px;
+    margin-top: -30px;
+  }
+
+  .ox-apparatus-bell-figure {
+    right: 0;
+    bottom: 5%;
+    width: 115%;
+  }
+
+  .ox-apparatus-bell-stage p {
+    right: auto;
+    bottom: 9%;
+    left: 20px;
+    width: 205px;
+    padding: 12px 14px 15px;
+    font-size: 11px;
+  }
+
+  .ox-apparatus-bell-signature {
+    right: 20px;
+    bottom: 130px;
+    width: 225px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-apparatus-bell-bell,
+  .ox-apparatus-bell-wave,
+  .ox-apparatus-bell-stage p,
+  .ox-apparatus-bell-figure {
+    animation: none !important;
+  }
+}
