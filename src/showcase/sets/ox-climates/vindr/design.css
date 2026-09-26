@@ -1,0 +1,242 @@
+.th-vindr {
+  --vindr-ink: #0a140f;
+  --vindr-storm: #12211a;
+  --vindr-yellow: #e8d44d;
+  --vindr-bone: #e8e4d2;
+  --vindr-mist: #9fb8a8;
+  --vindr-line: rgba(232, 212, 77, 0.3);
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    linear-gradient(155deg, rgba(232, 212, 77, 0.05), transparent 40%),
+    linear-gradient(180deg, var(--vindr-ink) 0%, var(--vindr-storm) 55%, #0f1d15 100%);
+  color: var(--vindr-bone);
+  font-family: 'Oxanium', system-ui, sans-serif;
+}
+
+.th-vindr ::selection {
+  background: var(--vindr-yellow);
+  color: var(--vindr-ink);
+}
+
+.th-vindr .ox-climates-flash {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: var(--vindr-yellow);
+  opacity: 0;
+  z-index: 1;
+  animation: vindr-flash 7s linear infinite;
+}
+
+@keyframes vindr-flash {
+  0%, 88%, 90.5%, 92.5%, 100% { opacity: 0; }
+  89%, 91% { opacity: 0.07; }
+}
+
+.th-vindr .ox-climates-bolt {
+  animation: vindr-bolt 7s linear infinite;
+}
+
+.th-vindr .ox-climates-bolt-late {
+  animation-delay: 0.35s;
+}
+
+@keyframes vindr-bolt {
+  0%, 88%, 90.5%, 92.5%, 100% { opacity: 0; }
+  89%, 91% { opacity: 1; }
+}
+
+.th-vindr .ox-climates-streak {
+  animation-name: vindr-streak;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vindr-streak {
+  from { transform: translateX(-120px); }
+  to { transform: translateX(160px); }
+}
+
+.th-vindr .ox-climates-sway {
+  animation-name: vindr-sway;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2.2s;
+  transform-box: fill-box;
+  transform-origin: bottom center;
+}
+
+@keyframes vindr-sway {
+  0%, 100% { transform: skewX(0deg); }
+  50% { transform: skewX(-9deg); }
+}
+
+.th-vindr .ox-climates-rain {
+  animation-name: vindr-rain;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vindr-rain {
+  from { transform: translateY(0); }
+  to { transform: translateY(1080px); }
+}
+
+.th-vindr .ox-climates-head {
+  position: relative;
+  z-index: 2;
+  padding: clamp(2rem, 5vw, 4.5rem) clamp(1.25rem, 5vw, 5rem) 0;
+}
+
+.th-vindr .ox-climates-kicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 0 0 0.4rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.65rem, 1.4vw, 0.8rem);
+  letter-spacing: 0.32em;
+  color: var(--vindr-yellow);
+  text-transform: uppercase;
+}
+
+.th-vindr .ox-climates-kicker span[lang] {
+  letter-spacing: 0.12em;
+  color: var(--vindr-mist);
+}
+
+.th-vindr .ox-climates-h1 {
+  margin: 0;
+  font-family: 'Anton', 'Arial Narrow', sans-serif;
+  font-weight: 400;
+  font-size: clamp(4.8rem, 15.5vw, 13rem);
+  line-height: 0.9;
+  letter-spacing: 0.03em;
+  color: var(--vindr-yellow);
+  text-shadow: 0 6px 0 rgba(0, 0, 0, 0.45);
+  transform: rotate(-2.5deg);
+}
+
+.th-vindr .ox-climates-sub {
+  margin: 1.1rem 0 0;
+  max-width: 31rem;
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  line-height: 1.55;
+  color: var(--vindr-mist);
+}
+
+.th-vindr .ox-climates-data {
+  position: absolute;
+  z-index: 2;
+  top: clamp(2.2rem, 5vw, 4.6rem);
+  right: clamp(1.25rem, 5vw, 5rem);
+  display: grid;
+  gap: 0.55rem;
+  text-align: right;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.th-vindr .ox-climates-data div {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--vindr-line);
+}
+
+.th-vindr .ox-climates-data dt {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: var(--vindr-mist);
+}
+
+.th-vindr .ox-climates-data dd {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.5vw, 1.05rem);
+  letter-spacing: 0.08em;
+  color: var(--vindr-bone);
+}
+
+.th-vindr .ox-climates-hero {
+  position: relative;
+  z-index: 1;
+  margin: clamp(0.5rem, 1.5vw, 1.5rem) auto 0;
+  width: min(1160px, 95vw);
+}
+
+.th-vindr .ox-climates-hero svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.th-vindr .ox-climates-foot {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 5vw, 5rem) clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.th-vindr .ox-climates-copy {
+  margin: 0;
+  max-width: 33rem;
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+  line-height: 1.65;
+  color: #c9cdb8;
+}
+
+.th-vindr .ox-climates-sign {
+  flex: none;
+  padding: 0.9rem 1.5rem;
+  border: 2px solid var(--vindr-yellow);
+  border-radius: 2px;
+  outline: 1px solid rgba(232, 212, 77, 0.4);
+  outline-offset: 2px;
+  font-family: 'Rubik Dirt', 'Oxanium', sans-serif;
+  font-size: clamp(0.68rem, 1.3vw, 0.85rem);
+  letter-spacing: 0.22em;
+  color: var(--vindr-yellow);
+  opacity: 0.88;
+  transform: rotate(-5deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .th-vindr .ox-climates-flash,
+  .th-vindr .ox-climates-bolt,
+  .th-vindr .ox-climates-streak,
+  .th-vindr .ox-climates-sway,
+  .th-vindr .ox-climates-rain {
+    animation: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .th-vindr .ox-climates-data {
+    position: static;
+    margin: 1.4rem 0 0;
+    padding: 0 clamp(1.25rem, 5vw, 5rem);
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .th-vindr .ox-climates-hero {
+    margin-top: 0.5rem;
+  }
+
+  .th-vindr   .ox-climates-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 8rem;
+  }
+
+  .ox-climates-sign {
+    order: -1;
+    margin: 0 0 1.5rem;
+  }
+}

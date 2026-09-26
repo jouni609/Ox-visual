@@ -208,6 +208,22 @@ Five stories with the ox in them — a Chinese star folktale, an Aegean sea-cros
 
 
 
+<details>
+  <summary><strong>Set XXIX — OX CLIMATES</strong> · five skies, one animal · <em>designed by Nordvik</em></summary>
+
+Five weathers, five bovines — the yak in night snow, the zebu at the noon trough, the Highland cow in first-light frost, the longhorn ox on the drizzling moor, and the bull filing itself into the storm. Each page is a different sky with its own light, type and motion, signed in its own mark (frosted ice plaque, sun-bleached stitched tag, engraved silver plate, hanging dew tag, rubber storm stamp).
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Hima** | Snow · the yak | Nordic woodblock night in indigo and ice: full-profile yak with crescent horns and shaggy skirt, falling snow, breath fog, Bebas Neue against IBM Plex Mono |
+| 02 | **Garmi** | Heat · the zebu | Desert-strata poster in burnt amber and cream: humped zebu drinking at a trough, heat-shimmer waves, pulsing sun, Alfa Slab One against Fraunces |
+| 03 | **Reò** | Frost · the Highland cow | Engraved weather-almanac plate in silver-mint: fringed cow with forward-curving horns inside a stone arch, twinkling frost sparkles, Instrument Serif against Source Serif 4 |
+| 04 | **Niwl** | Mist · the longhorn ox | Watercolour moor at dawn in grey-sage: ox with enormous curling horns walking the fence line through drifting fog bands, dew tag, Besley and Caveat against Sora |
+| 05 | **Vindr** | Gale · the bull | Constructivist storm poster in green-black and signal yellow: bull straining into the wind under slanting rain and lightning, Anton against Oxanium, rubber-stamp signature |
+
+</details>
+
+
 ## Switching designs and sets
 
 The bottom-right cluster controls everything:

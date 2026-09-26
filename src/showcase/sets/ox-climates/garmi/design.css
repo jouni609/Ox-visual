@@ -1,0 +1,182 @@
+.th-garmi {
+  --garmi-ink: #3a2412;
+  --garmi-ember: #6e3a16;
+  --garmi-cream: #f6e7c8;
+  --garmi-amber: #d98a35;
+  --garmi-line: rgba(58, 36, 18, 0.3);
+
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #f0c060 0%, #d98a35 42%, #b06a28 78%, #8f4a1c 100%);
+  color: var(--garmi-ink);
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.th-garmi ::selection {
+  background: var(--garmi-ember);
+  color: var(--garmi-cream);
+}
+
+.th-garmi .ox-climates-head {
+  position: relative;
+  z-index: 2;
+  padding: clamp(2rem, 5vw, 4.5rem) clamp(1.25rem, 5vw, 5rem) 0;
+}
+
+.th-garmi .ox-climates-kicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 0 0 0.4rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.65rem, 1.4vw, 0.8rem);
+  letter-spacing: 0.32em;
+  color: var(--garmi-ember);
+  text-transform: uppercase;
+}
+
+.th-garmi .ox-climates-kicker span[lang] {
+  letter-spacing: 0.12em;
+  color: var(--garmi-ink);
+}
+
+.th-garmi .ox-climates-h1 {
+  margin: 0;
+  font-family: 'Alfa Slab One', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(4.6rem, 15vw, 12.5rem);
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+  color: var(--garmi-cream);
+  text-shadow:
+    0 5px 0 var(--garmi-ember),
+    0 12px 28px rgba(58, 36, 18, 0.35);
+}
+
+.th-garmi .ox-climates-sub {
+  margin: 0.9rem 0 0;
+  max-width: 30rem;
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  line-height: 1.55;
+  font-style: italic;
+  color: var(--garmi-ink);
+}
+
+.th-garmi .ox-climates-data {
+  position: absolute;
+  z-index: 2;
+  top: clamp(2.2rem, 5vw, 4.6rem);
+  right: clamp(1.25rem, 5vw, 5rem);
+  display: grid;
+  text-align: right;
+  gap: 0.55rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.th-garmi .ox-climates-data div {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.45rem 0;
+  border-top: 2px solid var(--garmi-line);
+}
+
+.th-garmi .ox-climates-data dt {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: var(--garmi-ember);
+}
+
+.th-garmi .ox-climates-data dd {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.5vw, 1.05rem);
+  letter-spacing: 0.08em;
+  color: var(--garmi-ink);
+}
+
+.th-garmi .ox-climates-hero {
+  position: relative;
+  z-index: 1;
+  margin: clamp(0.5rem, 1.5vw, 1.5rem) auto 0;
+  width: min(1080px, 94vw);
+}
+
+.th-garmi .ox-climates-hero svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.th-garmi .ox-climates-shimmer {
+  animation-name: garmi-shimmer;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes garmi-shimmer {
+  from { transform: translateX(0); }
+  to { transform: translateX(-120px); }
+}
+
+.th-garmi .ox-climates-foot {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 5vw, 5rem) clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.th-garmi .ox-climates-copy {
+  margin: 0;
+  max-width: 33rem;
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+  line-height: 1.65;
+  color: var(--garmi-ink);
+}
+
+.th-garmi .ox-climates-sign {
+  flex: none;
+  padding: 0.9rem 1.4rem;
+  border: 2px dashed var(--garmi-ember);
+  border-radius: 4px;
+  background: var(--garmi-cream);
+  box-shadow: 0 4px 0 rgba(110, 58, 22, 0.35);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.62rem, 1.2vw, 0.75rem);
+  letter-spacing: 0.26em;
+  color: var(--garmi-ember);
+  transform: rotate(1.6deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .th-garmi .ox-climates-shimmer {
+    animation: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .th-garmi .ox-climates-data {
+    position: static;
+    margin: 1.4rem 0 0;
+    padding: 0 clamp(1.25rem, 5vw, 5rem);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .th-garmi .ox-climates-hero {
+    margin-top: 0.5rem;
+  }
+
+  .th-garmi   .ox-climates-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 8rem;
+  }
+
+  .ox-climates-sign {
+    order: -1;
+    margin: 0 0 1.5rem;
+  }
+}
