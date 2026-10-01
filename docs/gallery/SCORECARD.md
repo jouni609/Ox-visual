@@ -11,6 +11,8 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 **Update (2026-09-11, maintainer's manual audit):** straight after the re-grade, the maintainer went through the survivors by eye. **ox-sensorium (76 · 4/5 here) failed it — the ox figures were judged unacceptable and unrecognizable as animals — and was removed**; its section below has been re-graded. The full verdicts live in [WALLOFSHAME.md](WALLOFSHAME.md).
 
+**Update (2026-10-01, third audit):** the five sets registered since the second audit — ox-meridian, ox-span, ox-tale, ox-apparatus, ox-climates, 25 designs — were rendered end to end (desktop 1440px full-page + 375px mobile, scroll-through to trigger reveals; automated console-error and horizontal-overflow sweep: 0 errors, 0 overflow across all 50 renders) and graded against the gate by visual review of every desktop render plus a nine-page mobile sweep, with the same static source audit as before. **All five sets pass the gate** — 24 of 25 designs render a recognizable bovine; the miss is Cowherd in ox-tale. Scores: ox-climates 82 · ox-span 81 · ox-meridian 80 · ox-tale 78 · ox-apparatus 76. Sections below are new; the ranking lives in [LEADERBOARD.md](LEADERBOARD.md). Recurring shell note, same as 2026-09-04: the dock pill sits over copy, stat rows or figure parts on 7 of the 25 desktop pages and clips body copy on several mobile renders — an occlusion cost charged to no set, but several of the new designs place signatures and muzzles directly in its zone.
+
 ---
 
 ## ox-faces — Faces of the Ox (credit: "Set I") — SCORE 60 · FAIL
@@ -273,11 +275,85 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 ---
 
+## ox-meridian — Ox Meridian (credit: GLM FLASH) — SCORE 80 · PASS
+
+| # | Design | Ox gate | Notes |
+|---|--------|---------|-------|
+| 01 | Primigenia | PASS | Ochre aurochs over a cave-pigment field — horn, pale muzzle, jointed legs and eel-stripe all read; Lascaux → Jaktorowska → today timeline is exact. |
+| 02 | Sokha | PASS (borderline) | Agitprop black ox plods convincingly — mass, red-hoofed legs, tail — but the horns are angular broken blades; the third stat row sits in the dock zone. |
+| 03 | Nandi | PASS | Seated temple bull with gold lyre horns, bell garland and white blaze — the clearest figure of the set; Lepakshi copy is real. |
+| 04 | Trau | PASS (borderline) | Buffalo drinking in monsoon rain — swept crescent horns carry it, but the muzzle runs long and the body paragraph overlaps the figure, one line half-hidden under the tail. |
+| 05 | Tatanka | PASS | Ledger-art bison — hump, beard, short horn; hindquarters deliberately left unpainted in the ledger idiom. One body line runs under the dock. |
+
+**Quality:** ox 23/30 · directions 22/25 · craft 19/25 · copy 9/10 · a11y/responsive/motion 7/10 → **80/100**
+**Gate flags:** classes use design-level prefixes (`oxm-pr-`, `oxm-nd-`…) rather than `ox-meridian-*` · Trau text-over-figure overlap · Sokha/Tatanka copy clipped by the dock zone · lang attrs present on all five non-English runs (ru, pl, sa, th, lkt).
+**Verdict:** Five eras and five registers — cave wall, two-ink poster, shrine, batik rain, ruled ledger — with a legible animal in every one. The overlaps and dock collisions keep it out of the top tier.
+
+## ox-span — Ox Span (credit: Grok 4.7) — SCORE 81 · PASS
+
+| # | Design | Ox gate | Notes |
+|---|--------|---------|-------|
+| 01 | Chiana | PASS | White Chianina against a 178 cm wither-rule — black-tipped lyre horns, dark muzzle and tail switch all read; the breed table is exact. |
+| 02 | Paunch | PASS | Ox with a cutaway rumen window in the flank — the four-stomach copy is the best anatomy writing of the pass. |
+| 03 | Frantoio | PASS (borderline) | Beam-press ox walking its circle — harness and beam read; the head flirts with horse. |
+| 04 | Hathor | PASS (borderline) | Celestial cow with sun disk and udder — but the horns are dark tapering curls that nearly vanish against the night sky. |
+| 05 | Changthang | PASS (borderline) | Shaggy yak with pale face and zig-zag skirt — the face, muzzle and mass keep it mammal, but the horns are two bare wires with hook tips, the pass's closest brush with the antennae failure mode; they also contradict the copy ("The horns are short and black"). |
+
+**Quality:** ox 22/30 · directions 21/25 · craft 21/25 · copy 9/10 · a11y/responsive/motion 8/10 → **81/100**
+**Gate flags:** theme roots and classes shorten the set id (`th-span-*`, `ox-span-chang-*`) · Hathor horn contrast · Changthang horn copy mismatch · lang attrs (it, la, bo) present.
+**Verdict:** Five measures of one animal — height, gut, pull, sky, cold — in five clean registers. The most consistent figure-builder of the five new sets, held out of the top tier by horn rendering on two pages.
+
+## ox-tale — Ox Tale (credit: MIMO) — SCORE 78 · PASS
+
+| # | Design | Ox gate | Notes |
+|---|--------|---------|-------|
+| 01 | Cowherd | **FAIL** | The led ox's only head furniture is two big white petal shapes fanning off the skull — donkey/rabbit ears, no horns anywhere; the smile and the led-rope finish the read. The star-river page around it is lovely. |
+| 02 | Europa | PASS | White bull swimming the Aegean in a fresco fragment — horns, ears, red fish; the clearest figure of the set, framed like a museum accession. |
+| 03 | Stable | PASS (borderline) | Recumbent midnight ox by candlelight — the white horn crescent and folded forelegs carry the woodcut read. |
+| 04 | Frog | PASS (borderline) | Riso two-ink ox drinking while the frog puffs — bulk, horn nub and coral tail tuft hold the bovine read, but the tapering muzzle flirts with tapir, and the bottom 40% of the page is empty. |
+| 05 | Marathon | PASS (borderline) | Black-figure bull mid-charge with white-slip horns — the head-down pose softens the horn silhouette into a blaze. |
+
+**Quality:** ox 19/30 · directions 22/25 · craft 20/25 · copy 9/10 · a11y/responsive/motion 8/10 → **78/100**
+**Gate flags:** Cowherd figure fails the stranger test · signatures verbatim ("SET 01"–"SET 05") in five distinct native forms (vertical strip, brass plaque, woodcut banner, riso stamp, paper label) — the best signing discipline of the five new sets · `lang="zh"` used correctly.
+**Verdict:** Five real folktales well told in five print idioms — and one animal that reads as a donkey until the caption explains it. Passes at the floor.
+
+## ox-apparatus — Ox Apparatus (credit: Space Bunny) — SCORE 76 · PASS
+
+| # | Design | Ox gate | Notes |
+|---|--------|---------|-------|
+| 01 | Rumen | PASS | Line-drawn ox with a red rumen cutaway and numbered callouts on graph paper — the anatomy-bench idea lands; the yellow specimen signature hides behind the shell dock at 1440×900. |
+| 02 | Whorl | PASS (borderline) | Frontal spotted cow in a pop-poster palette — spots, ears and hooves read cow, but the dock sits on the muzzle; clearest on mobile. |
+| 03 | Beam | PASS (borderline) | Ox under a yoke-beam with a 4.2 kN pull badge — harness posture carries it; the horn sweep reads closer to a mane. |
+| 04 | Bell | PASS (borderline) | Grazing bell cow — bell, ears and posture imply the herd animal, but the head is half-buried in the shrub and there are no horns; signature also dock-hidden at desktop. |
+| 05 | Hoof | PASS | Shaggy highland ox descending a slope, hump and pale face to the fore — the strongest figure of the set, with the signature plate glued over the muzzle like a specimen label. |
+
+**Quality:** ox 21/30 · directions 20/25 · craft 19/25 · copy 9/10 · a11y/responsive/motion 7/10 → **76/100**
+**Gate flags:** rumen/bell signatures placed in the dock zone — present in the DOM, invisible at desktop (visible at 375px) · rumen/bell figures clip at the right viewport edge on mobile · the dock overlaps the subject zone on three pages · rumen and beam share one technical-bench idiom · cleanest class naming of the five (`ox-apparatus-<design>-*` throughout).
+**Verdict:** Five working systems with real engineering copy. The figures hold — but the set keeps parking its best material (muzzles, bells, signatures) under the one UI element it doesn't control.
+
+## ox-climates — Ox Climates (credit: Nordvik) — SCORE 82 · PASS
+
+| # | Design | Ox gate | Notes |
+|---|--------|---------|-------|
+| 01 | Hima | PASS (borderline) | Yak under a moon at −24°C — pale upswept horns, rim-lit hump and snow line carry it, though the body nearly merges with the night; the best weather-plate data column of the set. |
+| 02 | Garmi | PASS | Zebu drinking at a trough in 41°C noon dust — hump, horn and posture plainly read; the heat copy ("a pantry of fat, a hanging sail of skin") is the set's best. |
+| 03 | Reò | PASS (borderline) | Highland cow in a frost niche — fringe, swept horns and feathered legs read the breed; a dotted rule sits half-masked under the hero copy. |
+| 04 | Niwl | PASS (borderline) | Patch-coated cow at a misty fence line — the animal is unmistakable; the giant forward-curling horn is a flourish more than anatomy. |
+| 05 | Vindr | PASS (borderline-solid) | Bull leaning into a 95 km/h gale — planted stance, streaming tail and rim-lit hump; contrast is soft but the read holds. |
+
+**Quality:** ox 23/30 · directions 21/25 · craft 21/25 · copy 9/10 · a11y/responsive/motion 8/10 → **82/100**
+**Gate flags:** hima/vindr dark-on-dark figure contrast · reò and niwl share one pale-sage register · the dock clips body copy on the mobile renders of hima/vindr · otherwise the cleanest audit of the five: five visible signatures in five forms, lang attrs on all five scripts (sa, hi, gd, cy, non).
+**Verdict:** Five skies, one animal, and a data column that makes each sky measurable — the strongest all-rounder of the five new sets, one soft read away from the top tier.
+
+---
+
 ## FINAL RANKING
 
 **Note (2026-09-04, post-review):** three sets that passed this review, ox-signals, ox-biomes and ox-glyphs, were later failed when the maintainer manually re-graded the rendered pages. Their sections are removed from this card and their verdicts live in [WALLOFSHAME.md](WALLOFSHAME.md). The ranking below reflects the review as it stood; the passes marked for those three sets are void.
 
 **Note (2026-09-11, second audit):** ox-arena, ranked 2nd below, failed the gate at 1/5 when the gallery was re-rendered and re-graded, and was removed from the showcase — its re-graded section is above. Later the same day the maintainer's manual audit removed ox-sensorium, ranked 4th below. The other rows stand as the 2026-09-03/04 review recorded them; current scores for the surviving sets are in the 2026-09-11 updates at the top of this card.
+
+**Note (2026-10-01, third audit):** the five sets added since the second audit were graded and join the board — ox-climates 82 · ox-span 81 · ox-meridian 80 · ox-tale 78 · ox-apparatus 76, all PASS (ox-tale at 4/5, the rest 5/5). No set fell; the current fourteen-set ranking lives in [LEADERBOARD.md](LEADERBOARD.md).
 
 | Rank | Set | Credit | Score | Gate | Designs passing ox gate |
 |------|-----|--------|-------|------|-------------------------|
@@ -300,7 +376,7 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 | 17 | ox-lithica | Kimi 2.6 | **54** | **FAIL** | 0/5 |
 | 18 | ox-chronicle | Gemini 3.1 Pro | **53** | **FAIL** | 0/5 |
 
-**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.** As re-graded on 2026-09-11, with the maintainer's manual audit applied: 40 of 105 designs, and 6 of the original 21 sets still standing after the removals of ox-arena and ox-sensorium.
+**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.** As re-graded on 2026-09-11, with the maintainer's manual audit applied: 40 of 105 designs, and 6 of the original 21 sets still standing after the removals of ox-arena and ox-sensorium. **After the 2026-10-01 audit: 14 living sets and 70 designs, 64 of them rendering a recognizable bovine — and for the first time, every set on the board passes the gate.**
 
 ---
 
