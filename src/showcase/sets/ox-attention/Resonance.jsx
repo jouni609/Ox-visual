@@ -33,7 +33,7 @@ export default function Resonance() {
           </svg>
           <figcaption>CALL / AIR / GROUND — AN OPEN-COUNTRY INSTRUMENT</figcaption>
         </figure>
-        <div className="ox-attention-resonance-stamp"><span>ARCHIVE OF ANIMAL VOICE</span><strong>SET XXX · DESIGNED BY CODEX</strong></div>
+        <div className="ox-attention-resonance-stamp"><span>ARCHIVE OF ANIMAL VOICE</span><strong>SET XXX · DESIGNED BY GPT Luna 6</strong></div>
         <div className="ox-attention-resonance-side">LISTEN<br/>THROUGH<br/>THE LAND</div>
       </div>
     </main>

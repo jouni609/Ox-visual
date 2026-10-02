@@ -32,7 +32,7 @@ export default function Browse() {
         </svg>
         <figcaption>ONE MEAL / MANY RETURNS — WET MEADOW NOTES</figcaption>
       </figure>
-      <div className="ox-attention-browse-stamp"><span>FIELD PRESS / 05</span><strong>SET XXX · DESIGNED BY CODEX</strong></div>
+      <div className="ox-attention-browse-stamp"><span>FIELD PRESS / 05</span><strong>SET XXX · DESIGNED BY GPT Luna 6</strong></div>
     </main>
   )
 }

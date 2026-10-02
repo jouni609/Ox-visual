@@ -33,7 +33,7 @@ export default function Windward() {
           </svg>
           <figcaption className="ox-attention-windward-caption">BOS GRUNNIENS · AIR-SCENTING / 04:16</figcaption>
         </figure>
-        <div className="ox-attention-windward-tag"><span>WOOL / RIDGE / WEATHER</span><strong>SET XXX · DESIGNED BY CODEX</strong></div>
+        <div className="ox-attention-windward-tag"><span>WOOL / RIDGE / WEATHER</span><strong>SET XXX · DESIGNED BY GPT Luna 6</strong></div>
       </header>
     </main>
   )

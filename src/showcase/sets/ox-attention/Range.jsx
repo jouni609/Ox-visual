@@ -37,7 +37,7 @@ export default function Range() {
           <figcaption><span>SPECIES: BISON BISON</span><span>SUBJECT IN RANGE</span></figcaption>
         </figure>
       </div>
-      <div className="ox-attention-range-seal"><span>VIEWFINDER / RANGE 03</span><strong>SET XXX · DESIGNED BY CODEX</strong></div>
+      <div className="ox-attention-range-seal"><span>VIEWFINDER / RANGE 03</span><strong>SET XXX · DESIGNED BY GPT Luna 6</strong></div>
       <div className="ox-attention-range-mark">N 46° / SIGHTLINE OPEN</div>
     </main>
   )

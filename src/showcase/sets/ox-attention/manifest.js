@@ -5,7 +5,7 @@ export default {
   name: 'OX ATTENTION',
   tagline: 'Five senses in a bovine world',
   accent: '#e5b642',
-  credit: 'Designed by Codex',
+  credit: 'Designed by GPT Luna 6',
   designs: [
     { id: 'windward', num: '01', name: 'Windward', tag: 'Scent · Yak', chip: '#e5b642', Component: lazy(() => import('./Windward.jsx')) },
     { id: 'resonance', num: '02', name: 'Resonance', tag: 'Sound · Zebu', chip: '#f05a3e', Component: lazy(() => import('./Resonance.jsx')) },

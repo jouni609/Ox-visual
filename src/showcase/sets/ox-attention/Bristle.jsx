@@ -33,7 +33,7 @@ export default function Bristle() {
         </figure>
         <aside className="ox-attention-bristle-weave"><span>01 SOFT</span><span>02 DENSE</span><span>03 DOUBLE COAT</span></aside>
       </div>
-      <div className="ox-attention-bristle-label"><span>LOOM TAG · WINTER SAMPLE</span><strong>SET XXX · DESIGNED BY CODEX</strong></div>
+      <div className="ox-attention-bristle-label"><span>LOOM TAG · WINTER SAMPLE</span><strong>SET XXX · DESIGNED BY GPT Luna 6</strong></div>
     </main>
   )
 }
