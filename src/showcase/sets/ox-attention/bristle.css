@@ -1,0 +1,57 @@
+.th-ox-attention-bristle {
+  --oa-paper: #362d46;
+  --oa-ink: #f3efd9;
+  --oa-accent: #c5df63;
+  --oa-soft: #c6b6d3;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: var(--oa-ink);
+  background: radial-gradient(circle at 50% 60%, #51415d 0, #362d46 64%);
+  font-family: 'Karla', sans-serif;
+}
+.th-ox-attention-bristle ::selection { background: #c5df63; color: #362d46; }
+.ox-attention-bristle { padding: 28px clamp(22px, 5vw, 76px) 30px; }
+.ox-attention-bristle-rule { display: flex; justify-content: space-between; border-bottom: 1px dashed #b9abd080; padding-bottom: 11px; color: var(--oa-soft); font: 700 9px 'Red Hat Mono', monospace; letter-spacing: .15em; }
+.ox-attention-bristle-heading { position: relative; z-index: 2; margin: 38px 0 0 6%; }
+.ox-attention-bristle-heading p { color: var(--oa-accent); font: 700 10px 'Red Hat Mono', monospace; letter-spacing: .18em; }
+.ox-attention-bristle-heading h1 { margin-top: 9px; font: 700 clamp(3.4rem, 7vw, 7rem)/.94 'Fraunces', serif; letter-spacing: -.055em; }
+.ox-attention-bristle-heading > span { display: inline-block; margin-top: 9px; color: var(--oa-soft); font: 500 14px 'Caveat', cursive; }
+.ox-attention-bristle-loom { position: relative; max-width: 1320px; margin: -22px auto 0; padding: 0 4% 0 2%; }
+.ox-attention-bristle-loom::before,.ox-attention-bristle-loom::after { content: ''; position: absolute; z-index: 0; top: 10%; bottom: 10%; width: 1px; background: repeating-linear-gradient(to bottom, var(--oa-accent) 0 4px, transparent 4px 11px); opacity: .45; }
+.ox-attention-bristle-loom::before { left: 4%; }.ox-attention-bristle-loom::after { right: 4%; }
+.ox-attention-bristle-vertical { position: absolute; left: -18px; top: 40%; writing-mode: vertical-rl; color: var(--oa-accent); font: 700 8px 'Red Hat Mono', monospace; letter-spacing: .15em; }
+.ox-attention-bristle-figure { position: relative; z-index: 1; width: min(100%, 1030px); margin: auto; }
+.ox-attention-bristle-figure svg { width: 100%; overflow: visible; }
+.ox-attention-bristle-ground { stroke: var(--oa-soft); stroke-width: 2; opacity: .8; }
+.ox-attention-bristle-body { fill: #886a52; stroke: #1f1a25; stroke-width: 5; stroke-linejoin: round; }
+.ox-attention-bristle-legs { fill: #735740; stroke: #211b27; stroke-width: 13; stroke-linecap: round; stroke-linejoin: round; }
+.ox-attention-bristle-locks { fill: #b08a60; stroke: #211b27; stroke-width: 3; stroke-linejoin: round; }
+.ox-attention-bristle-head { fill: #84634c; stroke: #211b27; stroke-width: 5; }
+.ox-attention-bristle-muzzle { fill: #c99d7a; stroke: #211b27; stroke-width: 4; }
+.ox-attention-bristle-horn { fill: #ebe0b9; stroke: #211b27; stroke-width: 4; stroke-linejoin: round; }
+.ox-attention-bristle-horn-far { fill: #d7cda9; }
+.ox-attention-bristle-ear { fill: #987553; stroke: #211b27; stroke-width: 3; }
+.ox-attention-bristle-fringe { fill: #c19b6c; stroke: #211b27; stroke-width: 3; }
+.ox-attention-bristle-eye { fill: #1b1920; }
+.ox-attention-bristle-tail { fill: none; stroke: #886a52; stroke-width: 9; stroke-linecap: round; }
+.ox-attention-bristle-fibre { fill: none; stroke: #d7bd8b; stroke-width: 3; stroke-linecap: round; opacity: .6; }
+.ox-attention-bristle-stitch { fill: none; stroke: var(--oa-accent); stroke-width: 3; stroke-linecap: round; }
+.ox-attention-bristle-figure figcaption { color: var(--oa-soft); text-align: center; font: 700 8px 'Red Hat Mono', monospace; letter-spacing: .16em; margin-top: -8px; }
+.ox-attention-bristle-weave { position: absolute; right: 5%; top: 49%; display: flex; flex-direction: column; gap: 10px; color: var(--oa-accent); font: 700 8px 'Red Hat Mono', monospace; writing-mode: vertical-rl; }
+.ox-attention-bristle-label { position: absolute; z-index: 2; top: 145px; right: 5%; width: max-content; max-width: 100%; margin: 0; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 10px 17px; color: var(--oa-ink); background: #514360; border: 2px dashed var(--oa-accent); outline: 1px solid #514360; font: 700 8px 'Red Hat Mono', monospace; letter-spacing: .11em; }
+.ox-attention-bristle-label strong { color: var(--oa-accent); font-size: 9px; }
+@media (max-width: 700px) {
+  .ox-attention-bristle { padding: 19px 16px 24px; }
+  .ox-attention-bristle-rule { font-size: 7px; letter-spacing: .06em; }
+  .ox-attention-bristle-heading { margin: 33px 0 0 1%; }
+  .ox-attention-bristle-heading p { font-size: 8px; }
+  .ox-attention-bristle-heading h1 { max-width: 360px; font-size: clamp(3rem, 13vw, 4.4rem); }
+  .ox-attention-bristle-loom { margin: 9px -7% 0; padding: 0; }
+  .ox-attention-bristle-vertical,.ox-attention-bristle-weave { display: none; }
+  .ox-attention-bristle-figure { width: 112%; margin-left: -6%; }
+  .ox-attention-bristle-figure figcaption { font-size: 6px; letter-spacing: .08em; margin-top: 0; }
+  .ox-attention-bristle-label { position: relative; top: auto; right: auto; margin: 16px auto 0; padding: 8px 11px; font-size: 7px; letter-spacing: .06em; }
+  .ox-attention-bristle-label strong { font-size: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .ox-attention-bristle * { animation: none !important; transition: none !important; } }

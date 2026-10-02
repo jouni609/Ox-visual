@@ -1,0 +1,59 @@
+.th-ox-attention-range {
+  --oa-paper: #f0efe7;
+  --oa-ink: #142b32;
+  --oa-accent: #08736e;
+  --oa-muted: #50666a;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: var(--oa-ink);
+  background: var(--oa-paper);
+  font-family: 'Source Sans 3', sans-serif;
+}
+.th-ox-attention-range ::selection { background: #11a9a0; color: #f0efe7; }
+.ox-attention-range { padding: 30px clamp(20px, 5vw, 74px) 36px; }
+.ox-attention-range-header { display: flex; justify-content: space-between; border-bottom: 1px solid #142b3244; padding-bottom: 12px; color: var(--oa-muted); font: 700 10px 'IBM Plex Mono', monospace; letter-spacing: .14em; }
+.ox-attention-range-layout { width: min(1320px, 100%); min-height: calc(100vh - 130px); margin: auto; display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 2vw; }
+.ox-attention-range-copy { position: relative; z-index: 2; padding: 35px 0 0; max-width: 410px; }
+.ox-attention-range-label { color: var(--oa-accent); font: 700 11px 'IBM Plex Mono', monospace; letter-spacing: .2em; }
+.ox-attention-range-copy h1 { margin-top: 19px; font: 700 clamp(3.4rem, 6vw, 6.2rem)/.9 'Unbounded', sans-serif; letter-spacing: -.09em; }
+.ox-attention-range-copy > p:not(.ox-attention-range-label) { margin-top: 23px; max-width: 325px; color: #354b51; font: 400 16px/1.7 'Source Sans 3', sans-serif; }
+.ox-attention-range-focus { display: grid; grid-template-columns: auto 45px auto; align-items: center; gap: 12px; width: max-content; margin-top: 40px; color: var(--oa-muted); font: 700 9px 'IBM Plex Mono', monospace; letter-spacing: .1em; }
+.ox-attention-range-focus strong { color: var(--oa-accent); font: 400 42px 'Source Sans 3', sans-serif; }
+.ox-attention-range-lens { align-self: center; width: min(100%, 700px); margin-left: -4%; }
+.ox-attention-range-lens svg { width: 100%; overflow: visible; }
+.ox-attention-range-disc { fill: #d7e5df; }
+.ox-attention-range-ring { fill: none; stroke: #438a88; stroke-width: 1.5; opacity: .56; }
+.ox-attention-range-ring-inner { stroke-dasharray: 2 7; opacity: .4; }
+.ox-attention-range-crosshair,.ox-attention-range-terrain { fill: none; stroke: #507d7a; stroke-width: 1.5; opacity: .55; }
+.ox-attention-range-body { fill: #543d2d; stroke: #17282a; stroke-width: 5; stroke-linejoin: round; }
+.ox-attention-range-legs { fill: #493628; stroke: #17282a; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+.ox-attention-range-mane { fill: #76553a; stroke: #17282a; stroke-width: 4; stroke-linejoin: round; }
+.ox-attention-range-head { fill: #523c2d; stroke: #17282a; stroke-width: 5; stroke-linejoin: round; }
+.ox-attention-range-muzzle { fill: #a06d4c; stroke: #17282a; stroke-width: 4; }
+.ox-attention-range-nostril,.ox-attention-range-eye { fill: #121e20; }
+.ox-attention-range-horn { fill: #d7d2b4; stroke: #17282a; stroke-width: 4; stroke-linejoin: round; }
+.ox-attention-range-horn-far { fill: #b8b497; }
+.ox-attention-range-ear { fill: #72523a; stroke: #17282a; stroke-width: 3; }
+.ox-attention-range-tail { fill: none; stroke: #543d2d; stroke-width: 10; stroke-linecap: round; }
+.ox-attention-range-tick { fill: none; stroke: var(--oa-accent); stroke-width: 3; stroke-linecap: round; }
+.ox-attention-range-lens figcaption { display: flex; justify-content: space-between; color: var(--oa-muted); font: 700 8px 'IBM Plex Mono', monospace; letter-spacing: .12em; margin: -12px 5% 0; }
+.ox-attention-range-seal { position: absolute; right: 5vw; top: 66px; display: flex; flex-direction: column; gap: 4px; border: 1px solid var(--oa-ink); border-radius: 50%; width: 183px; height: 70px; justify-content: center; align-items: center; transform: rotate(-7deg); font: 700 8px 'IBM Plex Mono', monospace; letter-spacing: .04em; }
+.ox-attention-range-seal strong { color: var(--oa-accent); font-size: 8px; }
+.ox-attention-range-mark { position: absolute; bottom: 35px; left: 5vw; color: var(--oa-muted); font: 700 9px 'IBM Plex Mono', monospace; letter-spacing: .1em; }
+@media (max-width: 700px) {
+  .ox-attention-range { padding: 20px 18px 24px; }
+  .ox-attention-range-header { font-size: 7px; letter-spacing: .04em; }
+  .ox-attention-range-layout { min-height: unset; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .ox-attention-range-copy { padding-top: 34px; }
+  .ox-attention-range-copy h1 { max-width: 350px; font-size: clamp(3rem, 13vw, 4rem); margin-top: 13px; }
+  .ox-attention-range-copy > p:not(.ox-attention-range-label) { margin-top: 12px; font-size: 14px; line-height: 1.5; }
+  .ox-attention-range-focus { margin-top: 13px; }
+  .ox-attention-range-focus strong { font-size: 30px; }
+  .ox-attention-range-lens { width: 115%; margin: -5px -7.5% 0; }
+  .ox-attention-range-lens figcaption { font-size: 6px; letter-spacing: .04em; margin-top: -1px; }
+  .ox-attention-range-seal { position: absolute; top: 292px; right: 18px; margin: 0; width: 163px; height: 52px; font-size: 7px; z-index: 4; }
+  .ox-attention-range-seal strong { font-size: 7px; }
+  .ox-attention-range-mark { position: relative; left: auto; bottom: auto; margin-top: 15px; font-size: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .ox-attention-range * { animation: none !important; transition: none !important; } }

@@ -1,0 +1,54 @@
+.th-ox-attention-browse {
+  --oa-paper: #aee4d9;
+  --oa-ink: #153a3d;
+  --oa-accent: #a42422;
+  --oa-blue: #17666e;
+  --oa-grass: #355b35;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: var(--oa-ink);
+  background: var(--oa-paper);
+  font-family: 'DM Sans', sans-serif;
+}
+.th-ox-attention-browse ::selection { background: #e94e43; color: #fff8d7; }
+.ox-attention-browse { padding: 24px clamp(18px, 4.5vw, 68px) 35px; }
+.ox-attention-browse-top { display: flex; justify-content: space-between; gap: 10px; border-top: 3px solid var(--oa-ink); border-bottom: 1px solid var(--oa-ink); padding: 9px 0 8px; font: 700 9px 'Space Mono', monospace; letter-spacing: .09em; }
+.ox-attention-browse-intro { display: flex; justify-content: space-between; align-items: end; gap: 32px; width: min(1270px, 100%); margin: 41px auto 0; }
+.ox-attention-browse-intro > div > p { color: var(--oa-accent); font: 700 10px 'Space Mono', monospace; letter-spacing: .18em; }
+.ox-attention-browse-intro h1 { margin-top: 9px; font: 800 clamp(3.6rem, 7.7vw, 8rem)/.88 'Bricolage Grotesque', sans-serif; letter-spacing: -.085em; }
+.ox-attention-browse-intro > p { max-width: 325px; margin-bottom: 3px; font: 500 15px/1.6 'DM Sans', sans-serif; color: #264f4d; }
+.ox-attention-browse-land { width: min(1000px, 100%); margin: 1px auto 0; position: relative; }
+.ox-attention-browse-land svg { width: 100%; overflow: visible; }
+.ox-attention-browse-sun { fill: var(--oa-accent); stroke: #153a3d; stroke-width: 3; }
+.ox-attention-browse-hill { fill: #87c7a7; }
+.ox-attention-browse-water { fill: #338f96; }
+.ox-attention-browse-ripple { fill: none; stroke: #b9f0dc; stroke-width: 3; opacity: .8; }
+.ox-attention-browse-body,.ox-attention-browse-neck { fill: #493632; stroke: #15302f; stroke-width: 5; stroke-linejoin: round; }
+.ox-attention-browse-legs { fill: #42332f; stroke: #15302f; stroke-width: 13; stroke-linecap: round; stroke-linejoin: round; }
+.ox-attention-browse-dewlap { fill: #6a4840; stroke: #15302f; stroke-width: 4; stroke-linejoin: round; }
+.ox-attention-browse-head { fill: #493632; stroke: #15302f; stroke-width: 5; }
+.ox-attention-browse-muzzle { fill: #96705e; stroke: #15302f; stroke-width: 4; }
+.ox-attention-browse-nostril,.ox-attention-browse-eye { fill: #102222; }
+.ox-attention-browse-horn { fill: #eed7a1; stroke: #15302f; stroke-width: 4; stroke-linejoin: round; }
+.ox-attention-browse-horn-far { fill: #d5bf91; }
+.ox-attention-browse-ear { fill: #493632; stroke: #15302f; stroke-width: 3; }
+.ox-attention-browse-tail { fill: none; stroke: #493632; stroke-width: 9; stroke-linecap: round; }
+.ox-attention-browse-reed { fill: none; stroke: var(--oa-grass); stroke-width: 4; stroke-linecap: round; transform-origin: center bottom; }
+.ox-attention-browse-grass { fill: var(--oa-grass); }
+.ox-attention-browse-land figcaption { position: absolute; bottom: 13%; left: 4%; color: #fff8d7; font: 700 8px 'Space Mono', monospace; letter-spacing: .12em; }
+.ox-attention-browse-stamp { width: max-content; max-width: 100%; display: flex; flex-direction: column; gap: 5px; position: absolute; left: 6vw; bottom: 54px; padding: 10px 15px; background: var(--oa-accent); border: 2px solid var(--oa-ink); box-shadow: 4px 4px 0 var(--oa-ink); transform: rotate(3deg); color: #fff8d7; font: 700 8px 'Space Mono', monospace; letter-spacing: .09em; }
+.ox-attention-browse-stamp strong { white-space: nowrap; font-size: 9px; }
+@media (max-width: 700px) {
+  .ox-attention-browse { padding: 17px 15px 25px; }
+  .ox-attention-browse-top { font-size: 6px; letter-spacing: .01em; gap: 5px; }
+  .ox-attention-browse-intro { display: block; margin-top: 32px; }
+  .ox-attention-browse-intro > div > p { font-size: 8px; }
+  .ox-attention-browse-intro h1 { font-size: clamp(3.2rem, 14vw, 4.5rem); }
+  .ox-attention-browse-intro > p { max-width: 310px; margin-top: 13px; font-size: 13px; line-height: 1.5; }
+  .ox-attention-browse-land { width: 126%; margin: 4px -13% 0; }
+  .ox-attention-browse-land figcaption { bottom: 13%; left: 13%; font-size: 6px; letter-spacing: .04em; }
+  .ox-attention-browse-stamp { position: relative; left: auto; bottom: auto; margin: 11px 4px 0 auto; padding: 8px 10px; font-size: 7px; }
+  .ox-attention-browse-stamp strong { font-size: 7px; }
+}
+@media (prefers-reduced-motion: reduce) { .ox-attention-browse * { animation: none !important; transition: none !important; } }

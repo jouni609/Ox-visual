@@ -1,0 +1,53 @@
+.th-ox-attention-windward {
+  --oa-paper: #182c39;
+  --oa-ink: #f2ead7;
+  --oa-muted: #b9c1b9;
+  --oa-accent: #e5b642;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: var(--oa-ink);
+  background: radial-gradient(ellipse at 67% 36%, #354c50 0, #243b45 38%, #182c39 76%);
+  font-family: 'Red Hat Mono', monospace;
+}
+.th-ox-attention-windward ::selection { background: #e5b642; color: #182c39; }
+.ox-attention-windward-head { width: min(1380px, calc(100% - 96px)); min-height: 100vh; margin: auto; position: relative; padding: 34px 0 28px; }
+.ox-attention-windward-kicker { display: flex; justify-content: space-between; border-bottom: 1px solid #97a29a77; padding-bottom: 13px; color: var(--oa-muted); font-size: 10px; letter-spacing: .18em; }
+.ox-attention-windward-copy { position: relative; z-index: 2; width: min(470px, 43%); padding-top: clamp(50px, 9vh, 100px); }
+.ox-attention-windward-index { color: var(--oa-accent); font-size: 10px; letter-spacing: .2em; margin-bottom: 15px; }
+.ox-attention-windward-copy h1 { font: 800 clamp(3rem, 6.3vw, 6.2rem)/.92 'Fraunces', serif; letter-spacing: -.055em; }
+.ox-attention-windward-deck { color: #d2d7cd; max-width: 390px; margin-top: 23px; font: 400 clamp(14px, 1.1vw, 16px)/1.75 'Manrope', sans-serif; }
+.ox-attention-windward-altitude { margin-top: 38px; display: flex; gap: 14px; align-items: baseline; color: var(--oa-accent); }
+.ox-attention-windward-altitude strong { font: 700 24px 'Red Hat Mono', monospace; }
+.ox-attention-windward-altitude span { font-size: 9px; letter-spacing: .14em; color: var(--oa-muted); }
+.ox-attention-windward-art { position: absolute; right: -5.5%; top: 19%; width: 66%; }
+.ox-attention-windward-art svg { width: 100%; overflow: visible; }
+.ox-attention-windward-ground { stroke: #a8a78b; stroke-width: 2; }
+.ox-attention-windward-wind,.ox-attention-windward-wisp { fill: none; stroke: #b8d2cf; stroke-width: 2; stroke-linecap: round; opacity: .65; }
+.ox-attention-windward-scree { fill: none; stroke: #9da58f; stroke-width: 3; opacity: .5; }
+.ox-attention-windward-body,.ox-attention-windward-neck { fill: #b87936; stroke: #342f29; stroke-width: 5; stroke-linejoin: round; }
+.ox-attention-windward-fringe { fill: #d49a50; stroke: #342f29; stroke-width: 4; stroke-linejoin: round; }
+.ox-attention-windward-legs { fill: #87542f; stroke: #342f29; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+.ox-attention-windward-face { fill: #9b6339; stroke: #342f29; stroke-width: 5; }
+.ox-attention-windward-muzzle { fill: #cf946b; stroke: #342f29; stroke-width: 4; }
+.ox-attention-windward-nostril,.ox-attention-windward-eye { fill: #1e2524; }
+.ox-attention-windward-horn { fill: #ead6a4; stroke: #342f29; stroke-width: 5; stroke-linejoin: round; }
+.ox-attention-windward-horn-far { fill: #d8c190; }
+.ox-attention-windward-ear { fill: #a66a40; stroke: #342f29; stroke-width: 3; }
+.ox-attention-windward-tail { fill: none; stroke: #b87936; stroke-width: 11; stroke-linecap: round; }
+.ox-attention-windward-caption { color: var(--oa-muted); font-size: 9px; letter-spacing: .18em; text-align: right; margin-top: -12px; }
+.ox-attention-windward-tag { position: absolute; bottom: 28px; left: 0; display: flex; flex-direction: column; gap: 8px; border-left: 3px solid var(--oa-accent); padding: 8px 14px; font-size: 9px; letter-spacing: .12em; color: var(--oa-muted); }
+.ox-attention-windward-tag strong { color: var(--oa-ink); font-size: 10px; }
+@media (max-width: 700px) {
+  .ox-attention-windward-head { width: calc(100% - 36px); padding-top: 22px; }
+  .ox-attention-windward-kicker { font-size: 8px; }
+  .ox-attention-windward-copy { width: 100%; padding-top: 40px; }
+  .ox-attention-windward-copy h1 { font-size: clamp(3.15rem, 14vw, 4.2rem); }
+  .ox-attention-windward-deck { font-size: 14px; line-height: 1.55; max-width: 330px; margin-top: 14px; }
+  .ox-attention-windward-altitude { margin-top: 14px; }
+  .ox-attention-windward-altitude strong { font-size: 18px; }
+  .ox-attention-windward-art { position: relative; right: auto; top: auto; width: 118%; margin: 4px -9% 0; }
+  .ox-attention-windward-caption { font-size: 7px; margin-top: 0; }
+  .ox-attention-windward-tag { position: relative; bottom: auto; margin-top: 16px; padding: 5px 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .ox-attention-windward * { animation: none !important; transition: none !important; } }
