@@ -13,6 +13,8 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 **Update (2026-10-01, third audit):** the five sets registered since the second audit — ox-meridian, ox-span, ox-tale, ox-apparatus, ox-climates, 25 designs — were rendered end to end (desktop 1440px full-page + 375px mobile, scroll-through to trigger reveals; automated console-error and horizontal-overflow sweep: 0 errors, 0 overflow across all 50 renders) and graded against the gate by visual review of every desktop render plus a nine-page mobile sweep, with the same static source audit as before. **All five sets pass the gate** — 24 of 25 designs render a recognizable bovine; the miss is Cowherd in ox-tale. Scores: ox-climates 82 · ox-span 81 · ox-meridian 80 · ox-tale 78 · ox-apparatus 76. Sections below are new; the ranking lives in [LEADERBOARD.md](LEADERBOARD.md). Recurring shell note, same as 2026-09-04: the dock pill sits over copy, stat rows or figure parts on 7 of the 25 desktop pages and clips body copy on several mobile renders — an occlusion cost charged to no set, but several of the new designs place signatures and muzzles directly in its zone.
 
+**Update (2026-10-04, fourth audit):** the two sets registered since the third audit — ox-attention and ox-ledger, 10 designs — were rendered end to end (desktop 1440×900 full-page + 375×812 mobile, scroll-through; console-error and horizontal-overflow sweep: 0 errors, 0 overflow across all 20 renders) and graded by eye against the same rubric, with the same static source audit. **ox-attention passes at 5/5 and scores 76. ox-ledger fails at 0/5 and scores 57, and was removed.** Sections below; the ranking lives in [LEADERBOARD.md](LEADERBOARD.md) and the failure in [WALLOFSHAME.md](WALLOFSHAME.md). Same shell note: the dock covers a caption or a signature on several of these pages, and on ox-ledger's mobile renders the signature is clipped or stamped through the body copy.
+
 ---
 
 ## ox-faces — Faces of the Ox (credit: "Set I") — SCORE 60 · FAIL
@@ -345,6 +347,34 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 **Gate flags:** hima/vindr dark-on-dark figure contrast · reò and niwl share one pale-sage register · the dock clips body copy on the mobile renders of hima/vindr · otherwise the cleanest audit of the five: five visible signatures in five forms, lang attrs on all five scripts (sa, hi, gd, cy, non).
 **Verdict:** Five skies, one animal, and a data column that makes each sky measurable — the strongest all-rounder of the five new sets, one soft read away from the top tier.
 
+## ox-attention — Ox Attention (credit: Designed by GPT Luna 6) — SCORE 76 · PASS
+
+| # | Design | Ox gate | Notes |
+|---|--------|---------|-------|
+| 01 | Windward | PASS | Raised-muzzle yak in storm blue — horns, nostril and four legs read at once. The sawtooth skirt is coat, and the same skirt returns on every page of the set. The species line sits under the dock at 1440 and is cut off at the right edge at 375. |
+| 02 | Resonance | PASS | Bellowing zebu with a real shoulder hump and an open mouth. The footer "CALL / AIR / GROUND…" runs under the dock at desktop; it clears on mobile. |
+| 03 | Range | PASS | Bison in a viewfinder — hump, short horns, beard. The beard is the same zigzag as everyone else's belly, and it still reads bison. Clearest page of the set at both widths. |
+| 04 | Bristle | PASS | Highland cow, fringe over the eye, horns swept out. Same broadside mascot as Windward, recolored and turned around. |
+| 05 | Browse | PASS | Water buffalo, head down, one heavy crescent horn, grazing a wet meadow. The lowered head is the only pose in the set that isn't the standing profile. |
+
+**Quality:** ox 23/30 · directions 18/25 · craft 19/25 · copy 8/10 · a11y/responsive/motion 8/10 → **76/100**
+**Gate flags:** five animals, one construction — tan or brown profile, pink muzzle, cream horns, four dark legs, and a sawtooth belly standing in for coat, dewlap, beard and fringe. Paths are not copied; the figure is. Unbounded is the display face on Resonance and Range, Fraunces on Windward and Bristle, Karla the body face on Resonance and Bristle. Windward's latin line clips. Resonance's footer is in the dock zone at 1440. Each SVG carries `role="img"` and an `aria-label` while the parent `<figure>` is labelled too. Signatures are verbatim "SET XXX · DESIGNED BY GPT Luna 6" in five forms (woven tag, tilted stamp, oval seal, dashed loom label, red field stamp) and visible at both widths. Classes and the theme root use `ox-attention-*` / `th-ox-attention-*`. Themed `::selection` is a descendant selector, so it actually hits the text. No comments, no overflow, no console errors.
+**Verdict:** Five senses and five cattle a stranger can name, in five palettes that do not collapse into each other. Held to a tie with ox-atlas and ox-apparatus by the one cartoon ox worn five ways.
+
+## ox-ledger — Ox Ledger (credit: Designed by Composer) — SCORE 57 · FAIL
+
+| # | Design | Ox gate | Notes |
+|---|--------|---------|-------|
+| 01 | Brand | **FAIL** | A sphere with two tall filled lobes on top of the skull. They are drawn as horns and they read as rabbit ears. The brand ring and the white blaze do not rescue the head. At 375 the rubber stamp sits on top of the body sentence. |
+| 02 | Draught | **FAIL** | Side-on loaf, same upright ears, four stub legs. A gold yoke beam is actually drawn across the shoulders and still loses to the hare. At 375 the stencil signature is stamped through the paragraph and under the dock. |
+| 03 | Zebu | **FAIL** | The hump is a second blob on the back, which is the one bovine cue, and the head is the same rabbit. The copy claims "a silhouette no European ox can claim." The silhouette is a hare. Signature clipped to "COMPOS…" at 375. |
+| 04 | Nandi | **FAIL** | Frontal round face, red mouth, gold nose ring, two vertical gold paddles for horns. Reads as a rabbit, a seal, or a small idol. The sentence says the forelegs are folded; the drawing shows two hanging legs. The cartouche is clipped by the dock at 375. |
+| 05 | Bison | **FAIL** | Round body, round head, dark nose, two short black hooks on top. No cape, no beard, no hump that separates from the ball. Reads capybara, or a bear cub. The survey tag is clipped by the dock at 375. |
+
+**Quality:** ox 8/30 · directions 19/25 · craft 17/25 · copy 7/10 · a11y/responsive/motion 6/10 → **57/100**
+**Gate flags:** the failure mode the wall already names — upright horn-lobes on a round body — except this time the lobes have fill, and the fill is ear-shaped. One toy, five palettes. Theme roots shorten the set id (`th-ledger-*` rather than `th-ox-ledger-*`); classes themselves are `ox-ledger-*` and SVG ids are namespaced. `::selection` is attached to the theme root (`.th-ledger-*::selection`), so the themed selection does not reach the text inside it. Signatures are the verbatim string "SET XXXI · DESIGNED BY COMPOSER" (credit is "Designed by Composer"; the name is uppercased) and they are visible at 1440. At 375, four of the five are clipped by the dock or printed through the copy. `lang` is set on the Hindi and Sanskrit kickers. No comments, no overflow, no console errors. The noise filter in Draught's background is inside a data-URI, not a document id.
+**Verdict:** Five records, five typefaces, five layouts, and not one animal a stranger would call an ox. The best type discipline of the two new sets, wrapped around a hare.
+
 ---
 
 ## FINAL RANKING
@@ -353,7 +383,9 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 
 **Note (2026-09-11, second audit):** ox-arena, ranked 2nd below, failed the gate at 1/5 when the gallery was re-rendered and re-graded, and was removed from the showcase — its re-graded section is above. Later the same day the maintainer's manual audit removed ox-sensorium, ranked 4th below. The other rows stand as the 2026-09-03/04 review recorded them; current scores for the surviving sets are in the 2026-09-11 updates at the top of this card.
 
-**Note (2026-10-01, third audit):** the five sets added since the second audit were graded and join the board — ox-climates 82 · ox-span 81 · ox-meridian 80 · ox-tale 78 · ox-apparatus 76, all PASS (ox-tale at 4/5, the rest 5/5). No set fell; the current fourteen-set ranking lives in [LEADERBOARD.md](LEADERBOARD.md).
+**Note (2026-10-01, third audit):** the five sets added since the second audit were graded and join the board — ox-climates 82 · ox-span 81 · ox-meridian 80 · ox-tale 78 · ox-apparatus 76, all PASS (ox-tale at 4/5, the rest 5/5). No set fell; the ranking as it stood then is in [LEADERBOARD.md](LEADERBOARD.md).
+
+**Note (2026-10-04, fourth audit):** ox-attention joins at 76 · PASS · 5/5. ox-ledger scores 57 · FAIL · 0/5 and was removed. The current fifteen-set board is in [LEADERBOARD.md](LEADERBOARD.md).
 
 | Rank | Set | Credit | Score | Gate | Designs passing ox gate |
 |------|-----|--------|-------|------|-------------------------|
@@ -376,13 +408,13 @@ Static-rule violations (signing, banned techniques, naming, a11y floor) are list
 | 17 | ox-lithica | Kimi 2.6 | **54** | **FAIL** | 0/5 |
 | 18 | ox-chronicle | Gemini 3.1 Pro | **53** | **FAIL** | 0/5 |
 
-**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.** As re-graded on 2026-09-11, with the maintainer's manual audit applied: 40 of 105 designs, and 6 of the original 21 sets still standing after the removals of ox-arena and ox-sensorium. **After the 2026-10-01 audit: 14 living sets and 70 designs, 64 of them rendering a recognizable bovine — and for the first time, every set on the board passes the gate.**
+**Bottom line: 8 of 21 sets pass the ox gate; 49 of 105 designs render a recognizable bovine.** As re-graded on 2026-09-11, with the maintainer's manual audit applied: 40 of 105 designs, and 6 of the original 21 sets still standing after the removals of ox-arena and ox-sensorium. **After the 2026-10-01 audit: 14 living sets and 70 designs, 64 of them rendering a recognizable bovine — and for the first time, every set on the board passes the gate.** **After the 2026-10-04 audit: 15 sets on the board, 75 designs, 69 of them a recognizable bovine. ox-ledger fails at 0/5 and was removed.**
 
 ---
 
 ## GLOBAL FINDINGS
 
-**The showcase's #1 failure mode is horn rendering.** Across the failing sets, horns are drawn as thin double-line strokes that read as insect antennae or rabbit ears on rounded blob bodies — numismatica's coin oxen (rabbits/beetles), materia's substance mascots (clouds/poop), lithica (jugs/rabbits), chronicle (loafs/domes), systema and aurora (birds/rabbits). The passing sets draw horns as *masses* (atlas, vesper, mythos) — the single most predictive craft difference between pass and fail. Mass alone is not sufficient: ox-arena's flat lobes and ox-sensorium's antler-paddles both had weight and still failed, the one for equine heads, the other for donkey/moose gestalts that the maintainer's manual audit finally rejected.
+**The showcase's #1 failure mode is horn rendering.** Across the failing sets, horns are drawn as thin double-line strokes that read as insect antennae or rabbit ears on rounded blob bodies — numismatica's coin oxen (rabbits/beetles), materia's substance mascots (clouds/poop), lithica (jugs/rabbits), chronicle (loafs/domes), systema and aurora (birds/rabbits). The passing sets draw horns as *masses* (atlas, vesper, mythos) — the single most predictive craft difference between pass and fail. Mass alone is not sufficient: ox-arena's flat lobes and ox-sensorium's antler-paddles both had weight and still failed, the one for equine heads, the other for donkey/moose gestalts that the maintainer's manual audit finally rejected. The 2026-10-04 audit adds the same lesson in a blunter shape: ox-ledger's horns are filled, tall, and ear-shaped, and all five figures read as rabbits.
 
 **Second failure mode: dark-on-dark contrast.** polis/Cathedral, vesper/Cinder, chronicle (all five), hours/Matins+Compline, mythos/Gavaevodata — animals that exist in code but vanish on screen.
 

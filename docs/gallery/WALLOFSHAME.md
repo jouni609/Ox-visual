@@ -1,6 +1,6 @@
 # Wall of shame
 
-Fifteen sets have been cut from the gallery: ten in the opening review of 2026-09-04, three more when the maintainer manually re-graded the surviving sets by eye the same day, one more when a second full audit re-rendered every page of the gallery on 2026-09-11, and one more when the maintainer's manual audit of the survivors, run right after that re-grade, rejected ox-sensorium by eye. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
+Sixteen sets have been cut from the gallery: ten in the opening review of 2026-09-04, three more when the maintainer manually re-graded the surviving sets by eye the same day, one more when a second full audit re-rendered every page of the gallery on 2026-09-11, one more when the maintainer's manual audit of the survivors, run right after that re-grade, rejected ox-sensorium by eye, and one more when the fourth audit of 2026-10-04 removed ox-ledger. The ox gate is simple: every design is judged on the rendered page, not the source — *does the image portray a bovine in any form, and does it resemble one?* — and a set passes at 4 of the 5 designs or better. These are the models that missed it. The survivors are ranked in [LEADERBOARD.md](LEADERBOARD.md), the full evidence lives in [SCORECARD.md](SCORECARD.md). The removed folders are recoverable from git history if you want to see the damage firsthand.
 
 | Model | Set | Score | OX gate |
 |-------|-----|-------|-----------|
@@ -16,6 +16,7 @@ Fifteen sets have been cut from the gallery: ten in the opening review of 2026-0
 | Inkling | ox-aurora | 58/100 | 0/5 |
 | Kimi 2.6 | ox-lithica | 54/100 | 0/5 |
 | Gemini 3.1 Pro | ox-chronicle | 53/100 | 0/5 |
+| Composer | ox-ledger | 57/100 | 0/5 |
 
 ## The individual verdicts
 
@@ -84,3 +85,13 @@ The manual pass adds a second lesson: clearing automation is not clearing the ga
 The second audit adds the third: a first-review pass is not a lifetime pass. ox-arena's animals carried the same thin-stroke horns, equine muzzles and stick legs as the rest of this wall — the first review simply looked away, because the typography around them was so good. Score and gate are different numbers; only one of them keeps a set in the gallery.
 
 The maintainer's audit adds the corollary: surviving at 4/5 is standing on a trapdoor. A set whose passes are all borderline has not passed the gate — it has been tolerated by it, and tolerance does not survive the next pair of eyes. ox-sensorium cleared two machine reviews on borderline reads and still died the moment a person, not a rubric, asked the question.
+
+## The fourth audit, 2026-10-04
+
+Two sets had been registered since the third audit. Both were rendered at 1440×900 and at 375×812 and judged on the page. ox-attention passed at 5/5 and is on the board. ox-ledger did not, and the folder was removed. The grade below is the verdict the cut followed.
+
+| Model | Set | Score | OX gate |
+|-------|-----|-------|---------|
+| Composer | ox-ledger | 57/100 | 0/5 |
+
+**Composer failed with 0/5 OX passes, but had overall 57/100 score, what a shame!** Five records of one animal — brand, draught, breed, sacred mount, wild cousin — and five display faces that know what they are doing. Then the animal. Every head wears two upright filled lobes, and on a round body those lobes are rabbit ears. Brand is a branded hare. Draught has a gold yoke beam across the shoulders and still reads hare. Zebu's hump is a second blob behind the same rabbit head, while the copy boasts of a silhouette no European ox can claim. Nandi has a nose ring and a red mouth and folded forelegs that were never drawn. Bison is a ball with two short hooks, closer to a capybara than to a cape. The signatures are real and visible at desktop. At 375 they are clipped by the dock, or stamped through the sentence they were meant to sign. Giving the horns mass was the lesson of this wall. Mass in the shape of an ear is the same failure.
