@@ -1,0 +1,134 @@
+.th-ledger-zebu {
+  --lz-night: #07122a;
+  --lz-indigo: #142a5c;
+  --lz-rain: #8eabc8;
+  --lz-turmeric: #e8b339;
+  --lz-cream: #f3e6c8;
+  color: var(--lz-cream);
+  background:
+    linear-gradient(180deg, #0a1838 0%, var(--lz-indigo) 40%, #1a3a4a 78%, #245048 100%);
+}
+
+.th-ledger-zebu::selection {
+  background: var(--lz-turmeric);
+  color: var(--lz-night);
+}
+
+.ox-ledger-zebu {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding: clamp(1.25rem, 3.5vw, 2.75rem);
+  font-family: Outfit, system-ui, sans-serif;
+}
+
+.ox-ledger-zebu-sky {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 75% 15%, rgba(232, 179, 57, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 20% 80%, rgba(40, 120, 100, 0.25), transparent 60%);
+  pointer-events: none;
+}
+
+.ox-ledger-zebu-rain {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, transparent, var(--lz-rain));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ox-ledger-zebu-layout {
+  position: relative;
+  z-index: 2;
+  min-height: calc(100vh - 2 * clamp(1.25rem, 3.5vw, 2.75rem));
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.ox-ledger-zebu-kicker {
+  margin: 0 0 0.5rem;
+  font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--lz-turmeric);
+  letter-spacing: 0.02em;
+}
+
+.ox-ledger-zebu-title {
+  margin: 0 0 0.85rem;
+  font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: clamp(3.4rem, 10vw, 7rem);
+  line-height: 0.95;
+  font-weight: 400;
+  color: var(--lz-cream);
+}
+
+.ox-ledger-zebu-lede {
+  margin: 0;
+  max-width: 32ch;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  line-height: 1.55;
+  color: var(--lz-rain);
+}
+
+.ox-ledger-zebu-stage {
+  width: min(100%, 520px);
+  justify-self: center;
+}
+
+.ox-ledger-zebu-ox {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 24px 40px rgba(4, 12, 30, 0.55));
+}
+
+.ox-ledger-zebu-plate {
+  position: absolute;
+  right: clamp(1rem, 3vw, 2.5rem);
+  bottom: clamp(5.5rem, 12vh, 7.5rem);
+  z-index: 3;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid rgba(232, 179, 57, 0.55);
+  background: linear-gradient(145deg, #8a6a2a, #5a4418);
+  color: #f7e7b0;
+  font-family: Outfit, sans-serif;
+  font-size: clamp(0.58rem, 1.1vw, 0.7rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 2px 3px 0 rgba(4, 12, 30, 0.45);
+}
+
+@media (max-width: 820px) {
+  .ox-ledger-zebu-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-bottom: 5rem;
+  }
+
+  .ox-ledger-zebu-stage {
+    order: -1;
+    width: min(100%, 360px);
+  }
+
+  .ox-ledger-zebu-lede {
+    max-width: none;
+  }
+
+  .ox-ledger-zebu-plate {
+    left: 1.25rem;
+    right: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-ledger-zebu-rain {
+    display: none;
+  }
+}
