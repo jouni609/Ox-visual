@@ -1,0 +1,115 @@
+.ox-lantern-apis {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(ellipse at 50% 0%, #1F3B73 0%, #0D1B3D 50%, #060B18 100%);
+  color: #F2E7CE;
+  font-family: "Cormorant Garamond", serif;
+  padding: clamp(2rem, 5vw, 4rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 2rem;
+}
+
+.ox-lantern-apis,
+.th-ox-lantern {
+  --bg: #0D1B3D;
+  --ink: #F2E7CE;
+  --gold: #D4AF37;
+  --lapis: #1F3B73;
+}
+
+.ox-lantern-apis::selection,
+.th-ox-lantern::selection {
+  background: #D4AF37;
+  color: #060B18;
+}
+
+.ox-lantern-apis-mast {
+  max-width: 760px;
+}
+
+.ox-lantern-apis-kicker {
+  font-family: "Cinzel", serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #D4AF37;
+  margin: 0 0 0.75rem;
+}
+
+.ox-lantern-apis-title {
+  font-family: "Cinzel", serif;
+  font-size: clamp(3.2rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 0.9;
+  margin: 0;
+  color: #F2E7CE;
+  text-shadow: 0 0 24px rgba(212, 175, 55, 0.35);
+}
+
+.ox-lantern-apis-sub {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-style: italic;
+  margin: 1rem 0 0;
+  max-width: 46ch;
+}
+
+.ox-lantern-apis-shrine {
+  position: relative;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: linear-gradient(180deg, rgba(31, 59, 115, 0.15) 0%, rgba(6, 11, 24, 0.6) 100%);
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.ox-lantern-apis-figure {
+  width: 100%;
+  height: auto;
+}
+
+.ox-lantern-apis-cartouche {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border: 1px solid #D4AF37;
+  padding: 0.6rem 0.8rem;
+  background: rgba(6, 11, 24, 0.7);
+}
+.ox-lantern-apis-cartouche-line {
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #D4AF37;
+}
+
+.ox-lantern-apis-signature {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid #D4AF37;
+  padding: 0.35rem 0.6rem;
+  background: rgba(6, 11, 24, 0.7);
+  color: #F2E7CE;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-lantern-apis-figure circle {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ox-lantern-apis-shrine {
+    min-height: 320px;
+  }
+}

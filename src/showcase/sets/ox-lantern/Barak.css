@@ -1,0 +1,129 @@
+.ox-lantern-barak {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #163836 0%, #0D2322 60%, #061413 100%);
+  color: #DCEBE6;
+  font-family: "Besley", serif;
+  padding: clamp(2rem, 5vw, 4rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 2rem;
+}
+
+.ox-lantern-barak,
+.th-ox-lantern {
+  --bg: #0D2322;
+  --ink: #DCEBE6;
+  --teal: #1F5E5A;
+  --rain: #6DB7A8;
+  --brass: #EFC97A;
+}
+
+.ox-lantern-barak::selection,
+.th-ox-lantern::selection {
+  background: #6DB7A8;
+  color: #061413;
+}
+
+.ox-lantern-barak-mast {
+  max-width: 760px;
+}
+
+.ox-lantern-barak-kicker {
+  font-family: "Sora", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6DB7A8;
+  margin: 0 0 0.75rem;
+}
+
+.ox-lantern-barak-title {
+  font-family: "Besley", serif;
+  font-size: clamp(3.2rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 0.9;
+  margin: 0;
+  color: #DCEBE6;
+}
+
+.ox-lantern-barak-sub {
+  font-family: "Sora", sans-serif;
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  margin: 1rem 0 0;
+  max-width: 48ch;
+}
+
+.ox-lantern-barak-plain {
+  position: relative;
+  border: 1px solid rgba(109, 183, 168, 0.35);
+  background: linear-gradient(180deg, rgba(31, 94, 90, 0.2) 0%, rgba(6, 20, 19, 0.7) 100%);
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.ox-lantern-barak-rain {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    100deg,
+    rgba(109, 183, 168, 0.18) 0 1px,
+    transparent 1px 12px
+  );
+  animation: ox-lantern-barak-rain 8s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes ox-lantern-barak-rain {
+  to {
+    transform: translateY(60px);
+  }
+}
+
+.ox-lantern-barak-figure {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.ox-lantern-barak-seal {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  border: 1px dashed #6DB7A8;
+  padding: 0.6rem 0.8rem;
+  background: rgba(6, 20, 19, 0.75);
+  font-family: "Sora", sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #EFC97A;
+}
+
+.ox-lantern-barak-signature {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  font-family: "Sora", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid #6DB7A8;
+  padding: 0.35rem 0.6rem;
+  background: rgba(6, 20, 19, 0.75);
+  color: #DCEBE6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-lantern-barak-rain {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ox-lantern-barak-plain {
+    min-height: 300px;
+  }
+}

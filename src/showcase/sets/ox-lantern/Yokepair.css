@@ -1,0 +1,138 @@
+.ox-lantern-yokepair {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: #14120E;
+  color: #F2E7CE;
+  font-family: "Courier Prime", monospace;
+  padding: clamp(2rem, 5vw, 4rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 2rem;
+}
+
+.ox-lantern-yokepair,
+.th-ox-lantern {
+  --bg: #14120E;
+  --ink: #F2E7CE;
+  --iron: #B84A1B;
+  --steel: #3B352C;
+}
+
+.ox-lantern-yokepair::selection,
+.th-ox-lantern::selection {
+  background: #B84A1B;
+  color: #F2E7CE;
+}
+
+.ox-lantern-yokepair-mast {
+  max-width: 760px;
+}
+
+.ox-lantern-yokepair-kicker {
+  font-family: "Courier Prime", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #B84A1B;
+  margin: 0 0 0.75rem;
+}
+
+.ox-lantern-yokepair-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(3rem, 9.5vw, 7.5rem);
+  font-weight: 900;
+  line-height: 0.9;
+  margin: 0;
+  letter-spacing: -0.02em;
+  color: #F2E7CE;
+}
+
+.ox-lantern-yokepair-sub {
+  font-family: "Courier Prime", monospace;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  margin: 1rem 0 0;
+  max-width: 46ch;
+}
+
+.ox-lantern-yokepair-field {
+  position: relative;
+  border: 1px solid #3B352C;
+  background: linear-gradient(180deg, #1A1814 0%, #221E18 100%);
+  overflow: hidden;
+  min-height: 380px;
+}
+
+.ox-lantern-yokepair-furrows {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    115deg,
+    transparent 0 22px,
+    rgba(184, 74, 27, 0.18) 22px 24px
+  );
+  animation: ox-lantern-yokepair-scroll 12s linear infinite;
+}
+
+@keyframes ox-lantern-yokepair-scroll {
+  to {
+    transform: translateX(-40px);
+  }
+}
+
+.ox-lantern-yokepair-figure {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.ox-lantern-yokepair-tag {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border: 1px solid #F2E7CE;
+  background: rgba(20, 18, 14, 0.85);
+  padding: 0.6rem 0.8rem;
+}
+.ox-lantern-yokepair-tag-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B84A1B;
+}
+
+.ox-lantern-yokepair-signature {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  font-family: "Courier Prime", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid #F2E7CE;
+  padding: 0.35rem 0.6rem;
+  background: #14120E;
+  color: #F2E7CE;
+}
+
+.ox-lantern-yokepair:focus-visible {
+  outline: 2px solid #B84A1B;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-lantern-yokepair-furrows {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ox-lantern-yokepair-field {
+    min-height: 300px;
+  }
+}

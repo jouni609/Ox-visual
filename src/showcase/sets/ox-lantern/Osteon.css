@@ -1,0 +1,152 @@
+.ox-lantern-osteon {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 20% 10%, #F7F1E3 0%, #EFE6D2 45%, #E3D7BC 100%);
+  color: #1E1A14;
+  font-family: "IBM Plex Mono", monospace;
+  padding: clamp(2rem, 5vw, 4rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 2rem;
+}
+
+.ox-lantern-osteon,
+.th-ox-lantern {
+  --bg: #F7F1E3;
+  --ink: #1E1A14;
+  --bone: #E9DEC3;
+  --artery: #8A3B3B;
+}
+
+.ox-lantern-osteon::selection,
+.th-ox-lantern::selection {
+  background: #8A3B3B;
+  color: #F7F1E3;
+}
+
+.ox-lantern-osteon-mast {
+  max-width: 760px;
+}
+
+.ox-lantern-osteon-kicker {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8A3B3B;
+  margin: 0 0 0.75rem;
+}
+
+.ox-lantern-osteon-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(3rem, 9vw, 7rem);
+  font-weight: 900;
+  line-height: 0.9;
+  margin: 0;
+  color: #1E1A14;
+}
+
+.ox-lantern-osteon-sub {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  margin: 1rem 0 0;
+  max-width: 44ch;
+}
+
+.ox-lantern-osteon-figure {
+  width: min(92vw, 760px);
+  height: auto;
+  justify-self: center;
+}
+
+.ox-lantern-osteon-ground {
+  stroke: #8A3B3B;
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
+}
+
+.ox-lantern-osteon-skin {
+  fill: rgba(233, 222, 195, 0.35);
+  stroke: #1E1A14;
+  stroke-width: 1.2;
+}
+
+.ox-lantern-osteon-skull,
+.ox-lantern-osteon-pelvis {
+  fill: #E9DEC3;
+  stroke: #1E1A14;
+  stroke-width: 1.4;
+}
+
+.ox-lantern-osteon-horn,
+.ox-lantern-osteon-neck,
+.ox-lantern-osteon-leg,
+.ox-lantern-osteon-spine,
+.ox-lantern-osteon-rib,
+.ox-lantern-osteon-tail {
+  fill: none;
+  stroke: #1E1A14;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.ox-lantern-osteon-rib {
+  stroke: #8A3B3B;
+  stroke-width: 1.1;
+}
+
+.ox-lantern-osteon-specimen {
+  justify-self: end;
+  width: min(90vw, 280px);
+  border: 1px solid #1E1A14;
+  background: #F7F1E3;
+  padding: 1rem 1.25rem;
+  transform: rotate(-2deg);
+  box-shadow: 4px 4px 0 #8A3B3B;
+}
+
+.ox-lantern-osteon-specimen-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8A3B3B;
+  margin: 0 0 0.5rem;
+}
+
+.ox-lantern-osteon-specimen-line {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+}
+
+.ox-lantern-osteon-signature {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid #1E1A14;
+  padding: 0.35rem 0.6rem;
+  background: #F7F1E3;
+  box-shadow: 3px 3px 0 #8A3B3B;
+}
+
+.ox-lantern-osteon:focus-visible {
+  outline: 2px solid #8A3B3B;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-lantern-osteon-figure {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ox-lantern-osteon {
+    padding: 1.5rem;
+  }
+}

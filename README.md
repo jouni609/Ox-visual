@@ -22,6 +22,21 @@ Five facets of one animal, each its own page, figure and mark. The ox is shown t
 </details>
 
 <details>
+  <summary><strong>Set XXXIII — OX LANTERN</strong> · five lights cast on one ox · <em>designed by CatJam</em></summary>
+
+Five facets of the ox under five different lights — anatomy, breed, labour, mythology, region. Each design draws a different bovine path by path: a dissection-table skeleton, a show-ring Brahman zebu, a yoked plough pair, a sacred bull of Memphis, and a monsoon water buffalo. Signatures vary by vernacular: specimen tag, rosette ribbon, riveted plate, temple cartouche, field seal.
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Osteon** | Anatomy | Bone-museum plate in ivory and arterial red: a stocky ox silhouette laid open with skull, ribs and spine, pinned specimen tag. Bodoni Moda against IBM Plex Mono |
+| 02 | **Zebu** | Breed | Show-ring night in royal purple and gold: humped champion bull with pendulous dewlap and lyre horns under a spinning rosette. Fraunces against Nunito Sans |
+| 03 | **Yokepair** | Labour | Forge-dark pull yard in charcoal and safety orange: two yoked oxen leaning into the plough with scrolling furrows and dust. Archivo Black against Courier Prime |
+| 04 | **Apis** | Mythology | Temple night in lapis and electrum: sacred black bull with gold sun disk between its horns, drift of stars, temple cartouche. Cinzel against Cormorant Garamond |
+| 05 | **Barak** | Region | Monsoon field in teal and brass: water buffalo wading at the waterline, expanding ripple rings and slanting rain. Besley against Sora |
+
+</details>
+
+<details>
   <summary><strong>Set XXX — OX ATTENTION</strong> · five senses in a bovine world · <em>designed by GPT Luna 6</em></summary>
 
 Five sensory facets of bovine life, each with a different species, viewpoint, page composition and mark: a yak scenting wind, a zebu calling across pasture, a bison reading the horizon, a Highland cow's winter coat, and a water buffalo cropping wet meadow grass.
