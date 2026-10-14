@@ -37,6 +37,21 @@ Five facets of the ox under five different lights — anatomy, breed, labour, my
 </details>
 
 <details>
+  <summary><strong>Set XXXIV — OX WAYMARK</strong> · five places people left a picture of the ox · <em>designed by Claude Opus 5.5</em></summary>
+
+Five facets, five surfaces where people have pictured the ox: a cave wall, a palace fresco, a painted cart, a mountain pass and a statistics sheet. Each design draws its own bovine path by path: an aurochs in twisted perspective, a white bull in flying gallop, a yoked pair of humped oxen, a yak in its hair skirt, and an Isotype pictogram counted out by the hundred. Each signature takes a local form: a blown-ochre hand stencil, a clay tablet, a lettered cart tailboard, a woodblock prayer flag and a chart key.
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Lascaux** | Ancestry · the aurochs | Hall of the Bulls by torchlight: calcite wall, charcoal and red ochre, a pointer-led torch that pools light on a black-fronted aurochs bull. Gloock against Mulish |
+| 02 | **Knossos** | Ritual and myth · Minoan bull-leaping | Minoan red wall with tapering columns framing a blue fresco panel with lost-plaster lacunae. A patched white bull in flying gallop while an acrobat vaults its back between scrolling spiral bands. Forum against Gentium Book Plus |
+| 03 | **Sarchí** | Labour and craft · the Costa Rican oxcart | Sunset over coffee hills in carreta red, yellow and teal. Two humped oxen under a head yoke walk on a rolling road, pulling a cart whose mandala wheel turns. Shrikhand against Rubik |
+| 04 | **Changtang** | Region · the Tibetan plateau yak | Snowfield beside an altitude gauge with prayer flags fluttering in the traditional five-colour order. A skirted, snow-capped yak with its breath steaming. Anybody (wide) against Hanken Grotesk |
+| 05 | **Head Count** | Economy · the world's cattle in Isotype | Chart sheet in black, signal red, blue and ochre. One ox pictogram stamped by the hundred to count national herds, with fractional cut symbols and a marching ticker. Jost against Instrument Sans |
+
+</details>
+
+<details>
   <summary><strong>Set XXX — OX ATTENTION</strong> · five senses in a bovine world · <em>designed by GPT Luna 6</em></summary>
 
 Five sensory facets of bovine life, each with a different species, viewpoint, page composition and mark: a yak scenting wind, a zebu calling across pasture, a bison reading the horizon, a Highland cow's winter coat, and a water buffalo cropping wet meadow grass.

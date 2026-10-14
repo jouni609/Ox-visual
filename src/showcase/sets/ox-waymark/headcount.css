@@ -1,0 +1,340 @@
+.th-ox-waymark-hc {
+  --hc-paper: #ebe7dc;
+  --hc-ink: #161616;
+  --hc-red: #d63b2f;
+  --hc-blue: #1f4fa0;
+  --hc-ochre: #e1a32b;
+  --hc-rule: #161616;
+  --hc-icon: clamp(26px, 3vw, 42px);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--hc-paper);
+  color: var(--hc-ink);
+  font-family: 'Instrument Sans', system-ui, sans-serif;
+  font-size: clamp(15px, 0.6vw + 12px, 18px);
+  line-height: 1.55;
+}
+
+.th-ox-waymark-hc ::selection {
+  background: var(--hc-blue);
+  color: var(--hc-paper);
+}
+
+.ox-waymark-hc-ticker {
+  overflow: hidden;
+  border-bottom: 3px solid var(--hc-rule);
+  padding: 10px 0;
+  background: var(--hc-paper);
+}
+
+.ox-waymark-hc-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ox-waymark-hc-march 30s linear infinite;
+}
+
+.ox-waymark-hc-tick {
+  width: 30px;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+@keyframes ox-waymark-hc-march {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ox-waymark-hc-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(20px, 4vw, 64px);
+  padding: clamp(40px, 7vw, 96px) clamp(20px, 5vw, 72px);
+  border-bottom: 3px solid var(--hc-rule);
+  min-height: calc(100vh - 60px);
+}
+
+.ox-waymark-hc-sheet {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.78em;
+  border-top: 2px solid var(--hc-ink);
+  border-bottom: 2px solid var(--hc-ink);
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.ox-waymark-hc-title {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  margin: 0.4em 0 0.4em;
+  text-transform: uppercase;
+}
+
+.ox-waymark-hc-big {
+  display: block;
+  font-weight: 700;
+  font-size: 2.6em;
+  line-height: 0.85;
+  color: var(--hc-red);
+  letter-spacing: -0.03em;
+}
+
+.ox-waymark-hc-lede {
+  max-width: 40ch;
+}
+
+.ox-waymark-hc-hero-ox svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.ox-waymark-hc-callout-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 3px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.ox-waymark-hc-chart {
+  padding: clamp(48px, 7vw, 96px) clamp(20px, 5vw, 72px);
+  border-bottom: 3px solid var(--hc-rule);
+}
+
+.ox-waymark-hc-chart-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: clamp(20px, 3vw, 36px);
+}
+
+.ox-waymark-hc-chart h2,
+.ox-waymark-hc-method h2 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 3.4vw, 2.8rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.ox-waymark-hc-switch {
+  display: inline-flex;
+  border: 2px solid var(--hc-ink);
+}
+
+.ox-waymark-hc-btn {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  padding: 10px 18px;
+  background: var(--hc-paper);
+  color: var(--hc-ink);
+}
+
+.ox-waymark-hc-btn[aria-pressed='true'] {
+  background: var(--hc-ink);
+  color: var(--hc-paper);
+}
+
+.ox-waymark-hc-btn:focus-visible {
+  outline: 3px solid var(--hc-red);
+  outline-offset: 3px;
+}
+
+.ox-waymark-hc-rows {
+  list-style: none;
+  border-top: 2px solid var(--hc-ink);
+}
+
+.ox-waymark-hc-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 180px) minmax(0, 1fr) minmax(90px, 160px);
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.35);
+}
+
+.ox-waymark-hc-place {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ox-waymark-hc-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  align-items: center;
+}
+
+.ox-waymark-hc-stamp {
+  display: inline-block;
+}
+
+.ox-waymark-hc-stamp svg {
+  width: var(--hc-icon);
+  height: auto;
+}
+
+.ox-waymark-hc-num {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.ox-waymark-hc-key {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  font-size: 0.9em;
+}
+
+.ox-waymark-hc-key-ox {
+  width: 34px;
+}
+
+.ox-waymark-hc-method {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 72px);
+  align-items: center;
+  padding: clamp(48px, 7vw, 96px) clamp(20px, 5vw, 72px);
+  border-bottom: 3px solid var(--hc-rule);
+  background: var(--hc-ochre);
+}
+
+.ox-waymark-hc-method p {
+  margin-top: 1rem;
+  max-width: 54ch;
+}
+
+.ox-waymark-hc-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ox-waymark-hc-wrong,
+.ox-waymark-hc-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 16px;
+  background: var(--hc-paper);
+  border: 2px solid var(--hc-ink);
+}
+
+.ox-waymark-hc-wrong span,
+.ox-waymark-hc-right > span:last-child {
+  flex-basis: 100%;
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+}
+
+.ox-waymark-hc-small {
+  width: clamp(36px, 5vw, 56px);
+}
+
+.ox-waymark-hc-large {
+  width: clamp(72px, 10vw, 112px);
+}
+
+.ox-waymark-hc-pair {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.ox-waymark-hc-foot {
+  padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 72px) clamp(130px, 15vw, 180px);
+}
+
+.ox-waymark-hc-colophon {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 10px 20px;
+  border: 3px solid var(--hc-ink);
+  padding: 16px 22px;
+}
+
+.ox-waymark-hc-colophon-label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+}
+
+.ox-waymark-hc-colophon-icons {
+  display: inline-flex;
+  gap: 8px;
+  justify-self: end;
+}
+
+.ox-waymark-hc-colophon-icons svg {
+  width: 32px;
+}
+
+.ox-waymark-hc-colophon-sig {
+  grid-column: 1 / -1;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  border-top: 2px solid var(--hc-ink);
+  padding-top: 10px;
+}
+
+@media (max-width: 820px) {
+  .ox-waymark-hc-hero,
+  .ox-waymark-hc-method {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-waymark-hc-hero {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .ox-waymark-hc-row {
+    grid-template-columns: 1fr auto;
+  }
+
+  .ox-waymark-hc-icons {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .ox-waymark-hc-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-waymark-hc-ticker-track {
+    animation: none;
+  }
+}

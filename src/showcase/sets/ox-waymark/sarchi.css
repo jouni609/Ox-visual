@@ -1,0 +1,313 @@
+.th-ox-waymark-sa {
+  --sa-green: #0e5b45;
+  --sa-leaf: #17795c;
+  --sa-red: #e2452b;
+  --sa-yellow: #f6c343;
+  --sa-teal: #36b5a5;
+  --sa-pink: #f06a8c;
+  --sa-cream: #fff6e5;
+  --sa-ink: #2b2420;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--sa-green);
+  color: var(--sa-cream);
+  font-family: 'Rubik', system-ui, sans-serif;
+  font-size: clamp(15px, 0.8vw + 11px, 18px);
+  line-height: 1.6;
+}
+
+.th-ox-waymark-sa ::selection {
+  background: var(--sa-yellow);
+  color: var(--sa-ink);
+}
+
+.ox-waymark-sa-hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: minmax(0, 1fr);
+  background: linear-gradient(180deg, #f59a5b 0%, #f7b866 30%, #fbd78a 55%);
+  overflow: hidden;
+}
+
+.ox-waymark-sa-hills {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ox-waymark-sa-copy {
+  position: relative;
+  padding: clamp(28px, 6vh, 64px) clamp(20px, 6vw, 90px) 0;
+  color: var(--sa-ink);
+  max-width: 980px;
+}
+
+.ox-waymark-sa-kicker {
+  display: inline-block;
+  background: var(--sa-ink);
+  color: var(--sa-yellow);
+  padding: 0.3em 0.9em;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.82em;
+  letter-spacing: 0.06em;
+}
+
+.ox-waymark-sa-title {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5.4vw, 5rem);
+  line-height: 0.98;
+  margin: 0.25em 0 0.3em;
+  color: var(--sa-red);
+  text-shadow: 4px 4px 0 var(--sa-ink);
+}
+
+.ox-waymark-sa-lede {
+  max-width: 60ch;
+  font-weight: 500;
+  color: var(--sa-ink);
+}
+
+.ox-waymark-sa-road {
+  position: relative;
+  align-self: end;
+  padding: 0 clamp(8px, 4vw, 60px);
+}
+
+.ox-waymark-sa-svg {
+  position: relative;
+  z-index: 1;
+  width: min(1240px, 100%, calc((100vh - 400px) * 2.5));
+  margin: 0 auto;
+  height: auto;
+  overflow: visible;
+}
+
+.ox-waymark-sa-ground {
+  height: clamp(36px, 6vw, 70px);
+  margin: -2% calc(-1 * clamp(8px, 4vw, 60px)) 0;
+  background:
+    repeating-linear-gradient(90deg, #c98f4e 0 40px, #b67c40 40px 44px, #c98f4e 44px 90px) 0 0 / 180px 100%,
+    #c98f4e;
+  border-top: 6px solid #8a5a2c;
+  animation: ox-waymark-sa-roll 2.4s linear infinite;
+}
+
+@keyframes ox-waymark-sa-roll {
+  to {
+    background-position: -180px 0;
+  }
+}
+
+.ox-waymark-sa-stops {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2.4vw, 32px);
+  padding: clamp(56px, 9vw, 120px) clamp(20px, 5vw, 72px);
+  background:
+    radial-gradient(circle at 10px 10px, rgba(255, 246, 229, 0.08) 3px, transparent 4px) 0 0 / 28px 28px,
+    var(--sa-green);
+}
+
+.ox-waymark-sa-stop {
+  background: var(--sa-cream);
+  color: var(--sa-ink);
+  padding: clamp(18px, 2.4vw, 28px);
+  border-radius: 18px;
+  border: 4px solid var(--sa-ink);
+  box-shadow: 6px 6px 0 var(--sa-red);
+}
+
+.ox-waymark-sa-stop:nth-child(2) {
+  box-shadow: 6px 6px 0 var(--sa-teal);
+}
+
+.ox-waymark-sa-stop:nth-child(3) {
+  box-shadow: 6px 6px 0 var(--sa-yellow);
+}
+
+.ox-waymark-sa-stop:nth-child(4) {
+  box-shadow: 6px 6px 0 var(--sa-pink);
+}
+
+.ox-waymark-sa-stop h2 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.05;
+  color: #b8301b;
+  margin-bottom: 0.6rem;
+}
+
+.ox-waymark-sa-stop h2 small {
+  display: block;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.45em;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sa-ink);
+  margin-top: 0.3em;
+}
+
+.ox-waymark-sa-road-note {
+  padding: 0 clamp(20px, 5vw, 72px) clamp(56px, 9vw, 110px);
+  max-width: 1040px;
+}
+
+.ox-waymark-sa-route {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Shrikhand', cursive;
+  font-size: clamp(1.3rem, 3vw, 2.2rem);
+  color: var(--sa-yellow);
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.ox-waymark-sa-dash {
+  flex: 1;
+  min-width: 60px;
+  height: 6px;
+  background: repeating-linear-gradient(90deg, var(--sa-cream) 0 14px, transparent 14px 26px);
+  border-radius: 3px;
+}
+
+.ox-waymark-sa-foot {
+  padding: 0 clamp(20px, 5vw, 72px) clamp(120px, 14vw, 170px);
+}
+
+.ox-waymark-sa-board {
+  position: relative;
+  max-width: 720px;
+  background: var(--sa-red);
+  border: 5px solid var(--sa-ink);
+  border-radius: 10px;
+  padding: clamp(22px, 3.6vw, 40px) clamp(22px, 4vw, 48px);
+  box-shadow: inset 0 0 0 8px var(--sa-yellow), inset 0 0 0 12px var(--sa-ink);
+  text-align: center;
+}
+
+.ox-waymark-sa-board::before,
+.ox-waymark-sa-board::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  border-radius: 50%;
+  background: var(--sa-yellow);
+  border: 4px solid var(--sa-ink);
+}
+
+.ox-waymark-sa-board::before {
+  left: 22px;
+}
+
+.ox-waymark-sa-board::after {
+  right: 22px;
+}
+
+.ox-waymark-sa-board-text {
+  font-family: 'Shrikhand', cursive;
+  font-size: clamp(1rem, 2.4vw, 1.6rem);
+  color: var(--sa-cream);
+  text-shadow: 2px 2px 0 var(--sa-ink);
+  padding: 0 34px;
+}
+
+.ox-waymark-sa-board-sub {
+  margin-top: 0.4rem;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--sa-cream);
+}
+
+@media (max-width: 960px) {
+  .ox-waymark-sa-stops {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .ox-waymark-sa-stops {
+    grid-template-columns: 1fr;
+  }
+
+  .ox-waymark-sa-hero {
+    min-height: auto;
+  }
+
+  .ox-waymark-sa-road {
+    margin-top: 48px;
+    padding-bottom: 96px;
+  }
+
+  .ox-waymark-sa-svg {
+    width: 150vw;
+    max-width: none;
+    margin-left: -50vw;
+  }
+}
+
+.ox-waymark-sa-leg {
+  transform-box: fill-box;
+  transform-origin: 50% 0;
+  animation: ox-waymark-sa-swing 1.2s ease-in-out infinite;
+}
+
+.ox-waymark-sa-leg--b {
+  animation-delay: -0.6s;
+}
+
+@keyframes ox-waymark-sa-swing {
+  0%,
+  100% {
+    transform: rotate(-9deg);
+  }
+  50% {
+    transform: rotate(9deg);
+  }
+}
+
+.ox-waymark-sa-bob {
+  animation: ox-waymark-sa-bob 0.6s ease-in-out infinite;
+}
+
+@keyframes ox-waymark-sa-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.ox-waymark-sa-wheel {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: ox-waymark-sa-turn 6s linear infinite;
+}
+
+@keyframes ox-waymark-sa-turn {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ox-waymark-sa-ground,
+  .ox-waymark-sa-leg,
+  .ox-waymark-sa-bob,
+  .ox-waymark-sa-wheel {
+    animation: none;
+  }
+}
