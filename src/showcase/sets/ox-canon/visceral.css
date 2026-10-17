@@ -1,0 +1,475 @@
+.th-ox-canon-visc {
+  --ox-canon-visc-bg: #0E242B;
+  --ox-canon-visc-bg-deep: #08171C;
+  --ox-canon-visc-vellum: #F2ECE1;
+  --ox-canon-visc-vellum-dark: #E2D8C5;
+  --ox-canon-visc-ink: #1A1410;
+  --ox-canon-visc-muted: #524330;
+  --ox-canon-visc-vermilion: #D93829;
+  --ox-canon-visc-gold: #E5A93C;
+  --ox-canon-visc-teal: #2B8A78;
+  --ox-canon-visc-bone: #FAF6EE;
+  --ox-canon-visc-brass: #C89D54;
+}
+
+.th-ox-canon-visc ::selection {
+  background: var(--ox-canon-visc-vermilion);
+  color: var(--ox-canon-visc-bone);
+}
+
+.ox-canon-visc-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 25% 20%, #163842 0%, var(--ox-canon-visc-bg) 55%, var(--ox-canon-visc-bg-deep) 100%);
+  color: var(--ox-canon-visc-bone);
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 4vw, 3.5rem) 6.5rem;
+}
+
+.ox-canon-visc-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(242, 236, 225, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242, 236, 225, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+  pointer-events: none;
+}
+
+.ox-canon-visc-header {
+  position: relative;
+  z-index: 1;
+  max-width: 1380px;
+  margin: 0 auto 1.5rem;
+  border-bottom: 1px solid rgba(242, 236, 225, 0.18);
+  padding-bottom: 1.25rem;
+}
+
+.ox-canon-visc-folio-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  color: var(--ox-canon-visc-brass);
+  margin-bottom: 0.75rem;
+}
+
+.ox-canon-visc-title-row {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.5rem;
+  align-items: end;
+  margin-bottom: 1.15rem;
+}
+
+.ox-canon-visc-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  color: #F08A7E;
+  margin: 0 0 0.25rem;
+}
+
+.ox-canon-visc-h1 {
+  font-family: 'Rozha One', serif;
+  font-weight: 400;
+  font-size: clamp(2.25rem, 4.4vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  color: var(--ox-canon-visc-bone);
+  margin: 0;
+}
+
+.ox-canon-visc-lead {
+  font-size: clamp(0.95rem, 1.1vw, 1.06rem);
+  line-height: 1.58;
+  color: #D7E2E5;
+  margin: 0;
+}
+
+.ox-canon-visc-layer-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ox-canon-visc-layer-caption {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  color: #B4C8CE;
+  margin-right: 0.35rem;
+}
+
+.ox-canon-visc-layer-btn {
+  background: rgba(242, 236, 225, 0.07);
+  color: var(--ox-canon-visc-bone);
+  border: 1px solid rgba(242, 236, 225, 0.24);
+  border-radius: 3px;
+  padding: 0.42rem 0.85rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.ox-canon-visc-layer-btn:hover {
+  background: rgba(242, 236, 225, 0.14);
+}
+
+.ox-canon-visc-layer-btn.is-active {
+  background: var(--ox-canon-visc-vermilion);
+  border-color: #FF8A7A;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.ox-canon-visc-layer-btn:focus-visible,
+.ox-canon-visc-tab:focus-visible {
+  outline: 2px solid var(--ox-canon-visc-gold);
+  outline-offset: 2px;
+}
+
+.ox-canon-visc-workbench {
+  position: relative;
+  z-index: 1;
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.ox-canon-visc-plate-frame {
+  position: relative;
+  background: linear-gradient(165deg, var(--ox-canon-visc-vellum) 0%, var(--ox-canon-visc-vellum-dark) 100%);
+  color: var(--ox-canon-visc-ink);
+  border: 3px solid var(--ox-canon-visc-brass);
+  border-radius: 6px;
+  padding: clamp(0.85rem, 2vw, 1.4rem);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.48), inset 0 0 0 1px rgba(26, 20, 16, 0.25);
+}
+
+.ox-canon-visc-plate-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #6B5B45;
+  pointer-events: none;
+}
+
+.ox-canon-visc-corner-tl {
+  top: 8px;
+  left: 8px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.ox-canon-visc-corner-tr {
+  top: 8px;
+  right: 8px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.ox-canon-visc-corner-bl {
+  bottom: 8px;
+  left: 8px;
+  border-right: none;
+  border-top: none;
+}
+
+.ox-canon-visc-corner-br {
+  bottom: 8px;
+  right: 8px;
+  border-left: none;
+  border-top: none;
+}
+
+.ox-canon-visc-plate-topline,
+.ox-canon-visc-plate-caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--ox-canon-visc-muted);
+}
+
+.ox-canon-visc-plate-topline {
+  border-bottom: 1px solid rgba(26, 20, 16, 0.16);
+  padding-bottom: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.ox-canon-visc-plate-caption {
+  border-top: 1px solid rgba(26, 20, 16, 0.16);
+  padding-top: 0.45rem;
+  margin-top: 0.35rem;
+}
+
+.ox-canon-visc-svg-wrap {
+  width: 100%;
+}
+
+.ox-canon-visc-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ox-canon-visc-organ {
+  transition: filter 0.2s ease;
+}
+
+.ox-canon-visc-organ:hover {
+  filter: brightness(1.12);
+}
+
+.ox-canon-visc-console {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ox-canon-visc-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+}
+
+.ox-canon-visc-tab {
+  background: rgba(242, 236, 225, 0.06);
+  border: 1px solid rgba(242, 236, 225, 0.2);
+  border-radius: 4px;
+  padding: 0.6rem 0.35rem;
+  color: var(--ox-canon-visc-bone);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  transition: all 0.18s ease;
+}
+
+.ox-canon-visc-tab.is-active {
+  background: var(--ox-canon-visc-vellum);
+  color: var(--ox-canon-visc-ink);
+  border-color: var(--ox-canon-visc-brass);
+}
+
+.ox-canon-visc-tab-roman {
+  font-family: 'Rozha One', serif;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.ox-canon-visc-tab-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.ox-canon-visc-dossier {
+  background: rgba(8, 23, 28, 0.82);
+  border: 1px solid rgba(200, 157, 84, 0.38);
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
+.ox-canon-visc-dossier-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.ox-canon-visc-organ-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+}
+
+.ox-canon-visc-latin {
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--ox-canon-visc-brass);
+}
+
+.ox-canon-visc-h2 {
+  font-family: 'Rozha One', serif;
+  font-weight: 400;
+  font-size: 1.65rem;
+  margin: 0 0 0.25rem;
+  color: var(--ox-canon-visc-bone);
+}
+
+.ox-canon-visc-role {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: #F08A7E;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.75rem;
+}
+
+.ox-canon-visc-body {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #DCE6E8;
+  margin: 0 0 1rem;
+}
+
+.ox-canon-visc-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.ox-canon-visc-metric-cell {
+  background: rgba(242, 236, 225, 0.05);
+  border-left: 3px solid var(--ox-canon-visc-brass);
+  padding: 0.5rem 0.65rem;
+}
+
+.ox-canon-visc-metric-cell dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: #A8C0C7;
+  margin-bottom: 0.15rem;
+}
+
+.ox-canon-visc-metric-cell dd {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ox-canon-visc-bone);
+}
+
+.ox-canon-visc-ledger {
+  background: rgba(242, 236, 225, 0.05);
+  border: 1px solid rgba(242, 236, 225, 0.16);
+  border-radius: 6px;
+  padding: 1rem 1.15rem;
+}
+
+.ox-canon-visc-ledger-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  color: var(--ox-canon-visc-brass);
+  margin: 0 0 0.65rem;
+}
+
+.ox-canon-visc-ledger-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.ox-canon-visc-ledger-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  border-bottom: 1px dashed rgba(242, 236, 225, 0.14);
+  padding-bottom: 0.35rem;
+}
+
+.ox-canon-visc-ledger-list li span {
+  color: #BDD0D6;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+}
+
+.ox-canon-visc-ledger-list li strong {
+  color: var(--ox-canon-visc-bone);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.ox-canon-visc-footer {
+  position: relative;
+  z-index: 1;
+  max-width: 1380px;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ox-canon-visc-specimen-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: linear-gradient(180deg, #D8B46C 0%, #A98038 100%);
+  color: #1A1209;
+  padding: 0.55rem 1.1rem;
+  border-radius: 4px;
+  border: 2px solid #593E14;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.ox-canon-visc-rivet {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3B280A;
+  border: 1px solid #F3DC9E;
+}
+
+.ox-canon-visc-tag-inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ox-canon-visc-tag-cat {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: #3D290A;
+}
+
+.ox-canon-visc-signature {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #120B03;
+}
+
+@media (max-width: 980px) {
+  .ox-canon-visc-title-row,
+  .ox-canon-visc-workbench {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .ox-canon-visc-metrics {
+    grid-template-columns: 1fr;
+  }
+  .ox-canon-visc-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

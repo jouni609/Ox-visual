@@ -1,0 +1,340 @@
+.th-ox-canon-car {
+  --ox-canon-car-slate: #13221E;
+  --ox-canon-car-slate-deep: #0B1412;
+  --ox-canon-car-paddy: #84C341;
+  --ox-canon-car-celadon: #E4F0EA;
+  --ox-canon-car-bamboo: #D98A36;
+  --ox-canon-car-coral: #E04F3E;
+}
+
+.th-ox-canon-car ::selection {
+  background: var(--ox-canon-car-paddy);
+  color: var(--ox-canon-car-slate-deep);
+}
+
+.ox-canon-car-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #172B25 0%, var(--ox-canon-car-slate) 55%, var(--ox-canon-car-slate-deep) 100%);
+  color: var(--ox-canon-car-celadon);
+  font-family: 'Newsreader', serif;
+  padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 4vw, 3.5rem) 6.5rem;
+}
+
+.ox-canon-car-header {
+  max-width: 1380px;
+  margin: 0 auto 1.4rem;
+}
+
+.ox-canon-car-survey-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--ox-canon-car-paddy);
+  border-bottom: 1px solid rgba(132, 195, 65, 0.3);
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.ox-canon-car-hero-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+  align-items: end;
+  margin-bottom: 1.15rem;
+}
+
+.ox-canon-car-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  color: var(--ox-canon-car-bamboo);
+  margin: 0 0 0.3rem;
+}
+
+.ox-canon-car-h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.15rem, 4.2vw, 3.85rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.ox-canon-car-lead {
+  font-size: clamp(1rem, 1.15vw, 1.14rem);
+  line-height: 1.56;
+  color: var(--ox-canon-car-celadon);
+  margin: 0;
+}
+
+.ox-canon-car-tier-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.ox-canon-car-tier-caption {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.74rem;
+  color: #A6C4B8;
+  margin-right: 0.35rem;
+}
+
+.ox-canon-car-tier-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: rgba(228, 240, 234, 0.06);
+  border: 1.5px solid rgba(132, 195, 65, 0.3);
+  border-radius: 6px;
+  padding: 0.45rem 0.85rem;
+  color: var(--ox-canon-car-celadon);
+  cursor: pointer;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 0.88rem;
+  transition: all 0.16s ease;
+}
+
+.ox-canon-car-tier-elev {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  background: rgba(132, 195, 65, 0.2);
+  color: var(--ox-canon-car-paddy);
+  padding: 0.12rem 0.42rem;
+  border-radius: 3px;
+}
+
+.ox-canon-car-tier-btn.is-active {
+  background: var(--ox-canon-car-paddy);
+  border-color: #B4E878;
+  color: var(--ox-canon-car-slate-deep);
+}
+
+.ox-canon-car-tier-btn.is-active .ox-canon-car-tier-elev {
+  background: var(--ox-canon-car-slate-deep);
+  color: var(--ox-canon-car-paddy);
+}
+
+.ox-canon-car-tier-btn:focus-visible,
+.ox-canon-car-adapt-btn:focus-visible {
+  outline: 2px solid var(--ox-canon-car-bamboo);
+  outline-offset: 2px;
+}
+
+.ox-canon-car-atlas-grid {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.52fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.ox-canon-car-terrace-plate {
+  background: #1C312B;
+  border: 2.5px solid var(--ox-canon-car-paddy);
+  border-radius: 12px;
+  padding: clamp(0.85rem, 1.8vw, 1.25rem);
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.45);
+}
+
+.ox-canon-car-plate-head,
+.ox-canon-car-plate-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: #B9D8CA;
+}
+
+.ox-canon-car-plate-head {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(132, 195, 65, 0.24);
+}
+
+.ox-canon-car-plate-foot {
+  padding-top: 0.5rem;
+  margin-top: 0.45rem;
+  border-top: 1px solid rgba(132, 195, 65, 0.24);
+}
+
+.ox-canon-car-svg-wrap {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ox-canon-car-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ox-canon-car-fieldnotes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ox-canon-car-tier-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(132, 195, 65, 0.35);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.ox-canon-car-tier-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.ox-canon-car-elev-chip {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: var(--ox-canon-car-bamboo);
+  color: #13221E;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+}
+
+.ox-canon-car-ifugao-name {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.74rem;
+  color: var(--ox-canon-car-paddy);
+}
+
+.ox-canon-car-h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: 1.48rem;
+  margin: 0 0 0.55rem;
+  color: #FFFFFF;
+}
+
+.ox-canon-car-tier-body {
+  font-size: 0.98rem;
+  line-height: 1.58;
+  color: var(--ox-canon-car-celadon);
+  margin: 0;
+}
+
+.ox-canon-car-adapt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ox-canon-car-adapt-heading {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  color: var(--ox-canon-car-paddy);
+  margin: 0 0 0.25rem;
+}
+
+.ox-canon-car-adapt-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1.5px solid rgba(228, 240, 234, 0.16);
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  color: var(--ox-canon-car-celadon);
+  cursor: pointer;
+}
+
+.ox-canon-car-adapt-btn.is-active {
+  background: rgba(132, 195, 65, 0.12);
+  border-color: var(--ox-canon-car-paddy);
+}
+
+.ox-canon-car-adapt-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ox-canon-car-adapt-code {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ox-canon-car-bamboo);
+}
+
+.ox-canon-car-adapt-top strong {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 0.94rem;
+  color: #FFFFFF;
+}
+
+.ox-canon-car-adapt-detail {
+  margin: 0.45rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.52;
+  color: #CBE0D6;
+}
+
+.ox-canon-car-footer {
+  max-width: 1380px;
+  margin: 2rem auto 0;
+}
+
+.ox-canon-car-bamboo-plaque {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.95rem;
+  background: linear-gradient(180deg, #E2A252 0%, #BF7826 100%);
+  color: #161006;
+  border: 2.5px solid #4A2C0A;
+  border-radius: 6px;
+  padding: 0.55rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ox-canon-car-lashing {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #4A2C0A;
+}
+
+.ox-canon-car-plaque-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ox-canon-car-plaque-sub {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #3D2408;
+}
+
+.ox-canon-car-signature {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: #120B02;
+}
+
+@media (max-width: 980px) {
+  .ox-canon-car-hero-row,
+  .ox-canon-car-atlas-grid {
+    grid-template-columns: 1fr;
+  }
+}

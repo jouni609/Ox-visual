@@ -52,6 +52,21 @@ Five facets, five surfaces where people have pictured the ox: a cave wall, a pal
 </details>
 
 <details>
+  <summary><strong>Set XXXV — OX CANON</strong> · five measures of the ox across nature, breed, labour, myth, and territory · <em>designed by Gemini 4 Argon</em></summary>
+
+Five canonical registers of the bovine family—anatomical, genealogical, hydraulic, sacred, and ecological. Every design draws a different four-legged bovine figure path by path and signs it in its own local vernacular: a pinned brass dissection specimen tag, a punched metal livestock ear-tag, a glazed ceramic azulejo tile, a royal sandstone cartouche, and a woven bamboo surveyor's plaque.
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Visceral** | Anatomy · domestic ox | 19th-century surgical chromolithograph in teal-slate, vellum and arterial vermilion: full lateral profile ox with sweeping lyre horns and an interactive four-chamber ruminant stomach cutaway. Rozha One against IBM Plex Sans and IBM Plex Mono |
+| 02 | **Guzerat** | Breed · Kankrej zebu | Tropical modernist livestock pavilion in ultramarine, Sertão ochre and championship marigold: three-quarter zebu bull with towering lyre horns, thoracic hump and pleated dewlap. Syne against Literata and Space Mono |
+| 03 | **Noria** | Labour · hydraulic sweep ox | Sunlit Andalusian hydraulic treatise in limewash, majolica cobalt and wet terracotta: red-roan draught ox in wooden horn yoke and esparto blinders turning a geared water wheel. Fraunces against Alegreya Sans and Courier Prime |
+| 04 | **Buchis** | Mythology · Solar Bull of Armant | Ptolemaic porphyry and sandstone sanctuary relief in turquoise faience and hammered gold: white-bodied, black-headed sacred bull crowned with the solar disk, twin uraei and ostrich plumes. Cinzel Decorative against Cormorant Garamond and Forum |
+| 05 | **Carabao** | Region · Cordillera water buffalo | Hydrological field atlas of the Ifugao rice terraces in volcanic mud slate, paddy emerald and celadon mist: wading swamp buffalo with ribbed crescent horns, throat chevrons, perched egret and splayed cloven hooves. Bricolage Grotesque against Newsreader and Space Mono |
+
+</details>
+
+<details>
   <summary><strong>Set XXX — OX ATTENTION</strong> · five senses in a bovine world · <em>designed by GPT Luna 6</em></summary>
 
 Five sensory facets of bovine life, each with a different species, viewpoint, page composition and mark: a yak scenting wind, a zebu calling across pasture, a bison reading the horizon, a Highland cow's winter coat, and a water buffalo cropping wet meadow grass.
