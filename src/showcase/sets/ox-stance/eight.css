@@ -1,0 +1,397 @@
+.th-ox-stance-eight {
+  --oxe-yellow: #f4c430;
+  --oxe-yellow-hi: #fbdd6f;
+  --oxe-ink: #1a120b;
+  --oxe-red: #c8281c;
+  --oxe-denim: #27456f;
+  --oxe-paper: #fff4d2;
+}
+
+.ox-stance-eight {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(rgba(26, 18, 11, 0.09) 1.2px, transparent 1.6px) 0 0 / 7px 7px,
+    var(--oxe-yellow);
+  color: var(--oxe-ink);
+  font-family: 'Barlow Condensed', sans-serif;
+  padding: clamp(12px, 2.4vw, 32px) clamp(10px, 2.4vw, 32px) 150px;
+}
+
+.ox-stance-eight ::selection {
+  background: var(--oxe-red);
+  color: var(--oxe-paper);
+}
+
+.ox-stance-eight-frame {
+  max-width: 1240px;
+  margin: 0 auto;
+  border: 6px solid var(--oxe-ink);
+  outline: 2px solid var(--oxe-ink);
+  outline-offset: -14px;
+  padding: clamp(18px, 3vw, 40px);
+}
+
+.ox-stance-eight-banner {
+  margin: 0;
+  padding: 8px 10px;
+  background: var(--oxe-ink);
+  color: var(--oxe-yellow);
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.ox-stance-eight-banner span { color: var(--oxe-paper); }
+
+.ox-stance-eight-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  margin-top: clamp(10px, 2vw, 24px);
+}
+
+.ox-stance-eight-title {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.86;
+  color: var(--oxe-red);
+  text-shadow: 5px 5px 0 var(--oxe-ink);
+}
+
+.ox-stance-eight-title span { display: block; }
+.ox-stance-eight-title span:first-child { font-size: clamp(5.4rem, 11.4vw, 10.4rem); }
+.ox-stance-eight-title span:last-child {
+  font-size: clamp(3.1rem, 6.5vw, 5.9rem);
+  color: var(--oxe-ink);
+  text-shadow: 4px 4px 0 var(--oxe-paper);
+}
+
+.ox-stance-eight-figure {
+  margin-left: -10px;
+}
+
+.ox-stance-eight-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ox-stance-eight-burst { fill: var(--oxe-yellow-hi); }
+.ox-stance-eight-floor {
+  stroke: var(--oxe-ink);
+  stroke-width: 6;
+  stroke-dasharray: 26 10 6 10;
+}
+.ox-stance-eight-ink { fill: var(--oxe-ink); }
+.ox-stance-eight-cut { fill: var(--oxe-yellow-hi); }
+.ox-stance-eight-horn {
+  fill: var(--oxe-paper);
+  stroke: var(--oxe-ink);
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+.ox-stance-eight-hornfar {
+  fill: #d9c48c;
+  stroke: var(--oxe-ink);
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+.ox-stance-eight-cutline {
+  fill: none;
+  stroke: var(--oxe-yellow);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  opacity: 0.75;
+}
+.ox-stance-eight-strap {
+  fill: none;
+  stroke: var(--oxe-red);
+  stroke-width: 9;
+}
+.ox-stance-eight-snort {
+  fill: none;
+  stroke: var(--oxe-ink);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.ox-stance-eight-dust {
+  fill: var(--oxe-paper);
+  stroke: var(--oxe-ink);
+  stroke-width: 4;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.ox-stance-eight-hatink {
+  fill: var(--oxe-denim);
+  stroke: var(--oxe-ink);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+.ox-stance-eight-hatband {
+  fill: none;
+  stroke: var(--oxe-red);
+  stroke-width: 8;
+}
+.ox-stance-eight-star { fill: var(--oxe-red); stroke: var(--oxe-ink); stroke-width: 3; stroke-linejoin: round; }
+.ox-stance-eight-buck { transform-origin: 540px 700px; }
+.ox-stance-eight-hat {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+.ox-stance-eight-burst { transform-origin: 430px 400px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .ox-stance-eight-buck { animation: ox-stance-eight-kick 1.5s cubic-bezier(0.5, 0, 0.3, 1) infinite; }
+  .ox-stance-eight-dust { animation: ox-stance-eight-puff 1.5s ease-out infinite; }
+  .ox-stance-eight-hat { animation: ox-stance-eight-tumble 3s ease-in-out infinite; }
+  .ox-stance-eight-burst { animation: ox-stance-eight-pulse 1.5s ease-in-out infinite; }
+}
+
+@keyframes ox-stance-eight-kick {
+  0%, 100% { transform: rotate(-9deg) translateY(-10px); }
+  45% { transform: rotate(5deg) translateY(0); }
+  60% { transform: rotate(3deg) translateY(0); }
+}
+@keyframes ox-stance-eight-puff {
+  0%, 35% { transform: scale(0.2); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+@keyframes ox-stance-eight-tumble {
+  0%, 100% { transform: translateY(0) rotate(-14deg); }
+  50% { transform: translateY(-34px) rotate(16deg); }
+}
+@keyframes ox-stance-eight-pulse {
+  0%, 100% { transform: scale(1); }
+  45% { transform: scale(1.05); }
+}
+
+.ox-stance-eight-clockrow {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: clamp(14px, 3vw, 36px);
+  align-items: center;
+  margin-top: clamp(8px, 2vw, 20px);
+  padding-top: clamp(14px, 2vw, 24px);
+  border-top: 6px double var(--oxe-ink);
+}
+
+.ox-stance-eight-clock {
+  min-width: 5.2em;
+  padding: 6px 18px 10px;
+  background: var(--oxe-ink);
+  color: var(--oxe-yellow);
+  text-align: center;
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+}
+
+.ox-stance-eight-clock strong {
+  display: block;
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.ox-stance-eight-clock span {
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--oxe-paper);
+}
+
+.ox-stance-eight-clock.is-done { background: var(--oxe-red); color: var(--oxe-paper); }
+
+.ox-stance-eight-gate {
+  padding: 14px 22px;
+  border: 4px solid var(--oxe-ink);
+  background: var(--oxe-paper);
+  color: var(--oxe-ink);
+  font: 700 clamp(1.1rem, 2vw, 1.5rem) 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 var(--oxe-ink);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.ox-stance-eight-gate:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--oxe-ink); }
+.ox-stance-eight-gate:active { transform: translate(4px, 4px); box-shadow: 2px 2px 0 var(--oxe-ink); }
+.ox-stance-eight-gate:focus-visible { outline: 4px solid var(--oxe-red); outline-offset: 4px; }
+
+.ox-stance-eight-pitch {
+  margin: 0;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 1.9vw, 1.55rem);
+  line-height: 1.3;
+}
+
+.ox-stance-eight-rules {
+  margin-top: clamp(26px, 4vw, 48px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 4px solid var(--oxe-ink);
+}
+
+.ox-stance-eight-rules article {
+  padding: clamp(16px, 2.4vw, 28px);
+  border-right: 4px solid var(--oxe-ink);
+}
+
+.ox-stance-eight-rules article:last-child { border-right: 0; }
+.ox-stance-eight-rules article:nth-child(2) { background: var(--oxe-ink); color: var(--oxe-paper); }
+.ox-stance-eight-rules article:nth-child(2) h2 { color: var(--oxe-yellow); }
+
+.ox-stance-eight-rules h2 {
+  margin: 0 0 8px;
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--oxe-red);
+}
+
+.ox-stance-eight-rules p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.ox-stance-eight-score {
+  margin-top: clamp(20px, 3vw, 36px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ox-stance-eight-half {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: clamp(14px, 2.2vw, 26px);
+  background: var(--oxe-denim);
+  color: var(--oxe-paper);
+}
+
+.ox-stance-eight-halfbull { background: var(--oxe-red); }
+
+.ox-stance-eight-half strong {
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 8vw, 7rem);
+  line-height: 0.9;
+}
+
+.ox-stance-eight-half span {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.ox-stance-eight-card {
+  margin-top: clamp(20px, 3vw, 36px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2.4vw, 32px);
+}
+
+.ox-stance-eight-card div {
+  padding-top: 10px;
+  border-top: 10px solid var(--oxe-ink);
+}
+
+.ox-stance-eight-card strong {
+  display: block;
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+  line-height: 1;
+}
+
+.ox-stance-eight-card span {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.ox-stance-eight-ticket {
+  margin: clamp(30px, 5vw, 60px) auto 0;
+  max-width: 620px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background: var(--oxe-paper);
+  border: 3px solid var(--oxe-ink);
+  border-radius: 14px;
+  transform: rotate(-2deg);
+  box-shadow: 8px 8px 0 var(--oxe-ink);
+}
+
+.ox-stance-eight-stub {
+  display: grid;
+  place-content: center;
+  padding: 12px 18px;
+  border-right: 4px dotted var(--oxe-ink);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.ox-stance-eight-stub strong {
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  letter-spacing: 0.04em;
+  color: var(--oxe-red);
+}
+
+.ox-stance-eight-ticketbody {
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.ox-stance-eight-ticketbody span {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.ox-stance-eight-ticketbody p {
+  margin: 6px 0;
+  font-family: 'Alfa Slab One', serif;
+  font-size: clamp(0.95rem, 2.6vw, 1.4rem);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 860px) {
+  .ox-stance-eight-stage { grid-template-columns: 1fr; }
+  .ox-stance-eight-title span:first-child { font-size: clamp(4.6rem, 21.5vw, 12rem); }
+  .ox-stance-eight-title span:last-child { font-size: clamp(2.6rem, 12.2vw, 6.8rem); }
+  .ox-stance-eight-figure { margin: -4vw 0 0; }
+  .ox-stance-eight-clockrow { grid-template-columns: auto 1fr; }
+  .ox-stance-eight-pitch { grid-column: 1 / -1; }
+  .ox-stance-eight-rules,
+  .ox-stance-eight-card { grid-template-columns: 1fr; }
+  .ox-stance-eight-rules article { border-right: 0; border-bottom: 4px solid var(--oxe-ink); }
+  .ox-stance-eight-rules article:last-child { border-bottom: 0; }
+  .ox-stance-eight-half { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
+@media (max-width: 420px) {
+  .ox-stance-eight-gate { padding: 10px 12px; box-shadow: 4px 4px 0 var(--oxe-ink); }
+}

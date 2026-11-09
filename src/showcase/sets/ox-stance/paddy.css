@@ -1,0 +1,401 @@
+.th-ox-stance-paddy {
+  --oxp-water: #17756b;
+  --oxp-deep: #0b4744;
+  --oxp-jade: #58b3a0;
+  --oxp-rice: #c3ea4f;
+  --oxp-dawn: #ffe3ae;
+  --oxp-amber: #ffb877;
+  --oxp-hide: #3a434f;
+  --oxp-hide-lo: #262d36;
+  --oxp-red: #e2452e;
+  --oxp-paper: #f2f6e6;
+  --oxp-ink: #0d2b2a;
+}
+
+.ox-stance-paddy {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--oxp-deep);
+  color: var(--oxp-paper);
+  font-family: 'Sarabun', sans-serif;
+  padding-bottom: 150px;
+}
+
+.ox-stance-paddy ::selection {
+  background: var(--oxp-rice);
+  color: var(--oxp-ink);
+}
+
+.ox-stance-paddy-hero {
+  position: relative;
+}
+
+.ox-stance-paddy-scene {
+  height: clamp(300px, 52vw, 720px);
+}
+
+.ox-stance-paddy-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ox-stance-paddy-heading {
+  position: absolute;
+  z-index: 2;
+  top: clamp(18px, 3vw, 44px);
+  left: clamp(16px, 4vw, 64px);
+  max-width: min(46ch, 44vw);
+  color: var(--oxp-ink);
+}
+
+.ox-stance-paddy-kicker {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.ox-stance-paddy-title {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(4rem, 8vw, 7.4rem);
+  line-height: 0.88;
+  letter-spacing: -0.05em;
+  color: var(--oxp-deep);
+}
+
+.ox-stance-paddy-lede {
+  margin: 10px 0 0;
+  max-width: 30ch;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.ox-stance-paddy-sun { fill: #fff3cf; }
+.ox-stance-paddy-karst2 { fill: #8fc4b0; }
+.ox-stance-paddy-karst1 { fill: #4f9a86; }
+.ox-stance-paddy-bund { fill: #2f6d4c; }
+.ox-stance-paddy-palm {
+  fill: none;
+  stroke: #1d4a36;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-hide { fill: var(--oxp-hide); }
+.ox-stance-paddy-far { fill: var(--oxp-hide-lo); }
+.ox-stance-paddy-shade { fill: var(--oxp-hide-lo); opacity: 0.7; }
+.ox-stance-paddy-chevron {
+  fill: none;
+  stroke: #8f9aa8;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-ear { fill: var(--oxp-hide-lo); }
+.ox-stance-paddy-nose { fill: var(--oxp-hide-lo); }
+.ox-stance-paddy-horn {
+  fill: #a39680;
+  stroke: var(--oxp-hide-lo);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+.ox-stance-paddy-hornfar { fill: #5f574d; }
+.ox-stance-paddy-ridge {
+  fill: none;
+  stroke: var(--oxp-hide-lo);
+  stroke-width: 2.5;
+}
+.ox-stance-paddy-eye { fill: #f2f0e4; }
+.ox-stance-paddy-pupil { fill: #101418; }
+.ox-stance-paddy-nostril {
+  fill: none;
+  stroke: #101418;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-ring {
+  fill: none;
+  stroke: #d9a441;
+  stroke-width: 3;
+}
+.ox-stance-paddy-tail {
+  fill: none;
+  stroke: var(--oxp-hide);
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-tuft { fill: var(--oxp-hide-lo); }
+.ox-stance-paddy-yoke {
+  fill: none;
+  stroke: #b47a3a;
+  stroke-width: 12;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-rope {
+  fill: none;
+  stroke: #e7cf9a;
+  stroke-width: 3.5;
+}
+.ox-stance-paddy-plough {
+  fill: none;
+  stroke: #8a5a2a;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-trouser { fill: #1c2f3d; }
+.ox-stance-paddy-shirt { fill: var(--oxp-red); }
+.ox-stance-paddy-arm {
+  fill: none;
+  stroke: var(--oxp-red);
+  stroke-width: 11;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-skin { fill: #b7825a; }
+.ox-stance-paddy-hat { fill: #f0d27a; stroke: #b98f33; stroke-width: 2; }
+.ox-stance-paddy-egretbody { fill: #fff; }
+.ox-stance-paddy-egretleg { stroke: #20262c; stroke-width: 3; }
+.ox-stance-paddy-beak { fill: #f0a020; }
+.ox-stance-paddy-mirror { opacity: 0.32; }
+.ox-stance-paddy-glint {
+  stroke: rgba(255, 243, 207, 0.6);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.ox-stance-paddy-ripple {
+  fill: none;
+  stroke: #fff3cf;
+  stroke-width: 2.5;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  opacity: 0.7;
+}
+.ox-stance-paddy-rice {
+  fill: none;
+  stroke: var(--oxp-rice);
+  stroke-linecap: round;
+}
+.ox-stance-paddy-rice0 { stroke-width: 2.5; opacity: 0.8; }
+.ox-stance-paddy-rice1 { stroke-width: 3.5; }
+.ox-stance-paddy-rice2 { stroke-width: 4.5; }
+.ox-stance-paddy-walk,
+.ox-stance-paddy-egret {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ox-stance-paddy-ripple { animation: ox-stance-paddy-ring 3.6s ease-out infinite; }
+  .ox-stance-paddy-walk { animation: ox-stance-paddy-trudge 3.2s ease-in-out infinite; }
+  .ox-stance-paddy-egret { animation: ox-stance-paddy-bob 3.2s ease-in-out -0.5s infinite; }
+  .ox-stance-paddy-glint { animation: ox-stance-paddy-shimmer 5s ease-in-out infinite; }
+  .ox-stance-paddy-sun { animation: ox-stance-paddy-rise 9s ease-in-out infinite alternate; }
+}
+
+@keyframes ox-stance-paddy-ring {
+  0% { transform: scale(0.5); opacity: 0.9; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+@keyframes ox-stance-paddy-trudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+@keyframes ox-stance-paddy-bob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-3px) rotate(-3deg); }
+}
+@keyframes ox-stance-paddy-shimmer {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.35; }
+}
+@keyframes ox-stance-paddy-rise {
+  from { transform: translateY(14px); }
+  to { transform: translateY(-10px); }
+}
+
+.ox-stance-paddy-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 80px) clamp(16px, 4vw, 40px) 0;
+}
+
+.ox-stance-paddy-why h2 {
+  margin: 0 0 16px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.03em;
+  color: var(--oxp-rice);
+}
+
+.ox-stance-paddy-whycols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(16px, 3vw, 44px);
+}
+
+.ox-stance-paddy-whycols p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.ox-stance-paddy-season ol {
+  list-style: none;
+  margin: clamp(40px, 6vw, 84px) 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.ox-stance-paddy-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(14px, 2vw, 28px);
+  align-items: center;
+  padding: clamp(16px, 2.4vw, 30px) clamp(16px, 3vw, 40px);
+  border-radius: 0 60px 0 0;
+  color: var(--oxp-ink);
+}
+
+.ox-stance-paddy-step0 { width: 58%; background: #e9f3b4; }
+.ox-stance-paddy-step1 { width: 72%; background: var(--oxp-rice); }
+.ox-stance-paddy-step2 { width: 86%; background: #8fd07a; }
+.ox-stance-paddy-step3 { width: 100%; background: var(--oxp-jade); }
+
+.ox-stance-paddy-stepnum {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 7vw, 5.6rem);
+  line-height: 1;
+  color: var(--oxp-deep);
+}
+
+.ox-stance-paddy-step h3 {
+  margin: 0 0 4px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+.ox-stance-paddy-step p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+.ox-stance-paddy-saying {
+  margin-top: clamp(44px, 6vw, 90px);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(20px, 4vw, 60px);
+  align-items: center;
+}
+
+.ox-stance-paddy-saying blockquote {
+  margin: 0;
+  padding-left: 22px;
+  border-left: 8px solid var(--oxp-red);
+}
+
+.ox-stance-paddy-saying blockquote p {
+  margin: 0;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4.4vw, 3.4rem);
+  line-height: 1.15;
+  color: var(--oxp-dawn);
+}
+
+.ox-stance-paddy-saying blockquote footer {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ox-stance-paddy-facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.ox-stance-paddy-facts li {
+  display: grid;
+  grid-template-columns: 11.5rem 1fr;
+  gap: 14px;
+  align-items: baseline;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(242, 246, 230, 0.25);
+}
+
+.ox-stance-paddy-facts strong {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+  white-space: nowrap;
+  color: var(--oxp-amber);
+}
+
+.ox-stance-paddy-facts span {
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.ox-stance-paddy-sack {
+  margin: clamp(44px, 6vw, 80px) auto 0;
+  max-width: 520px;
+  padding: 14px;
+  background:
+    repeating-linear-gradient(0deg, rgba(90, 60, 20, 0.18) 0 2px, transparent 2px 5px),
+    repeating-linear-gradient(90deg, rgba(90, 60, 20, 0.18) 0 2px, transparent 2px 5px),
+    #c9a66b;
+  border-radius: 6px 6px 18px 18px;
+  transform: rotate(1deg);
+}
+
+.ox-stance-paddy-stencil {
+  border: 4px solid #23301f;
+  padding: 16px 12px;
+  text-align: center;
+  color: #23301f;
+  font-family: 'Syne', sans-serif;
+  text-transform: uppercase;
+}
+
+.ox-stance-paddy-stencil span {
+  display: block;
+  font-weight: 700;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+}
+
+.ox-stance-paddy-stencil p {
+  margin: 8px 0;
+  font-weight: 800;
+  font-size: clamp(0.92rem, 2.6vw, 1.25rem);
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+}
+
+@media (max-width: 820px) {
+  .ox-stance-paddy-heading {
+    position: static;
+    max-width: none;
+    padding: 22px 16px 18px;
+    background: var(--oxp-dawn);
+  }
+  .ox-stance-paddy-whycols,
+  .ox-stance-paddy-saying { grid-template-columns: 1fr; }
+  .ox-stance-paddy-step0,
+  .ox-stance-paddy-step1,
+  .ox-stance-paddy-step2,
+  .ox-stance-paddy-step3 { width: 100%; }
+  .ox-stance-paddy-step { border-radius: 0 36px 0 0; }
+  .ox-stance-paddy-facts li { grid-template-columns: 8.4rem 1fr; }
+}
