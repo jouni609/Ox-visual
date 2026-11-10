@@ -17,5 +17,6 @@ import oxPrism from './ox-prism/manifest.js'
 import oxLantern from './ox-lantern/manifest.js'
 import oxWaymark from './ox-waymark/manifest.js'
 import oxCanon from './ox-canon/manifest.js'
+import oxStance from './ox-stance/manifest.js'
 
-export const SETS = [oxAtlas, oxMasque, oxHours, oxVesper, oxVita, oxMythos, oxYoke, oxEpoch, oxLexicon, oxMeridian, oxSpan, oxTale, oxApparatus, oxClimates, oxAttention, oxPrism, oxLantern, oxWaymark, oxCanon]
+export const SETS = [oxAtlas, oxMasque, oxHours, oxVesper, oxVita, oxMythos, oxYoke, oxEpoch, oxLexicon, oxMeridian, oxSpan, oxTale, oxApparatus, oxClimates, oxAttention, oxPrism, oxLantern, oxWaymark, oxCanon, oxStance]

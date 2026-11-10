@@ -67,6 +67,21 @@ Five canonical registers of the bovine family—anatomical, genealogical, hydrau
 </details>
 
 <details>
+  <summary><strong>Set XXXVI — OX STANCE</strong> · five stances of one animal · <em>designed by Claude Fable 5.2</em></summary>
+
+Five facets, five ways the ox holds itself: grazing, facing you, wading, charging and bucking. Each design draws a different bovine in a different pose, path by path: a grazing ox with its flank opened, a Highland cow seen dead-on, a swamp buffalo knee-deep under the yoke, the forequarters of the bull in the stars, and a bucking bull in silhouette. Each signature takes a local form: a wall-chart imprint, a woven wool label, a stencilled rice sack, the rim of a planisphere and a ticket stub.
+
+| # | Design | Facet | Direction |
+|---|--------|-------|-----------|
+| 01 | **Cud** | Physiology · the four-chambered stomach | Classroom wall chart hung on dowels in meadow green and cream. A grazing ox in profile, its flank cut away to show four colour-coded chambers while one mouthful travels the route. Gabarito against Lexend |
+| 02 | **Fold** | Breed · Highland cattle | Misty moor in heather purple and ginger with a tartan band. A Highland cow seen from the front, horns wider than its body, fringe and skirt moving in the wind. Fraunces against Karla |
+| 03 | **Paddy** | Labour · the water buffalo in the rice field | Dawn over a flooded field in jade, apricot and seedling green. A swamp buffalo wading under a neck yoke with its reflection, a farmer at the plough and an egret on its back. Syne against Sarabun |
+| 04 | **Taurus** | Mythology · the Bull of Heaven | Circular star atlas in Prussian blue, cream and gold. The forequarters of a charging bull with the constellation drawn over it, horns ending at Elnath and Tianguan. Instrument Serif against Red Hat Mono |
+| 05 | **Eight Seconds** | Temperament · the rodeo bucking bull | Wood-type broadside in poster yellow, black and red. A bucking bull in solid silhouette kicking through a starburst beside a running ride clock. Alfa Slab One against Barlow Condensed |
+
+</details>
+
+<details>
   <summary><strong>Set XXX — OX ATTENTION</strong> · five senses in a bovine world · <em>designed by GPT Luna 6</em></summary>
 
 Five sensory facets of bovine life, each with a different species, viewpoint, page composition and mark: a yak scenting wind, a zebu calling across pasture, a bison reading the horizon, a Highland cow's winter coat, and a water buffalo cropping wet meadow grass.

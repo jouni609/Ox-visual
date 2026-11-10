@@ -1,0 +1,345 @@
+.th-ox-stance-taurus {
+  --oxt-night: #0e2444;
+  --oxt-plate: #17365f;
+  --oxt-line: #f1e6c8;
+  --oxt-dim: #b9c9dd;
+  --oxt-gold: #f2bd45;
+  --oxt-rose: #ea7f68;
+  --oxt-hide: #efe3c6;
+  --oxt-hide-lo: #bfa97e;
+}
+
+.ox-stance-taurus {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(242, 189, 69, 0.1), transparent 40%),
+    var(--oxt-night);
+  color: var(--oxt-line);
+  font-family: 'Red Hat Mono', monospace;
+  padding: clamp(20px, 3vw, 48px) clamp(14px, 3vw, 48px) 150px;
+}
+
+.ox-stance-taurus ::selection {
+  background: var(--oxt-gold);
+  color: var(--oxt-night);
+}
+
+.ox-stance-taurus-layout {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(24px, 4vw, 64px);
+  align-items: start;
+}
+
+.ox-stance-taurus-chart {
+  position: sticky;
+  top: 20px;
+}
+
+.ox-stance-taurus-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 40px);
+}
+
+.ox-stance-taurus-plate {
+  fill: var(--oxt-plate);
+  stroke: var(--oxt-line);
+  stroke-width: 2;
+}
+
+.ox-stance-taurus-tick {
+  stroke: var(--oxt-line);
+  stroke-width: 2;
+}
+
+.ox-stance-taurus-ring {
+  transform-origin: 400px 400px;
+}
+
+.ox-stance-taurus-rimtext {
+  font: 500 15.5px 'Red Hat Mono', monospace;
+  letter-spacing: 3.2px;
+  fill: var(--oxt-line);
+}
+
+.ox-stance-taurus-grid {
+  fill: none;
+  stroke: rgba(185, 201, 221, 0.22);
+  stroke-width: 1.2;
+}
+
+.ox-stance-taurus-ecliptic {
+  fill: none;
+  stroke: var(--oxt-rose);
+  stroke-width: 2.5;
+  stroke-dasharray: 10 8;
+}
+
+.ox-stance-taurus-faint { fill: var(--oxt-dim); }
+
+.ox-stance-taurus-hide {
+  fill: var(--oxt-hide);
+  stroke: var(--oxt-night);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+.ox-stance-taurus-legfar,
+.ox-stance-taurus-ear {
+  fill: var(--oxt-hide-lo);
+  stroke: var(--oxt-night);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+.ox-stance-taurus-hoof {
+  fill: var(--oxt-night);
+  stroke: var(--oxt-line);
+  stroke-width: 2;
+}
+
+.ox-stance-taurus-horn {
+  fill: var(--oxt-gold);
+  stroke: var(--oxt-night);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.ox-stance-taurus-hornfar {
+  fill: #c9973a;
+  stroke: var(--oxt-night);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.ox-stance-taurus-hatch,
+.ox-stance-taurus-brow {
+  fill: none;
+  stroke: #8a7350;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.ox-stance-taurus-shade { fill: var(--oxt-hide-lo); opacity: 0.55; }
+.ox-stance-taurus-muzzle {
+  fill: #6f6a78;
+  stroke: var(--oxt-night);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+.ox-stance-taurus-nostril,
+.ox-stance-taurus-cleft {
+  fill: none;
+  stroke: var(--oxt-line);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.ox-stance-taurus-lines {
+  fill: none;
+  stroke: var(--oxt-gold);
+  stroke-width: 2;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  opacity: 0.9;
+}
+
+.ox-stance-taurus-star {
+  fill: var(--oxt-gold);
+  stroke: var(--oxt-night);
+  stroke-width: 1.5;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+.ox-stance-taurus-star.is-hot { fill: #ff8a3c; }
+
+.ox-stance-taurus-halo {
+  fill: none;
+  stroke: var(--oxt-gold);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 5;
+}
+
+.ox-stance-taurus-label {
+  font: 500 15px 'Red Hat Mono', monospace;
+  fill: var(--oxt-line);
+  paint-order: stroke;
+  stroke: var(--oxt-plate);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+
+.ox-stance-taurus-ecl { fill: var(--oxt-rose); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .ox-stance-taurus-ring { animation: ox-stance-taurus-turn 240s linear infinite; }
+  .ox-stance-taurus-star { animation: ox-stance-taurus-twinkle 4.2s ease-in-out infinite; }
+  .ox-stance-taurus-faint { animation: ox-stance-taurus-dim 4.2s ease-in-out infinite; }
+  .ox-stance-taurus-lines { animation: ox-stance-taurus-draw 2.6s ease-out 0.8s both; }
+}
+
+@keyframes ox-stance-taurus-turn {
+  to { transform: rotate(360deg); }
+}
+@keyframes ox-stance-taurus-twinkle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.72); }
+}
+@keyframes ox-stance-taurus-dim {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+@keyframes ox-stance-taurus-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
+.ox-stance-taurus-text {
+  padding-top: clamp(0px, 3vw, 40px);
+}
+
+.ox-stance-taurus-kicker {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--oxt-gold);
+}
+
+.ox-stance-taurus-title {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-size: clamp(4.4rem, 10vw, 9.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.02em;
+}
+
+.ox-stance-taurus-title span {
+  display: block;
+  margin-top: 12px;
+  font-style: italic;
+  font-size: clamp(1.4rem, 2.6vw, 2.3rem);
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: var(--oxt-gold);
+}
+
+.ox-stance-taurus-lede {
+  margin: 26px 0 0;
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(1.25rem, 1.9vw, 1.6rem);
+  line-height: 1.35;
+}
+
+.ox-stance-taurus-myths {
+  margin-top: 34px;
+  display: grid;
+  gap: 22px;
+}
+
+.ox-stance-taurus-myths article {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(241, 230, 200, 0.4);
+}
+
+.ox-stance-taurus-myths h2 {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.ox-stance-taurus-myths h2 span {
+  color: var(--oxt-rose);
+  margin-right: 4px;
+}
+
+.ox-stance-taurus-myths p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--oxt-line);
+}
+
+.ox-stance-taurus-tablewrap {
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+.ox-stance-taurus-tablewrap h2 {
+  margin: 0 0 10px;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.ox-stance-taurus-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.ox-stance-taurus-table th,
+.ox-stance-taurus-table td {
+  padding: 9px 10px 9px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px dashed rgba(241, 230, 200, 0.35);
+}
+
+.ox-stance-taurus-table thead th {
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oxt-gold);
+  border-bottom: 2px solid var(--oxt-gold);
+}
+
+.ox-stance-taurus-table tbody th {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.ox-stance-taurus-table i {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.2rem;
+  color: var(--oxt-rose);
+  margin-right: 4px;
+}
+
+.ox-stance-taurus-coda {
+  margin: 34px 0 0;
+  padding: 18px 20px;
+  border: 1px solid var(--oxt-line);
+  border-radius: 999px 0 0 999px;
+  padding-left: 44px;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 960px) {
+  .ox-stance-taurus-layout { grid-template-columns: 1fr; }
+  .ox-stance-taurus-chart { position: static; }
+  .ox-stance-taurus-svg { max-height: none; }
+}
+
+@media (max-width: 520px) {
+  .ox-stance-taurus-myths article { grid-template-columns: 1fr; gap: 6px; }
+  .ox-stance-taurus-coda { border-radius: 24px 0 0 24px; padding-left: 22px; }
+  .ox-stance-taurus-table tbody th { white-space: normal; }
+}
