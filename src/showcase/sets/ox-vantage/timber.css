@@ -1,0 +1,257 @@
+.th-vantage-timber {
+  --tim-bg: #112A22;
+  --tim-bg-deep: #0B1D17;
+  --tim-card: #16362C;
+  --tim-cream: #F2EFE6;
+  --tim-muted: #BDD0C6;
+  --tim-vermilion: #D94323;
+  --tim-cedar: #C98E4B;
+  --tim-line: rgba(242, 239, 230, 0.2);
+  --tim-font-display: 'Bevan', Georgia, serif;
+  --tim-font-mono: 'JetBrains Mono', monospace;
+}
+
+.th-vantage-timber ::selection {
+  background: var(--tim-vermilion);
+  color: var(--tim-cream);
+}
+
+.ox-vantage-tim-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, var(--tim-bg-deep) 0%, var(--tim-bg) 42%, #0E231C 100%);
+  color: var(--tim-cream);
+  font-family: var(--tim-font-mono);
+  padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 3.8vw, 3.25rem) 7.5rem;
+}
+
+.ox-vantage-tim-gridbg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(242, 239, 230, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242, 239, 230, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.ox-vantage-tim-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.ox-vantage-tim-head {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 1.75rem;
+  align-items: end;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--tim-cedar);
+  margin-bottom: 1.5rem;
+}
+
+.ox-vantage-tim-eyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  color: var(--tim-cedar);
+}
+
+.ox-vantage-tim-h1 {
+  margin: 0 0 0.6rem;
+  font-family: var(--tim-font-display);
+  font-size: clamp(2.8rem, 7.2vw, 5.4rem);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: 0.03em;
+  color: var(--tim-cream);
+}
+
+.ox-vantage-tim-lead {
+  margin: 0;
+  max-width: 54ch;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--tim-muted);
+}
+
+.ox-vantage-tim-gauge {
+  background: var(--tim-card);
+  border: 1.5px solid var(--tim-line);
+  border-left: 5px solid var(--tim-vermilion);
+  border-radius: 6px;
+  padding: 1rem 1.15rem;
+}
+
+.ox-vantage-tim-gauge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--tim-line);
+  font-size: 0.78rem;
+}
+
+.ox-vantage-tim-gauge-row span {
+  color: var(--tim-muted);
+  letter-spacing: 0.1em;
+}
+
+.ox-vantage-tim-gauge-row strong {
+  font-size: 1.02rem;
+  color: var(--tim-cream);
+}
+
+.ox-vantage-tim-grades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.85rem;
+}
+
+.ox-vantage-tim-gbtn {
+  flex: 1 1 auto;
+  padding: 0.48rem 0.65rem;
+  border: 1.5px solid var(--tim-line);
+  border-radius: 4px;
+  background: var(--tim-bg-deep);
+  color: var(--tim-cream);
+  font-family: var(--tim-font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.ox-vantage-tim-gbtn.is-on {
+  background: var(--tim-vermilion);
+  border-color: var(--tim-vermilion);
+  color: var(--tim-cream);
+}
+
+.ox-vantage-tim-gbtn:focus-visible {
+  outline: 3px solid var(--tim-cedar);
+  outline-offset: 2px;
+}
+
+.ox-vantage-tim-stage-card {
+  background: var(--tim-bg-deep);
+  border: 2px solid var(--tim-line);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ox-vantage-tim-stage-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--tim-cedar);
+}
+
+.ox-vantage-tim-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ox-vantage-tim-caption {
+  margin: 0.85rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--tim-line);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--tim-muted);
+}
+
+.ox-vantage-tim-tally {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.ox-vantage-tim-titem {
+  background: var(--tim-card);
+  border: 1px solid var(--tim-line);
+  border-top: 3px solid var(--tim-cedar);
+  border-radius: 4px;
+  padding: 0.85rem 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.ox-vantage-tim-tkey {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--tim-cedar);
+}
+
+.ox-vantage-tim-tval {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--tim-cream);
+}
+
+.ox-vantage-tim-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ox-vantage-tim-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.62rem 1.2rem;
+  background: #D9A35F;
+  color: #1D1006;
+  border: 3px solid #593214;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  box-shadow: inset 0 0 0 2px #8C5525;
+}
+
+.ox-vantage-tim-brand-ring {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 920px) {
+  .ox-vantage-tim-head {
+    grid-template-columns: 1fr;
+  }
+  .ox-vantage-tim-tally {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .ox-vantage-tim-head {
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ox-vantage-tim-lead {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+  .ox-vantage-tim-gauge {
+    padding: 0.75rem 0.9rem;
+  }
+  .ox-vantage-tim-tally {
+    grid-template-columns: 1fr;
+  }
+  .ox-vantage-tim-brand {
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+  }
+}

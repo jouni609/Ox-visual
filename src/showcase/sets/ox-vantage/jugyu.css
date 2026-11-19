@@ -1,0 +1,264 @@
+.th-vantage-jugyu {
+  --jug-bg: #14110F;
+  --jug-panel: #1D1815;
+  --jug-gold: #D9A74A;
+  --jug-gold-dim: rgba(217, 167, 74, 0.24);
+  --jug-ivory: #EFE6D5;
+  --jug-muted: #C2B49E;
+  --jug-vermilion: #C92A2A;
+  --jug-font-display: 'Vollkorn', Georgia, serif;
+  --jug-font-jp: 'Shippori Mincho', serif;
+}
+
+.th-vantage-jugyu ::selection {
+  background: var(--jug-vermilion);
+  color: var(--jug-ivory);
+}
+
+.ox-vantage-jug-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 54% 34%, #241D17 0%, var(--jug-bg) 62%, #0C0A09 100%);
+  color: var(--jug-ivory);
+  font-family: var(--jug-font-display);
+  padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 4vw, 3.5rem) 7.5rem;
+}
+
+.ox-vantage-jug-seams {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ox-vantage-jug-seams span {
+  border-right: 1px solid rgba(217, 167, 74, 0.08);
+}
+
+.ox-vantage-jug-layout {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  grid-template-areas:
+    'rail stage'
+    'scroll scroll';
+  gap: 1.5rem 2.25rem;
+  align-items: center;
+}
+
+.ox-vantage-jug-rail {
+  grid-area: rail;
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  border-left: 2px solid var(--jug-gold);
+  padding-left: 1.15rem;
+}
+
+.ox-vantage-jug-kanji {
+  writing-mode: vertical-rl;
+  font-family: var(--jug-font-jp);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--jug-gold);
+  padding: 0.6rem 0.35rem;
+  border: 1px solid var(--jug-gold-dim);
+  background: rgba(217, 167, 74, 0.06);
+}
+
+.ox-vantage-jug-kicker {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--jug-gold);
+}
+
+.ox-vantage-jug-h1 {
+  margin: 0 0 0.7rem;
+  font-family: var(--jug-font-display);
+  font-size: clamp(2.5rem, 5.2vw, 4.2rem);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: 0.06em;
+  color: var(--jug-ivory);
+}
+
+.ox-vantage-jug-sub {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--jug-muted);
+}
+
+.ox-vantage-jug-stage {
+  grid-area: stage;
+}
+
+.ox-vantage-jug-svg {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.ox-vantage-jug-scroll {
+  grid-area: scroll;
+  border-top: 1px solid var(--jug-gold-dim);
+  padding-top: 1.5rem;
+}
+
+.ox-vantage-jug-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.35rem;
+}
+
+.ox-vantage-jug-step {
+  padding: 0.8rem 0.85rem;
+  background: var(--jug-panel);
+  border: 1px solid var(--jug-gold-dim);
+  border-radius: 4px;
+  color: var(--jug-ivory);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+
+.ox-vantage-jug-step.is-current {
+  background: rgba(217, 167, 74, 0.14);
+  border-color: var(--jug-gold);
+}
+
+.ox-vantage-jug-step:focus-visible {
+  outline: 3px solid var(--jug-gold);
+  outline-offset: 2px;
+}
+
+.ox-vantage-jug-num {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  color: var(--jug-gold);
+}
+
+.ox-vantage-jug-step-kanji {
+  font-family: var(--jug-font-jp);
+  font-size: 1.15rem;
+  color: var(--jug-ivory);
+}
+
+.ox-vantage-jug-step-title {
+  font-family: var(--jug-font-display);
+  font-size: 0.86rem;
+  color: var(--jug-muted);
+}
+
+.ox-vantage-jug-versecard {
+  background: rgba(29, 24, 21, 0.9);
+  border: 1px solid var(--jug-gold-dim);
+  border-left: 4px solid var(--jug-gold);
+  padding: 1.35rem 1.6rem;
+  border-radius: 4px;
+}
+
+.ox-vantage-jug-vhead {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.65rem;
+}
+
+.ox-vantage-jug-vkanji {
+  font-family: var(--jug-font-jp);
+  font-size: 1.55rem;
+  color: var(--jug-gold);
+}
+
+.ox-vantage-jug-vhead h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--jug-ivory);
+}
+
+.ox-vantage-jug-quote {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.08rem, 1.8vw, 1.3rem);
+  font-style: italic;
+  line-height: 1.6;
+  color: #FAF4E8;
+}
+
+.ox-vantage-jug-commentary {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--jug-muted);
+}
+
+.ox-vantage-jug-footer {
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ox-vantage-jug-hanko {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.52rem 1rem;
+  background: var(--jug-vermilion);
+  color: #FAF4E8;
+  border: 2px solid #F2A8A8;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px #8F1B1B;
+}
+
+.ox-vantage-jug-hanko-glyph {
+  font-family: var(--jug-font-jp);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-right: 0.55rem;
+  border-right: 1px solid rgba(250, 244, 232, 0.55);
+}
+
+.ox-vantage-jug-hanko-text {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+@media (max-width: 960px) {
+  .ox-vantage-jug-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'rail'
+      'stage'
+      'scroll';
+  }
+  .ox-vantage-jug-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .ox-vantage-jug-steps {
+    grid-template-columns: 1fr;
+  }
+  .ox-vantage-jug-hanko-text {
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+  }
+}

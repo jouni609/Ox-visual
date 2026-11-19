@@ -1,0 +1,247 @@
+.th-vantage-taurine {
+  --tau-paper: #F6F9FC;
+  --tau-panel: #FFFFFF;
+  --tau-cobalt: #0B2545;
+  --tau-cyan: #1E7CC8;
+  --tau-amber: #F5A623;
+  --tau-red: #E04632;
+  --tau-muted: #3A5573;
+  --tau-rule: rgba(11, 37, 69, 0.22);
+  --tau-font-display: 'Krona One', sans-serif;
+  --tau-font-mono: 'DM Mono', monospace;
+}
+
+.th-vantage-taurine ::selection {
+  background: var(--tau-cyan);
+  color: #FFFFFF;
+}
+
+.ox-vantage-tau-root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--tau-paper);
+  color: var(--tau-cobalt);
+  font-family: var(--tau-font-mono);
+  padding: clamp(1rem, 2.5vw, 2rem) clamp(0.85rem, 3vw, 2.5rem) 7.5rem;
+}
+
+.ox-vantage-tau-sheet {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid var(--tau-cobalt);
+  background: var(--tau-panel);
+  box-shadow: 8px 8px 0 rgba(11, 37, 69, 0.08);
+}
+
+.ox-vantage-tau-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 2px solid var(--tau-cobalt);
+  background: #EDF4FB;
+}
+
+.ox-vantage-tau-doccode {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--tau-cyan);
+  font-weight: 500;
+}
+
+.ox-vantage-tau-h1 {
+  margin: 0;
+  font-family: var(--tau-font-display);
+  font-size: clamp(1.9rem, 5vw, 3.6rem);
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: var(--tau-cobalt);
+}
+
+.ox-vantage-tau-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ox-vantage-tau-mbtn {
+  padding: 0.55rem 0.9rem;
+  border: 1.5px solid var(--tau-cobalt);
+  background: var(--tau-panel);
+  color: var(--tau-cobalt);
+  font-family: var(--tau-font-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.ox-vantage-tau-mbtn.is-active {
+  background: var(--tau-cobalt);
+  color: #FFFFFF;
+}
+
+.ox-vantage-tau-mbtn:focus-visible,
+.ox-vantage-tau-cbtn:focus-visible,
+.ox-vantage-tau-pin:focus-visible {
+  outline: 3px solid var(--tau-red);
+  outline-offset: 2px;
+}
+
+.ox-vantage-tau-board {
+  border-bottom: 2px solid var(--tau-cobalt);
+  background: var(--tau-paper);
+}
+
+.ox-vantage-tau-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ox-vantage-tau-pin {
+  cursor: pointer;
+}
+
+.ox-vantage-tau-lower {
+  display: grid;
+  grid-template-columns: 230px 1.35fr 1fr;
+}
+
+.ox-vantage-tau-index {
+  border-right: 1.5px solid var(--tau-cobalt);
+  display: flex;
+  flex-direction: column;
+}
+
+.ox-vantage-tau-cbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-bottom: 1px solid var(--tau-rule);
+  background: var(--tau-panel);
+  color: var(--tau-cobalt);
+  font-family: var(--tau-font-mono);
+  font-size: 0.78rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ox-vantage-tau-cbtn:last-child {
+  border-bottom: none;
+}
+
+.ox-vantage-tau-cbtn.is-selected {
+  background: #E5F1FC;
+  font-weight: 500;
+  border-left: 4px solid var(--tau-red);
+}
+
+.ox-vantage-tau-code {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 22px;
+  background: var(--tau-cobalt);
+  color: #FFFFFF;
+  font-size: 0.7rem;
+}
+
+.ox-vantage-tau-spec {
+  padding: 1.25rem 1.4rem;
+  border-right: 1.5px solid var(--tau-cobalt);
+}
+
+.ox-vantage-tau-spec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.ox-vantage-tau-spec-head h2 {
+  margin: 0;
+  font-family: var(--tau-font-display);
+  font-size: 0.95rem;
+  color: var(--tau-cobalt);
+}
+
+.ox-vantage-tau-badge {
+  padding: 0.22rem 0.55rem;
+  background: #FFF3D6;
+  border: 1px solid #C88412;
+  color: #6B4200;
+  font-size: 0.72rem;
+}
+
+.ox-vantage-tau-spec p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.68;
+  color: var(--tau-muted);
+}
+
+.ox-vantage-tau-titleblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #EDF4FB;
+}
+
+.ox-vantage-tau-tb-row {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--tau-rule);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ox-vantage-tau-tb-row span {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--tau-muted);
+}
+
+.ox-vantage-tau-tb-row strong {
+  font-size: 0.78rem;
+  color: var(--tau-cobalt);
+}
+
+.ox-vantage-tau-tb-sig {
+  padding: 0.85rem 1rem;
+  background: var(--tau-cobalt);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .ox-vantage-tau-lower {
+    grid-template-columns: 1fr;
+  }
+  .ox-vantage-tau-index {
+    border-right: none;
+    border-bottom: 1.5px solid var(--tau-cobalt);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ox-vantage-tau-spec {
+    border-right: none;
+    border-bottom: 1.5px solid var(--tau-cobalt);
+  }
+}
+
+@media (max-width: 480px) {
+  .ox-vantage-tau-index {
+    grid-template-columns: 1fr;
+  }
+}
