@@ -1,0 +1,98 @@
+.th-ox-record-body {
+  --board: #2440c0;
+  --deep: #172c92;
+  --ink: #f0f3ff;
+  --quiet: #d9e0ff;
+  --rule: #6a80ed;
+  --signal: #f4ee8b;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding: clamp(18px, 3.4vw, 54px) clamp(15px, 5vw, 84px) 130px;
+  color: var(--ink);
+  background: var(--board);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.th-ox-record-body ::selection { color: var(--deep); background: var(--signal); }
+
+.ox-record-body-frame { max-width: 1460px; margin-inline: auto; }
+
+.ox-record-body-mast,
+.ox-record-body-plate figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--quiet);
+  text-transform: uppercase;
+  font-size: clamp(.61rem, 1vw, .77rem);
+  letter-spacing: .12em;
+}
+
+.ox-record-body-mast { border-block: 1px solid var(--rule); padding: 12px 0; }
+.ox-record-body-mast span:first-child { color: var(--ink); font-weight: 700; }
+.ox-record-body-grid { display: grid; grid-template-columns: minmax(225px, .86fr) minmax(0, 2.14fr); align-items: center; }
+
+.ox-record-body-intro { padding-block: 31px; padding-right: clamp(10px, 2vw, 30px); }
+.ox-record-body-index { color: var(--signal); font-size: .76rem; letter-spacing: .065em; text-transform: uppercase; }
+
+.ox-record-body-intro h1 {
+  margin: 12px 0 19px;
+  font: 800 clamp(4.15rem, 7.9vw, 8.7rem)/.73 'Saira Extra Condensed', sans-serif;
+  letter-spacing: -.015em;
+  text-transform: uppercase;
+}
+
+.ox-record-body-intro > p:last-child { max-width: 27ch; color: var(--quiet); font-size: .83rem; line-height: 1.65; }
+.ox-record-body-plate { border-left: 1px solid var(--rule); padding: clamp(5px, 1.1vw, 19px); }
+.ox-record-body-plate svg { width: 100%; }
+.ox-record-body-plate figcaption { margin-inline: 5%; }
+
+.ox-record-body-reader {
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(205px, .68fr);
+  border-block: 1px solid var(--rule);
+}
+
+.ox-record-body-controls { display: flex; flex-wrap: wrap; align-content: center; gap: 7px; padding: 17px 14px 17px 0; }
+
+.ox-record-body-controls button {
+  padding: 9px 9px;
+  border: 1px solid var(--rule);
+  text-align: left;
+  font-size: .77rem;
+  text-transform: uppercase;
+  transition: background-color .18s, color .18s;
+}
+
+.ox-record-body-controls button span { margin-right: 7px; opacity: .8; }
+.ox-record-body-controls button:hover { background: var(--deep); }
+.ox-record-body-controls button[aria-pressed="true"] { background: var(--signal); border-color: var(--signal); color: var(--deep); }
+.ox-record-body-controls button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.ox-record-body-reading { min-height: 105px; padding: 13px 17px; border-inline: 1px solid var(--rule); }
+.ox-record-body-reading h2 { margin-bottom: 4px; font-size: .88rem; }
+.ox-record-body-reading p { color: var(--quiet); font-size: .75rem; line-height: 1.6; }
+
+.ox-record-body-imprint {
+  display: grid;
+  align-content: center;
+  margin: 12px 0 12px clamp(12px, 2vw, 30px);
+  border: 1px solid var(--rule);
+  text-transform: uppercase;
+  font-size: .66rem;
+}
+
+.ox-record-body-imprint span { padding: 5px 8px; color: var(--quiet); border-bottom: 1px solid var(--rule); }
+.ox-record-body-imprint strong { padding: 7px 8px; font-weight: 700; letter-spacing: -.025em; }
+
+@media (max-width: 690px) {
+  .ox-record-body-grid, .ox-record-body-reader { grid-template-columns: 1fr; }
+  .ox-record-body-intro { padding: 25px 0 12px; }
+  .ox-record-body-intro h1 { margin-block: 10px 14px; }
+  .ox-record-body-intro > p:last-child { max-width: 36ch; }
+  .ox-record-body-plate { border-left: 0; padding: 0 0 11px; }
+  .ox-record-body-controls { padding: 11px 0; }
+  .ox-record-body-controls button { padding: 8px 6px; font-size: .68rem; }
+  .ox-record-body-reading { min-height: 96px; padding: 10px 0; border-inline: 0; border-top: 1px solid var(--rule); }
+  .ox-record-body-imprint { justify-self: start; margin: 0 0 12px; }
+}

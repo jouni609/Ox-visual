@@ -1,0 +1,109 @@
+.th-ox-record-wallow {
+  --field: #c7dc67;
+  --ink: #342439;
+  --panel: #412844;
+  --panel-text: #f6eafa;
+  --flash: #e8f17f;
+  --rule: #816384;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding: clamp(16px, 3vw, 47px) clamp(16px, 5vw, 74px) 132px;
+  color: var(--ink);
+  background: var(--field);
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.th-ox-record-wallow ::selection { color: var(--flash); background: var(--ink); }
+.ox-record-wallow-page { max-width: 1390px; margin-inline: auto; }
+
+.ox-record-wallow-mast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: clamp(.75rem, 1.2vw, 1rem);
+  font-weight: 700;
+}
+
+.ox-record-wallow-mast > span:first-child { padding: 5px 10px; border-radius: 20px; border: 1px solid var(--ink); }
+.ox-record-wallow-mast b { font-family: 'Bricolage Grotesque', sans-serif; margin-left: 5px; }
+.ox-record-wallow-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, .88fr); gap: clamp(16px, 4.2vw, 66px); margin-top: clamp(24px, 4.6vw, 73px); }
+.ox-record-wallow-main { min-width: 0; }
+.ox-record-wallow-label { font-size: .89rem; font-weight: 700; }
+
+.ox-record-wallow-main h1 {
+  margin: 4px 0 7px;
+  font: 800 clamp(3.7rem, 7.9vw, 8.3rem)/.88 'Bricolage Grotesque', sans-serif;
+  letter-spacing: -.071em;
+}
+
+.ox-record-wallow-main > p:last-of-type { max-width: 44ch; font-size: clamp(1rem, 1.45vw, 1.25rem); line-height: 1.4; }
+.ox-record-wallow-main figure { margin-top: -3px; }
+.ox-record-wallow-main figure svg { width: 100%; max-height: 445px; }
+
+.ox-record-wallow-main figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--ink);
+  padding-top: 7px;
+  font-size: .86rem;
+}
+
+.ox-record-wallow-panel {
+  display: grid;
+  align-self: center;
+  min-width: 0;
+  padding: clamp(16px, 2.2vw, 35px);
+  border-radius: 5px 38px 5px 5px;
+  background: var(--panel);
+  color: var(--panel-text);
+}
+
+.ox-record-wallow-panel ::selection { color: var(--panel); background: var(--flash); }
+.ox-record-wallow-panel h2 { font: 800 clamp(1.75rem, 3vw, 2.85rem)/.96 'Bricolage Grotesque', sans-serif; letter-spacing: -.055em; }
+.ox-record-wallow-switch { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 17px; }
+
+.ox-record-wallow-switch button {
+  min-height: 36px;
+  padding: 6px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  font-size: .84rem;
+  font-weight: 700;
+  transition: background-color .18s, color .18s, border-color .18s;
+}
+
+.ox-record-wallow-switch button:hover { border-color: var(--flash); }
+.ox-record-wallow-switch button[aria-pressed="true"] { border-color: var(--flash); color: var(--ink); background: var(--flash); }
+.ox-record-wallow-switch button:focus-visible { outline: 2px solid var(--panel-text); outline-offset: 3px; }
+.ox-record-wallow-panel svg { width: 100%; margin-top: 8px; }
+.ox-record-wallow-panel > p { min-height: 4.5em; margin-top: 12px; font-size: .96rem; line-height: 1.43; }
+
+.ox-record-wallow-tag {
+  display: grid;
+  gap: 4px;
+  margin: 14px 0 0 auto;
+  width: fit-content;
+  padding: 8px 10px 7px;
+  border-left: 4px solid var(--flash);
+  background: var(--panel-text);
+  color: var(--panel);
+  transform: rotate(2deg);
+}
+
+.ox-record-wallow-tag span { font-size: .69rem; }
+.ox-record-wallow-tag strong { font-size: .68rem; }
+
+@media (max-width: 740px) {
+  .ox-record-wallow-grid { grid-template-columns: minmax(0, 1fr); }
+  .ox-record-wallow-main h1 { font-size: clamp(3.17rem, 10.5vw, 5rem); }
+  .ox-record-wallow-main figure { margin-top: 3px; }
+  .ox-record-wallow-panel { margin-top: 4px; padding: 13px 15px; }
+  .ox-record-wallow-panel h2 { font-size: clamp(1.54rem, 5.8vw, 2.1rem); }
+  .ox-record-wallow-switch { margin-top: 11px; }
+  .ox-record-wallow-panel svg { max-width: 220px; margin-top: 5px; }
+  .ox-record-wallow-panel > p { min-height: 0; margin-top: 7px; font-size: .88rem; line-height: 1.35; }
+  .ox-record-wallow-tag { justify-self: start; margin: 8px 0 0; }
+}

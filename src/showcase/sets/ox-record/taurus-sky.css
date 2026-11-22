@@ -1,0 +1,109 @@
+.th-ox-record-sky {
+  --night: #12192b;
+  --ink: #f6dfb0;
+  --quiet: #ddd4dd;
+  --gold: #e7b873;
+  --rule: #815e50;
+  --button: #232b43;
+  --ticket: #eac492;
+  --ticket-ink: #3f2c33;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding: clamp(15px, 2.7vw, 42px) clamp(13px, 4.7vw, 74px) 124px;
+  background: radial-gradient(ellipse at 50% 46%, #252e47, var(--night) 65%);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.th-ox-record-sky ::selection { background: var(--gold); color: var(--night); }
+.ox-record-sky-room { max-width: 1500px; margin-inline: auto; }
+
+.ox-record-sky-mast {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-block: 1px solid var(--rule);
+  padding: 9px 0;
+  color: var(--quiet);
+  font: 600 clamp(.58rem, .95vw, .77rem)/1.2 'Cinzel', serif;
+  letter-spacing: .16em;
+}
+
+.th-ox-record-sky h1 {
+  margin: clamp(15px, 2.1vw, 32px) auto 0;
+  text-align: center;
+  font: 700 clamp(2.35rem, 6.8vw, 7.7rem)/.98 'Cinzel', serif;
+  letter-spacing: -.062em;
+  text-wrap: balance;
+}
+
+.ox-record-sky-stage {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) minmax(0, 4.05fr) minmax(130px, 1fr);
+  grid-template-areas: 'story dome console';
+  align-items: center;
+  gap: clamp(5px, 1.4vw, 25px);
+}
+
+.ox-record-sky-dome { grid-area: dome; }
+.ox-record-sky-dome svg { width: 100%; max-height: 475px; }
+
+.ox-record-sky-dome figcaption {
+  color: var(--gold);
+  text-align: center;
+  font: 600 clamp(.59rem, 1vw, .72rem)/1.2 'Cinzel', serif;
+  letter-spacing: .11em;
+}
+
+.ox-record-sky-story { grid-area: story; }
+.ox-record-sky-story h2 { margin-bottom: 7px; color: var(--gold); font: 700 clamp(.92rem, 1.25vw, 1.18rem)/1.25 'Cinzel', serif; }
+.ox-record-sky-story p, .ox-record-sky-console p { color: var(--quiet); font-size: clamp(1.05rem, 1.4vw, 1.3rem); line-height: 1.25; }
+.ox-record-sky-console { grid-area: console; }
+
+.ox-record-sky-console button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 9px;
+  padding: 10px;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  font: 700 clamp(.66rem, .94vw, .83rem)/1.15 'Cinzel', serif;
+}
+
+.ox-record-sky-console button:hover { background: var(--button); border-color: var(--gold); }
+.ox-record-sky-console button:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+.ox-record-sky-console button span { width: 10px; height: 10px; flex: none; border: 1px solid var(--gold); transform: rotate(45deg); }
+.ox-record-sky-console button[aria-pressed="true"] span { background: var(--gold); }
+
+.ox-record-sky-ticket {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  margin: 19px auto 0;
+  padding: 8px 13px;
+  background: radial-gradient(circle at left, transparent 5px, var(--ticket) 5.5px) left / 51% 100% no-repeat,
+    radial-gradient(circle at right, transparent 5px, var(--ticket) 5.5px) right / 51% 100% no-repeat;
+  color: var(--ticket-ink);
+  font: 700 .67rem/1.2 'Cinzel', serif;
+  text-transform: uppercase;
+}
+
+.ox-record-sky-ticket strong { border-inline: 1px dashed var(--ticket-ink); padding: 3px 7px; font-weight: 700; }
+
+@media (max-width: 720px) {
+  .ox-record-sky-stage {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    grid-template-areas: 'dome dome' 'story console';
+    align-items: start;
+    column-gap: 16px;
+    row-gap: 22px;
+  }
+
+  .th-ox-record-sky h1 { max-width: 12ch; margin-top: 24px; margin-bottom: 7px; }
+  .ox-record-sky-ticket { margin-top: 22px; font-size: .59rem; }
+}
