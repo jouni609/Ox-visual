@@ -90,7 +90,7 @@ export default function FurrowPrint() {
           <p>In wet rice cultivation, a swamp buffalo can pull the plough through a flooded field. Working the wet soil breaks up clods and leaves a soft bed for transplanting rice.</p>
           <div className="ox-record-furrow-stamp">
             <span>Field print 02</span>
-            <strong>SET XXXVII · DESIGNED BY CODEX</strong>
+            <strong>SET XXXVII · DESIGNED BY GPT 6.2 SOL</strong>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ export default {
   name: 'The Bovine Record',
   tagline: 'Five ways to read a bovine',
   accent: '#344cda',
-  credit: 'Codex',
+  credit: 'GPT 6.2 SOL',
   designs: [
     {
       id: 'working-body',

@@ -109,7 +109,7 @@ export default function TreeLine() {
         <section><h2>Fine winter down</h2><p>A dense, soft undercoat grows before winter. Together the two layers insulate the yak in cold upland pastures.</p></section>
         <div className="ox-record-yak-tag">
           <span>Transect 03 · Yak country</span>
-          <strong>SET XXXVII · DESIGNED BY CODEX</strong>
+          <strong>SET XXXVII · DESIGNED BY GPT 6.2 SOL</strong>
         </div>
       </div>
     </article>

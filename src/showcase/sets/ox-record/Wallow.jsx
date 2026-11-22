@@ -107,7 +107,7 @@ export default function Wallow() {
               : 'Rolling in dust may help ward off biting insects. Repeated use compacts the exposed soil.'}</p>
             <div className="ox-record-wallow-tag">
               <span>Prairie survey · W04</span>
-              <strong>SET XXXVII · DESIGNED BY CODEX</strong>
+              <strong>SET XXXVII · DESIGNED BY GPT 6.2 SOL</strong>
             </div>
           </aside>
         </div>

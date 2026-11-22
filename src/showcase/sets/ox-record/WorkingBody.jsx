@@ -117,7 +117,7 @@ export default function WorkingBody() {
           </div>
           <div className="ox-record-body-imprint">
             <span>Record drawing · A/01</span>
-            <strong>SET XXXVII · DESIGNED BY CODEX</strong>
+            <strong>SET XXXVII · DESIGNED BY GPT 6.2 SOL</strong>
           </div>
         </div>
       </div>

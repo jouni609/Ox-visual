@@ -149,7 +149,7 @@ export default function TaurusSky() {
         </div>
         <div className="ox-record-sky-ticket">
           <span>Admit one</span>
-          <strong>SET XXXVII · DESIGNED BY CODEX</strong>
+          <strong>SET XXXVII · DESIGNED BY GPT 6.2 SOL</strong>
           <span>TAURUS</span>
         </div>
       </div>
