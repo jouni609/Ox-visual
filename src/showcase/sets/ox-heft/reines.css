@@ -1,0 +1,352 @@
+.th-ox-heft.ox-heft-reines {
+  --ox-heft-reines-board: #173b2d;
+  --ox-heft-reines-board-deep: #0f2a20;
+  --ox-heft-reines-paper: #f3ede0;
+  --ox-heft-reines-larch: #d9702b;
+  --ox-heft-reines-larch-lt: #f09a5a;
+  --ox-heft-reines-slate: #8d99a2;
+  --ox-heft-reines-gold: #e5b84b;
+  --ox-heft-reines-display: 'Vollkorn', 'PT Serif', serif;
+  --ox-heft-reines-body: 'Figtree', 'Hanken Grotesk', sans-serif;
+  --ox-heft-reines-hand: 'Caveat', cursive;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 14px;
+  padding: 26px clamp(16px, 4vw, 56px) 120px;
+  background-color: var(--ox-heft-reines-board);
+  background-image:
+    radial-gradient(ellipse at 50% -10%, rgba(243, 237, 224, 0.1), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(243, 237, 224, 0.025) 0 2px, transparent 2px 9px);
+  color: var(--ox-heft-reines-paper);
+  font-family: var(--ox-heft-reines-body);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.th-ox-heft.ox-heft-reines ::selection {
+  background: var(--ox-heft-reines-larch);
+  color: var(--ox-heft-reines-board-deep);
+}
+
+.th-ox-heft.ox-heft-reines * {
+  box-sizing: border-box;
+}
+
+.ox-heft-reines-head {
+  width: min(1180px, 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.ox-heft-reines-kicker {
+  margin: 0 0 6px 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ox-heft-reines-paper);
+}
+
+.ox-heft-reines-cross {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  background: var(--ox-heft-reines-paper);
+  border-radius: 3px;
+}
+
+.ox-heft-reines-cross i {
+  display: block;
+  width: 12px;
+  height: 4px;
+  background: var(--ox-heft-reines-larch);
+  box-shadow: 0 0 0 0 transparent;
+  position: relative;
+}
+
+.ox-heft-reines-cross i::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -4px;
+  width: 4px;
+  height: 12px;
+  background: var(--ox-heft-reines-larch);
+}
+
+.ox-heft-reines-title {
+  margin: 0;
+  font-family: var(--ox-heft-reines-display);
+  font-weight: 700;
+  font-size: clamp(60px, 9vw, 116px);
+  line-height: 0.82;
+  letter-spacing: -0.03em;
+  color: var(--ox-heft-reines-paper);
+}
+
+.ox-heft-reines-deck {
+  margin: 0 4px 6px 0;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.45;
+  text-align: right;
+  color: var(--ox-heft-reines-paper);
+}
+
+.ox-heft-reines-panel {
+  position: relative;
+  width: min(1180px, 100%);
+  filter: drop-shadow(0 30px 40px rgba(5, 18, 12, 0.55));
+}
+
+.ox-heft-reines-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.ox-heft-reines-hit {
+  position: absolute;
+  top: 42%;
+  width: 36%;
+  height: 38%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  cursor: pointer;
+  color: var(--ox-heft-reines-paper);
+  font-family: var(--ox-heft-reines-body);
+}
+
+.ox-heft-reines-hit-a {
+  left: 14%;
+}
+
+.ox-heft-reines-hit-b {
+  right: 14%;
+}
+
+.ox-heft-reines-hit:disabled {
+  cursor: default;
+}
+
+.ox-heft-reines-hit-label {
+  margin-bottom: 4%;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--ox-heft-reines-paper);
+  color: var(--ox-heft-reines-board-deep);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.ox-heft-reines-hit:hover:not(:disabled) .ox-heft-reines-hit-label,
+.ox-heft-reines-hit:focus-visible .ox-heft-reines-hit-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ox-heft-reines-hit:focus-visible {
+  outline: 3px dashed var(--ox-heft-reines-paper);
+  outline-offset: -8px;
+}
+
+.ox-heft-reines-verdict {
+  margin: 6px 0 0;
+  width: min(1180px, 100%);
+  min-height: 1.6em;
+  font-size: 17px;
+  text-align: left;
+  color: var(--ox-heft-reines-paper);
+}
+
+.ox-heft-reines-verdict b {
+  font-family: var(--ox-heft-reines-display);
+  font-weight: 700;
+  font-size: 1.25em;
+  color: var(--ox-heft-reines-gold);
+  margin-right: 4px;
+}
+
+.ox-heft-reines-reset {
+  margin-left: 16px;
+  padding: 4px 16px;
+  border: 1.5px solid var(--ox-heft-reines-paper);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ox-heft-reines-paper);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ox-heft-reines-reset:hover {
+  background: var(--ox-heft-reines-paper);
+  color: var(--ox-heft-reines-board);
+}
+
+.ox-heft-reines-reset:focus-visible {
+  outline: 3px solid var(--ox-heft-reines-gold);
+  outline-offset: 3px;
+}
+
+.ox-heft-reines-notes {
+  width: min(1180px, 100%);
+  margin-top: 14px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(243, 237, 224, 0.28);
+  display: grid;
+  grid-template-columns: 1.25fr 1.15fr 1fr 0.9fr;
+  gap: 32px;
+}
+
+.ox-heft-reines-note h2 {
+  margin: 0 0 8px;
+  font-family: var(--ox-heft-reines-display);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.15;
+  color: var(--ox-heft-reines-larch-lt);
+}
+
+.ox-heft-reines-note p,
+.ox-heft-reines-note ol,
+.ox-heft-reines-note dl {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+
+.ox-heft-reines-note-lede p {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.ox-heft-reines-note ol {
+  padding-left: 1.2em;
+}
+
+.ox-heft-reines-note li {
+  margin: 6px 0;
+  padding-left: 2px;
+}
+
+.ox-heft-reines-note dt {
+  font-weight: 700;
+  margin-top: 8px;
+  color: var(--ox-heft-reines-paper);
+}
+
+.ox-heft-reines-note dd {
+  margin: 0;
+  color: rgba(243, 237, 224, 0.9);
+}
+
+.ox-heft-reines-figures dl {
+  display: grid;
+  gap: 10px;
+}
+
+.ox-heft-reines-figures dt {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(243, 237, 224, 0.82);
+}
+
+.ox-heft-reines-figures dd {
+  font-family: var(--ox-heft-reines-display);
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--ox-heft-reines-gold);
+}
+
+@media (max-width: 980px) {
+  .th-ox-heft.ox-heft-reines {
+    padding: 20px 14px 136px;
+  }
+
+  .ox-heft-reines-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .ox-heft-reines-deck {
+    text-align: left;
+    margin: 0 0 0 4px;
+  }
+
+  .ox-heft-reines-notes {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .ox-heft-reines-note-lede {
+    grid-column: 1 / -1;
+  }
+
+  .ox-heft-reines-hit-label {
+    display: none;
+  }
+
+  .ox-heft-reines-panel.is-compact .ox-heft-reines-hit {
+    top: 24%;
+    width: 51%;
+    height: 48%;
+  }
+
+  .ox-heft-reines-panel.is-compact .ox-heft-reines-hit-a {
+    left: 0;
+  }
+
+  .ox-heft-reines-panel.is-compact .ox-heft-reines-hit-b {
+    right: 0;
+  }
+}
+
+.ox-heft-reines-tally {
+  display: block;
+  font-size: 15px;
+}
+
+.ox-heft-reines-tally b {
+  font-size: 1.1em;
+}
+
+@media (max-width: 620px) {
+  .ox-heft-reines-notes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ox-heft-reines-verdict {
+    font-size: 15px;
+  }
+}

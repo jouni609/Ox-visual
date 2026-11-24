@@ -22,3 +22,4 @@ import oxVantage from './ox-vantage/manifest.js'
 
 export const SETS = [oxAtlas, oxMasque, oxHours, oxVesper, oxVita, oxMythos, oxYoke, oxEpoch, oxLexicon, oxMeridian, oxSpan, oxTale, oxApparatus, oxClimates, oxAttention, oxPrism, oxLantern, oxWaymark, oxCanon, oxStance, oxVantage]
 import oxRecord from './ox-record/manifest.js'; SETS.push(oxRecord)
+import oxHeft from './ox-heft/manifest.js'; SETS.push(oxHeft)
